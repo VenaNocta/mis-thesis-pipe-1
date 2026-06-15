@@ -1,0 +1,1350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bom version="1" xmlns="http://cyclonedx.org/schema/bom/1.6">
+  <components>
+    <component bom-ref="pkg:maven/io.netty/netty-codec-base@4.2.10.Final?type=jar">
+      <group>io.netty</group>
+      <name>netty-codec-base</name>
+      <version>4.2.10.Final</version>
+      <hashes>
+        <hash alg="SHA-1">e81b71d93024736f174397bff1fdd590e0aa9c44</hash>
+        <hash alg="SHA-256">2a420ee609c1c4ad750609b6d7e2ee9f26a0431a8bbd7f48afb8ac576f1c40b9</hash>
+        <hash alg="SHA-512">ba56e5a915c92e4c769d99804bba966ef1bd1f2b2388cd3dc12f28e5258203733500d2840cf36d389cb0ab3894795eafb8f4508c0ac022a5d00eee171e43fad8</hash>
+        <hash alg="MD5">74cc444af0396c1bd5da34a3e50e12cf</hash>
+      </hashes>
+      <purl>pkg:maven/io.netty/netty-codec-base@4.2.10.Final?type=jar</purl>
+    </component>
+    <component bom-ref="pkg:maven/org.apache/apache@37?type=pom">
+      <group>org.apache</group>
+      <name>apache</name>
+      <version>37</version>
+      <hashes>
+        <hash alg="SHA-1">e6d6d76cff11107ad33986203556d8ebe43c7b2c</hash>
+        <hash alg="SHA-256">524ec4787aff73af6b3a9fafa154c7f1881b648299b663fdbfcadda1286f2353</hash>
+        <hash alg="SHA-512">f8b4087d30b07befaf0118f4c93900e21a1c094b0238ae922e9c989b2fec9b82c2cbd0ac8fb20176682b07daf332e75e25b33315a3b195f99bb4f9cb11d6ea67</hash>
+        <hash alg="MD5">309bbd26fed682c7a9e3c059031cfbe7</hash>
+      </hashes>
+      <purl>pkg:maven/org.apache/apache@37?type=pom</purl>
+    </component>
+    <component bom-ref="pkg:maven/commons-codec/commons-codec@1.21.0?type=jar">
+      <group>commons-codec</group>
+      <name>commons-codec</name>
+      <version>1.21.0</version>
+      <hashes>
+        <hash alg="SHA-1">d95f998db5f89900fe895daf6cd2cddcb2f1d64b</hash>
+        <hash alg="SHA-256">4da851cb6abfb98bfe9eb77c5e5fc47f5414fa28b94e21b7fd9a646705dc167f</hash>
+        <hash alg="SHA-512">3ceb4aa588d0b918e46b1ddda9ff41b5a765985bf66542d2728458fc3f83b9dedfd972ff5d919cf6f456fbaa9f8c4e5f0c0913848ec3a471c316374e683b1f2a</hash>
+        <hash alg="MD5">c49977029838babaf8a71485aa9aaef8</hash>
+      </hashes>
+      <purl>pkg:maven/commons-codec/commons-codec@1.21.0?type=jar</purl>
+    </component>
+    <component bom-ref="pkg:maven/com.github.ben-manes.caffeine/caffeine@3.2.3?type=pom">
+      <group>com.github.ben-manes.caffeine</group>
+      <name>caffeine</name>
+      <version>3.2.3</version>
+      <hashes>
+        <hash alg="SHA-1">5d4cb358196382f921333f6fcbe0bbc4bd2d442c</hash>
+        <hash alg="SHA-256">9f704f9083797b4f7d0c1d5c855d34cd268d544cf06b4283d5ce4288acfc9ee0</hash>
+        <hash alg="SHA-512">8a8edc2bcc60cf42e91ff28f78f58e3f43658d98ac686abed1e09fe67c5c1018e941e295ad5cf11698f77ae04dc0e85299cc9efaa985eb560cc1647bd2d59977</hash>
+        <hash alg="MD5">28090f3c34b96b0823a0ce66bf146b3f</hash>
+      </hashes>
+      <purl>pkg:maven/com.github.ben-manes.caffeine/caffeine@3.2.3?type=pom</purl>
+    </component>
+    <component bom-ref="pkg:maven/com.fasterxml.woodstox/woodstox-core@7.1.1?type=jar">
+      <group>com.fasterxml.woodstox</group>
+      <name>woodstox-core</name>
+      <version>7.1.1</version>
+      <hashes>
+        <hash alg="SHA-1">76baad1b94513ea896e0a17388890a4c81edd0e0</hash>
+        <hash alg="SHA-256">02b9d022e9d47704ff8a7a859a0dbfd3b2882a8311eb7ff1e180f760ccda2712</hash>
+        <hash alg="SHA-512">28105d6409766966123d4e212dba555c4776bfeb538093d3739ef113de5c6d6e92453aabc16915bfb76124a5dcc82b57f3cd13b42ea2e4038a4495285c642d3a</hash>
+        <hash alg="MD5">971ff236679f7b35a7c13c0d02c0170e</hash>
+      </hashes>
+      <purl>pkg:maven/com.fasterxml.woodstox/woodstox-core@7.1.1?type=jar</purl>
+    </component>
+    <component bom-ref="pkg:maven/io.netty/netty-common@4.2.10.Final?type=pom">
+      <group>io.netty</group>
+      <name>netty-common</name>
+      <version>4.2.10.Final</version>
+      <hashes>
+        <hash alg="SHA-1">4adb56f0aa9bd880f6c6633b015910e4718b8a15</hash>
+        <hash alg="SHA-256">fe62ba5901800a5a1706e24619ccd40788f01b53c628ba3cc5f18f2e595d58c0</hash>
+        <hash alg="SHA-512">640f39bc7503de6efd80cc0800f01f47e437af0eef93e61a392c4fa1b1aa014d6657d43acfc5c65bb25c48566b3318081fe85e8dcd67bc3722f004110689bd01</hash>
+        <hash alg="MD5">0aaf479418ad37751f2110bf7d09004f</hash>
+      </hashes>
+      <purl>pkg:maven/io.netty/netty-common@4.2.10.Final?type=pom</purl>
+    </component>
+    <component bom-ref="pkg:maven/org.bouncycastle/bcpg-jdk18on@1.83?type=jar">
+      <group>org.bouncycastle</group>
+      <name>bcpg-jdk18on</name>
+      <version>1.83</version>
+      <hashes>
+        <hash alg="SHA-1">4369727b9b02e6c62c26fde862ac42d77ce8edef</hash>
+        <hash alg="SHA-256">4077fd4517761c98a81944c70a376ce73f4eb3e44c03db1eb5d699fc28ab48aa</hash>
+        <hash alg="SHA-512">c6e9c6d95919d71e2d00485651417cbb6ba40716072811ad34f0ce00c2450f1ee93498ace080a16a99ada8c90c814049eb2a213687f094d3cf1af1116ef9a5aa</hash>
+        <hash alg="MD5">5a622f9aef7fba434fad454d6eea4294</hash>
+      </hashes>
+      <purl>pkg:maven/org.bouncycastle/bcpg-jdk18on@1.83?type=jar</purl>
+    </component>
+    <component bom-ref="pkg:maven/com.github.package-url/packageurl-java@1.5.0?type=pom">
+      <group>com.github.package-url</group>
+      <name>packageurl-java</name>
+      <version>1.5.0</version>
+      <hashes>
+        <hash alg="SHA-1">44c06c2f2177d232c44c9dbd1c945b92e02b123b</hash>
+        <hash alg="SHA-256">42fdf46c5355bcb9aa0b240d52ac9d89ee728f8cb1386e43127588af916b3e06</hash>
+        <hash alg="SHA-512">93edf68a28f44a24a3f705425c97f36d185f3d3437e8770871955ed5a703048559549e410592bb45e1719ca3a3414f2eaaab866792c0baf762f5c12ed16c9e5f</hash>
+        <hash alg="MD5">94d091b265652307b4f5cc962fab736f</hash>
+      </hashes>
+      <purl>pkg:maven/com.github.package-url/packageurl-java@1.5.0?type=pom</purl>
+    </component>
+    <component bom-ref="pkg:maven/io.netty/netty-resolver@4.2.10.Final?type=jar">
+      <group>io.netty</group>
+      <name>netty-resolver</name>
+      <version>4.2.10.Final</version>
+      <hashes>
+        <hash alg="SHA-1">888daac4608a9b5fa1a74763e0de88d0dbf459a4</hash>
+        <hash alg="SHA-256">14dfad791466ab2cc87316841c1c976af140bdb8c6ed5f84725e1225a1e0bbe6</hash>
+        <hash alg="SHA-512">fc4ec7317024f329c2231d7f0eace5b387b250dbcd6a09dea173d4f4b6568e00a8642531ed7d153b047f285e546a05e7274a52946ca4bb2c47cf521858cdafe4</hash>
+        <hash alg="MD5">71f670cd33feed6e48be74b0cd555270</hash>
+      </hashes>
+      <purl>pkg:maven/io.netty/netty-resolver@4.2.10.Final?type=jar</purl>
+    </component>
+    <component bom-ref="pkg:maven/org.opentest4j/opentest4j@1.2.0?type=jar">
+      <group>org.opentest4j</group>
+      <name>opentest4j</name>
+      <version>1.2.0</version>
+      <hashes>
+        <hash alg="SHA-1">28c11eb91f9b6d8e200631d46e20a7f407f2a046</hash>
+        <hash alg="SHA-256">58812de60898d976fb81ef3b62da05c6604c18fd4a249f5044282479fc286af2</hash>
+        <hash alg="SHA-512">17f77797a260eb2bd1666a90e25efc79a5413afa9df1c1cb6c4cd1949d61c38b241e3bb20956396b5f54d144720303d72a2ac00bc5bf245a260a3c3099e01c74</hash>
+        <hash alg="MD5">45c9a837c21f68e8c93e85b121e2fb90</hash>
+      </hashes>
+      <purl>pkg:maven/org.opentest4j/opentest4j@1.2.0?type=jar</purl>
+    </component>
+    <component bom-ref="pkg:maven/io.netty/netty-buffer@4.2.10.Final?type=pom">
+      <group>io.netty</group>
+      <name>netty-buffer</name>
+      <version>4.2.10.Final</version>
+      <hashes>
+        <hash alg="SHA-1">c68b2552aa1072d83cf8ac1d4cdf714efe217dae</hash>
+        <hash alg="SHA-256">a4fe2c116ca052e1ed1652809a7e4168863a33c97b497255b6074868a3e129e2</hash>
+        <hash alg="SHA-512">e16a980ef3c9361bf09fe19c973bdae2cc16877ac7b3d5f2ab14b282ff6efb87e98609d24b430a365d36c7a288939b65f71171532e4f50fa44896d5beb94335f</hash>
+        <hash alg="MD5">b236988dea08f142d6ab8eaf5e8ac75b</hash>
+      </hashes>
+      <purl>pkg:maven/io.netty/netty-buffer@4.2.10.Final?type=pom</purl>
+    </component>
+    <component bom-ref="pkg:maven/org.bouncycastle/bcprov-jdk18on@1.83?type=jar">
+      <group>org.bouncycastle</group>
+      <name>bcprov-jdk18on</name>
+      <version>1.83</version>
+      <hashes>
+        <hash alg="SHA-1">310e719f391bd9f4ee5103ca299c172643efb595</hash>
+        <hash alg="SHA-256">82cf3a2af766c3bc874f6d36b9f20a8b99a8f09762dc776e8a227a45d8daaafb</hash>
+        <hash alg="SHA-512">e51cc843ca130ad4a15ff667360063bbb583af3f22e14193840a734da6665b470ba1855ce975f88a94ddd6419aa020d3a9966980bc1deb7514f92a7215d6e229</hash>
+        <hash alg="MD5">9c629a979cbb1de2e82fc104b4a7b762</hash>
+      </hashes>
+      <purl>pkg:maven/org.bouncycastle/bcprov-jdk18on@1.83?type=jar</purl>
+    </component>
+    <component bom-ref="pkg:maven/org.codehaus.woodstox/stax2-api@4.2.2?type=jar">
+      <group>org.codehaus.woodstox</group>
+      <name>stax2-api</name>
+      <version>4.2.2</version>
+      <hashes>
+        <hash alg="SHA-1">b0d746cadea928e5264f2ea294ea9a1bf815bbde</hash>
+        <hash alg="SHA-256">a61c48d553efad78bc01fffc4ac528bebbae64cbaec170b2a5e39cf61eb51abe</hash>
+        <hash alg="SHA-512">1c0587ecb4c5a659ce2ae1fe36ffc12636a8ecba549a29f2cf91cb4d1d36a335c05f35776f480488d40d894230389f76aeeb363887026c6ef5c565995c17b7c6</hash>
+        <hash alg="MD5">6949cace015c0f408f0b846e3735d301</hash>
+      </hashes>
+      <purl>pkg:maven/org.codehaus.woodstox/stax2-api@4.2.2?type=jar</purl>
+    </component>
+    <component bom-ref="pkg:maven/commons-io/commons-io@2.21.0?type=jar">
+      <group>commons-io</group>
+      <name>commons-io</name>
+      <version>2.21.0</version>
+      <hashes>
+        <hash alg="SHA-1">52a6f68fe5afe335cde95461dd5c3412f04996f7</hash>
+        <hash alg="SHA-256">7d643a2afea8b058b762aa6fb90e5b256f6c729739f8b3784c3370ddc609e88d</hash>
+        <hash alg="SHA-512">7ac1aa4d834cd7cdecaee223a64c63d481810c73dfdb5109f402234a05cadf754e414cead99072f5140d4f7042ee084161935fb28129a631d908d989c5bbac5d</hash>
+        <hash alg="MD5">bc7e020873f086ede85f97bd9f013215</hash>
+      </hashes>
+      <purl>pkg:maven/commons-io/commons-io@2.21.0?type=jar</purl>
+    </component>
+    <component bom-ref="pkg:maven/com.google.errorprone/error_prone_parent@2.43.0?type=pom">
+      <group>com.google.errorprone</group>
+      <name>error_prone_parent</name>
+      <version>2.43.0</version>
+      <hashes>
+        <hash alg="SHA-1">cc6c3c736a5ce7edfd2d287f2aac76511e6d3f8e</hash>
+        <hash alg="SHA-256">bb92c4584d0211bd59beca4fb276170f5dc50fe346146e93578d2dab26033e10</hash>
+        <hash alg="SHA-512">1cd14bc6a9c9e5d4d851bf63079d5e03b299a27469bc2155af9c5839824bc09afc9b25b2590900b90dfe7a5b3daf0935ffaf606418aa946bb64ca61b338818d9</hash>
+        <hash alg="MD5">24d28e7254cd46127616343b10907659</hash>
+      </hashes>
+      <purl>pkg:maven/com.google.errorprone/error_prone_parent@2.43.0?type=pom</purl>
+    </component>
+    <component bom-ref="pkg:maven/com.fasterxml/oss-parent@55?type=pom">
+      <group>com.fasterxml</group>
+      <name>oss-parent</name>
+      <version>55</version>
+      <hashes>
+        <hash alg="SHA-1">24ad110e0e507856ae662736d6c6ef5b101a1689</hash>
+        <hash alg="SHA-256">0f5e18f2b35ebf6d839f7fd549972883f696c210f9ae3230afd2c20ba886c04d</hash>
+        <hash alg="SHA-512">1e1758084b1a2c1992d6f04eb027afdfe0ab743a0c4c878bff6e241b6cddebe0e73cb91c00ec7561294efe2642123927827393c818ad19c1395c1fbb30df99b6</hash>
+        <hash alg="MD5">fa61ac4c51981c9255c0f584dcbfa252</hash>
+      </hashes>
+      <purl>pkg:maven/com.fasterxml/oss-parent@55?type=pom</purl>
+    </component>
+    <component bom-ref="pkg:maven/io.netty/netty-buffer@4.2.10.Final?type=jar">
+      <group>io.netty</group>
+      <name>netty-buffer</name>
+      <version>4.2.10.Final</version>
+      <hashes>
+        <hash alg="SHA-1">b9b67175347d45b1caa5525440258904e01fac22</hash>
+        <hash alg="SHA-256">a430cfedce93c171a56a86d1d27c8d829db4793f1c59c381c65e84e5bcd5bcaa</hash>
+        <hash alg="SHA-512">88dcd9c188bf03fc28ebaadd6efe9ba25ecd1c89cdb7e62e189bf2da3fcbff9e8d6c2fb9d7e443fa0df21ddd0b4fa480b14b78024b7246ecba8680410f825847</hash>
+        <hash alg="MD5">0ab56f967880a1e332813984990767e0</hash>
+      </hashes>
+      <purl>pkg:maven/io.netty/netty-buffer@4.2.10.Final?type=jar</purl>
+    </component>
+    <component bom-ref="pkg:maven/org.apiguardian/apiguardian-api@1.1.2?type=jar">
+      <group>org.apiguardian</group>
+      <name>apiguardian-api</name>
+      <version>1.1.2</version>
+      <hashes>
+        <hash alg="SHA-1">a231e0d844d2721b0fa1b238006d15c6ded6842a</hash>
+        <hash alg="SHA-256">b509448ac506d607319f182537f0b35d71007582ec741832a1f111e5b5b70b38</hash>
+        <hash alg="SHA-512">d7ccd0e7019f1a997de39d66dc0ad4efe150428fdd7f4c743c93884f1602a3e90135ad34baea96d5b6d925ad6c0c8487c8e78304f0a089a12383d4a62e2c9a61</hash>
+        <hash alg="MD5">8c7de3f82037fa4a2e8be2a2f13092af</hash>
+      </hashes>
+      <purl>pkg:maven/org.apiguardian/apiguardian-api@1.1.2?type=jar</purl>
+    </component>
+    <component bom-ref="pkg:maven/com.fasterxml.jackson.core/jackson-core@2.21.0?type=jar">
+      <group>com.fasterxml.jackson.core</group>
+      <name>jackson-core</name>
+      <version>2.21.0</version>
+      <hashes>
+        <hash alg="SHA-1">1f7c3f82e6e2ef5def0a12d7dd754e26f0c0ae28</hash>
+        <hash alg="SHA-256">e22604bcd9b24e462d5df102007cb06e1ed811e86f1ce6081ca62f385f2db87b</hash>
+        <hash alg="SHA-512">4f00351e57ce480428216691c52c59a75ca824674d5c26ef902250cc3d012f22042c82eab9ca530c6328031b597239143e9e3b68c1c7a6cc6d49cef8cb420774</hash>
+        <hash alg="MD5">eeaf6f2d71789f1c04ba944aeaa8e18e</hash>
+      </hashes>
+      <purl>pkg:maven/com.fasterxml.jackson.core/jackson-core@2.21.0?type=jar</purl>
+    </component>
+    <component bom-ref="pkg:maven/com.fasterxml.jackson.dataformat/jackson-dataformat-yaml@2.18.3?type=jar">
+      <group>com.fasterxml.jackson.dataformat</group>
+      <name>jackson-dataformat-yaml</name>
+      <version>2.18.3</version>
+      <hashes>
+        <hash alg="SHA-1">66658356a375664262c227dad09adc51dbc09c54</hash>
+        <hash alg="SHA-256">3ca00e47cfcb43e79438ddcfc8fc735e9ebac3824fb7769138609be6bd56e483</hash>
+        <hash alg="SHA-512">a4696ab6e7161a5aa913ca0d22ff99aae12828104df3169753cb60ed69a8ed29c776c4beb1c938caad57344ef649572b0ef21fa45f3e58b3321b25b5d073939a</hash>
+        <hash alg="MD5">96671888dd42efee72d555b537558977</hash>
+      </hashes>
+      <purl>pkg:maven/com.fasterxml.jackson.dataformat/jackson-dataformat-yaml@2.18.3?type=jar</purl>
+    </component>
+    <component bom-ref="pkg:maven/io.netty/netty-codec-compression@4.2.10.Final?type=jar">
+      <group>io.netty</group>
+      <name>netty-codec-compression</name>
+      <version>4.2.10.Final</version>
+      <hashes>
+        <hash alg="SHA-1">5cc88546ee2ac730041eb33dff868037c8e85e78</hash>
+        <hash alg="SHA-256">6ed70c21d6b4eb237dfab29214dfc029e1e85e9804751cb94924fa04f36c04cd</hash>
+        <hash alg="SHA-512">0020504459851fb571e53f7664794d7bda04c4cfc088a4a8667ada408dd850ac032f59e7180e3ad3327cc26c12a426a88f17aefd5d9cb1362e27561d2047f3da</hash>
+        <hash alg="MD5">a414c212744a98db85f7e2dedb87e24e</hash>
+      </hashes>
+      <purl>pkg:maven/io.netty/netty-codec-compression@4.2.10.Final?type=jar</purl>
+    </component>
+    <component bom-ref="pkg:maven/org.cyclonedx/cyclonedx-core-java@12.0.1?type=pom">
+      <group>org.cyclonedx</group>
+      <name>cyclonedx-core-java</name>
+      <version>12.0.1</version>
+      <hashes>
+        <hash alg="SHA-1">d971d48df0f6694fcee703efd55006188fac1d24</hash>
+        <hash alg="SHA-256">aa8e1258e5f8187be02ae0bdbe454987ca0c180b9aeccc083dce69738c1cc6f0</hash>
+        <hash alg="SHA-512">4ac11958be39d9758569ee9c2c7f519556e82995602d2cf53e654c4f438b6086b9814cd317f4726b5c60552d503f3567ef6b30aa3f9cc21bc220c8d6f8634e9d</hash>
+        <hash alg="MD5">77714787adee926f41c8062e0724ae35</hash>
+      </hashes>
+      <purl>pkg:maven/org.cyclonedx/cyclonedx-core-java@12.0.1?type=pom</purl>
+    </component>
+    <component bom-ref="pkg:maven/org.junit/junit-bom@5.8.2?type=pom">
+      <group>org.junit</group>
+      <name>junit-bom</name>
+      <version>5.8.2</version>
+      <hashes>
+        <hash alg="SHA-1">90eab8a5a400f15b8e1cb6e65af0ceb616f23bba</hash>
+        <hash alg="SHA-256">836069ca9e8ee3c56e48376222da291263f137bd3fd16d84fdd47efcc3f286e2</hash>
+        <hash alg="SHA-512">cb9283ed1a16be7f3102c891e91ff1cc9df94175c45ca99186f3d80f67439aea598565aac1c3cba6812a71dde9aa89a68fd7a29808096a1d254b9cda847e19a2</hash>
+        <hash alg="MD5">e43cc024bd4f5deba25d54c01e98cfed</hash>
+      </hashes>
+      <purl>pkg:maven/org.junit/junit-bom@5.8.2?type=pom</purl>
+    </component>
+    <component bom-ref="pkg:maven/net.runeduniverse.tools.maven.workflow/maven-pipeline-workflow@0.1.0?type=jar">
+      <group>net.runeduniverse.tools.maven.workflow</group>
+      <name>maven-pipeline-workflow</name>
+      <version>0.1.0</version>
+      <hashes>
+        <hash alg="SHA-1">194ff20263d0728fa3e31b0b683f9276a77d83d5</hash>
+        <hash alg="SHA-256">60505e5c2bec098d17054e16590e9cb0a8ef521510bd00564c940268f952fd7e</hash>
+        <hash alg="SHA-512">072214db7f3d5040261a15f49da1247d5ab9422d628287b2690d32894f236c42d2d88d3f33c7a1a4538dbe52f185108caee09d13daaa54bdfaf20fca41fdc6e6</hash>
+        <hash alg="MD5">92ed0069dbff63c2d5c69b028a8e152f</hash>
+      </hashes>
+      <purl>pkg:maven/net.runeduniverse.tools.maven.workflow/maven-pipeline-workflow@0.1.0?type=jar</purl>
+    </component>
+    <component bom-ref="pkg:maven/com.github.ben-manes.caffeine/caffeine@3.2.3?type=jar">
+      <group>com.github.ben-manes.caffeine</group>
+      <name>caffeine</name>
+      <version>3.2.3</version>
+      <hashes>
+        <hash alg="SHA-1">c097f0f6d21a0e6db88ea55836e26419b30dfe19</hash>
+        <hash alg="SHA-256">ca70c90a5d1ce1511880ce9c93d4ad22108f61111d3daf91eb52762b571bd179</hash>
+        <hash alg="SHA-512">7aa65de1cb087aa645d7217bd3162b3842fe40914b590238afc681b1d8b33647efb1fd948d21ed0210a40d4bbda882ed24f3e6d326f9a03131660ae9778bbb7b</hash>
+        <hash alg="MD5">0258f45d43968523cc11beeb01b240f2</hash>
+      </hashes>
+      <purl>pkg:maven/com.github.ben-manes.caffeine/caffeine@3.2.3?type=jar</purl>
+    </component>
+    <component bom-ref="pkg:maven/org.jspecify/jspecify@1.0.0?type=pom">
+      <group>org.jspecify</group>
+      <name>jspecify</name>
+      <version>1.0.0</version>
+      <hashes>
+        <hash alg="SHA-1">fae4a252aeee8a649653b2f239067bcead8f80cb</hash>
+        <hash alg="SHA-256">cdab929a3b95211f43d2090c5e2d0dfe8465960e378bc32b35841dab324433a6</hash>
+        <hash alg="SHA-512">291d8fb333121ba18ebd427e7ee5e98694be797b8280a228be7c4958af934b2465f341957248dcd396f5ffbe99dd9a65aa61cef70ca772ee37a92c3d20e41f32</hash>
+        <hash alg="MD5">23e3a454130c3244ae8f15224f348673</hash>
+      </hashes>
+      <purl>pkg:maven/org.jspecify/jspecify@1.0.0?type=pom</purl>
+    </component>
+    <component bom-ref="pkg:maven/com.fasterxml.jackson/jackson-base@2.21.0?type=pom">
+      <group>com.fasterxml.jackson</group>
+      <name>jackson-base</name>
+      <version>2.21.0</version>
+      <hashes>
+        <hash alg="SHA-1">b6fe471b91051667811330818e5e2a279dd194b3</hash>
+        <hash alg="SHA-256">dce86a926b76ba88d93d2b65d32dac2529ce864097cbd77808f5bb6046c8eb8b</hash>
+        <hash alg="SHA-512">d8250fc988cafd4d38371aa18782bce853f31fde24b8a5ecd52e9936b21b98a5363355ca99e0c070fa1c2331726535d8ce008695de90d96287d39b8658fd6c0a</hash>
+        <hash alg="MD5">35524221d309333ae737aa6ed6e3bc7c</hash>
+      </hashes>
+      <purl>pkg:maven/com.fasterxml.jackson/jackson-base@2.21.0?type=pom</purl>
+    </component>
+    <component bom-ref="pkg:maven/com.github.package-url/packageurl-java@1.5.0?type=jar">
+      <group>com.github.package-url</group>
+      <name>packageurl-java</name>
+      <version>1.5.0</version>
+      <hashes>
+        <hash alg="SHA-1">e6bf530f52feab911f4032604ca0b8216f7ff337</hash>
+        <hash alg="SHA-256">e45551727707acc0c56ac62d56964332ea0f138d6cc3656d988b9369150f5247</hash>
+        <hash alg="SHA-512">8064df400154caa110b8845bd17e6cea2683307e575ce88e40d7c0c8965ea0af6c150a376d8b9ba7354676c41b52c94535f30c6e830447613299ccf5fc7aa959</hash>
+        <hash alg="MD5">90856d8bb5b17e08fdf03b6a2f93b81c</hash>
+      </hashes>
+      <purl>pkg:maven/com.github.package-url/packageurl-java@1.5.0?type=jar</purl>
+    </component>
+    <component bom-ref="pkg:maven/org.junit/junit-bom@5.14.2?type=pom">
+      <group>org.junit</group>
+      <name>junit-bom</name>
+      <version>5.14.2</version>
+      <hashes>
+        <hash alg="SHA-1">76ba4d331ce3412102fb0b53a48264619ee353e8</hash>
+        <hash alg="SHA-256">ed2dcc7855bd460bccc93a1bf0c962e63b566ff7d8f1ded0f1f2593ba8183aaf</hash>
+        <hash alg="SHA-512">b4ac40bd983d3928df403dcf64a9253bc922825f9f191c4c8140c34188d631918831290ef2b396cc2ba30968c77a061ec7fbf593008f79650543856a6c314506</hash>
+        <hash alg="MD5">7b80098869bd3156a7c34e50e4a5f7e2</hash>
+      </hashes>
+      <purl>pkg:maven/org.junit/junit-bom@5.14.2?type=pom</purl>
+    </component>
+    <component bom-ref="pkg:maven/com.fasterxml.jackson.dataformat/jackson-dataformat-xml@2.21.0?type=pom">
+      <group>com.fasterxml.jackson.dataformat</group>
+      <name>jackson-dataformat-xml</name>
+      <version>2.21.0</version>
+      <hashes>
+        <hash alg="SHA-1">52ba3647532962285e16a858d673c37fb038148f</hash>
+        <hash alg="SHA-256">b75fa8f993b5a064a3607aaf9ec5812d919f621e178a0f8fd8579fc47cfd7ef2</hash>
+        <hash alg="SHA-512">d63a3c5fe1167afd472233f7aadb7f56bb02190eca28c2bef2d545b3eb8d84f04e2ed2bd3611e3ca282712d60ed50c7e8d1a67dfd47d79f5a3290a4afa0aa4a1</hash>
+        <hash alg="MD5">962d8c6b86cc8646e6c2b0eb97c5ecb9</hash>
+      </hashes>
+      <purl>pkg:maven/com.fasterxml.jackson.dataformat/jackson-dataformat-xml@2.21.0?type=pom</purl>
+    </component>
+    <component bom-ref="pkg:maven/io.netty/netty-resolver@4.2.10.Final?type=pom">
+      <group>io.netty</group>
+      <name>netty-resolver</name>
+      <version>4.2.10.Final</version>
+      <hashes>
+        <hash alg="SHA-1">0e98c6658cc4adf2fe8bd53cff058318d76dfe13</hash>
+        <hash alg="SHA-256">c1949febf7ceefcc0d8cac47ad0cb8d8980d98f4b39b8c6f5e694afdf013128c</hash>
+        <hash alg="SHA-512">d6d01c65cee5a53269011dd7a8a12e9d820780b0f79927d2d1e5323421443f37f89a175d0629da7353dc33b00e72d849e3801bfa9d662b15b4f777ea10ec430b</hash>
+        <hash alg="MD5">e65eb7af2b5e84231d282d3cb9e63a82</hash>
+      </hashes>
+      <purl>pkg:maven/io.netty/netty-resolver@4.2.10.Final?type=pom</purl>
+    </component>
+    <component bom-ref="pkg:maven/org.bouncycastle/bcprov-jdk18on@1.83?type=pom">
+      <group>org.bouncycastle</group>
+      <name>bcprov-jdk18on</name>
+      <version>1.83</version>
+      <hashes>
+        <hash alg="SHA-1">47ac579a6c076f5ae174dd07056a540daae4529a</hash>
+        <hash alg="SHA-256">c87cf06f5aac4656380f1d441b2459fbe066ec812b29469bd0b3fcb8bb20574a</hash>
+        <hash alg="SHA-512">112cb1626f1d120cee705e0e47c60b1f0cdcf8f7dc6ba53993eccd3302923aa09fcdaa6f278000710d350b048324db97a5d94d8ddc3b880e22c584b8bd75f99f</hash>
+        <hash alg="MD5">bc63a447e08a5ccce2d371cf55cf0841</hash>
+      </hashes>
+      <purl>pkg:maven/org.bouncycastle/bcprov-jdk18on@1.83?type=pom</purl>
+    </component>
+    <component bom-ref="pkg:maven/com.fasterxml.woodstox/woodstox-core@7.1.1?type=pom">
+      <group>com.fasterxml.woodstox</group>
+      <name>woodstox-core</name>
+      <version>7.1.1</version>
+      <hashes>
+        <hash alg="SHA-1">92b24d78ad48a06a0b66ae0c8422057ba74cf15d</hash>
+        <hash alg="SHA-256">afb5cb45d41c1f9e3675909de4fef242bdc1cea4476a0634ae20f4d7a54433ff</hash>
+        <hash alg="SHA-512">ae520790b45a5edddd7e5030ab2d1705505b4245328441d817b76719d71bbb2e0403a70f0cf25270e2f9f1babce25eef893ae93c9bb6fb8a29491a3b694cdc12</hash>
+        <hash alg="MD5">fec2a2045aa95573f5a4951e5f97e47f</hash>
+      </hashes>
+      <purl>pkg:maven/com.fasterxml.woodstox/woodstox-core@7.1.1?type=pom</purl>
+    </component>
+    <component bom-ref="pkg:maven/org.bouncycastle/bcutil-jdk18on@1.83?type=jar">
+      <group>org.bouncycastle</group>
+      <name>bcutil-jdk18on</name>
+      <version>1.83</version>
+      <hashes>
+        <hash alg="SHA-1">da0747f51fe1774f8e922b498b9c3e0ebe87b2d4</hash>
+        <hash alg="SHA-256">ee7d0eb4e74de70a735f7fb36b604dd5c6ad35720d50b914604db042114a0185</hash>
+        <hash alg="SHA-512">e19831d4afc0a709fd57694f33bfe3a8e881cba287c34fb076a44ef436e56e6bdf49299ca9525028a4de9bf5fadeaa254654d0e527855f1f5659c5a7be538576</hash>
+        <hash alg="MD5">39ac03082e0185c3c75a735637cc9244</hash>
+      </hashes>
+      <purl>pkg:maven/org.bouncycastle/bcutil-jdk18on@1.83?type=jar</purl>
+    </component>
+    <component bom-ref="pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.18.3?type=pom">
+      <group>com.fasterxml.jackson.core</group>
+      <name>jackson-annotations</name>
+      <version>2.18.3</version>
+      <hashes>
+        <hash alg="SHA-1">a22ad10241d766231b051107d4910b583b88db61</hash>
+        <hash alg="SHA-256">b9c98ba9e29ea61b693d4c8c801968feaae220b2b2002364a7bcec524998384b</hash>
+        <hash alg="SHA-512">6f9ca7903b284c2b44d33353335d2c1b288ca8878f12ec9b1d74de532f9127fdf19c6810bdad844ffa53cbf696c924007a58cfb936cf86ee0cb157a115fa14ca</hash>
+        <hash alg="MD5">10e18ab05a0143ff38e6d388fd4df197</hash>
+      </hashes>
+      <purl>pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.18.3?type=pom</purl>
+    </component>
+    <component bom-ref="pkg:maven/com.networknt/json-schema-validator@1.5.9?type=pom">
+      <group>com.networknt</group>
+      <name>json-schema-validator</name>
+      <version>1.5.9</version>
+      <hashes>
+        <hash alg="SHA-1">ede8502039084a0b6794d74d6302edf6a1baed41</hash>
+        <hash alg="SHA-256">13e4d327d45f3398ebf80f477e2470eb6ac263f423d289023bbb2ad5e69c278c</hash>
+        <hash alg="SHA-512">e9ae056e33cded53fde5d959503b86de69d2bb4cf0f9bccae32c43c6158a8f1068c4925be8965daaeb77c29709b1480d93eb03056a8d67f879313994bb811399</hash>
+        <hash alg="MD5">4d68eb9a208ecff9ad3d50731d255702</hash>
+      </hashes>
+      <purl>pkg:maven/com.networknt/json-schema-validator@1.5.9?type=pom</purl>
+    </component>
+    <component bom-ref="pkg:maven/org.apache.commons/commons-collections4@4.5.0?type=jar">
+      <group>org.apache.commons</group>
+      <name>commons-collections4</name>
+      <version>4.5.0</version>
+      <hashes>
+        <hash alg="SHA-1">e5cf89f0c6e132fc970bd9a465fdcb8dbe94f75a</hash>
+        <hash alg="SHA-256">00f93263c267be201b8ae521b44a7137271b16688435340bf629db1bac0a5845</hash>
+        <hash alg="SHA-512">ee43c513ac9dcbd7dd23b5cbb4ea5f65a2e10cdfbb403d080b87e778b3b45062315522297c41eca514a9a946228ad7650f0a572d5b78effb8260dd8084131988</hash>
+        <hash alg="MD5">d564105594035b363b193d8ce3c18b98</hash>
+      </hashes>
+      <purl>pkg:maven/org.apache.commons/commons-collections4@4.5.0?type=jar</purl>
+    </component>
+    <component bom-ref="pkg:maven/io.netty/netty-common@4.2.10.Final?type=jar">
+      <group>io.netty</group>
+      <name>netty-common</name>
+      <version>4.2.10.Final</version>
+      <hashes>
+        <hash alg="SHA-1">c55e97d9bd061a2d88418d2d831e1fa39cb975e7</hash>
+        <hash alg="SHA-256">ad7ff0989d76be928069176754deec42c6a0e3305013df21814b4ac46b1ace9a</hash>
+        <hash alg="SHA-512">127de8d3fd4c71f905949b9577ba6f167e65ed0d97694339db7a2d8d7f3e7042bee8b9afa7c226df3a3f8e543246725fc537bd6c4fc556d758935250e1caada3</hash>
+        <hash alg="MD5">5390e35e3ebafbbf348fe7ecd66aef94</hash>
+      </hashes>
+      <purl>pkg:maven/io.netty/netty-common@4.2.10.Final?type=jar</purl>
+    </component>
+    <component bom-ref="pkg:maven/io.netty/netty-codec-base@4.2.10.Final?type=pom">
+      <group>io.netty</group>
+      <name>netty-codec-base</name>
+      <version>4.2.10.Final</version>
+      <hashes>
+        <hash alg="SHA-1">47909d4f25913761f89a9dfbd85211ea1a192df0</hash>
+        <hash alg="SHA-256">ad21d319c9503161a19391b3b335f5796b10a3db47bb347d8f3a6d8d6125b093</hash>
+        <hash alg="SHA-512">b3e34c2a864f91681e2b7e0db601877a0289b14e4ce8ca7de16edb56bdbf81f8ea3c4e22a80cf75157c00f8da6a2e1ab950368d349f0c9a090a37a9dc48c89d9</hash>
+        <hash alg="MD5">59845a16c7537860e4527877e5dbca66</hash>
+      </hashes>
+      <purl>pkg:maven/io.netty/netty-codec-base@4.2.10.Final?type=pom</purl>
+    </component>
+    <component bom-ref="pkg:maven/org.slf4j/slf4j-api@2.0.17?type=pom">
+      <group>org.slf4j</group>
+      <name>slf4j-api</name>
+      <version>2.0.17</version>
+      <hashes>
+        <hash alg="SHA-1">0570964f8e6716b09c354c6e334ba1a092464d85</hash>
+        <hash alg="SHA-256">150c40287f7cecdc21b9380caac98e928c4f33c023db6b348df1c5ac977026bf</hash>
+        <hash alg="SHA-512">462872ccda241179a77ebc89c3f7be93870fffae344e09d3cccc33d6448336dc77affc9572f420d7da788b3f0eb072b7facc9b7e609b33742ed48f4bb467cb70</hash>
+        <hash alg="MD5">e3b0304a349d7201df5e8e462ac9d833</hash>
+      </hashes>
+      <purl>pkg:maven/org.slf4j/slf4j-api@2.0.17?type=pom</purl>
+    </component>
+    <component bom-ref="pkg:maven/org.apiguardian/apiguardian-api@1.1.2?type=pom">
+      <group>org.apiguardian</group>
+      <name>apiguardian-api</name>
+      <version>1.1.2</version>
+      <hashes>
+        <hash alg="SHA-1">ce9568cec632f7c99fb26d13c4d5c89517349f6b</hash>
+        <hash alg="SHA-256">32355081d109095c3d5d374d5a43b4f4c1b75d549e983ef50723e2772e5302a0</hash>
+        <hash alg="SHA-512">bb604d1103315784a2f56a43244434dbbd7edc97d0450dada21313463d230e00f2f23f6e7c2ca45be94e81304057e70c79c9f0fb84247f7244d0277110b5747e</hash>
+        <hash alg="MD5">d0133fc2488e911b38d39df93c304d13</hash>
+      </hashes>
+      <purl>pkg:maven/org.apiguardian/apiguardian-api@1.1.2?type=pom</purl>
+    </component>
+    <component bom-ref="pkg:maven/org.apache/apache@35?type=pom">
+      <group>org.apache</group>
+      <name>apache</name>
+      <version>35</version>
+      <hashes>
+        <hash alg="SHA-1">0a20c027145b2ee59e77ef7dee4881d4ab0a8e07</hash>
+        <hash alg="SHA-256">ea297dcd114136e8b8e8b630230d52a76c2fc69f6c5db25d672b1857000728b8</hash>
+        <hash alg="SHA-512">d599ebf085e96ab2c0fa925fec99fc046f1763743a0445e5a4bf255d8259d44aec7bd175881accf1c6562e13efc26b13a54de01c49b46032464366d41869d7e8</hash>
+        <hash alg="MD5">706c1dd6d8a87a9c55c3a518e704340f</hash>
+      </hashes>
+      <purl>pkg:maven/org.apache/apache@35?type=pom</purl>
+    </component>
+    <component bom-ref="pkg:maven/org.codehaus.woodstox/stax2-api@4.2.2?type=pom">
+      <group>org.codehaus.woodstox</group>
+      <name>stax2-api</name>
+      <version>4.2.2</version>
+      <hashes>
+        <hash alg="SHA-1">23269202484e4856b817c3ed94bb9fdb412f01bd</hash>
+        <hash alg="SHA-256">4e902ec556fc6598b41c2952ec1573edc815037e7330ec4922eab619422686e2</hash>
+        <hash alg="SHA-512">64b95aefd534bcc90612e6432516b6a8aa1112869c0f329d60cbab202728bba64b5e90756a718d849a7d71b3df00d09e9fd0dada5651841245d4b603bb8d1b5f</hash>
+        <hash alg="MD5">a6634df4a3c8dd02733486925b1c9370</hash>
+      </hashes>
+      <purl>pkg:maven/org.codehaus.woodstox/stax2-api@4.2.2?type=pom</purl>
+    </component>
+    <component bom-ref="pkg:maven/com.fasterxml.jackson/jackson-bom@2.21.0?type=pom">
+      <group>com.fasterxml.jackson</group>
+      <name>jackson-bom</name>
+      <version>2.21.0</version>
+      <hashes>
+        <hash alg="SHA-1">47793302ed3e92ca0a8f67260e586abb7e0c6376</hash>
+        <hash alg="SHA-256">28b06c4e5f51330c4fced2b3bd6194188cfd237068ea17e592139164537721ff</hash>
+        <hash alg="SHA-512">5f6224b59df776f8ae4c4e4b24040f75f25940748772767aac4988cbcfce82c7d0e69a2f2525e3a1c50541bde865ab4e931d939a2f261a4c5917333545359fc4</hash>
+        <hash alg="MD5">1bdcb1defb7eca7a582190473d0f5b67</hash>
+      </hashes>
+      <purl>pkg:maven/com.fasterxml.jackson/jackson-bom@2.21.0?type=pom</purl>
+    </component>
+    <component bom-ref="pkg:maven/io.netty/netty-transport@4.2.10.Final?type=jar">
+      <group>io.netty</group>
+      <name>netty-transport</name>
+      <version>4.2.10.Final</version>
+      <hashes>
+        <hash alg="SHA-1">d9ce85a6b94fe584b0dec4b07230ac455ff975c1</hash>
+        <hash alg="SHA-256">aaff8b2958eea0e94d3e5521d795e65ea91faf58fa1152e45584b36348a81abd</hash>
+        <hash alg="SHA-512">a64e8e9931af089d4a00876ea1e9c424f9ed8c2a28ba45205de48bd4c4001143848ff4f234549aec6bdfc18ffc1fb2ff25cd3b4233ac6634853c6025f83aeae3</hash>
+        <hash alg="MD5">0d16ed7e5266244c2aa8df0d887fd116</hash>
+      </hashes>
+      <purl>pkg:maven/io.netty/netty-transport@4.2.10.Final?type=jar</purl>
+    </component>
+    <component bom-ref="pkg:maven/org.apache.commons/commons-collections4@4.5.0?type=pom">
+      <group>org.apache.commons</group>
+      <name>commons-collections4</name>
+      <version>4.5.0</version>
+      <hashes>
+        <hash alg="SHA-1">a7629f342b98274f93dea86d14785f5684f1ac19</hash>
+        <hash alg="SHA-256">c700f998e1d7a6a5c0aef1d4ceeb6bac7d1702dd6d6eda73a17d67f5d6f2467d</hash>
+        <hash alg="SHA-512">c75ec824a5c71a51d574e3128f4765d8097df68459c8a0b22e1e3c51969e4563867da27de1768fc33014718c3c4e43a53bbbde2cd5382bfbf611d032bed6456d</hash>
+        <hash alg="MD5">6562a4cae265e255cd9c66686ba1a1d6</hash>
+      </hashes>
+      <purl>pkg:maven/org.apache.commons/commons-collections4@4.5.0?type=pom</purl>
+    </component>
+    <component bom-ref="pkg:maven/com.networknt/json-schema-validator@1.5.9?type=jar">
+      <group>com.networknt</group>
+      <name>json-schema-validator</name>
+      <version>1.5.9</version>
+      <hashes>
+        <hash alg="SHA-1">6a2f9fe324b9dc8d8e0c3d7b435f7ae99595a556</hash>
+        <hash alg="SHA-256">e0b8baeb78fd1ba027454ee3974d8a02f54447eaa510d3052820a7d2160d9ae4</hash>
+        <hash alg="SHA-512">5ba210c135717a6ed043e0889d96f6381b3668f9e2a011bd0def8138ad327813f792259858ae5ed192cb8ec0645308113769aa8ebee903db1ccd82e98cb3009d</hash>
+        <hash alg="MD5">84622292ac5001bac8f16dc5002a8b94</hash>
+      </hashes>
+      <purl>pkg:maven/com.networknt/json-schema-validator@1.5.9?type=jar</purl>
+    </component>
+    <component bom-ref="pkg:maven/com.fasterxml/oss-parent@75?type=pom">
+      <group>com.fasterxml</group>
+      <name>oss-parent</name>
+      <version>75</version>
+      <hashes>
+        <hash alg="SHA-1">c6d41b946c6545194a0576ab31d94088cc23844b</hash>
+        <hash alg="SHA-256">fcbbf1c18c9047e6917d384f2064e21b42a58fc85fb0523a9e2e015eff7c619d</hash>
+        <hash alg="SHA-512">ad9008fbc1c74e61dbed5ae339d095b47e8fc1e7ff038230f05ddf8a82cec486de73613c67475c4b5eb9ad32c0b2c5291ee675fffcf32cd790c0d80030100e27</hash>
+        <hash alg="MD5">f0530c7fce5827549a9a884381be5bb4</hash>
+      </hashes>
+      <purl>pkg:maven/com.fasterxml/oss-parent@75?type=pom</purl>
+    </component>
+    <component bom-ref="pkg:maven/org.apache.commons/commons-parent@81?type=pom">
+      <group>org.apache.commons</group>
+      <name>commons-parent</name>
+      <version>81</version>
+      <hashes>
+        <hash alg="SHA-1">4a342190fb243a221636ac0e0b02d3eed07a9908</hash>
+        <hash alg="SHA-256">348d4e7c131be6114c854a719ce7a44307a7c39bd366084977b24fd29ad0edb4</hash>
+        <hash alg="SHA-512">ffd6abb50fe660ca0fd5cba86c1615430fc45716e78e2d18aa1b0a46a978e8053dbbd7e3fa36c8bfe71898c47106fbf28738d30734409cfd823ba3eb30dd21a8</hash>
+        <hash alg="MD5">de9cb06935554e6c6e3248e000b3d7e6</hash>
+      </hashes>
+      <purl>pkg:maven/org.apache.commons/commons-parent@81?type=pom</purl>
+    </component>
+    <component bom-ref="pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.21?type=pom">
+      <group>com.fasterxml.jackson.core</group>
+      <name>jackson-annotations</name>
+      <version>2.21</version>
+      <hashes>
+        <hash alg="SHA-1">2e729bf0e12485bd0c2044e09bb505fb0e52b822</hash>
+        <hash alg="SHA-256">71cac5392151e2a528cc9a09179f0a334179f05c52f8e596cf58ddf12bb27f2b</hash>
+        <hash alg="SHA-512">fe4b58ec957920026916ddf034cf6e200e17310da01bc58bfa176d06d14f084a64f195701f68cf62ddd656f33cd9ff66bab8705059a67b5a2ece86e5addbea15</hash>
+        <hash alg="MD5">588b67b0d955f7c1a969af6a786ca8d1</hash>
+      </hashes>
+      <purl>pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.21?type=pom</purl>
+    </component>
+    <component bom-ref="pkg:maven/net.runeduniverse.tools.maven.workflow/maven-java-workflow@0.1.0?type=pom">
+      <group>net.runeduniverse.tools.maven.workflow</group>
+      <name>maven-java-workflow</name>
+      <version>0.1.0</version>
+      <hashes>
+        <hash alg="SHA-1">b92a5dfe7284f31dfd4c6a135a95cdc57718178a</hash>
+        <hash alg="SHA-256">e5dd231b838a33116b9b77b346740349a162eca83a4d202f3244dcd7ebc3e345</hash>
+        <hash alg="SHA-512">af01eb948f55a13d8ea80d6d20da2d7f1dc33efe4ed27eba4e4d49460ecf2a229e1fdc8d8c09364912b4a8c09a68a8db48cb0aa70ca914eb1a51699a40426bf4</hash>
+        <hash alg="MD5">753474f3f066c86b6d4253d202d2ea88</hash>
+      </hashes>
+      <purl>pkg:maven/net.runeduniverse.tools.maven.workflow/maven-java-workflow@0.1.0?type=pom</purl>
+    </component>
+    <component bom-ref="pkg:maven/com.fasterxml.jackson.dataformat/jackson-dataformat-yaml@2.18.3?type=pom">
+      <group>com.fasterxml.jackson.dataformat</group>
+      <name>jackson-dataformat-yaml</name>
+      <version>2.18.3</version>
+      <hashes>
+        <hash alg="SHA-1">cbd3ecb983ca7b61408d26b343f92c0456e9d61f</hash>
+        <hash alg="SHA-256">6b4e7a9d2b5742aea138c15c0c9de04632f1a2d8de6e761edef8b36092b4864a</hash>
+        <hash alg="SHA-512">bb670e9d2713f7aced03c1ef2aa71f5cc4acb0979c4e5ee91eafd765d09ed52fcb379daa9c2a7570ca1e2395656bfd31edcb90a3b0732bebb986742856cae1bc</hash>
+        <hash alg="MD5">61d24f678689ad2d71ec197bd2012b10</hash>
+      </hashes>
+      <purl>pkg:maven/com.fasterxml.jackson.dataformat/jackson-dataformat-yaml@2.18.3?type=pom</purl>
+    </component>
+    <component bom-ref="pkg:maven/io.netty/netty-codec-http2@4.2.10.Final?type=jar">
+      <group>io.netty</group>
+      <name>netty-codec-http2</name>
+      <version>4.2.10.Final</version>
+      <hashes>
+        <hash alg="SHA-1">ce03862f1ce5e4bd5a8af688ac9f5146a8192867</hash>
+        <hash alg="SHA-256">ac0962cb4bc795baa2217bdbe192e0e9f2dd97bb4ddcdd87f1ec4bbc21d781f2</hash>
+        <hash alg="SHA-512">60c0da1fdd4a7d547699c8b9c2f7768407a6bdd6bcdb5ebce660e3924fab8bdc00b4574b0c4b5baf941e44d835862e36cea05fcf2e78c4c660e10cf596f2f4eb</hash>
+        <hash alg="MD5">6c61ac3cd49ae5cbfdb0ca405d84216a</hash>
+      </hashes>
+      <purl>pkg:maven/io.netty/netty-codec-http2@4.2.10.Final?type=jar</purl>
+    </component>
+    <component bom-ref="pkg:maven/org.apache.commons/commons-parent@92?type=pom">
+      <group>org.apache.commons</group>
+      <name>commons-parent</name>
+      <version>92</version>
+      <hashes>
+        <hash alg="SHA-1">90ccda9c2c57ce00faa336fbe6b37484536d9960</hash>
+        <hash alg="SHA-256">94f6c027b15f6402995dd1b2c7ea35bfe1ebc88b6832b3134368b41998721953</hash>
+        <hash alg="SHA-512">acd1c27a46eee21bfd63633561b48cb294f41eb879c118c0e9a704c79fb8b1407aa0b88755f0dca1b7b6a7180e98b7837da2be77819b7d81a4ed1b348f289095</hash>
+        <hash alg="MD5">32be5d5ecfdd93a1717de65606f0ff58</hash>
+      </hashes>
+      <purl>pkg:maven/org.apache.commons/commons-parent@92?type=pom</purl>
+    </component>
+    <component bom-ref="pkg:maven/org.jspecify/jspecify@1.0.0?type=jar">
+      <group>org.jspecify</group>
+      <name>jspecify</name>
+      <version>1.0.0</version>
+      <hashes>
+        <hash alg="SHA-1">7425a601c1c7ec76645a78d22b8c6a627edee507</hash>
+        <hash alg="SHA-256">1fad6e6be7557781e4d33729d49ae1cdc8fdda6fe477bb0cc68ce351eafdfbab</hash>
+        <hash alg="SHA-512">efded31ef5b342f09422935076e599789076431e93a746685c0607e7de5592719ba6aacde0be670b3f064d1e85630d58d5bce6b34aed2a288fdb34f745efb7bc</hash>
+        <hash alg="MD5">9133aba420d0ca3b001dbb6ae9992cf6</hash>
+      </hashes>
+      <purl>pkg:maven/org.jspecify/jspecify@1.0.0?type=jar</purl>
+    </component>
+    <component bom-ref="pkg:maven/org.bouncycastle/bcpg-jdk18on@1.83?type=pom">
+      <group>org.bouncycastle</group>
+      <name>bcpg-jdk18on</name>
+      <version>1.83</version>
+      <hashes>
+        <hash alg="SHA-1">828fc5cc3dd769637107a8264495217be2ca2a5c</hash>
+        <hash alg="SHA-256">0ac227c6a9f6a441b6221e01c10f51b7e162eaafc2c566627561da5ac90ad8d7</hash>
+        <hash alg="SHA-512">bd570199f658f7ef39c93fba788b3383a1eb70c6dc1dfc926ef34418def8fbf1781f708872b02e27be3aa4b5095a58dc0a2c33555c0f52c71ebf795d78163e0a</hash>
+        <hash alg="MD5">ee709909276fade2e7239c6e31ddf508</hash>
+      </hashes>
+      <purl>pkg:maven/org.bouncycastle/bcpg-jdk18on@1.83?type=pom</purl>
+    </component>
+    <component bom-ref="pkg:maven/com.google.errorprone/error_prone_annotations@2.43.0?type=jar">
+      <group>com.google.errorprone</group>
+      <name>error_prone_annotations</name>
+      <version>2.43.0</version>
+      <hashes>
+        <hash alg="SHA-1">a4f9062316c31850b03085e45717f564fd563ceb</hash>
+        <hash alg="SHA-256">48272e75c16e1f7bdc7bd19529ccacd5ee170404701d7f5a23441bb5847957f5</hash>
+        <hash alg="SHA-512">1e9e8cc7e7eebdbb12c21ad94868c731c49533dd9ef5c6db6e93c421c57ca4e6a5a22e1830a41c65b19e4755c84d6450dccea0f8d23258a65a9d395dfd17405e</hash>
+        <hash alg="MD5">59fe4a79ce3218423f4f8918f04ef22f</hash>
+      </hashes>
+      <purl>pkg:maven/com.google.errorprone/error_prone_annotations@2.43.0?type=jar</purl>
+    </component>
+    <component bom-ref="pkg:maven/org.yaml/snakeyaml@2.3?type=pom">
+      <group>org.yaml</group>
+      <name>snakeyaml</name>
+      <version>2.3</version>
+      <hashes>
+        <hash alg="SHA-1">5f2b46d0f5393337e4a2f5327789510b255bd346</hash>
+        <hash alg="SHA-256">0f5a265a06331b0049e352be32ca322de18b17f3d4dbb70635d40da692e3582f</hash>
+        <hash alg="SHA-512">f83f34a04dd37bd0ff3423a84e8d0cae04311528736a5954a244b067f25b2b345f8384c544f987b02efc81b6c96a2b6f05aa744cc656c8111ad7d7f9c814a0dd</hash>
+        <hash alg="MD5">7f6e4bbcfe7663238d788e497e6bebe1</hash>
+      </hashes>
+      <purl>pkg:maven/org.yaml/snakeyaml@2.3?type=pom</purl>
+    </component>
+    <component bom-ref="pkg:maven/io.netty/netty-transport-native-unix-common@4.2.10.Final?type=pom">
+      <group>io.netty</group>
+      <name>netty-transport-native-unix-common</name>
+      <version>4.2.10.Final</version>
+      <hashes>
+        <hash alg="SHA-1">8063a6686aafcbaa1f7bae43d3212b3b442fdb6b</hash>
+        <hash alg="SHA-256">d33bf51115d23a6ecffe234f1c9951e1debc3122e67f199beff5718a6c5dd3ad</hash>
+        <hash alg="SHA-512">7be5eaee92304dbf9b8f31105021014ef9cec62032a6c167bcc68384fa94e20738162203f7fc527904182d5a989c63b687da84d9a9da2bdb35159abcddc6aaa8</hash>
+        <hash alg="MD5">eea563f36901cf436aba095c48f90612</hash>
+      </hashes>
+      <purl>pkg:maven/io.netty/netty-transport-native-unix-common@4.2.10.Final?type=pom</purl>
+    </component>
+    <component bom-ref="pkg:maven/com.fasterxml/oss-parent@68?type=pom">
+      <group>com.fasterxml</group>
+      <name>oss-parent</name>
+      <version>68</version>
+      <hashes>
+        <hash alg="SHA-1">f19ecade22562dcd5a3520a35d60225008c16a29</hash>
+        <hash alg="SHA-256">25eafd96dae242b6b5a7108f55b2c14015b828daa5abe234289fd6e774a1ce57</hash>
+        <hash alg="SHA-512">7c9d51b7fd00d0ea30d00d048ce2e9ab3ec1bae3073f9f52d034a66572d5e6680992e42695e649d826c1a3f4b8f089460df8d2549afd15afe45488b6f9984528</hash>
+        <hash alg="MD5">c4d6956e62d9afcb24c2f335d2aeeed6</hash>
+      </hashes>
+      <purl>pkg:maven/com.fasterxml/oss-parent@68?type=pom</purl>
+    </component>
+    <component bom-ref="pkg:maven/com.fasterxml.jackson.core/jackson-core@2.18.3?type=pom">
+      <group>com.fasterxml.jackson.core</group>
+      <name>jackson-core</name>
+      <version>2.18.3</version>
+      <hashes>
+        <hash alg="SHA-1">db764a3c40c61120f6ee19f0960deb2875d53649</hash>
+        <hash alg="SHA-256">37dc6b8f6391a4709ac215ca98fa2341c6dd65613c2277d96a4fd82a2f50e3c9</hash>
+        <hash alg="SHA-512">9845843ac0605381bb4d9f25b9b10338e8b19b25eca60137f0c3b0bc1f1a04c5fdf3e80ed9fa81005119738c4bb19f17ed93a20e880f8621e3b23d97b90a6ca5</hash>
+        <hash alg="MD5">72a09b5f6f674b7e426e8306adb434f1</hash>
+      </hashes>
+      <purl>pkg:maven/com.fasterxml.jackson.core/jackson-core@2.18.3?type=pom</purl>
+    </component>
+    <component bom-ref="pkg:maven/io.netty/netty-parent@4.2.10.Final?type=pom">
+      <group>io.netty</group>
+      <name>netty-parent</name>
+      <version>4.2.10.Final</version>
+      <hashes>
+        <hash alg="SHA-1">db3064a3e18e56e0e2939ef563438a660f752cd2</hash>
+        <hash alg="SHA-256">37e447ebee88a1755bf3ab3f74f029a42953da46f0c76f8ad4ac1236853b24b8</hash>
+        <hash alg="SHA-512">706045cdc3605765e037562e579b51ed234868bcf7df787524f1c70bdfd051bfbf144489a751846241ba4a358601b071ee3dd5c290f61f005198e517690f7800</hash>
+        <hash alg="MD5">c061064bb244db54464a6f5261542e30</hash>
+      </hashes>
+      <purl>pkg:maven/io.netty/netty-parent@4.2.10.Final?type=pom</purl>
+    </component>
+    <component bom-ref="pkg:maven/org.slf4j/slf4j-api@2.0.17?type=jar">
+      <group>org.slf4j</group>
+      <name>slf4j-api</name>
+      <version>2.0.17</version>
+      <hashes>
+        <hash alg="SHA-1">d9e58ac9c7779ba3bf8142aff6c830617a7fe60f</hash>
+        <hash alg="SHA-256">7b751d952061954d5abfed7181c1f645d336091b679891591d63329c622eb832</hash>
+        <hash alg="SHA-512">9a3e79db6666a6096a3021bb2e1d918f30f589d8de51d6b600f8ebd92515a510ae2d8f87919cc2dfa8365d64f10194cac8dfa0fb950160eef0e9da06f6caaeb9</hash>
+        <hash alg="MD5">b6480d114a23683498ac3f746f959d2f</hash>
+      </hashes>
+      <purl>pkg:maven/org.slf4j/slf4j-api@2.0.17?type=jar</purl>
+    </component>
+    <component bom-ref="pkg:maven/com.ethlo.time/itu@1.14.0?type=jar">
+      <group>com.ethlo.time</group>
+      <name>itu</name>
+      <version>1.14.0</version>
+      <hashes>
+        <hash alg="SHA-1">c0f9f9d4f4404787e992ab3af5ae95f2fad79e47</hash>
+        <hash alg="SHA-256">5cf40ab0cc77828ab2b875b1f3ecd71c8295d7721933476abc2e08fddcea164a</hash>
+        <hash alg="SHA-512">aa69a6af3a7123eb41425bbaf6834e16dc3323172709e2338b8a21b970fd21333d996515f42da4aa0225251e30542ad7d9c8332bdf7d62ed96b42fadc8a1520d</hash>
+        <hash alg="MD5">e537d0a2bc8066726f7e4654c253cf84</hash>
+      </hashes>
+      <purl>pkg:maven/com.ethlo.time/itu@1.14.0?type=jar</purl>
+    </component>
+    <component bom-ref="pkg:maven/org.junit.jupiter/junit-jupiter-api@5.8.2?type=jar">
+      <group>org.junit.jupiter</group>
+      <name>junit-jupiter-api</name>
+      <version>5.8.2</version>
+      <hashes>
+        <hash alg="SHA-1">4c21029217adf07e4c0d0c5e192b6bf610c94bdc</hash>
+        <hash alg="SHA-256">1808ee87e0f718cd6e25f3b75afc17956ac8a3edc48c7e9bab9f19f9a79e3801</hash>
+        <hash alg="SHA-512">c304f4d392cee741f5cb75f1e4bdca61a0100d03cd5c79ccdbe61d9452a4e324b3a0c89da5bd92cf562d96fa682bdb2c8a062c6d45dade25f4680696620d58eb</hash>
+        <hash alg="MD5">4e2f81d2ad6c031476d784d25c0f67a7</hash>
+      </hashes>
+      <purl>pkg:maven/org.junit.jupiter/junit-jupiter-api@5.8.2?type=jar</purl>
+    </component>
+    <component bom-ref="pkg:maven/org.apache.commons/commons-lang3@3.20.0?type=jar">
+      <group>org.apache.commons</group>
+      <name>commons-lang3</name>
+      <version>3.20.0</version>
+      <hashes>
+        <hash alg="SHA-1">65897b3e5731220962e659e001904af3c3cbeba9</hash>
+        <hash alg="SHA-256">69e5c9fa35da7a51a5fd2099dfe56a2d8d32cf233e2f6d770e796146440263f4</hash>
+        <hash alg="SHA-512">1c72db334ea44f932c35e602b78907865f5bab43e30c871c9be67c8184eaa778f32d7bc3ab525d5921cd28619d3f9babfd483f17de54f007ee07db2e074b0307</hash>
+        <hash alg="MD5">4b29562ded527aa074e1d44f8646dac5</hash>
+      </hashes>
+      <purl>pkg:maven/org.apache.commons/commons-lang3@3.20.0?type=jar</purl>
+    </component>
+    <component bom-ref="pkg:maven/org.bouncycastle/bc-jdk18on-bom@1.83?type=pom">
+      <group>org.bouncycastle</group>
+      <name>bc-jdk18on-bom</name>
+      <version>1.83</version>
+      <hashes>
+        <hash alg="SHA-1">688454ee0792e6c4d669d7a209afe44ce34b0f6e</hash>
+        <hash alg="SHA-256">68a8b85f440adb724b27e657269870e1095c56027ffa887a0b5277656fb666a4</hash>
+        <hash alg="SHA-512">81216817f573204d6654d9af9eb96f4a26310e6e7058cd77dd3ebc9ad7fef412fae6ffda87eeb3959394b70fb07e884d70101541323aecc7302f74f278394095</hash>
+        <hash alg="MD5">27864258344d2be7e180ef83fc6f0aef</hash>
+      </hashes>
+      <purl>pkg:maven/org.bouncycastle/bc-jdk18on-bom@1.83?type=pom</purl>
+    </component>
+    <component bom-ref="pkg:maven/org.apache.commons/commons-parent@96?type=pom">
+      <group>org.apache.commons</group>
+      <name>commons-parent</name>
+      <version>96</version>
+      <hashes>
+        <hash alg="SHA-1">25b58143f63cb2ca6bc8db598c827cf06740ac53</hash>
+        <hash alg="SHA-256">2cd3289b44efa53052d9cdaf3f05544833a520a682f9c7ffd403a00bbb157f9a</hash>
+        <hash alg="SHA-512">232c7064beeb024d5f14aaabf06aa57c49b83f313f257b2e3a0308a3cc7fbd2c057f5212d32b93e8298192a5b765904884110c654ed75b4d58ec3e416ce667c8</hash>
+        <hash alg="MD5">4e45b631eaa10cb24e0ef33dd6dac2b4</hash>
+      </hashes>
+      <purl>pkg:maven/org.apache.commons/commons-parent@96?type=pom</purl>
+    </component>
+    <component bom-ref="pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.21?type=jar">
+      <group>com.fasterxml.jackson.core</group>
+      <name>jackson-annotations</name>
+      <version>2.21</version>
+      <hashes>
+        <hash alg="SHA-1">b1bc1868bf02dc0bd6c7836257a036a331005309</hash>
+        <hash alg="SHA-256">53ca085f4a150f703f49e1aabd935bd03b43e1ea3d55d135438292af22cef56b</hash>
+        <hash alg="SHA-512">d832a99867acc2d5afb2596da760c50e6a6b54c1bbc8e6c4186f267a16e1d55c7a916ef8b034ad6b277c41e3342b91dcdc2e3dcea8bdccfe89e7c147894591be</hash>
+        <hash alg="MD5">e0d0c3e7300954f73e43c67d933aaea4</hash>
+      </hashes>
+      <purl>pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.21?type=jar</purl>
+    </component>
+    <component bom-ref="pkg:maven/io.netty/netty-codec-http@4.2.10.Final?type=jar">
+      <group>io.netty</group>
+      <name>netty-codec-http</name>
+      <version>4.2.10.Final</version>
+      <hashes>
+        <hash alg="SHA-1">93e6b3df76177423742ed10d48612b59e46f0c8c</hash>
+        <hash alg="SHA-256">faf833d3f557921264328c933ffeb055e9885e0d258a021355aa88a62181b540</hash>
+        <hash alg="SHA-512">6c67f08690275a4854b5c2a845b6d257c62bba7c081db64abefb7f328098dccf205d711e83436f85987bef270906db6aa1022107254e092029541d4ee34d67bc</hash>
+        <hash alg="MD5">a7c3400a3b4fc1ba2ee2cfc87914aaee</hash>
+      </hashes>
+      <purl>pkg:maven/io.netty/netty-codec-http@4.2.10.Final?type=jar</purl>
+    </component>
+    <component bom-ref="pkg:maven/com.fasterxml/oss-parent@61?type=pom">
+      <group>com.fasterxml</group>
+      <name>oss-parent</name>
+      <version>61</version>
+      <hashes>
+        <hash alg="SHA-1">8a4169cc2907589f72b053e7b9b02cb741bf1e46</hash>
+        <hash alg="SHA-256">3649513cf597e9186da0855986a8c543e12bdbd805edeef9c124db56dd036544</hash>
+        <hash alg="SHA-512">24731b163cd4c1a3758c0dd8d743937fa1b36d37a58ca60d5487fc48d3e46e4c33b8e1374ee2952be972ff1c9a2fc8c551edf207f2d7fb312dafc33901316271</hash>
+        <hash alg="MD5">905e7daa4d8d47705f904092f9bfb749</hash>
+      </hashes>
+      <purl>pkg:maven/com.fasterxml/oss-parent@61?type=pom</purl>
+    </component>
+    <component bom-ref="pkg:maven/net.runeduniverse.tools.maven.workflow/maven-java-workflow@0.1.0?type=jar">
+      <group>net.runeduniverse.tools.maven.workflow</group>
+      <name>maven-java-workflow</name>
+      <version>0.1.0</version>
+      <hashes>
+        <hash alg="SHA-1">b1502cd7c0295616975ecabf2c37d2020c253f2d</hash>
+        <hash alg="SHA-256">932ddb03e5cb0f1c0dbed206b09baf0b10fd0c0dfc23f5a5902e891159155816</hash>
+        <hash alg="SHA-512">61fe038d50b3d78fe83dbc372e1247ee60d8152aa7301f42541b45f6025a25c69d181e1aeacd2b4ef97516f15c897dcde228d80925d3a9265ac8f7fa521f852e</hash>
+        <hash alg="MD5">79becbc35516d4062df18cb44ab53821</hash>
+      </hashes>
+      <purl>pkg:maven/net.runeduniverse.tools.maven.workflow/maven-java-workflow@0.1.0?type=jar</purl>
+    </component>
+    <component bom-ref="pkg:maven/org.apache/apache@33?type=pom">
+      <group>org.apache</group>
+      <name>apache</name>
+      <version>33</version>
+      <hashes>
+        <hash alg="SHA-1">f7b7b5a9e84395f17d7e6a136e5bfc4b9973566d</hash>
+        <hash alg="SHA-256">d78bd8524c5f8380a190a6525686629a95dfe512df21111383a6d8c0923a4415</hash>
+        <hash alg="SHA-512">17ccc60c4670ded2b9b0986c8549c7f7789afb4a194c81d16c9c8de10b514396f241c8b1622150b38a8d3a889f6733af66554685b7b801647b5ddfaccef5537e</hash>
+        <hash alg="MD5">95ee134ad253ceca3a97c25c2d782b32</hash>
+      </hashes>
+      <purl>pkg:maven/org.apache/apache@33?type=pom</purl>
+    </component>
+    <component bom-ref="pkg:maven/org.projectlombok/lombok@1.18.32?type=jar">
+      <group>org.projectlombok</group>
+      <name>lombok</name>
+      <version>1.18.32</version>
+      <hashes>
+        <hash alg="SHA-1">17d46b3e205515e1e8efd3ee4d57ce8018914163</hash>
+        <hash alg="SHA-256">97574674e2a25f567a313736ace00df8787d443de316407d57fc877d9f19a65d</hash>
+        <hash alg="SHA-512">549bbfa836e595adeb7c81911556e1438f6f52882ed35f6d037d0f0c46ca90e753249413c573006e4b127b30e10d3adcd2f84a6e368f9f55be9df018ec5d8756</hash>
+        <hash alg="MD5">56e9be7b9a26802ac0c784ad824f3a29</hash>
+      </hashes>
+      <purl>pkg:maven/org.projectlombok/lombok@1.18.32?type=jar</purl>
+    </component>
+    <component bom-ref="pkg:maven/com.fasterxml.jackson/jackson-parent@2.18.1?type=pom">
+      <group>com.fasterxml.jackson</group>
+      <name>jackson-parent</name>
+      <version>2.18.1</version>
+      <hashes>
+        <hash alg="SHA-1">fcd5c9c72aeebb63d13eb4330842fdb8ae4f9a1c</hash>
+        <hash alg="SHA-256">d0822fac1a0226844b8ad445c920c49a4f619169d09b1010a7dfeed19910998c</hash>
+        <hash alg="SHA-512">f8e24c8676736bb78c4a46a68e6042b78a86b99470790ccc549e2609063a4b725a37df51901d8c0d9da5c24c5cb4c27af1139a248e38e3bf7f88e428a9bd0d6d</hash>
+        <hash alg="MD5">84abfe5c8cf33e55d6b98d51aec75862</hash>
+      </hashes>
+      <purl>pkg:maven/com.fasterxml.jackson/jackson-parent@2.18.1?type=pom</purl>
+    </component>
+    <component bom-ref="pkg:maven/com.google.errorprone/error_prone_annotations@2.43.0?type=pom">
+      <group>com.google.errorprone</group>
+      <name>error_prone_annotations</name>
+      <version>2.43.0</version>
+      <hashes>
+        <hash alg="SHA-1">1ef31c1f568278158b223493e060560e65ddd5c4</hash>
+        <hash alg="SHA-256">4f6b8889afa8debdbe1e3fe2a5f8e66e2216ca0b563f26b4e54138730eecdc80</hash>
+        <hash alg="SHA-512">9769e5cf246a23581de8b3014d8620134c59ff7f393d19307f3fd8fde1de0b8d37c8474d26aedf47610c43016adfe19b875747a19245fa755bf24a34f71da5d4</hash>
+        <hash alg="MD5">d21c7ff59ad7dbe9069ea541150510ac</hash>
+      </hashes>
+      <purl>pkg:maven/com.google.errorprone/error_prone_annotations@2.43.0?type=pom</purl>
+    </component>
+    <component bom-ref="pkg:maven/org.slf4j/slf4j-bom@2.0.17?type=pom">
+      <group>org.slf4j</group>
+      <name>slf4j-bom</name>
+      <version>2.0.17</version>
+      <hashes>
+        <hash alg="SHA-1">abbc25a81a3bc8ccacdbd9150224250e4a66542a</hash>
+        <hash alg="SHA-256">f78d27b642b4b886eb839fc102b5cd9fe7f30f37599ffe68185be4e1609031e9</hash>
+        <hash alg="SHA-512">cb2db4597b98b9981959413e3ffcd5882f8e267d3d51f989c396807c36893296065cbe443a173029e8d3a0851eced25f5149dc2dafa0dd2c29fca737180a7029</hash>
+        <hash alg="MD5">234ecef482a87b53780059db651137e2</hash>
+      </hashes>
+      <purl>pkg:maven/org.slf4j/slf4j-bom@2.0.17?type=pom</purl>
+    </component>
+    <component bom-ref="pkg:maven/com.fasterxml.jackson/jackson-parent@2.21?type=pom">
+      <group>com.fasterxml.jackson</group>
+      <name>jackson-parent</name>
+      <version>2.21</version>
+      <hashes>
+        <hash alg="SHA-1">ca493ce06a74692e8295df9e3129b39ca67af9b7</hash>
+        <hash alg="SHA-256">3851df627faeb46887b956104630b74a8bbb5f7de22e974cf15982e20e0373de</hash>
+        <hash alg="SHA-512">7f09fb690e700a20962f72bc3139acaea67b670a071599282cfafacb6995e887d9e6872e875526f5e17cfbad282cde0633c157a67e05ba66e17c76e9329bf5e1</hash>
+        <hash alg="MD5">db4b5b71c6fe702c8fbcb1eae21cab2e</hash>
+      </hashes>
+      <purl>pkg:maven/com.fasterxml.jackson/jackson-parent@2.21?type=pom</purl>
+    </component>
+    <component bom-ref="pkg:maven/com.fasterxml.jackson/jackson-bom@2.18.3?type=pom">
+      <group>com.fasterxml.jackson</group>
+      <name>jackson-bom</name>
+      <version>2.18.3</version>
+      <hashes>
+        <hash alg="SHA-1">a0020677d60a0b6a0467f1f9babdf89963a9a872</hash>
+        <hash alg="SHA-256">f1d4c6aeb32118650c805fe9bbc5ee940fa8f2cd7d0f04fa4360551e9a27b290</hash>
+        <hash alg="SHA-512">ae6be2659e8cfd93bffd546be6035128d13c5caf5d7e10661da478359a0209042facbb44e54178ba0fee18645dbf3943ad0f9959aaaa8eb8621096a074c93107</hash>
+        <hash alg="MD5">df43fdc4617d1ada9d13b26d207465a9</hash>
+      </hashes>
+      <purl>pkg:maven/com.fasterxml.jackson/jackson-bom@2.18.3?type=pom</purl>
+    </component>
+    <component bom-ref="pkg:maven/io.netty/netty-handler@4.2.10.Final?type=pom">
+      <group>io.netty</group>
+      <name>netty-handler</name>
+      <version>4.2.10.Final</version>
+      <hashes>
+        <hash alg="SHA-1">44225055539b8f6a0d0bb6ae0d132a37d1f8af14</hash>
+        <hash alg="SHA-256">6d15b0fa1dcc4fc12df9008c96b7c5dbe3cce39ca4f411b958698eb459615a3d</hash>
+        <hash alg="SHA-512">3787f3b311ba36666630035e020d5350edd99564d42ddba706a19d0aa47c85bdf34ada5998114e52e5da2d256fb6eecba4013d6ae2cde73f4953ddeec6017000</hash>
+        <hash alg="MD5">f35b91d1b28295021108a45a806060d2</hash>
+      </hashes>
+      <purl>pkg:maven/io.netty/netty-handler@4.2.10.Final?type=pom</purl>
+    </component>
+    <component bom-ref="pkg:maven/org.bouncycastle/bcutil-jdk18on@1.83?type=pom">
+      <group>org.bouncycastle</group>
+      <name>bcutil-jdk18on</name>
+      <version>1.83</version>
+      <hashes>
+        <hash alg="SHA-1">e72fd567b1cd2e0099b36cf46cfaf44d33aee903</hash>
+        <hash alg="SHA-256">35069f488f075e059d55ede3a8a82c8be166396a91d93e7a16f7b85d3f444a22</hash>
+        <hash alg="SHA-512">284fab53740db33b7e2a0d05e6009a881949ecd18636e7952ddc6df65c07e3f003effb246d05f21e47a6a6c4a84e6ca69a254da5085c0f8e5c79d9943f333228</hash>
+        <hash alg="MD5">36ee27570969f94911c8bc24d0c58f1b</hash>
+      </hashes>
+      <purl>pkg:maven/org.bouncycastle/bcutil-jdk18on@1.83?type=pom</purl>
+    </component>
+    <component bom-ref="pkg:maven/io.netty/netty-codec-http2@4.2.10.Final?type=pom">
+      <group>io.netty</group>
+      <name>netty-codec-http2</name>
+      <version>4.2.10.Final</version>
+      <hashes>
+        <hash alg="SHA-1">ba98033df8e9b89ab64b9994c7785e8c1512735c</hash>
+        <hash alg="SHA-256">4fe9bda3b6683c4be8cfbf49802025c568a5940478c9d845817fa45e180fce3c</hash>
+        <hash alg="SHA-512">5004c4b23f8c2ec4b9de04bad58826cd2053daf578b5843b514482f090b16a619f7a3438b378862ae8c464dc7cee781e242115d2669185f7df4b9a1102222946</hash>
+        <hash alg="MD5">d392ba9e01b21844cf54a1b15b0c398c</hash>
+      </hashes>
+      <purl>pkg:maven/io.netty/netty-codec-http2@4.2.10.Final?type=pom</purl>
+    </component>
+    <component bom-ref="pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.21.0?type=pom">
+      <group>com.fasterxml.jackson.core</group>
+      <name>jackson-databind</name>
+      <version>2.21.0</version>
+      <hashes>
+        <hash alg="SHA-1">1f4cb5e0d5b4d7a5f61aab12733335514104d6a2</hash>
+        <hash alg="SHA-256">dc6b56c8a903d8b512791183a686769a351725bd4afb8d74ae7012ce6f0740b3</hash>
+        <hash alg="SHA-512">1c9a5062bc5834d68f4929b710026997ae9426793dc645e652756dfe245058885904e94d5d3ad3a69ac1912fe71b2a0433a06ecc675ee3e4008303b209c745fe</hash>
+        <hash alg="MD5">0121602c43d1eff23440fc1b50f99a98</hash>
+      </hashes>
+      <purl>pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.21.0?type=pom</purl>
+    </component>
+    <component bom-ref="pkg:maven/org.yaml/snakeyaml@2.3?type=jar">
+      <group>org.yaml</group>
+      <name>snakeyaml</name>
+      <version>2.3</version>
+      <hashes>
+        <hash alg="SHA-1">936b36210e27320f920536f695cf1af210c44586</hash>
+        <hash alg="SHA-256">63a76fe66b652360bd4c2c107e6f0258daa7d4bb492008ba8c26fcd230ff9146</hash>
+        <hash alg="SHA-512">1c9c78f0d102ae49a7c06f9e20c6a79a4fb9a2af962230ee6e136bda0caf10dcbb9deadc1c3ab15f74a4982ec8f8266217115e357329fde5b3f4f1858882de0c</hash>
+        <hash alg="MD5">2a1c2ee8923dcd6bd6d025751af5df37</hash>
+      </hashes>
+      <purl>pkg:maven/org.yaml/snakeyaml@2.3?type=jar</purl>
+    </component>
+    <component bom-ref="pkg:maven/io.netty/netty-transport-native-unix-common@4.2.10.Final?type=jar">
+      <group>io.netty</group>
+      <name>netty-transport-native-unix-common</name>
+      <version>4.2.10.Final</version>
+      <hashes>
+        <hash alg="SHA-1">8a8495c494ab2f5b0fdd93d2f670a1ea50a6b7de</hash>
+        <hash alg="SHA-256">6bea060f5ffe953acab6c922236d284ca8f1e8c6a59d8a13eaba053fa280a88f</hash>
+        <hash alg="SHA-512">51ac37069ffee460ce2444f15ba10bd1cbad8d49c9921b983a024177b83b60bee08994541ad637c6c5607751a4090f2b50170ef60834ed401cffb6e4a4905228</hash>
+        <hash alg="MD5">0d4423aea3ff37c909ca5d65a0af4cd2</hash>
+      </hashes>
+      <purl>pkg:maven/io.netty/netty-transport-native-unix-common@4.2.10.Final?type=jar</purl>
+    </component>
+    <component bom-ref="pkg:maven/io.netty/netty-transport@4.2.10.Final?type=pom">
+      <group>io.netty</group>
+      <name>netty-transport</name>
+      <version>4.2.10.Final</version>
+      <hashes>
+        <hash alg="SHA-1">7011f120a2dd159c86cb70b04fa32b1c4712d18b</hash>
+        <hash alg="SHA-256">48990ded13d361df9b2725ac732f0dc310b960ea2784883f765eef3cd5389a42</hash>
+        <hash alg="SHA-512">30545ebf3e35670990dfaae39947d5a225f3899a532bc8620a815c51beb84ad59c74ce7044ceb3afb285e63a2024f1dd46a65bac441af41f124f31285649d592</hash>
+        <hash alg="MD5">a82b6b3db02d2d064f1e0eeedf9f9dcb</hash>
+      </hashes>
+      <purl>pkg:maven/io.netty/netty-transport@4.2.10.Final?type=pom</purl>
+    </component>
+    <component bom-ref="pkg:maven/org.junit.jupiter/junit-jupiter-api@5.8.2?type=pom">
+      <group>org.junit.jupiter</group>
+      <name>junit-jupiter-api</name>
+      <version>5.8.2</version>
+      <hashes>
+        <hash alg="SHA-1">e975f1a2ffdd9d0d899d15ac3948bb0db79f5074</hash>
+        <hash alg="SHA-256">c9bde3622795b30a773531e85c5832f8dc8aa77ecdd313eee235c983cbfd0277</hash>
+        <hash alg="SHA-512">73cdbd4b6e0997f365a596a0ba1cea6a9b35e3a3b1a40beeadf666c879ac2bcda9f58b728ccb090e830737838de5cd8fd730d3176fb741fe54e9046ad6876ae3</hash>
+        <hash alg="MD5">5799f36fae9604b90c873f7c1d15efcc</hash>
+      </hashes>
+      <purl>pkg:maven/org.junit.jupiter/junit-jupiter-api@5.8.2?type=pom</purl>
+    </component>
+    <component bom-ref="pkg:maven/org.junit/junit-bom@5.11.4?type=pom">
+      <group>org.junit</group>
+      <name>junit-bom</name>
+      <version>5.11.4</version>
+      <hashes>
+        <hash alg="SHA-1">c02d99183d700dae681ed4a699dfcbe3d77dc507</hash>
+        <hash alg="SHA-256">19d4b747b204805325b6334553296f986562277a4ac1cb5e593a5e4c4f5e4115</hash>
+        <hash alg="SHA-512">303612e72adb3af46265aa7c60718dd51baccb576d4a9820ae3aa94c5119d6c9b3a3168993dd1a6692154786cbbd33eba99985842fc45125a18a1c44d490a8c1</hash>
+        <hash alg="MD5">53d32e56c515c7d2dcb1f573ead28933</hash>
+      </hashes>
+      <purl>pkg:maven/org.junit/junit-bom@5.11.4?type=pom</purl>
+    </component>
+    <component bom-ref="pkg:maven/org.apache.commons/commons-parent@91?type=pom">
+      <group>org.apache.commons</group>
+      <name>commons-parent</name>
+      <version>91</version>
+      <hashes>
+        <hash alg="SHA-1">a96e35763e76a6b6de324ae5fafd1f4ce74576d7</hash>
+        <hash alg="SHA-256">d2f8b6fd4800b6aaf120f5a38226d5f9d5fc6db837af99e2f9b33067868b9872</hash>
+        <hash alg="SHA-512">c8bcacfe275a5c628179e44142f5af2c3b00febb2c58c488391a8101f636db8e5af16345bed427f673f99080e15c1a2a8f99a80720ba5e59c386958c1905e0af</hash>
+        <hash alg="MD5">a1b2cb531010116f664b9808fe67e30d</hash>
+      </hashes>
+      <purl>pkg:maven/org.apache.commons/commons-parent@91?type=pom</purl>
+    </component>
+    <component bom-ref="pkg:maven/commons-io/commons-io@2.21.0?type=pom">
+      <group>commons-io</group>
+      <name>commons-io</name>
+      <version>2.21.0</version>
+      <hashes>
+        <hash alg="SHA-1">eb07af0104fa822da7e8e1a54435055b1b0acc46</hash>
+        <hash alg="SHA-256">ae47795e721803ec8ff1deed74be28a811a02713bd5a3ab0ac67c2b58cb635ab</hash>
+        <hash alg="SHA-512">4728a13da04911617a5a3d981c21015f26551e636076d3a5fbaa12524f04ee46b7ec250a662a670688b5699ce92940e49b7ed70999ab3cfdaf4949ec6894449d</hash>
+        <hash alg="MD5">abca74108103031ddfd97aba2952c276</hash>
+      </hashes>
+      <purl>pkg:maven/commons-io/commons-io@2.21.0?type=pom</purl>
+    </component>
+    <component bom-ref="pkg:maven/org.junit/junit-bom@5.14.1?type=pom">
+      <group>org.junit</group>
+      <name>junit-bom</name>
+      <version>5.14.1</version>
+      <hashes>
+        <hash alg="SHA-1">4b65efd2e4343d427841a790384c53f5663f6913</hash>
+        <hash alg="SHA-256">01b01dfa366550b40ac5760548a7d728b6109d17c451e83864d1e5e0ce862c94</hash>
+        <hash alg="SHA-512">adeca632b5d26607b30e792431646f7e6b28cb701a54e5dd9c3b2f4523f5e8bc4b2d114981846f2dc9d57e4ff4331da5ed5d1226ebc30b1267f885368295eae0</hash>
+        <hash alg="MD5">5821a60b26aca620721de6820b578dfe</hash>
+      </hashes>
+      <purl>pkg:maven/org.junit/junit-bom@5.14.1?type=pom</purl>
+    </component>
+    <component bom-ref="pkg:maven/org.apache.commons/commons-lang3@3.20.0?type=pom">
+      <group>org.apache.commons</group>
+      <name>commons-lang3</name>
+      <version>3.20.0</version>
+      <hashes>
+        <hash alg="SHA-1">54f65c450509a0cc4723b8bfb3553d9c9eb44175</hash>
+        <hash alg="SHA-256">7ca83b2709c1e7a9e03b576cd41422190379489a80866e542f8c8b955411a2aa</hash>
+        <hash alg="SHA-512">25e43253bdd776fc620a45df322987f8b5f2629d195bd76cee896effdbebd34d9f3179fe0f7078f0b57ac5623924544740ddb15383997e22881689875db581ec</hash>
+        <hash alg="MD5">939bd6b97e08be5545b51e1dc2831979</hash>
+      </hashes>
+      <purl>pkg:maven/org.apache.commons/commons-lang3@3.20.0?type=pom</purl>
+    </component>
+    <component bom-ref="pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.18.3?type=pom">
+      <group>com.fasterxml.jackson.core</group>
+      <name>jackson-databind</name>
+      <version>2.18.3</version>
+      <hashes>
+        <hash alg="SHA-1">8e872ba354299927b2d7194e658d02394ddc4311</hash>
+        <hash alg="SHA-256">e58f48ac14e4dbd48595d69e20bad35019ec1281514ef7ef155e18072ada617f</hash>
+        <hash alg="SHA-512">183b4c6693f3cb876fadc44c4bb92dccfe57a5ea9f8009a8379381c632d1068efbc8f795437402e4511657d8402ea1aa596004ad21b44d28765d82f0d77b9768</hash>
+        <hash alg="MD5">42735882d3f08934b657548c234213e4</hash>
+      </hashes>
+      <purl>pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.18.3?type=pom</purl>
+    </component>
+    <component bom-ref="pkg:maven/org.junit.platform/junit-platform-commons@1.8.2?type=pom">
+      <group>org.junit.platform</group>
+      <name>junit-platform-commons</name>
+      <version>1.8.2</version>
+      <hashes>
+        <hash alg="SHA-1">458a6bbdf025b0ea16dccc37dd816c4aeeb1b9e2</hash>
+        <hash alg="SHA-256">ce852e34c6a184aa6c80ee8df0471713a7408134134f08e3c1c3dd87c6b59ab7</hash>
+        <hash alg="SHA-512">5e96390f5c34e888873f0ec353530753cc9f89a4ef404af6c8c9ba1458e80657eaf521fba0dad1580e4d5c8afe622bab120138fa5a0db1f7f94ad4ce7031f3af</hash>
+        <hash alg="MD5">828dce06b338624a9283b63ef5dd400c</hash>
+      </hashes>
+      <purl>pkg:maven/org.junit.platform/junit-platform-commons@1.8.2?type=pom</purl>
+    </component>
+    <component bom-ref="pkg:maven/com.fasterxml.jackson.core/jackson-core@2.21.0?type=pom">
+      <group>com.fasterxml.jackson.core</group>
+      <name>jackson-core</name>
+      <version>2.21.0</version>
+      <hashes>
+        <hash alg="SHA-1">65a1dd6038c0ef27de053ce37c7b663de8c2c25a</hash>
+        <hash alg="SHA-256">a0add9d219816d4da50a03d62ae21222329388822cb8aac8b5ab3d0af16aa7d6</hash>
+        <hash alg="SHA-512">67f258cc83b8f44a0ffe3ff6dd8717a960c722156df1abf8101bae36ee204e8d21442ce328f0fa2149bd8961ef4ed36b2af6b3620c543523a28ec367d5a25097</hash>
+        <hash alg="MD5">f7f60f792ec4266bda10d0c55256ee97</hash>
+      </hashes>
+      <purl>pkg:maven/com.fasterxml.jackson.core/jackson-core@2.21.0?type=pom</purl>
+    </component>
+    <component bom-ref="pkg:maven/org.junit/junit-bom@6.0.2?type=pom">
+      <group>org.junit</group>
+      <name>junit-bom</name>
+      <version>6.0.2</version>
+      <hashes>
+        <hash alg="SHA-1">44be4c17a4fb924ae9d135d1b9971a0f5c475f14</hash>
+        <hash alg="SHA-256">c35897be53ef083986c3f0911ade7749cb42aeb400c991fbaee51e4639f7b9a9</hash>
+        <hash alg="SHA-512">becc2710a6d5cdf4d96adb0f8b8427d77add4b4fa1c5a40e48ebff6d4c33b4dbe1ce5dab7994a00dd9f45c8e045f2162f445c45dde7beca9fad5dfa672f06407</hash>
+        <hash alg="MD5">40e7b98b19deb411fa6bc81639b1c762</hash>
+      </hashes>
+      <purl>pkg:maven/org.junit/junit-bom@6.0.2?type=pom</purl>
+    </component>
+    <component bom-ref="pkg:maven/com.fasterxml.jackson.dataformat/jackson-dataformats-text@2.18.3?type=pom">
+      <group>com.fasterxml.jackson.dataformat</group>
+      <name>jackson-dataformats-text</name>
+      <version>2.18.3</version>
+      <hashes>
+        <hash alg="SHA-1">8bed064d87de9f90c2a76c47cd47194536952e49</hash>
+        <hash alg="SHA-256">5673daacc6e855976decedeb46dc63395a6b1ac9a483e672f0831cf46fe06e25</hash>
+        <hash alg="SHA-512">f22c1aec981319e394b17aa725b19399af000ee76814c4aeb13cfed2c32d0c45410e762c5cbf7821c8c2f28366675b125913806c93ea5c6bf525ca336ae323d6</hash>
+        <hash alg="MD5">e6b7891e2342a1ccbd20c4d34e76a7b9</hash>
+      </hashes>
+      <purl>pkg:maven/com.fasterxml.jackson.dataformat/jackson-dataformats-text@2.18.3?type=pom</purl>
+    </component>
+    <component bom-ref="pkg:maven/com.ethlo.time/itu@1.14.0?type=pom">
+      <group>com.ethlo.time</group>
+      <name>itu</name>
+      <version>1.14.0</version>
+      <hashes>
+        <hash alg="SHA-1">a8d4e9f1c796c9cb761ba63ec378ed4addef70c9</hash>
+        <hash alg="SHA-256">0d5ae0bec09495529c63cc8a6c13253870686832a4e3b206c138165035ae4bc5</hash>
+        <hash alg="SHA-512">163fcb4869ab38b17ecd688d659e3b870eada915d14c705acd84ec3fbb25fed344e62f8d389105178e838848e580f3c671b59f18aef093d477e45f76dec86c3a</hash>
+        <hash alg="MD5">3d389ff1d659aca23ec2b50bd1f1e7e1</hash>
+      </hashes>
+      <purl>pkg:maven/com.ethlo.time/itu@1.14.0?type=pom</purl>
+    </component>
+    <component bom-ref="pkg:maven/commons-codec/commons-codec@1.21.0?type=pom">
+      <group>commons-codec</group>
+      <name>commons-codec</name>
+      <version>1.21.0</version>
+      <hashes>
+        <hash alg="SHA-1">1a8bf55d91b1addde5e774928e0baa33fee31d62</hash>
+        <hash alg="SHA-256">b230416ba6f5bf9df8fcb6e7f4a6c26b8fb0fe85ce371d13d5846ed3768309b7</hash>
+        <hash alg="SHA-512">778948e7c592d31af6162f085d14fd854586ef7a907467208f70995e28259e701e00a2c49e6c228be6a9f83abc798dc6be569b81e3369ed71edcf064f0f8e7ed</hash>
+        <hash alg="MD5">09186610ea7df8deda61c0f0a51a6759</hash>
+      </hashes>
+      <purl>pkg:maven/commons-codec/commons-codec@1.21.0?type=pom</purl>
+    </component>
+    <component bom-ref="pkg:maven/io.netty/netty-codec-http@4.2.10.Final?type=pom">
+      <group>io.netty</group>
+      <name>netty-codec-http</name>
+      <version>4.2.10.Final</version>
+      <hashes>
+        <hash alg="SHA-1">23d9c3b57185c800c2bf59cc3926550591a59446</hash>
+        <hash alg="SHA-256">7ef93e46c5de6e6924458ebd40525c34771ecf0542e32a89c980c7d53305b02a</hash>
+        <hash alg="SHA-512">21ff227cb80ef5f6fca88a1bfad9dc6a4047d311772f5646fb97bc5f2925aabe99d17abfa4a1abafd0ac94e5f267862256d7a524d96e16d898d3712fd0ea1bdd</hash>
+        <hash alg="MD5">ee27e32c5e6dc9e22e1e479ce3ce98ad</hash>
+      </hashes>
+      <purl>pkg:maven/io.netty/netty-codec-http@4.2.10.Final?type=pom</purl>
+    </component>
+    <component bom-ref="pkg:maven/org.opentest4j/opentest4j@1.2.0?type=pom">
+      <group>org.opentest4j</group>
+      <name>opentest4j</name>
+      <version>1.2.0</version>
+      <hashes>
+        <hash alg="SHA-1">b5c66f49b69c36797c1fb7f4ec57776f261303ad</hash>
+        <hash alg="SHA-256">a96e671816c1ff8803bdec74c9241f025bdfb277da5d2b4ee02266405936f994</hash>
+        <hash alg="SHA-512">28ce0d0b5cceeac5adfcdd16ee6f5fbefd43eef8057b924993fb7a9f4b7a7085b980f3e808db5fb7750a53d0072b7fe7b118f5c0011e3ef0efe6c9a90a87b868</hash>
+        <hash alg="MD5">78c56edc6e9612ffe1ffcbd09adc6d52</hash>
+      </hashes>
+      <purl>pkg:maven/org.opentest4j/opentest4j@1.2.0?type=pom</purl>
+    </component>
+    <component bom-ref="pkg:maven/net.runeduniverse.tools.maven.workflow/maven-pipeline-workflow@0.1.0?type=pom">
+      <group>net.runeduniverse.tools.maven.workflow</group>
+      <name>maven-pipeline-workflow</name>
+      <version>0.1.0</version>
+      <hashes>
+        <hash alg="SHA-1">1ed9f3a40293de7290c5d998b32572d3697d7118</hash>
+        <hash alg="SHA-256">83eb2dc7182afbbcdbcda7f3908aba3cfb0e72cb19201d2acc49c0a6deeb0c18</hash>
+        <hash alg="SHA-512">1075fa22e8545dfe1ec3fe2924cf8472662dc0aca65c5906ad941e293b5cb3428635311e5cc927096a74059c29752175cbe5a9af574aea1ad00074d3dcbba0ca</hash>
+        <hash alg="MD5">9cf6ebd56c677cb83382dc1026714312</hash>
+      </hashes>
+      <purl>pkg:maven/net.runeduniverse.tools.maven.workflow/maven-pipeline-workflow@0.1.0?type=pom</purl>
+    </component>
+    <component bom-ref="pkg:maven/org.cyclonedx/cyclonedx-core-java@12.0.1?type=jar">
+      <group>org.cyclonedx</group>
+      <name>cyclonedx-core-java</name>
+      <version>12.0.1</version>
+      <hashes>
+        <hash alg="SHA-1">7c1a12457a344d05dad982880c372846b2b7935b</hash>
+        <hash alg="SHA-256">13b43f039f76d3976273d6b1017a3e2ce008a57d28c129eed24c871c7e3b8335</hash>
+        <hash alg="SHA-512">07d9c6e7660bd16b9a4291ed9316ac4b0d765ee656add1a421534d18af445d938323868c7c77e4fc8be50a2a0f6c7683340e3407fa417b55572f0946951acf89</hash>
+        <hash alg="MD5">7b7e9264c3b6dc2cb8cb1bc6b10b6cff</hash>
+      </hashes>
+      <purl>pkg:maven/org.cyclonedx/cyclonedx-core-java@12.0.1?type=jar</purl>
+    </component>
+    <component bom-ref="pkg:maven/io.netty/netty-handler@4.2.10.Final?type=jar">
+      <group>io.netty</group>
+      <name>netty-handler</name>
+      <version>4.2.10.Final</version>
+      <hashes>
+        <hash alg="SHA-1">730b1c0df761ecae4de489b974efe29135d996f5</hash>
+        <hash alg="SHA-256">769fecbfbca5756c52a442da35563218ced4d6cc179da2a8e782aae6ce8a187b</hash>
+        <hash alg="SHA-512">f117518c67a75f66292bece50f059fd1710fb29c905db3c0466db37667c6b06c148135c6d36f4ae7f288bc2983f545edcc7f3ed6f9066c97e227812ebba6b471</hash>
+        <hash alg="MD5">34ea67c97c2c95bfb262dcf15fdf919f</hash>
+      </hashes>
+      <purl>pkg:maven/io.netty/netty-handler@4.2.10.Final?type=jar</purl>
+    </component>
+    <component bom-ref="pkg:maven/com.fasterxml.jackson/jackson-base@2.18.3?type=pom">
+      <group>com.fasterxml.jackson</group>
+      <name>jackson-base</name>
+      <version>2.18.3</version>
+      <hashes>
+        <hash alg="SHA-1">78fde8c8211a5e64c6409704a011bbe16def9e12</hash>
+        <hash alg="SHA-256">d5bbfd3c8445230e498b6092de809afd65cf504d013932dab7b3dfd6e9f3a4fd</hash>
+        <hash alg="SHA-512">1607fe92398a3fa15a3dbeabd85048c06bbc591c3055a1710c2fb10855f7edc1b00002c8b8681e11412e452daa420c07bd2292d41a7ec58ccafa39876456cca3</hash>
+        <hash alg="MD5">0eb2b4d3d1dda833200319d455d7e531</hash>
+      </hashes>
+      <purl>pkg:maven/com.fasterxml.jackson/jackson-base@2.18.3?type=pom</purl>
+    </component>
+    <component bom-ref="pkg:maven/org.slf4j/slf4j-parent@2.0.17?type=pom">
+      <group>org.slf4j</group>
+      <name>slf4j-parent</name>
+      <version>2.0.17</version>
+      <hashes>
+        <hash alg="SHA-1">641edf481a624909e4da7d07343055d46aba0b77</hash>
+        <hash alg="SHA-256">95cd71e852dfdb29126e58b7b939d57ec2b2e6024391852e0b545dee082bbf3b</hash>
+        <hash alg="SHA-512">5b16a209843c18a478a0a16dff83ae1c75eedbdeadc15a958d536a36631d4d39a9998e085c165a79ced8ad187f021e2f3cd4068856ca174db35657ef5a473c5a</hash>
+        <hash alg="MD5">ff3a5b491edfc88fe488d10a650a6e4b</hash>
+      </hashes>
+      <purl>pkg:maven/org.slf4j/slf4j-parent@2.0.17?type=pom</purl>
+    </component>
+    <component bom-ref="pkg:maven/com.fasterxml.jackson.dataformat/jackson-dataformat-xml@2.21.0?type=jar">
+      <group>com.fasterxml.jackson.dataformat</group>
+      <name>jackson-dataformat-xml</name>
+      <version>2.21.0</version>
+      <hashes>
+        <hash alg="SHA-1">d9d7f071f07c028ebac30a3c8c651f209b6d7c9e</hash>
+        <hash alg="SHA-256">9bbd6ff3d3c3e693a8ce4861613ae14d943c8639f3192bb38586381c4941b21e</hash>
+        <hash alg="SHA-512">f6825e5a271b484a2221e848d20c2671b1165f8cb7a1e0f341a2d46fabb5fba31599a97efbf333d857c3127d463abfa34a76078d0097146c349b913799bbe191</hash>
+        <hash alg="MD5">dd61517195fdfa40fc011d4ecc070f96</hash>
+      </hashes>
+      <purl>pkg:maven/com.fasterxml.jackson.dataformat/jackson-dataformat-xml@2.21.0?type=jar</purl>
+    </component>
+    <component bom-ref="pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.21.0?type=jar">
+      <group>com.fasterxml.jackson.core</group>
+      <name>jackson-databind</name>
+      <version>2.21.0</version>
+      <hashes>
+        <hash alg="SHA-1">a6b96ee168ca8734a293b6dc70acd5d495119521</hash>
+        <hash alg="SHA-256">0057817ee40bc71544072dc2a3ba575ef91dce53a2d87489bde91c05f3a22621</hash>
+        <hash alg="SHA-512">757949bf3a5d21f7a2d6567b1d2d80de60faaf11f8705b0d713e73361787cc78e12ffb328e9b2afee4e0dc005418599680bcbcc3a2c9df78cc9f29ecb60651ad</hash>
+        <hash alg="MD5">6da51758193ce8b00c39e742010b6c45</hash>
+      </hashes>
+      <purl>pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.21.0?type=jar</purl>
+    </component>
+    <component bom-ref="pkg:maven/org.junit.platform/junit-platform-commons@1.8.2?type=jar">
+      <group>org.junit.platform</group>
+      <name>junit-platform-commons</name>
+      <version>1.8.2</version>
+      <hashes>
+        <hash alg="SHA-1">32c8b8617c1342376fd5af2053da6410d8866861</hash>
+        <hash alg="SHA-256">d2e015fca7130e79af2f4608dc54415e4b10b592d77333decb4b1a274c185050</hash>
+        <hash alg="SHA-512">9ff90e05f39933342dcf8440336b32ac803a7348f86b63dab938083759cce56e22e290d056d4596f035a4dff629a4d159bf146ca7c32d0e89df2e0f0af7f1a9e</hash>
+        <hash alg="MD5">72693a20944048031e0a55f67413ca1b</hash>
+      </hashes>
+      <purl>pkg:maven/org.junit.platform/junit-platform-commons@1.8.2?type=jar</purl>
+    </component>
+    <component bom-ref="pkg:maven/org.projectlombok/lombok@1.18.32?type=pom">
+      <group>org.projectlombok</group>
+      <name>lombok</name>
+      <version>1.18.32</version>
+      <hashes>
+        <hash alg="SHA-1">b48898e1ae2980d01c4bccf67b24cefb77296a7b</hash>
+        <hash alg="SHA-256">9091bc6c05b6973349d9b78b7b7dd8dda6ebb74cc9ea74e2792960fb50348a92</hash>
+        <hash alg="SHA-512">fa2bae17c84b8a6f2bda8467b762507412ecb46755f0d7f3c5aa3d46c0b1ff319cf6bbb49dd66eeaa11f5b9754cf35c4a4ab2dd3637c1362137955b2b6971219</hash>
+        <hash alg="MD5">d0214cbdad3145be525361f2edc0ab01</hash>
+      </hashes>
+      <purl>pkg:maven/org.projectlombok/lombok@1.18.32?type=pom</purl>
+    </component>
+    <component bom-ref="pkg:maven/io.netty/netty-codec-compression@4.2.10.Final?type=pom">
+      <group>io.netty</group>
+      <name>netty-codec-compression</name>
+      <version>4.2.10.Final</version>
+      <hashes>
+        <hash alg="SHA-1">22f042d43f9dcd47a9b0937a7e411ce726257947</hash>
+        <hash alg="SHA-256">081509d749d7de1ed101200f19c0589e49f81fa64c5d4561015bb9e21d530654</hash>
+        <hash alg="SHA-512">81cd0263e99eaba448c0ab36a9f550fdeccc1886f5c7cf788f063ca747820d31f6fe964b3c885a5793aa44a9c1b41eec0b02e471a310a3a3a3797bad6a3fc5e9</hash>
+        <hash alg="MD5">9ab6cc522658c1af93d0b8ac6d1af80c</hash>
+      </hashes>
+      <purl>pkg:maven/io.netty/netty-codec-compression@4.2.10.Final?type=pom</purl>
+    </component>
+    <component bom-ref="pkg:maven/org.junit/junit-bom@5.13.4?type=pom">
+      <group>org.junit</group>
+      <name>junit-bom</name>
+      <version>5.13.4</version>
+      <hashes>
+        <hash alg="SHA-1">eff1995329424362ac5e524dd5198276da1d6b08</hash>
+        <hash alg="SHA-256">d7a08a99b2502f0bb68cd4e1f984f0bf69324aaa208bd0f73366c03fc3548a42</hash>
+        <hash alg="SHA-512">ec795b2f32982c1af8dccef57553aa9d959c13ee829aebd6459ba22b4ef434aeb4184aa89f63ad2f0d8c45d59cd020a15cd976ddb4bf20f1044b492a406e029e</hash>
+        <hash alg="MD5">99bad348d37d5d71d3ed18bfd64a6b36</hash>
+      </hashes>
+      <purl>pkg:maven/org.junit/junit-bom@5.13.4?type=pom</purl>
+    </component>
+  </components>
+</bom>
+
