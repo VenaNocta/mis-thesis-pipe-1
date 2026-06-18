@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <bom serialNumber="urn:uuid:35298a1f-969b-3d9f-bd26-82bec0307d12" version="1" xmlns="http://cyclonedx.org/schema/bom/1.6">
   <metadata>
-    <component type="library" bom-ref="pkg:maven/net.runeduniverse.tools.maven.r4m/r4m-maven-extension@1.1.1?type=maven-plugin">
+    <component type="library" bom-ref="pkg:maven/net.runeduniverse.tools.maven.r4m/r4m-maven-extension@1.1.1?type=jar">
       <publisher>RunedUniverse</publisher>
       <group>net.runeduniverse.tools.maven.r4m</group>
       <name>r4m-maven-extension</name>
@@ -14,7 +14,7 @@
           <url>https://www.apache.org/licenses/LICENSE-2.0</url>
         </license>
       </licenses>
-      <purl>pkg:maven/net.runeduniverse.tools.maven.r4m/r4m-maven-extension@1.1.1?type=maven-plugin</purl>
+      <purl>pkg:maven/net.runeduniverse.tools.maven.r4m/r4m-maven-extension@1.1.1?type=jar</purl>
       <externalReferences>
         <reference type="website">
           <url>https://github.com/RunedUniverse/r4m-maven-extension</url>
