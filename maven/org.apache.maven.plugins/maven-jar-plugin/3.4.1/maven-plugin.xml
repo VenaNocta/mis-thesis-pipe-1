@@ -23,7 +23,7 @@
         </hashes>
       </tool>
     </tools>
-    <component type="library" bom-ref="pkg:maven/org.apache.maven.plugins/maven-jar-plugin@3.4.1?type=maven-plugin">
+    <component type="library" bom-ref="pkg:maven/org.apache.maven.plugins/maven-jar-plugin@3.4.1?type=jar">
       <publisher>The Apache Software Foundation</publisher>
       <group>org.apache.maven.plugins</group>
       <name>maven-jar-plugin</name>
@@ -39,7 +39,7 @@
           <url>https://www.apache.org/licenses/LICENSE-2.0</url>
         </license>
       </licenses>
-      <purl>pkg:maven/org.apache.maven.plugins/maven-jar-plugin@3.4.1?type=maven-plugin</purl>
+      <purl>pkg:maven/org.apache.maven.plugins/maven-jar-plugin@3.4.1?type=jar</purl>
       <externalReferences><reference type="website"><url>https://maven.apache.org/plugins/maven-jar-plugin/</url></reference><reference type="build-system"><url>https://ci-maven.apache.org/job/Maven/job/maven-box/job/maven-jar-plugin/</url></reference><reference type="distribution-intake"><url>https://repository.apache.org/service/local/staging/deploy/maven2</url></reference><reference type="issue-tracker"><url>https://issues.apache.org/jira/browse/MJAR</url></reference><reference type="mailing-list"><url>https://lists.apache.org/list.html?users@maven.apache.org</url></reference><reference type="vcs"><url>https://github.com/apache/maven-jar-plugin/tree/maven-jar-plugin-3.4.1</url></reference></externalReferences>
     </component>
     <properties>
@@ -1285,7 +1285,7 @@ writes to specify Java code for type-checking by the Checker Framework.</descrip
     </component>
   </components>
   <dependencies>
-    <dependency ref="pkg:maven/org.apache.maven.plugins/maven-jar-plugin@3.4.1?type=maven-plugin">
+    <dependency ref="pkg:maven/org.apache.maven.plugins/maven-jar-plugin@3.4.1?type=jar">
       <dependency ref="pkg:maven/org.apache.maven/maven-plugin-api@3.6.3?type=jar"/>
       <dependency ref="pkg:maven/org.apache.maven/maven-core@3.6.3?type=jar"/>
       <dependency ref="pkg:maven/org.apache.maven/maven-artifact@3.6.3?type=jar"/>
