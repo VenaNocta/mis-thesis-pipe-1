@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bom serialNumber="urn:uuid:33a81287-0192-3411-a713-38ebced162cd" version="1" xmlns="http://cyclonedx.org/schema/bom/1.6">
+  <metadata>
+    <timestamp>2026-06-24T15:12:22Z</timestamp>
+    <lifecycles>
+      <lifecycle>
+        <phase>build</phase>
+      </lifecycle>
+    </lifecycles>
+    <tools>
+      <components>
+        <component type="library">
+          <author>OWASP Foundation</author>
+          <group>org.cyclonedx</group>
+          <name>cyclonedx-maven-plugin</name>
+          <version>2.9.2</version>
+          <description>CycloneDX Maven plugin</description>
+          <hashes>
+            <hash alg="MD5">843a7130400f75d33f563dc7e9f52dea</hash>
+            <hash alg="SHA-1">2cac5a176b9f48801dfc4910d4f6a34bfbb13445</hash>
+            <hash alg="SHA-256">d9e5a12bac3c1a91d85f3a1ad84307099f457ff24aa65b438ba7de9ca784a54e</hash>
+            <hash alg="SHA-512">636f788518752c5a23d14bad41d68b0d549e4b3a3d720d66f2f6e2b8b956207942ee12abba968a1e9aac6cf1d78d9e738a4a75eeb8bc6fca2377030fbb482407</hash>
+            <hash alg="SHA-384">72aad41633b92fadd4dbd1c6f5c1b956836b22d3b96afbdd7ca8b8eb0456eec00c2ed658e3c2d4e93d95048bcc23dac8</hash>
+            <hash alg="SHA3-384">9837cee0f9b7d575f8d88df3ad6f58a075032ad2635e0987abbc102240327f1cec87dc062b3034009f028ab5baf988f9</hash>
+            <hash alg="SHA3-256">4c654267cde6eb6d295dbc06b33e33528412bee57549dae89c85b8df8202dbcb</hash>
+            <hash alg="SHA3-512">f7da73632ef2fd1c2d85f0cf5eebc2b6a3ff1ae2ed0945442e679da71490562a2ff6b67422dbd5285f4042eda6637e6f3544f62825a625b38efacfdebc8df137</hash>
+          </hashes>
+        </component>
+      </components>
+    </tools>
+    <component type="library" bom-ref="pkg:maven/org.apache.commons/commons-compress@1.20?type=jar">
+      <publisher>The Apache Software Foundation</publisher>
+      <group>org.apache.commons</group>
+      <name>commons-compress</name>
+      <version>1.20</version>
+      <description>Apache Commons Compress software defines an API for working with
+compression and archive formats.  These include: bzip2, gzip, pack200,
+lzma, xz, Snappy, traditional Unix Compress, DEFLATE, DEFLATE64, LZ4,
+Brotli, Zstandard and ar, cpio, jar, tar, zip, dump, 7z, arj.</description>
+      <hashes>
+        <hash alg="MD5">3f7237fb56029591b5bdd2698c196220</hash>
+        <hash alg="SHA-1">b8df472b31e1f17c232d2ad78ceb1c84e00c641b</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.apache.commons/commons-compress@1.20?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://commons.apache.org/proper/commons-compress/</url>
+        </reference>
+        <reference type="build-system">
+          <url>https://builds.apache.org/</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://repository.apache.org/service/local/staging/deploy/maven2</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>https://issues.apache.org/jira/browse/COMPRESS</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>https://mail-archives.apache.org/mod_mbox/commons-user/</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://gitbox.apache.org/repos/asf?p=commons-compress.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <properties>
+      <property name="maven.goal">makeAggregateBom</property>
+      <property name="maven.scopes">compile,provided,runtime,system</property>
+    </properties>
+  </metadata>
+  <components>
+    <component type="library" bom-ref="pkg:maven/com.github.luben/zstd-jni@1.4.4-7?type=jar">
+      <publisher>com.github.luben</publisher>
+      <group>com.github.luben</group>
+      <name>zstd-jni</name>
+      <version>1.4.4-7</version>
+      <description>JNI bindings for Zstd native library that provides fast and high compression lossless algorithm for Java and all JVM languages.</description>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="MD5">31a1fc328dec128c8e9c36ba6e363f28</hash>
+        <hash alg="SHA-1">f7e9d149c0182968cc2a8706d3ffe82f5c9f01eb</hash>
+        <hash alg="SHA-256">24ff5dbe06bb7ed31f4087df7d824d7b843880f3c953d608b4867f3ffd16ba7e</hash>
+        <hash alg="SHA-512">44654545729229cbd6d0386903e1972a1d64f7756c5a24a9e9eb47f3f6cb1a7b92b8b6b1b4de8cd4e6fd2be6b4929516ba62e65b717681556df7603bdb429edf</hash>
+        <hash alg="SHA-384">8619056f3645973501a342c6d8054c9e4e27618de94fb5941db0ca6a284be84a09b817030eb69d961c3af6b33edd902a</hash>
+        <hash alg="SHA3-384">4b4369909891644927a01a80ed48a28c5a529aeb3d3db7c3d62f4e05a9ec1bd77c60f74a0dd13be766a05a62e477f691</hash>
+        <hash alg="SHA3-256">e7810016de4a5d7d0d7dc713cb93b096fa5e4b8f6bb6df8a0e6a15dacfb762e2</hash>
+        <hash alg="SHA3-512">39424bb0be066523448dd76b542139bda13e7b945125ecbde2681274327f923f5c549fd6ad55d5856236ebe4f6208508eae7cbcdd511d4f4a109b00c3b756816</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>BSD-2-Clause</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/com.github.luben/zstd-jni@1.4.4-7?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/luben/zstd-jni</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.brotli/dec@0.1.2?type=jar">
+      <group>org.brotli</group>
+      <name>dec</name>
+      <version>0.1.2</version>
+      <description>Brotli is a generic-purpose lossless compression algorithm.</description>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="MD5">4b1cd14cf29733941cc536b27e6aedfa</hash>
+        <hash alg="SHA-1">0c26a897ae0d524809eef1c786cc6183b4ddcc3b</hash>
+        <hash alg="SHA-256">615c0c3efef990d77831104475fba6a1f7971388691d4bad1471ad84101f6d52</hash>
+        <hash alg="SHA-512">d4cd2b33f7c358012ff01db6a13ebfe1e8051a580698bffcd942c47451012cf53ce49a400b1c8bf7502b01e631d79d7c6417202a145622572d79fd145ccde61a</hash>
+        <hash alg="SHA-384">d6b8ad9d0ee6baf8c3a29c1dc2911eaf207352e2c7de893a0185e987e7eae87827890c1d4dbf31c46f25846fbcdc08bb</hash>
+        <hash alg="SHA3-384">d16c32130bf6b168ff4c8a3dedf1b17787f8d6f0eab9de21e51ed3ab1e7d85925dd02315972f6ca3a4493357aad545cb</hash>
+        <hash alg="SHA3-256">962dc76a5c487de8d34308860ab65927bf91f50ccb12f37bffb036a7a05145a4</hash>
+        <hash alg="SHA3-512">a82a3f79b57d30613606ca51dc432b097fa75aab5c87fb45eabec6d80ddeff1b329100b325bb07005aebaec166952c4599a863d4bfd5a684bad21103a2046311</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/license/mit/</url>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.brotli/dec@0.1.2?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://brotli.org/dec</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/google/brotli/dec</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.tukaani/xz@1.8?type=jar">
+      <group>org.tukaani</group>
+      <name>xz</name>
+      <version>1.8</version>
+      <description>XZ data compression</description>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="MD5">5f982127e0de85b785c4b2abad21aa2e</hash>
+        <hash alg="SHA-1">c4f7d054303948eb6a4066194253886c8af07128</hash>
+        <hash alg="SHA-256">8c7964b36fe3f0cbe644b04fcbff84e491ce81917db2f5bfa0cba8e9548aff5d</hash>
+        <hash alg="SHA-512">8cf42ae7d57c2115b9d86dc22eb782f0e0b3348a3927d013ef6a04cf444074592a4614f5e43328f6a55560b90945381a697fa01c47faf54be5b0ef202472ad0d</hash>
+        <hash alg="SHA-384">999d842552a2a07f2e8cf84931ed8c3314d995b8f076abb61169ff5e13a732049ff192e56d2d456962832abc2ff10259</hash>
+        <hash alg="SHA3-384">a5326ba46259b17a1f27a839972247212d891c5c88c29f13baa9d5541a5b2cc6961c7132d79bc295c33d6f17c9cf2d44</hash>
+        <hash alg="SHA3-256">159a019e46e775f006bbc7b8fafd5224220b86f00b3f77b0374bb383be81b665</hash>
+        <hash alg="SHA3-512">7a73042ad6954158e47ee24b23427300f6324fd75c036c80f4acdba0a7a0d23843eb92a2a00c33e97d8384ab337a709d26ee0301e6af9189e43d520877bba79e</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <name>Public Domain</name>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.tukaani/xz@1.8?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://tukaani.org/xz/java.html</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://git.tukaani.org/?p=xz-java.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.osgi/org.osgi.core@6.0.0?type=jar">
+      <publisher>OSGi Alliance</publisher>
+      <group>org.osgi</group>
+      <name>org.osgi.core</name>
+      <version>6.0.0</version>
+      <description>OSGi Core Release 6, Interfaces and Classes for use in compiling bundles.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">cae291c61fe8b7a4476d713550c7ff49</hash>
+        <hash alg="SHA-1">0c49acdc9ac62cf69ee49cb6f1905b4fdb79ea5c</hash>
+        <hash alg="SHA-256">1c1bb435eb34cbf1f743653da38f604d45d53fbc95979053768cd3fc293cb931</hash>
+        <hash alg="SHA-512">a6d5388804982ab2cb0ba82b4291e73f006577c54e5dcb0675a2c4922594ddb0265810a4e7c748c88eba76ee350340376b7a9bd25d2de3afb954cf89117cd470</hash>
+        <hash alg="SHA-384">8daff91fc229b2874c1ff7a214fdee65b1824fbac76eb7feec609c5b70ab2fd24fc5cf017b339788a5c7aec041ec1a1c</hash>
+        <hash alg="SHA3-384">b921d8bea5dab6e7d827ce49a43e6edb4a15c1402e1d70498faf867bd7e9ea61f47b9cbdbf008ed517b71499c02b9e4c</hash>
+        <hash alg="SHA3-256">5836efac64dd3757498bc6648cf02e46f136c6b0b39d5f1641218459d6b68ca0</hash>
+        <hash alg="SHA3-512">9056edfc04943cdc81041db1851cade670415457221617babeb3d3c5136c3dcc303862e55b545f40584477e0654d11d84db6ede072015b08744241202d79ee63</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.osgi/org.osgi.core@6.0.0?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://www.osgi.org</url>
+        </reference>
+        <reference type="vcs">
+          <url>private</url>
+        </reference>
+      </externalReferences>
+    </component>
+  </components>
+  <dependencies>
+    <dependency ref="pkg:maven/org.apache.commons/commons-compress@1.20?type=jar">
+      <dependency ref="pkg:maven/com.github.luben/zstd-jni@1.4.4-7?type=jar"/>
+      <dependency ref="pkg:maven/org.brotli/dec@0.1.2?type=jar"/>
+      <dependency ref="pkg:maven/org.tukaani/xz@1.8?type=jar"/>
+      <dependency ref="pkg:maven/org.osgi/org.osgi.core@6.0.0?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.github.luben/zstd-jni@1.4.4-7?type=jar"/>
+    <dependency ref="pkg:maven/org.brotli/dec@0.1.2?type=jar"/>
+    <dependency ref="pkg:maven/org.tukaani/xz@1.8?type=jar"/>
+    <dependency ref="pkg:maven/org.osgi/org.osgi.core@6.0.0?type=jar"/>
+  </dependencies>
+</bom>
