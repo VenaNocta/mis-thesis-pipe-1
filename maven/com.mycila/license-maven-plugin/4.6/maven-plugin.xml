@@ -43,6 +43,14 @@
 			<version>4.6</version>
 			<description>Maven 2 plugin to check and update license headers in
 				source files</description>
+			<hashes>
+				<hash alg="MD5">58f63c26b9700d163652162fef7247e3</hash>
+				<hash alg="SHA-1">a509161209adf30465e8213120e37d00e50df115</hash>
+				<hash alg="SHA-256">adfc481a9e8b58eaa63c06b9f40493305b8aa981cb773d78f35632c3067da2ee
+				</hash>
+				<hash alg="SHA-512">7127f4aeacc9795ae999f315d2d3a2839043ec5d971817f90cb126f5976f2fd50e410199df5345d87299284373400cf73713cccd70a69b4bc89b4e48467f9767
+				</hash>
+			</hashes>
 			<licenses>
 				<license>
 					<id>Apache-2.0</id>
@@ -202,7 +210,8 @@
 			<name>org.eclipse.sisu.plexus</name>
 			<version>0.9.0.M3</version>
 			<description>Plexus-JSR330 adapter; adds Plexus support to the
-				Sisu-Inject container</description>
+				Sisu-Inject container
+			</description>
 			<scope>required</scope>
 			<hashes>
 				<hash alg="MD5">964e7bc9837b270566f18b87af65f5d7</hash>
@@ -309,11 +318,16 @@
 			<name>maven-artifact</name>
 			<version>3.9.9</version>
 			<description>Maven is a software build management and
-				comprehension tool. Based on the concept of a project object model:
-				builds, dependency management, documentation creation, site
-				publication, and distribution publication are all controlled from
-				the declarative file. Maven can be extended by plugins to utilise a
-				number of other development tools for reporting or the build
+				comprehension
+				tool. Based on the concept of a project object model:
+				builds,
+				dependency management, documentation creation, site
+				publication, and
+				distribution publication are all controlled from
+				the declarative
+				file. Maven can be extended by plugins to utilise a
+				number of other
+				development tools for reporting or the build
 				process.
 			</description>
 			<scope>required</scope>
@@ -493,7 +507,8 @@
 			<name>maven-settings-builder</name>
 			<version>3.9.9</version>
 			<description>The effective settings builder, with inheritance and
-				password decryption.</description>
+				password decryption.
+			</description>
 			<scope>required</scope>
 			<hashes>
 				<hash alg="MD5">4fb4ae61642d42cba66821d8698a670a</hash>
@@ -555,7 +570,8 @@
 			<name>plexus-sec-dispatcher</name>
 			<version>2.0</version>
 			<description>The Plexus project provides a full software stack for
-				creating and executing software projects.</description>
+				creating and executing software projects.
+			</description>
 			<scope>required</scope>
 			<hashes>
 				<hash alg="MD5">e68635a721630177ac70173e441336b6</hash>
@@ -608,7 +624,8 @@
 			<name>plexus-cipher</name>
 			<version>2.0</version>
 			<description>The Plexus project provides a full software stack for
-				creating and executing software projects.</description>
+				creating and executing software projects.
+			</description>
 			<scope>required</scope>
 			<hashes>
 				<hash alg="MD5">55d612839faf248cbe3e273969c002c2</hash>
@@ -658,7 +675,8 @@
 			<name>maven-builder-support</name>
 			<version>3.9.9</version>
 			<description>Support for descriptor builders (model, setting,
-				toolchains)</description>
+				toolchains)
+			</description>
 			<scope>required</scope>
 			<hashes>
 				<hash alg="MD5">0266bb9314b63d9fde8aff0d190f48d6</hash>
@@ -782,7 +800,8 @@
 			<name>maven-model-builder</name>
 			<version>3.9.9</version>
 			<description>The effective model builder, with inheritance, profile
-				activation, interpolation, ...</description>
+				activation, interpolation, ...
+			</description>
 			<scope>required</scope>
 			<hashes>
 				<hash alg="MD5">a48ea3e9ceec85a9bff88e88048148d9</hash>
@@ -843,7 +862,8 @@
 			<name>maven-resolver-provider</name>
 			<version>3.9.9</version>
 			<description>Extensions to Maven Resolver for utilizing Maven POM and
-				repository metadata.</description>
+				repository metadata.
+			</description>
 			<scope>required</scope>
 			<hashes>
 				<hash alg="MD5">ea2fccfc4c499dbaa570a26da14050d9</hash>
@@ -963,7 +983,8 @@
 			<name>maven-resolver-named-locks</name>
 			<version>1.9.22</version>
 			<description>A synchronization utility implementation using Named
-				locks.</description>
+				locks.
+			</description>
 			<scope>required</scope>
 			<hashes>
 				<hash alg="MD5">3d3855f4775bc27f9962f999ea88919b</hash>
@@ -1022,7 +1043,8 @@
 			<name>maven-resolver-api</name>
 			<version>1.9.22</version>
 			<description>The application programming interface for the repository
-				system.</description>
+				system.
+			</description>
 			<scope>required</scope>
 			<hashes>
 				<hash alg="MD5">c59d27b3750461be99f8d38e1f503f56</hash>
@@ -1080,7 +1102,8 @@
 			<name>maven-resolver-spi</name>
 			<version>1.9.22</version>
 			<description>The service provider interface for repository system
-				implementations and repository connectors.</description>
+				implementations and repository connectors.
+			</description>
 			<scope>required</scope>
 			<hashes>
 				<hash alg="MD5">7ae784f1d4088fff396386ed6966cafc</hash>
@@ -1138,7 +1161,8 @@
 			<name>maven-resolver-util</name>
 			<version>1.9.22</version>
 			<description>A collection of utility classes to ease usage of the
-				repository system.</description>
+				repository system.
+			</description>
 			<scope>required</scope>
 			<hashes>
 				<hash alg="MD5">4e84c0379667d2436a99fced60a74b5d</hash>
@@ -1196,7 +1220,8 @@
 			<name>org.eclipse.sisu.inject</name>
 			<version>0.9.0.M3</version>
 			<description>JSR330-based container; supports classpath scanning,
-				auto-binding, and dynamic auto-wiring</description>
+				auto-binding, and dynamic auto-wiring
+			</description>
 			<scope>required</scope>
 			<hashes>
 				<hash alg="MD5">643a13084e0ac59cdda06319e1b348ea</hash>
@@ -1251,7 +1276,8 @@
 			<name>guice</name>
 			<version>5.1.0</version>
 			<description>Guice is a lightweight dependency injection framework
-				for Java 6 and above</description>
+				for Java 6 and above
+			</description>
 			<scope>required</scope>
 			<hashes>
 				<hash alg="MD5">2560169296aa94492af34af2115e9511</hash>
@@ -1340,11 +1366,15 @@
 			<description>Contains
 				com.google.common.util.concurrent.internal.InternalFutureFailureAccess
 				and
-				InternalFutures. Most users will never need to use this artifact. Its
-				classes are conceptually a part of Guava, but they're in this separate
-				artifact so that Android libraries can use them without pulling in
+				InternalFutures. Most users will never need to use this artifact.
+				Its
+				classes are conceptually a part of Guava, but they're in this
+				separate
+				artifact so that Android libraries can use them without
+				pulling in
 				all of
-				Guava (just as they can use ListenableFuture by depending on the
+				Guava (just as they can use ListenableFuture by
+				depending on the
 				listenablefuture artifact).
 			</description>
 			<scope>required</scope>
@@ -1434,7 +1464,8 @@
 			<name>plexus-interpolation</name>
 			<version>1.27</version>
 			<description>The Plexus project provides a full software stack for
-				creating and executing software projects.</description>
+				creating and executing software projects.
+			</description>
 			<scope>required</scope>
 			<hashes>
 				<hash alg="MD5">c2edbe0dbc934692794aaeac6006055a</hash>
@@ -1489,7 +1520,8 @@
 			<version>2.1.0</version>
 			<description>Plexus Component "Java 5" Annotations, to describe
 				plexus components properties in java sources with
-				standard annotations instead of javadoc annotations.
+				standard
+				annotations instead of javadoc annotations.
 			</description>
 			<scope>required</scope>
 			<hashes>
@@ -1707,7 +1739,8 @@
 			<version>2.11.0</version>
 			<description>The Apache Commons IO library contains utility classes,
 				stream implementations, file filters,
-				file comparators, endian transformation classes, and much more.
+				file comparators, endian
+				transformation classes, and much more.
 			</description>
 			<scope>required</scope>
 			<hashes>
@@ -1822,7 +1855,8 @@
 			<name>maven-dependency-tree</name>
 			<version>3.3.0</version>
 			<description>A tree-based API for resolution of Maven project
-				dependencies</description>
+				dependencies
+			</description>
 			<scope>required</scope>
 			<hashes>
 				<hash alg="MD5">d31e811443b74801b0345f3e279e5b4c</hash>
@@ -1927,7 +1961,8 @@
 			<name>error_prone_annotations</name>
 			<version>2.27.0</version>
 			<description>Error Prone is a static analysis tool for Java that
-				catches common programming mistakes at compile-time.</description>
+				catches common programming mistakes at compile-time.
+			</description>
 			<scope>required</scope>
 			<hashes>
 				<hash alg="MD5">fb183180666ce3d0a24ef7ba02d7193c</hash>
@@ -2023,7 +2058,8 @@
 			<name>plexus-xml</name>
 			<version>3.0.1</version>
 			<description>A collection of various utility classes to ease working
-				with XML in Maven 3.</description>
+				with XML in Maven 3.
+			</description>
 			<scope>required</scope>
 			<hashes>
 				<hash alg="MD5">cd868918ebc742350840124ea4422ab0</hash>
@@ -2177,7 +2213,8 @@
 			<description>Guava is a suite of core and expanded libraries that
 				include
 				utility classes, Google's collections, I/O classes, and
-				much more.
+				much
+				more.
 			</description>
 			<scope>required</scope>
 			<hashes>
@@ -2228,27 +2265,38 @@
 			<version>9999.0-empty-to-avoid-conflict-with-guava</version>
 			<description>An empty artifact that Guava depends on to signal that
 				it is providing
-				ListenableFuture -- but is also available in a second "version" that
-				contains com.google.common.util.concurrent.ListenableFuture class, without
+				ListenableFuture -- but is also available in a second
+				"version" that
+				contains
+				com.google.common.util.concurrent.ListenableFuture class, without
 				any other Guava classes. The idea is:
 
-				- If users want only ListenableFuture, they depend on
+				- If users want only
+				ListenableFuture, they depend on
 				listenablefuture-1.0.
 
-				- If users want all of Guava, they depend on guava, which, as of
+				- If users want
+				all of Guava, they depend on guava, which, as of
 				Guava
-				27.0, depends on
+				27.0, depends
+				on
 				listenablefuture-9999.0-empty-to-avoid-conflict-with-guava. The
 				9999.0-...
-				version number is enough for some build systems (notably, Gradle) to select
-				that empty artifact over the "real" listenablefuture-1.0 -- avoiding
+				version number is enough for some build systems (notably,
+				Gradle) to select
+				that empty artifact over the "real"
+				listenablefuture-1.0 -- avoiding
 				a
-				conflict with the copy of ListenableFuture in guava itself. If users are
-				using an older version of Guava or a build system other than Gradle,
+				conflict with the copy of
+				ListenableFuture in guava itself. If users are
+				using an older version
+				of Guava or a build system other than Gradle,
 				they
-				may see class conflicts. If so, they can solve them by manually
+				may see class
+				conflicts. If so, they can solve them by manually
 				excluding
-				the listenablefuture artifact or manually forcing their build systems
+				the
+				listenablefuture artifact or manually forcing their build systems
 				to
 				use 9999.0-....
 			</description>
@@ -2344,7 +2392,8 @@
 			<version>3.43.0</version>
 			<description>checker-qual contains annotations (type qualifiers) that
 				a programmer
-				writes to specify Java code for type-checking by the Checker Framework.
+				writes to specify Java code for type-checking by the
+				Checker Framework.
 			</description>
 			<scope>required</scope>
 			<hashes>
