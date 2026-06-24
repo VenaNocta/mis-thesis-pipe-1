@@ -1832,7 +1832,7 @@
 	</components>
 	<dependencies>
 		<dependency
-			ref="pkg:maven/org.apache.maven.plugins/maven-toolchains-plugin@3.2.0?type=maven-plugin">
+			ref="pkg:maven/org.apache.maven.plugins/maven-toolchains-plugin@3.2.0?type=jar">
 			<dependency
 				ref="pkg:maven/org.apache.maven/maven-plugin-api@3.9.6?type=jar" />
 			<dependency
