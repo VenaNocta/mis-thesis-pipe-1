@@ -18,19 +18,23 @@
         </hashes>
       </tool>
     </tools>
-    <component type="library" bom-ref="pkg:maven/org.apache.maven.plugins/maven-assembly-plugin@3.7.1?type=maven-plugin">
+    <component type="library" bom-ref="pkg:maven/org.apache.maven.plugins/maven-assembly-plugin@3.7.1?type=jar">
       <publisher>The Apache Software Foundation</publisher>
       <group>org.apache.maven.plugins</group>
       <name>maven-assembly-plugin</name>
       <version>3.7.1</version>
       <description>A Maven plugin to create archives of your project's sources, classes, dependencies etc. from flexible assembly descriptors.</description>
+      <hashes>
+        <hash alg="MD5">d77bb9e0c42d8f5e9b8a28e04c21c0c0</hash>
+        <hash alg="SHA-1">59d01f9b253b851821446c76bed9b5b4eaa6adc8</hash>
+      </hashes>
       <licenses>
         <license>
           <id>Apache-2.0</id>
           <url>https://www.apache.org/licenses/LICENSE-2.0</url>
         </license>
       </licenses>
-      <purl>pkg:maven/org.apache.maven.plugins/maven-assembly-plugin@3.7.1?type=maven-plugin</purl>
+      <purl>pkg:maven/org.apache.maven.plugins/maven-assembly-plugin@3.7.1?type=jar</purl>
       <externalReferences><reference type="website"><url>https://maven.apache.org/plugins/maven-assembly-plugin/</url></reference><reference type="build-system"><url>https://ci-maven.apache.org/job/Maven/job/maven-box/job/maven-assembly-plugin/</url></reference><reference type="distribution"><url>https://repository.apache.org/service/local/staging/deploy/maven2</url></reference><reference type="issue-tracker"><url>https://issues.apache.org/jira/browse/MASSEMBLY</url></reference><reference type="mailing-list"><url>https://lists.apache.org/list.html?users@maven.apache.org</url></reference><reference type="vcs"><url>https://github.com/apache/maven-assembly-plugin/tree/maven-assembly-plugin-3.7.1</url></reference></externalReferences>
     </component>
     <properties>
@@ -1311,7 +1315,7 @@ Brotli, Zstandard and ar, cpio, jar, tar, zip, dump, 7z, arj.</description>
     </component>
   </components>
   <dependencies>
-    <dependency ref="pkg:maven/org.apache.maven.plugins/maven-assembly-plugin@3.7.1?type=maven-plugin">
+    <dependency ref="pkg:maven/org.apache.maven.plugins/maven-assembly-plugin@3.7.1?type=jar">
       <dependency ref="pkg:maven/org.apache.maven/maven-plugin-api@3.6.3?type=jar"/>
       <dependency ref="pkg:maven/org.apache.maven/maven-core@3.6.3?type=jar"/>
       <dependency ref="pkg:maven/org.apache.maven/maven-artifact@3.6.3?type=jar"/>
