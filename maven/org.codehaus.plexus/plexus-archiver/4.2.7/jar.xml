@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bom serialNumber="urn:uuid:5176e523-28b7-399a-836b-e05f7c0ddf6b" version="1" xmlns="http://cyclonedx.org/schema/bom/1.6">
+  <metadata>
+    <lifecycles>
+      <lifecycle>
+        <phase>build</phase>
+      </lifecycle>
+    </lifecycles>
+    <tools>
+      <components>
+        <component type="library">
+          <author>OWASP Foundation</author>
+          <group>org.cyclonedx</group>
+          <name>cyclonedx-maven-plugin</name>
+          <version>2.9.2</version>
+          <description>CycloneDX Maven plugin</description>
+          <hashes>
+            <hash alg="MD5">843a7130400f75d33f563dc7e9f52dea</hash>
+            <hash alg="SHA-1">2cac5a176b9f48801dfc4910d4f6a34bfbb13445</hash>
+            <hash alg="SHA-256">d9e5a12bac3c1a91d85f3a1ad84307099f457ff24aa65b438ba7de9ca784a54e</hash>
+            <hash alg="SHA-512">636f788518752c5a23d14bad41d68b0d549e4b3a3d720d66f2f6e2b8b956207942ee12abba968a1e9aac6cf1d78d9e738a4a75eeb8bc6fca2377030fbb482407</hash>
+            <hash alg="SHA-384">72aad41633b92fadd4dbd1c6f5c1b956836b22d3b96afbdd7ca8b8eb0456eec00c2ed658e3c2d4e93d95048bcc23dac8</hash>
+            <hash alg="SHA3-384">9837cee0f9b7d575f8d88df3ad6f58a075032ad2635e0987abbc102240327f1cec87dc062b3034009f028ab5baf988f9</hash>
+            <hash alg="SHA3-256">4c654267cde6eb6d295dbc06b33e33528412bee57549dae89c85b8df8202dbcb</hash>
+            <hash alg="SHA3-512">f7da73632ef2fd1c2d85f0cf5eebc2b6a3ff1ae2ed0945442e679da71490562a2ff6b67422dbd5285f4042eda6637e6f3544f62825a625b38efacfdebc8df137</hash>
+          </hashes>
+        </component>
+      </components>
+    </tools>
+    <component type="library" bom-ref="pkg:maven/org.codehaus.plexus/plexus-archiver@4.2.7?type=jar">
+      <publisher>Codehaus Plexus</publisher>
+      <group>org.codehaus.plexus</group>
+      <name>plexus-archiver</name>
+      <version>4.2.7</version>
+      <description>The Plexus project provides a full software stack for creating and executing software projects.</description>
+      <hashes>
+        <hash alg="MD5">0b7d267876216af63af4b52fc46d2519</hash>
+        <hash alg="SHA-1">ea77e871447d62c8759404e84989845d0168ddd6</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.codehaus.plexus/plexus-archiver@4.2.7?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://codehaus-plexus.github.io/plexus-archiver/</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>https://github.com/codehaus-plexus/plexus-archiver/issues</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>http://archive.plexus.codehaus.org/user</url>
+        </reference>
+        <reference type="vcs">
+          <url>http://github.com/codehaus-plexus/plexus-archiver/tree/plexus-archiver-4.2.7/</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <properties>
+      <property name="maven.goal">makeAggregateBom</property>
+      <property name="maven.scopes">compile,provided,runtime,system</property>
+      <property name="cdx:reproducible">enabled</property>
+    </properties>
+  </metadata>
+  <components>
+    <component type="library" bom-ref="pkg:maven/org.codehaus.plexus/plexus-container-default@1.0-alpha-30?type=jar">
+      <publisher>Codehaus</publisher>
+      <group>org.codehaus.plexus</group>
+      <name>plexus-container-default</name>
+      <version>1.0-alpha-30</version>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">af35f8c80bbf8deaaa382bd530c40939</hash>
+        <hash alg="SHA-1">669d4ba8e898e37987eb5e30b121ed1d62c5b7b8</hash>
+        <hash alg="SHA-256">ef5fa49aeb90df9cac923435577dc9c2701a18ba29191b6e407e7870795eea35</hash>
+        <hash alg="SHA-512">1b0e11b59296048081d6cc44fa4f2800068b54c06ba411513115826ac9209ab3538b262c5f543d0a0410e3ed54ee3d99a0b52611fbc3875816b63f7bf2e2e6ad</hash>
+        <hash alg="SHA-384">58c0afcf93afa3c385203be846c0a1515bdfc510b2f83e509e4575fbf29e3bf0577666e3c6b149cc06454d1a30a4e65a</hash>
+        <hash alg="SHA3-384">7d745262fc27e480fca22a6b050e6d896d86c68acf64633eaf5ac2299aab5a65d26a1ed3493e847583f18fe09dfc08a6</hash>
+        <hash alg="SHA3-256">22609f9da58123d3559a9322c9dd93fbc54934eee1d6ed2cae65bd2e4f408535</hash>
+        <hash alg="SHA3-512">59b2416a997d28ce608562f403411a9ec286cc3781d40f36b60f679cfb12854b923b4e791847dd5981d4982b1545b381bbb4c596b6586bf196293d42d9c70836</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.codehaus.plexus/plexus-container-default@1.0-alpha-30?type=jar</purl>
+      <externalReferences>
+        <reference type="distribution-intake">
+          <url>dav:https://dav.codehaus.org/repository/plexus</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>http://jira.codehaus.org/browse/PLX</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>http://archive.plexus.codehaus.org/user</url>
+        </reference>
+        <reference type="vcs">
+          <url>http://fisheye.codehaus.org/browse/plexus/plexus-containers/tags/plexus-containers-1.0-alpha-30/plexus-container-default</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.codehaus.plexus/plexus-classworlds@1.2-alpha-9?type=jar">
+      <publisher>Codehaus</publisher>
+      <group>org.codehaus.plexus</group>
+      <name>plexus-classworlds</name>
+      <version>1.2-alpha-9</version>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">daad171ca854474b9a77eb2a78a3d63a</hash>
+        <hash alg="SHA-1">a927f9212093cb8fde7de0a5aa40ea4f5678215f</hash>
+        <hash alg="SHA-256">9861b88bbbc571f4f9019cb9075202174aeb04150b5dd1a7edbca01e30edc90c</hash>
+        <hash alg="SHA-512">031906c3250e0bbbeb295ae839e9c9c79ae22a403d826d678312c22423b639a011bd6dbae598b4504ab7f4214283bd40c7f561d1c5631d9d1711f547f7f6bc83</hash>
+        <hash alg="SHA-384">8689921a36ba5f171109fa01cb7ef99247f415dfa88c724623ed4330d3d4bd618ad2bf0437eb911b215ebf3c12be846a</hash>
+        <hash alg="SHA3-384">c56fdaafeeaa75821f5510a70b352678e5bf680c4e9d7f5bf48ee7d4be3951990ed734a46d2f12b06b90497ac38dc85d</hash>
+        <hash alg="SHA3-256">209403df38048932a49b85b546d59a2aeed44f7bcff616e9127252f5f8f14bd4</hash>
+        <hash alg="SHA3-512">41e769cf77ac9143e0fe190818d5fec1210cc0ec1dd34456264fb3c7bf7dd77a53f81a0d6946bcc31d9390b4440ee552fec82658ac2942bf9d4f38f05bb103c9</hash>
+      </hashes>
+      <purl>pkg:maven/org.codehaus.plexus/plexus-classworlds@1.2-alpha-9?type=jar</purl>
+      <externalReferences>
+        <reference type="distribution-intake">
+          <url>dav:https://dav.codehaus.org/repository/plexus</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>http://jira.codehaus.org/browse/PLX</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>http://archive.plexus.codehaus.org/user</url>
+        </reference>
+        <reference type="vcs">
+          <url>http://fisheye.codehaus.org/browse/plexus/plexus-classworlds/tags/plexus-classworlds-1.2-alpha-9</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.codehaus.plexus/plexus-utils@3.4.1?type=jar">
+      <publisher>Codehaus Plexus</publisher>
+      <group>org.codehaus.plexus</group>
+      <name>plexus-utils</name>
+      <version>3.4.1</version>
+      <description>A collection of various utility classes to ease working with strings, files, command lines, XML and
+    more.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">c155c4135ef7ba134659bf1af31c5156</hash>
+        <hash alg="SHA-1">4de9992988c534efd668bfcca0480ebe13e0c0eb</hash>
+        <hash alg="SHA-256">52d85e04b3918722af11d12855b4a8257df96a0e76c8f4e3852e6faa851f357b</hash>
+        <hash alg="SHA-512">0668d413520a713d9279123eccae3b5e9bc79f41dd8da3b3a1ba79b7b60086c009639d91d84df230e490192fe63b10390f3901478c69bfd452a1280364d24876</hash>
+        <hash alg="SHA-384">cefd95e956f79c103c95f15d8a5b914b7158dfdf1bb1d7a1cb1eb4f89ab47f841f5fbc3f1cd9380bb57252a036cb63ee</hash>
+        <hash alg="SHA3-384">26aa374d12efd70c423a45794427f3ca297a20663b2297ef806e7f2bd57bb9e885da1222e1c557a80fb2a012cef5de52</hash>
+        <hash alg="SHA3-256">6ec121dba759799e676e53ab9b57d379907c6fb8f844177f63c21b7324011dc3</hash>
+        <hash alg="SHA3-512">3ba2485a1471edd0e43819277db828573ba2299599dd273bbb09ae4453343bc8e32672adc3b7a4eb523edd64aed8a50427f5b7a968870c152e7859f2c6bcbf34</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.codehaus.plexus/plexus-utils@3.4.1?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://codehaus-plexus.github.io/plexus-utils/</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>http://github.com/codehaus-plexus/plexus-utils/issues</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>http://archive.plexus.codehaus.org/user</url>
+        </reference>
+        <reference type="vcs">
+          <url>http://github.com/codehaus-plexus/plexus-utils</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.codehaus.plexus/plexus-io@3.2.0?type=jar">
+      <publisher>Codehaus Plexus</publisher>
+      <group>org.codehaus.plexus</group>
+      <name>plexus-io</name>
+      <version>3.2.0</version>
+      <description>The Plexus project provides a full software stack for creating and executing software projects.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">10e377cecbafa25cd80de1207be4b685</hash>
+        <hash alg="SHA-1">0f7d52906fe1b21b06fa046a98d6c15c4e595c5e</hash>
+        <hash alg="SHA-256">15cf8cbd9e014b7156482bbb48e515613158bdd9b4b908d21e6b900f7876f6ff</hash>
+        <hash alg="SHA-512">6edb562a75b779b25d65264ae26a1c04ecccf08d6a14708cec67a64e0141d321020983c1103a4f892107c838de2149db7039446641174a786f2153e680613492</hash>
+        <hash alg="SHA-384">20f574cd47ee2b41302317adc21935e4a06c179beb4653ca65c10c2e49b3071c60132c01226984a61e4aa7a59591a496</hash>
+        <hash alg="SHA3-384">cd5afdb48f16ea48bf38691b2ad6c8e68e1fd44f818828cc902e40b7683d7ec13c483b18a0a83767e6dc5ec7ba249eea</hash>
+        <hash alg="SHA3-256">5a922b50da424007987fa34abc116d6d39d9eba1d4a63af553297383f5766105</hash>
+        <hash alg="SHA3-512">fd2f29e6a6987687a5c9b7aeb851e32c1ae88126d79f244fa881028beb3bc8673ad1ad9c57d79abbdebff4affd3ff6c57c3bfb8475010c829fefcc0c53155bb2</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.codehaus.plexus/plexus-io@3.2.0?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://codehaus-plexus.github.io/plexus-io/</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>https://github.com/codehaus-plexus/plexus-io/issues</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>http://archive.plexus.codehaus.org/user</url>
+        </reference>
+        <reference type="vcs">
+          <url>http://github.com/codehaus-plexus/plexus-io</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/commons-io/commons-io@2.6?type=jar">
+      <publisher>The Apache Software Foundation</publisher>
+      <group>commons-io</group>
+      <name>commons-io</name>
+      <version>2.6</version>
+      <description>The Apache Commons IO library contains utility classes, stream implementations, file filters,
+file comparators, endian transformation classes, and much more.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">467c2a1f64319c99b5faf03fc78572af</hash>
+        <hash alg="SHA-1">815893df5f31da2ece4040fe0a12fd44b577afaf</hash>
+        <hash alg="SHA-256">f877d304660ac2a142f3865badfc971dec7ed73c747c7f8d5d2f5139ca736513</hash>
+        <hash alg="SHA-512">4de22e2a50711f756a5542474395d8619dca0a8be0407b722605005a1167f8c306bc5eef7f0b8252f5508c817c1ceb759171e4e18d4eb9697dfdd809ac39673f</hash>
+        <hash alg="SHA-384">1efcb8c663fff4cf7f2bc86e1a367b5f88819a6a2f80341fd5d41ad82eb0adda9f34a05c20115f461bee64d1ab487e3c</hash>
+        <hash alg="SHA3-384">47f8067345da2e60493ced8f5852b5a9ee5fd1ee141c03177f132f97fa4beccd3c3f649276cbcb06a3fa2d0b39e20369</hash>
+        <hash alg="SHA3-256">12e088d6b2f63a97e29d4cf1a81dbe311a0110e784677698a2eaa0b63785dc6e</hash>
+        <hash alg="SHA3-512">82e8aa5fb7b8801b94c83f912dc863ff1b569a281081d33ca7e512a694202aebb60101b54bc9ba0a3b6a769221667a3d222b67102377d554603678798ca22d07</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/commons-io/commons-io@2.6?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://commons.apache.org/proper/commons-io/</url>
+        </reference>
+        <reference type="build-system">
+          <url>https://builds.apache.org/</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://repository.apache.org/service/local/staging/deploy/maven2</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>http://issues.apache.org/jira/browse/IO</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>http://mail-archives.apache.org/mod_mbox/commons-user/</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://git-wip-us.apache.org/repos/asf?p=commons-io.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.apache.commons/commons-compress@1.21?type=jar">
+      <publisher>The Apache Software Foundation</publisher>
+      <group>org.apache.commons</group>
+      <name>commons-compress</name>
+      <version>1.21</version>
+      <description>Apache Commons Compress software defines an API for working with
+compression and archive formats.  These include: bzip2, gzip, pack200,
+lzma, xz, Snappy, traditional Unix Compress, DEFLATE, DEFLATE64, LZ4,
+Brotli, Zstandard and ar, cpio, jar, tar, zip, dump, 7z, arj.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">2a713d10331bc4e13459a3dc0463f16f</hash>
+        <hash alg="SHA-1">4ec95b60d4e86b5c95a0e919cb172a0af98011ef</hash>
+        <hash alg="SHA-256">6aecfd5459728a595601cfa07258d131972ffc39b492eb48bdd596577a2f244a</hash>
+        <hash alg="SHA-512">c92d9a12547aab475e057955ad815fdfe92ff44c78383fa5af54b089f1bff5525126ef6aef93334f3bfc22e2fef4ad0d969f69384e978a83a55f011a53e7e471</hash>
+        <hash alg="SHA-384">da56f95d420cd7278cee646f4cd0e7a5ee12b6a2894efaec12f0ff7b56c3d43e5db736fe1ed66ff91118b16f2d64ebef</hash>
+        <hash alg="SHA3-384">6d3dc0198dd523a49fa94e054841aece853577b5c3ea1029fc288ad9ff580ab1b65ea99ddbe58c42125054e8c43be461</hash>
+        <hash alg="SHA3-256">37d4a014b50393793d35c70431bd8a1842c197d854c6f174dfa946b9edc2b841</hash>
+        <hash alg="SHA3-512">61609f60746406a7cb1ef3f979488beca6674fde208c9025d3fdee115de4767e8a4a1ee38f5bf79ac0104505ddb3558f1feeba5e318d6545647120ac60db6b89</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.apache.commons/commons-compress@1.21?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://commons.apache.org/proper/commons-compress/</url>
+        </reference>
+        <reference type="build-system">
+          <url>https://builds.apache.org/</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://repository.apache.org/service/local/staging/deploy/maven2</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>https://issues.apache.org/jira/browse/COMPRESS</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>https://mail-archives.apache.org/mod_mbox/commons-user/</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://gitbox.apache.org/repos/asf?p=commons-compress.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.iq80.snappy/snappy@0.4?type=jar">
+      <group>org.iq80.snappy</group>
+      <name>snappy</name>
+      <version>0.4</version>
+      <description>Port of Snappy to Java</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">f0792d1dbe7f90d8b34c7c19961e0073</hash>
+        <hash alg="SHA-1">a42b2d92a89efd35bb14738000dabcac6bd07a8d</hash>
+        <hash alg="SHA-256">46a0c87d504ce9d6063e1ff6e4d20738feb49d8abf85b5071a7d18df4f11bac9</hash>
+        <hash alg="SHA-512">dfd2559bf0388c6f1987d1393497a423203b2a72febbe648b3429e4d07b47a504797228e6e4e39a94c6800c5d3df8d3792863a3b841e6e8f65cfdcda91b6f0ab</hash>
+        <hash alg="SHA-384">7b5feeb0f1ee3fd3f5cd17c5ea31a75cdd060e7beaa1773474727711c308d2cf5b900b5717965afe8c14912e33c41538</hash>
+        <hash alg="SHA3-384">d96d486687e858c1ebe1fadbd731d33e0233922eee703f1a4e36e68fa1dcc527cdcc4fae8fc91894ebeada2a1214606e</hash>
+        <hash alg="SHA3-256">cf1b329b3f46891dc9e86fe9c6350a023dc0cb411739d2fd9d35490dfa8397aa</hash>
+        <hash alg="SHA3-512">3a8584d15b63d4c371fed5b615f7a121fe2530d35d234b2caa499c53e7c558376ed22d289828276fbc77cd7c1311ba4d6c1af03edf08c5f051d5b674f01e6120</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+          <url>https://www.apache.org/licenses/LICENSE-2.0</url>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.iq80.snappy/snappy@0.4?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://github.com/dain/snappy</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </reference>
+        <reference type="vcs">
+          <url>http://github.com/dain/snapy/tree/master</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/junit/junit@4.13.2?type=jar">
+      <publisher>JUnit</publisher>
+      <group>junit</group>
+      <name>junit</name>
+      <version>4.13.2</version>
+      <description>JUnit is a unit testing framework for Java, created by Erich Gamma and Kent Beck.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">d98a9a02a99a9acd22d7653cbcc1f31f</hash>
+        <hash alg="SHA-1">8ac9e16d933b6fb43bc7f576336b8f4d7eb5ba12</hash>
+        <hash alg="SHA-256">8e495b634469d64fb8acfa3495a065cbacc8a0fff55ce1e31007be4c16dc57d3</hash>
+        <hash alg="SHA-512">a31b9950f929a7e5a600d89787ef40e42a8a8e2392e210d0c0f45b3572937670a18a524f1815508cd1152cd1eaa7275cb7430ba45c053be365c83c231bccd3f0</hash>
+        <hash alg="SHA-384">9f85c56a77c699eb87630b9e8224068a34c296bcd9aadb52248dd4665036f5bf1048fe75e5cb590b59e7855ca716acae</hash>
+        <hash alg="SHA3-384">590cfd9396424583879ca8ad732870406bab18325ac72fb2bbe188b9611278d6341700badf7cfc32525b8ff42900c905</hash>
+        <hash alg="SHA3-256">a06b3fd2fd1d9f4306b58125484e3605a395afe5ffe2c801e43ae462f366a430</hash>
+        <hash alg="SHA3-512">a6d25ce3c14f9065f06dfd0e68e1dad5c03bd5de0a302c44ca4733d2cb87ec1bc6f0abd36d65aeee8caf328b6881432c4b682fa4b4b1fa931c3c950de5129fb2</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>EPL-1.0</id>
+          <url>http://www.eclipse.org/legal/epl-v10.html</url>
+        </license>
+      </licenses>
+      <purl>pkg:maven/junit/junit@4.13.2?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://junit.org</url>
+        </reference>
+        <reference type="build-system">
+          <url>https://github.com/junit-team/junit4/actions</url>
+        </reference>
+        <reference type="distribution">
+          <url>https://github.com/junit-team/junit4/wiki/Download-and-Install</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>https://github.com/junit-team/junit4/issues</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/junit-team/junit4</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.hamcrest/hamcrest-core@1.3?type=jar">
+      <group>org.hamcrest</group>
+      <name>hamcrest-core</name>
+      <version>1.3</version>
+      <description>This is the core API of hamcrest matcher framework to be used by third-party framework providers. This includes the a foundation set of matcher implementations for common operations.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">6393363b47ddcbba82321110c3e07519</hash>
+        <hash alg="SHA-1">42a25dc3219429f0e5d060061f71acb49bf010a0</hash>
+        <hash alg="SHA-256">66fdef91e9739348df7a096aa384a5685f4e875584cce89386a7a47251c4d8e9</hash>
+        <hash alg="SHA-512">e237ae735aac4fa5a7253ec693191f42ef7ddce384c11d29fbf605981c0be077d086757409acad53cb5b9e53d86a07cc428d459ff0f5b00d32a8cbbca390be49</hash>
+        <hash alg="SHA-384">4b5297d2a12cc32b824153afc83f1ba9f1869ca288330f0a2f759659d09e4c420eb6ba4a1efbfa0657b625edd41293d5</hash>
+        <hash alg="SHA3-384">b14d34985c0a78cf0ba19b5a18bffd403e08adcb2afde228ddef6e16121c7046dbebf58c04d3419311c4496c48aa93be</hash>
+        <hash alg="SHA3-256">f679af77deedf69b3c3066f7916583848c6fd32a950f9c0b0e2ef1da121717ba</hash>
+        <hash alg="SHA3-512">bca821931e438a1977b7b4356b5f8cebf485634f82159d505c48267c34e6a0f4fde9c2917331365f66dc0e52e2ca3a2db5256863584110c27ecebefc28741f63</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>BSD-3-Clause</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.hamcrest/hamcrest-core@1.3?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/hamcrest/JavaHamcrest/hamcrest-core</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/hamcrest/JavaHamcrest/hamcrest-core</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.google.code.findbugs/jsr305@3.0.2?type=jar">
+      <group>com.google.code.findbugs</group>
+      <name>jsr305</name>
+      <version>3.0.2</version>
+      <description>JSR305 Annotations for Findbugs</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">dd83accb899363c32b07d7a1b2e4ce40</hash>
+        <hash alg="SHA-1">25ea2e8b0c338a877313bd4672d3fe056ea78f0d</hash>
+        <hash alg="SHA-256">766ad2a0783f2687962c8ad74ceecc38a28b9f72a2d085ee438b7813e928d0c7</hash>
+        <hash alg="SHA-512">bb09db62919a50fa5b55906013be6ca4fc7acb2e87455fac5eaf9ede2e41ce8bbafc0e5a385a561264ea4cd71bbbd3ef5a45e02d63277a201d06a0ae1636f804</hash>
+        <hash alg="SHA-384">ca0b169d3eb2d0922dc031133a021f861a043bb3e405a88728215fd6ff00fa52fdc7347842dcc2031472e3726164bdc4</hash>
+        <hash alg="SHA3-384">9903fd7505218999f8262efedb3d935d64bcef84aae781064ab5e1b24755466b269517cada562fa140cd1d417ede57a1</hash>
+        <hash alg="SHA3-256">223fda9a89a461afaae73b177a2dc20ed4a90f2f8757f5c65f3241b0510f00ff</hash>
+        <hash alg="SHA3-512">3996b5af57a5d5c6a0cd62b11773360fb051dd86a2ba968476806a2a5d32049b82d69a24a3c694e8fe4d735be6a28e41000cc500cc2a9fb577e058045855d2d6</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/com.google.code.findbugs/jsr305@3.0.2?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://findbugs.sourceforge.net/</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://code.google.com/p/jsr-305/</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.tukaani/xz@1.9?type=jar">
+      <group>org.tukaani</group>
+      <name>xz</name>
+      <version>1.9</version>
+      <description>XZ data compression</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">57c2fbfeb55e307ccae52e5322082e02</hash>
+        <hash alg="SHA-1">1ea4bec1a921180164852c65006d928617bd2caf</hash>
+        <hash alg="SHA-256">211b306cfc44f8f96df3a0a3ddaf75ba8c5289eed77d60d72f889bb855f535e5</hash>
+        <hash alg="SHA-512">a4362db234d4e83683e90f5baf90c82107450cc4404acab96e3fab14b8a3d4588a19722171d32f27d18463682a6994cad9af0b1065c954e3a77ea7bdcf586bac</hash>
+        <hash alg="SHA-384">aa30349b094723369908369a18e2cb5beb5b7ca0b24b4d56c2f5725fae152220f6526466672b22bfec939e2e0622a01d</hash>
+        <hash alg="SHA3-384">b3e1fee7784188df5e1931c9e8137ac0e20e63f66f93e7f938a448fc0b3adb4be5205c7a5f1835007e233fee2696fc2c</hash>
+        <hash alg="SHA3-256">92eff603ed0aab557e1a45e17a74e80d8ec656b5f137197b23c429c903fa448f</hash>
+        <hash alg="SHA3-512">b290f92958f8cd91705331d8411140c23957ab8b568fbe19a70f4f1dc97eddc13d3a200df28a02ab5911ce18f546c33f720878be0f727edac839a6e63ee66ece</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <name>Public Domain</name>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.tukaani/xz@1.9?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://tukaani.org/xz/java.html</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://git.tukaani.org/?p=xz-java.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+  </components>
+  <dependencies>
+    <dependency ref="pkg:maven/org.codehaus.plexus/plexus-archiver@4.2.7?type=jar">
+      <dependency ref="pkg:maven/org.codehaus.plexus/plexus-container-default@1.0-alpha-30?type=jar"/>
+      <dependency ref="pkg:maven/org.codehaus.plexus/plexus-utils@3.4.1?type=jar"/>
+      <dependency ref="pkg:maven/org.codehaus.plexus/plexus-io@3.2.0?type=jar"/>
+      <dependency ref="pkg:maven/org.apache.commons/commons-compress@1.21?type=jar"/>
+      <dependency ref="pkg:maven/org.iq80.snappy/snappy@0.4?type=jar"/>
+      <dependency ref="pkg:maven/com.google.code.findbugs/jsr305@3.0.2?type=jar"/>
+      <dependency ref="pkg:maven/org.tukaani/xz@1.9?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.codehaus.plexus/plexus-container-default@1.0-alpha-30?type=jar">
+      <dependency ref="pkg:maven/org.codehaus.plexus/plexus-utils@3.4.1?type=jar"/>
+      <dependency ref="pkg:maven/org.codehaus.plexus/plexus-classworlds@1.2-alpha-9?type=jar"/>
+      <dependency ref="pkg:maven/junit/junit@4.13.2?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.codehaus.plexus/plexus-utils@3.4.1?type=jar"/>
+    <dependency ref="pkg:maven/org.codehaus.plexus/plexus-classworlds@1.2-alpha-9?type=jar">
+      <dependency ref="pkg:maven/junit/junit@4.13.2?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/junit/junit@4.13.2?type=jar">
+      <dependency ref="pkg:maven/org.hamcrest/hamcrest-core@1.3?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.hamcrest/hamcrest-core@1.3?type=jar"/>
+    <dependency ref="pkg:maven/org.codehaus.plexus/plexus-io@3.2.0?type=jar">
+      <dependency ref="pkg:maven/org.codehaus.plexus/plexus-utils@3.4.1?type=jar"/>
+      <dependency ref="pkg:maven/commons-io/commons-io@2.6?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/commons-io/commons-io@2.6?type=jar"/>
+    <dependency ref="pkg:maven/org.apache.commons/commons-compress@1.21?type=jar"/>
+    <dependency ref="pkg:maven/org.iq80.snappy/snappy@0.4?type=jar"/>
+    <dependency ref="pkg:maven/com.google.code.findbugs/jsr305@3.0.2?type=jar"/>
+    <dependency ref="pkg:maven/org.tukaani/xz@1.9?type=jar"/>
+  </dependencies>
+</bom>
