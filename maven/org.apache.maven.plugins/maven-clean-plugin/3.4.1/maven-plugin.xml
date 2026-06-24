@@ -30,8 +30,8 @@
       <version>3.4.1</version>
       <description>The Maven Clean Plugin is a plugin that removes files generated at build-time in a project's directory.</description>
       <hashes>
-        <hash alg="MD5">c758840e5b5e843ce55e44c40eb96562</hash>
-        <hash alg="SHA-1">e56dac20158d3ac574779af4eadd34cae6fe2b55</hash>
+        <hash alg="MD5">6e918fb29a89145feb61ace98a9103e4</hash>
+        <hash alg="SHA-1">fffb9042d3acb3ce562aba06cabf95dac1fdcb1d</hash>
       </hashes>
       <licenses>
         <license>
