@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bom serialNumber="urn:uuid:1cea6255-11e5-31e7-8adf-9bc94ed584b6" version="1" xmlns="http://cyclonedx.org/schema/bom/1.6">
+  <metadata>
+    <timestamp>2026-06-24T15:38:18Z</timestamp>
+    <lifecycles>
+      <lifecycle>
+        <phase>build</phase>
+      </lifecycle>
+    </lifecycles>
+    <tools>
+      <components>
+        <component type="library">
+          <author>OWASP Foundation</author>
+          <group>org.cyclonedx</group>
+          <name>cyclonedx-maven-plugin</name>
+          <version>2.9.2</version>
+          <description>CycloneDX Maven plugin</description>
+          <hashes>
+            <hash alg="MD5">843a7130400f75d33f563dc7e9f52dea</hash>
+            <hash alg="SHA-1">2cac5a176b9f48801dfc4910d4f6a34bfbb13445</hash>
+            <hash alg="SHA-256">d9e5a12bac3c1a91d85f3a1ad84307099f457ff24aa65b438ba7de9ca784a54e</hash>
+            <hash alg="SHA-512">636f788518752c5a23d14bad41d68b0d549e4b3a3d720d66f2f6e2b8b956207942ee12abba968a1e9aac6cf1d78d9e738a4a75eeb8bc6fca2377030fbb482407</hash>
+            <hash alg="SHA-384">72aad41633b92fadd4dbd1c6f5c1b956836b22d3b96afbdd7ca8b8eb0456eec00c2ed658e3c2d4e93d95048bcc23dac8</hash>
+            <hash alg="SHA3-384">9837cee0f9b7d575f8d88df3ad6f58a075032ad2635e0987abbc102240327f1cec87dc062b3034009f028ab5baf988f9</hash>
+            <hash alg="SHA3-256">4c654267cde6eb6d295dbc06b33e33528412bee57549dae89c85b8df8202dbcb</hash>
+            <hash alg="SHA3-512">f7da73632ef2fd1c2d85f0cf5eebc2b6a3ff1ae2ed0945442e679da71490562a2ff6b67422dbd5285f4042eda6637e6f3544f62825a625b38efacfdebc8df137</hash>
+          </hashes>
+        </component>
+      </components>
+    </tools>
+    <component type="library" bom-ref="pkg:maven/org.apache.commons/commons-text@1.3?type=jar">
+      <publisher>The Apache Software Foundation</publisher>
+      <group>org.apache.commons</group>
+      <name>commons-text</name>
+      <version>1.3</version>
+      <description>Apache Commons Text is a library focused on algorithms working on strings.</description>
+      <hashes>
+        <hash alg="MD5">e12b93c4a7fa6326e8afe557243c8651</hash>
+        <hash alg="SHA-1">9abf61708a66ab5e55f6169a200dbfc584b546d9</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.apache.commons/commons-text@1.3?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://commons.apache.org/proper/commons-text/</url>
+        </reference>
+        <reference type="build-system">
+          <url>https://builds.apache.org/</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://repository.apache.org/service/local/staging/deploy/maven2</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>http://issues.apache.org/jira/browse/TEXT</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>http://mail-archives.apache.org/mod_mbox/commons-user/</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://git-wip-us.apache.org/repos/asf?p=commons-text.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <properties>
+      <property name="maven.goal">makeAggregateBom</property>
+      <property name="maven.scopes">compile,provided,runtime,system</property>
+    </properties>
+  </metadata>
+  <components>
+    <component type="library" bom-ref="pkg:maven/org.apache.commons/commons-lang3@3.7?type=jar">
+      <publisher>The Apache Software Foundation</publisher>
+      <group>org.apache.commons</group>
+      <name>commons-lang3</name>
+      <version>3.7</version>
+      <description>Apache Commons Lang, a package of Java utility classes for the
+  classes that are in java.lang's hierarchy, or are considered to be so
+  standard as to justify existence in java.lang.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">f1df5623d78c432b7c3d58ff491e1801</hash>
+        <hash alg="SHA-1">557edd918fd41f9260963583ebf5a61a43a6b423</hash>
+        <hash alg="SHA-256">6e8dc31e046508d9953c96534edf0c2e0bfe6f468966b5b842b3f87e43b6a847</hash>
+        <hash alg="SHA-512">bfd3b6b849f7af97a337b5884bf4d0f610753dad6ca0d95e84457cd47b0b1f2a614219632ef2283ec7da0725c49ae653c8c1c1f24186cb97db31313889b0ab08</hash>
+        <hash alg="SHA-384">328d948baea86d2d5d25003572fab503824ddf54ba7fc597e63950b7d69d890f53dbd7c0a2e040a5b9f632dd6a02793c</hash>
+        <hash alg="SHA3-384">5f70c9add052feb5b2f1bda8c45b6b636d3963b23c4f8d3d6125e4c12f5ab4d1b91b2eebcbe8720e4a2956373e4bcadb</hash>
+        <hash alg="SHA3-256">ad204ee2bb225a65a37508fea3a2c3229b9d869e0f6f07c219cb10d7b0b6a936</hash>
+        <hash alg="SHA3-512">075a8fe8e4c9c8ebf7628fb473e80fd04aea1f57d0b3d76382ce30f0189c09f8b863887c71c6e9c4498fb05bc92b0f4b8c800727d7d9d5d3112673bcfb948436</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.apache.commons/commons-lang3@3.7?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://commons.apache.org/proper/commons-lang/</url>
+        </reference>
+        <reference type="build-system">
+          <url>https://builds.apache.org/</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://repository.apache.org/service/local/staging/deploy/maven2</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>http://issues.apache.org/jira/browse/LANG</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>http://mail-archives.apache.org/mod_mbox/commons-user/</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://git-wip-us.apache.org/repos/asf?p=commons-lang.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+  </components>
+  <dependencies>
+    <dependency ref="pkg:maven/org.apache.commons/commons-text@1.3?type=jar">
+      <dependency ref="pkg:maven/org.apache.commons/commons-lang3@3.7?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.apache.commons/commons-lang3@3.7?type=jar"/>
+  </dependencies>
+</bom>
