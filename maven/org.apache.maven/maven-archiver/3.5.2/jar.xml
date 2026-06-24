@@ -1,0 +1,1685 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bom serialNumber="urn:uuid:3f4a45a6-6027-350b-b567-1bbbca0a5ca1" version="1" xmlns="http://cyclonedx.org/schema/bom/1.6">
+  <metadata>
+    <lifecycles>
+      <lifecycle>
+        <phase>build</phase>
+      </lifecycle>
+    </lifecycles>
+    <tools>
+      <components>
+        <component type="library">
+          <author>OWASP Foundation</author>
+          <group>org.cyclonedx</group>
+          <name>cyclonedx-maven-plugin</name>
+          <version>2.9.2</version>
+          <description>CycloneDX Maven plugin</description>
+          <hashes>
+            <hash alg="MD5">843a7130400f75d33f563dc7e9f52dea</hash>
+            <hash alg="SHA-1">2cac5a176b9f48801dfc4910d4f6a34bfbb13445</hash>
+            <hash alg="SHA-256">d9e5a12bac3c1a91d85f3a1ad84307099f457ff24aa65b438ba7de9ca784a54e</hash>
+            <hash alg="SHA-512">636f788518752c5a23d14bad41d68b0d549e4b3a3d720d66f2f6e2b8b956207942ee12abba968a1e9aac6cf1d78d9e738a4a75eeb8bc6fca2377030fbb482407</hash>
+            <hash alg="SHA-384">72aad41633b92fadd4dbd1c6f5c1b956836b22d3b96afbdd7ca8b8eb0456eec00c2ed658e3c2d4e93d95048bcc23dac8</hash>
+            <hash alg="SHA3-384">9837cee0f9b7d575f8d88df3ad6f58a075032ad2635e0987abbc102240327f1cec87dc062b3034009f028ab5baf988f9</hash>
+            <hash alg="SHA3-256">4c654267cde6eb6d295dbc06b33e33528412bee57549dae89c85b8df8202dbcb</hash>
+            <hash alg="SHA3-512">f7da73632ef2fd1c2d85f0cf5eebc2b6a3ff1ae2ed0945442e679da71490562a2ff6b67422dbd5285f4042eda6637e6f3544f62825a625b38efacfdebc8df137</hash>
+          </hashes>
+        </component>
+      </components>
+    </tools>
+    <component type="library" bom-ref="pkg:maven/org.apache.maven/maven-archiver@3.5.2?type=jar">
+      <publisher>The Apache Software Foundation</publisher>
+      <group>org.apache.maven</group>
+      <name>maven-archiver</name>
+      <version>3.5.2</version>
+      <description>Provides utility methods for creating JARs and other archive files from a Maven project.</description>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <hashes>
+        <hash alg="MD5">880127ba320c005e0bd7db2f71390463</hash>
+        <hash alg="SHA-1">85d6e016fe2cee7f2fbc3294f68780c3bf59d443</hash>
+      </hashes>
+      <purl>pkg:maven/org.apache.maven/maven-archiver@3.5.2?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://maven.apache.org/shared/maven-archiver/</url>
+        </reference>
+        <reference type="build-system">
+          <url>https://ci-builds.apache.org/job/Maven/job/maven-box/job/maven-archiver/</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://repository.apache.org/service/local/staging/deploy/maven2</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>https://issues.apache.org/jira/issues/?jql=project%3DMSHARED+AND+component%3Dmaven-archiver</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>https://lists.apache.org/list.html?users@maven.apache.org</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/apache/maven-archiver/tree/maven-archiver-3.5.2</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <properties>
+      <property name="maven.goal">makeAggregateBom</property>
+      <property name="maven.scopes">compile,provided,runtime,system</property>
+      <property name="cdx:reproducible">enabled</property>
+    </properties>
+  </metadata>
+  <components>
+    <component type="library" bom-ref="pkg:maven/org.apache.maven/maven-artifact@3.1.1?type=jar">
+      <publisher>The Apache Software Foundation</publisher>
+      <group>org.apache.maven</group>
+      <name>maven-artifact</name>
+      <version>3.1.1</version>
+      <description>Maven is a software build management and
+    comprehension tool. Based on the concept of a project object model:
+    builds, dependency management, documentation creation, site
+    publication, and distribution publication are all controlled from
+    the declarative file. Maven can be extended by plugins to utilise a
+    number of other development tools for reporting or the build
+    process.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">32f4cdfe73cccb1af3e5624a2406431c</hash>
+        <hash alg="SHA-1">dbd94f0744545e17caa51db6fc493fc736361837</hash>
+        <hash alg="SHA-256">d0d8b67c283c804e792001bd063b1dc62418f7cf8524dbae401ba3fffd55238b</hash>
+        <hash alg="SHA-512">0d5975eaa9bcca7d2a958c6513ed33e4104104e4a2a0bec71fc74465dba5cd303b6bb62737ad6238bdceb4a9b224b9eb8da8f27628ee25bd8b2b996bef0aefb2</hash>
+        <hash alg="SHA-384">e3e6a671ff433cc16f028ae9fc5d5381fb8ecb6de534f4a1dbed81ffedf972554402a6a983b1063a26d35c8c979dc1a2</hash>
+        <hash alg="SHA3-384">9338fb143a277de7bedcdc931a062e15d19b97d22badb91eae12ac99d41bab7274981de0ac6686fd26ea153a4714167d</hash>
+        <hash alg="SHA3-256">0c50d180692c43b7f837596ebf32d95306301efde25b6ceb2dfd6367bbf816ad</hash>
+        <hash alg="SHA3-512">c2e875644b5787ae6c75bb5f57e6e7a4bfff8492683e14baebdc35c249031c80d205d30f39c9bec7f0d738ebd7ff6a07198953e2dd26c445b4a5e4a7e0a49d90</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.apache.maven/maven-artifact@3.1.1?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://maven.apache.org/ref/3.1.1/maven-artifact</url>
+        </reference>
+        <reference type="build-system">
+          <url>https://builds.apache.org/job/maven-3.x/</url>
+        </reference>
+        <reference type="distribution">
+          <url>http://maven.apache.org/download.html</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://repository.apache.org/service/local/staging/deploy/maven2</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>http://jira.codehaus.org/browse/MNG</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>http://mail-archives.apache.org/mod_mbox/maven-users</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/apache/maven/tree/maven-3.1.1/maven-artifact</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.apache.maven/maven-model@3.1.1?type=jar">
+      <publisher>The Apache Software Foundation</publisher>
+      <group>org.apache.maven</group>
+      <name>maven-model</name>
+      <version>3.1.1</version>
+      <description>Model for Maven POM (Project Object Model)</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">242061dd2741386ecef6fc26ef523215</hash>
+        <hash alg="SHA-1">ccf79a1a63ef35de038a4226a952175c4e9f4f59</hash>
+        <hash alg="SHA-256">e71bad235af182c43dfcaa9b649032352cf859f9d09f79e1f537268384176de1</hash>
+        <hash alg="SHA-512">60d9d4d4dce8eaac17eb0fb37b386d825faab461c1838f57de5db31f57b5eda845a8ec596d1595cbcd87a5cfbe47ce02566153f527da6b00a03646e7a0d6db0e</hash>
+        <hash alg="SHA-384">7e2904add9c2900ba7ab7da6eb9956beb246ead031fc2ddf4a06aa21c9a11e2a92982eb7e4133d2c299722876e5004f2</hash>
+        <hash alg="SHA3-384">cf460c1165d88699e0570ac98cf227ce767154cc70dfae5565c8bca40fe14c92c18fdadbb6ba58801af5010600a6899a</hash>
+        <hash alg="SHA3-256">b57d02b13d73a3c0f01879f6247c0267c76b6698cb833635078702cee93ed9c6</hash>
+        <hash alg="SHA3-512">4d5835796b7e0b4043689c1367157ac6070dafdd2bdb8571f889724014efb0f72079deb7ad959cad183794ba016bd74aee8733f7643dcb9ff3b354f4d71d1fe7</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.apache.maven/maven-model@3.1.1?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://maven.apache.org/ref/3.1.1/maven-model</url>
+        </reference>
+        <reference type="build-system">
+          <url>https://builds.apache.org/job/maven-3.x/</url>
+        </reference>
+        <reference type="distribution">
+          <url>http://maven.apache.org/download.html</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://repository.apache.org/service/local/staging/deploy/maven2</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>http://jira.codehaus.org/browse/MNG</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>http://mail-archives.apache.org/mod_mbox/maven-users</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/apache/maven/tree/maven-3.1.1/maven-model</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.apache.maven/maven-core@3.1.1?type=jar">
+      <publisher>The Apache Software Foundation</publisher>
+      <group>org.apache.maven</group>
+      <name>maven-core</name>
+      <version>3.1.1</version>
+      <description>Maven Core classes.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">f4c6ef84a6e712a1374b42139daa0784</hash>
+        <hash alg="SHA-1">ab7a9b58a1a4dec17facebda058d1da2a34871ff</hash>
+        <hash alg="SHA-256">40e7f78eecf682a4d395dab14049e7a948c58268aee97248d0a0a0332de668e9</hash>
+        <hash alg="SHA-512">c77f71c80593c7cebb262d56eb2ad5ad33ab0cf76aadc68d3f3139144f6fec819d74cb7cc1df34ad7d2d7a0b11e32f7882829b128af6c383153035ce5a6d3a8e</hash>
+        <hash alg="SHA-384">07b5a4c0cd38c88b83c91dbc949a5b7289d554bb232e5fc97a0907f026145cb75e01555ab3ef55ae5c9acac3e25e245c</hash>
+        <hash alg="SHA3-384">33d578925a481b0d4dac184a0c2f193b43a32188af2ed46ccfc300de60bafca4c22113de290d67a5d27e81f93620a1c5</hash>
+        <hash alg="SHA3-256">378c1cde19dc79263a21384973101fbb1b4c19654a4a09aff5d5771d047fdfe7</hash>
+        <hash alg="SHA3-512">134efae7a894660ee45cc33d10295152fa499ddcf4f6e7914bc4a7e871b737ba26f6c4ad4497845a707e00402ba1604732b6acee7abef7a447fbabbc47174ba7</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.apache.maven/maven-core@3.1.1?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://maven.apache.org/ref/3.1.1/maven-core</url>
+        </reference>
+        <reference type="build-system">
+          <url>https://builds.apache.org/job/maven-3.x/</url>
+        </reference>
+        <reference type="distribution">
+          <url>http://maven.apache.org/download.html</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://repository.apache.org/service/local/staging/deploy/maven2</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>http://jira.codehaus.org/browse/MNG</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>http://mail-archives.apache.org/mod_mbox/maven-users</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/apache/maven/tree/maven-3.1.1/maven-core</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.apache.maven/maven-settings@3.1.1?type=jar">
+      <publisher>The Apache Software Foundation</publisher>
+      <group>org.apache.maven</group>
+      <name>maven-settings</name>
+      <version>3.1.1</version>
+      <description>Maven Settings model.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">6c3d69b07dca9143cae8b63090ba7d1f</hash>
+        <hash alg="SHA-1">311d38cf15ec7f5c713985862632db91b7a827af</hash>
+        <hash alg="SHA-256">7fa1eb820cae20961a818650899b72cc79e76d560aa7aeef8b2259d3d639202f</hash>
+        <hash alg="SHA-512">6ab5baf31e5764bff85135a6bbaf07a7d56ca6707c435e97c536ca05baa0d34b6b79c63c81f0d9a5520a314230c6d6d282414b646dc38891f79e8b352b84bcb8</hash>
+        <hash alg="SHA-384">f8925d4c748a441e24d4de907f52232e51fff2bf9c46296d390ee35e8816f6d3078c9fae49fd58d8d567df2059e14b5a</hash>
+        <hash alg="SHA3-384">533c15afb4177caa2179ba9deb535bc5402a3d30f4c6745b3aa807f410386c4b53a3e5b71fb917cb0e8bb1e5cc06e65d</hash>
+        <hash alg="SHA3-256">70c7fc9daa27366ed8147c55fd0a803cc7dc6a0eb9d9f273f769403ed8a4f532</hash>
+        <hash alg="SHA3-512">33492027e2fbb098bc8f9c0c7c5bdee9272d952884cabb8327e35a0a8e6fee36168561420710208ccbc08dd1da83a4a289a389f9b9c1b07dc3a4d3821be37361</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.apache.maven/maven-settings@3.1.1?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://maven.apache.org/ref/3.1.1/maven-settings</url>
+        </reference>
+        <reference type="build-system">
+          <url>https://builds.apache.org/job/maven-3.x/</url>
+        </reference>
+        <reference type="distribution">
+          <url>http://maven.apache.org/download.html</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://repository.apache.org/service/local/staging/deploy/maven2</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>http://jira.codehaus.org/browse/MNG</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>http://mail-archives.apache.org/mod_mbox/maven-users</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/apache/maven/tree/maven-3.1.1/maven-settings</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.apache.maven/maven-settings-builder@3.1.1?type=jar">
+      <publisher>The Apache Software Foundation</publisher>
+      <group>org.apache.maven</group>
+      <name>maven-settings-builder</name>
+      <version>3.1.1</version>
+      <description>The effective settings builder, with inheritance and password decryption.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">78e94e8af3ebba1b54e06dc30f3a499d</hash>
+        <hash alg="SHA-1">e2d5e96ea4bbd4fc463dbb76d07dd8aefac05e3c</hash>
+        <hash alg="SHA-256">cdc8e2653971b0303dbbfce0c1d1b3a7591c128cd7d6fda9f18831f1a2bd5d0b</hash>
+        <hash alg="SHA-512">0ad4262075d08c1a48bc5c6a9f75acf5ce91069a265319b360839f2db3149f73bfe83431993ebcf122d366123e1b6490853a6c52a3d8578e120aa587ce7a6554</hash>
+        <hash alg="SHA-384">4da0607029dda900ae397520bcef3243537bc32153c05cf46b5b1a136a92e8d5ac56b9da8cd23aad2ad053d8d94f00ca</hash>
+        <hash alg="SHA3-384">e91cea865612573adc4a353eb4f60a753b523818b6be2614a414b64b36dda5bcd4a6e535f301c61a1a620f2ca5c53972</hash>
+        <hash alg="SHA3-256">d4a6ab1d1e213f21f3c7ddbf29ebb837a2cacb558ee87fc87250cbfdd140cac4</hash>
+        <hash alg="SHA3-512">89a835b9866e52e3796bf74f9783e5a8f31bfbdf7e6f881ca56e0fed39a337ac577da21b8f1879835a80306e530c32f7e05bd8c1437a852110331669a12f2614</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.apache.maven/maven-settings-builder@3.1.1?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://maven.apache.org/ref/3.1.1/maven-settings-builder</url>
+        </reference>
+        <reference type="build-system">
+          <url>https://builds.apache.org/job/maven-3.x/</url>
+        </reference>
+        <reference type="distribution">
+          <url>http://maven.apache.org/download.html</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://repository.apache.org/service/local/staging/deploy/maven2</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>http://jira.codehaus.org/browse/MNG</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>http://mail-archives.apache.org/mod_mbox/maven-users</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/apache/maven/tree/maven-3.1.1/maven-settings-builder</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.apache.maven/maven-repository-metadata@3.1.1?type=jar">
+      <publisher>The Apache Software Foundation</publisher>
+      <group>org.apache.maven</group>
+      <name>maven-repository-metadata</name>
+      <version>3.1.1</version>
+      <description>Per-directory local and remote repository metadata.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">04ac2c679942b4e4d6140dcbad09c153</hash>
+        <hash alg="SHA-1">ef5bccf2a7a22a326c8fe94e1d56f6f15419bedd</hash>
+        <hash alg="SHA-256">820e45f0fd150a02ea02a6fc246852e61c725fd69bdac8f6186bb00f19dc7640</hash>
+        <hash alg="SHA-512">36416dc6ed274b04e353fc6cd4c913498f07c3296b6a13f59b29258c553487ad8ed0dc1c4b9265f4df73035c1e2ffa3cc32444cd10e2a6602d7a86c911fc9eff</hash>
+        <hash alg="SHA-384">12502fc008ee58f8e4ec09af42b3ba17dbc6ad44eaecabee788fbbd454a2a655f30fbba82c3cef65f3561359ef65ac8a</hash>
+        <hash alg="SHA3-384">b36fa40990cfadd7d5ec3bf8af4d9907fcc60ed88db4e2420da420cacc2673a746a270428c4a45a845f87d3783d5b774</hash>
+        <hash alg="SHA3-256">5fa8a7ae17cc44d321c127b93af2d82742206a8ac0cb627731d2efd5920ee524</hash>
+        <hash alg="SHA3-512">f0e8d361b3ad0f2d4ea1b6ebdebcfc54578f789034117abd0066cf217a85370326aed63861a2f09d78227359a9e9ee8cd3c851aadb3abda2e9b6a3a92fb17854</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.apache.maven/maven-repository-metadata@3.1.1?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://maven.apache.org/ref/3.1.1/maven-repository-metadata</url>
+        </reference>
+        <reference type="build-system">
+          <url>https://builds.apache.org/job/maven-3.x/</url>
+        </reference>
+        <reference type="distribution">
+          <url>http://maven.apache.org/download.html</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://repository.apache.org/service/local/staging/deploy/maven2</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>http://jira.codehaus.org/browse/MNG</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>http://mail-archives.apache.org/mod_mbox/maven-users</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/apache/maven/tree/maven-3.1.1/maven-repository-metadata</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.apache.maven/maven-plugin-api@3.1.1?type=jar">
+      <publisher>The Apache Software Foundation</publisher>
+      <group>org.apache.maven</group>
+      <name>maven-plugin-api</name>
+      <version>3.1.1</version>
+      <description>The API for plugins - Mojos - development.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">0f0d7bc9468f3c41463a539051e72d8d</hash>
+        <hash alg="SHA-1">3836a4ea31ca2d1531aa250127bc17e6e876d658</hash>
+        <hash alg="SHA-256">21955fd1f1f4527a9d6d2d23e3c1255333257db9f95ae6d47ddfe9aa90ed48bc</hash>
+        <hash alg="SHA-512">8d22c900adc010709f04cda9613577c2f8060a78a4ab3d07275d9dc5c815c45443106ce1f62eabf9ecf3c8ca8ada1fb04d9d4aada3444113f85204408edeb29b</hash>
+        <hash alg="SHA-384">cfb50d534502805c93096afc29e7dbed257094e3fba4965339d5614b251c09fd031d4bbeeed786b6d69a51fd25dcad0f</hash>
+        <hash alg="SHA3-384">c67473966ce19c4dc70a79375766ca35e436eabdf4599e93c23ed9354edf04a5f3bbaa632d1e3ad77be9bbfe5632026c</hash>
+        <hash alg="SHA3-256">b4ca460e4e20047150577717d46761814a86a6bc5cb934be7d25bc73a790f75e</hash>
+        <hash alg="SHA3-512">b631f2dec2c5c8b3ff5bfd3f7b528747717f125ae46481e3c99f3d5305eab84d7cb5f28d0c9f2134a2aa897c2e59172ccc5e7bd45b12322d91364152e251fc80</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.apache.maven/maven-plugin-api@3.1.1?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://maven.apache.org/ref/3.1.1/maven-plugin-api</url>
+        </reference>
+        <reference type="build-system">
+          <url>https://builds.apache.org/job/maven-3.x/</url>
+        </reference>
+        <reference type="distribution">
+          <url>http://maven.apache.org/download.html</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://repository.apache.org/service/local/staging/deploy/maven2</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>http://jira.codehaus.org/browse/MNG</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>http://mail-archives.apache.org/mod_mbox/maven-users</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/apache/maven/tree/maven-3.1.1/maven-plugin-api</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.apache.maven/maven-model-builder@3.1.1?type=jar">
+      <publisher>The Apache Software Foundation</publisher>
+      <group>org.apache.maven</group>
+      <name>maven-model-builder</name>
+      <version>3.1.1</version>
+      <description>The effective model builder, with inheritance, profile activation, interpolation, ...</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">7447b3f33c6201f92dedbf5b4059bb4c</hash>
+        <hash alg="SHA-1">5fb53c92da84ebeff403414b667611d6bcd477cf</hash>
+        <hash alg="SHA-256">a4edbd8a8c0a6724c25200f71df3407a0b400a4f15c4999d058ee6aaac04ec73</hash>
+        <hash alg="SHA-512">439375f446771f82ffbba1080ab05a8e892086813fc2acd4d8778b16d2bd755f3efadd60a7beee4600fe2729ecc44cd1f7b65c860c601adbd49a5c3e749b7a68</hash>
+        <hash alg="SHA-384">ed680bf87c1cb333463a3eeb6eafa15468393124346b67312bf47a48503979186170ccf8a998b6f591918485de65b1a5</hash>
+        <hash alg="SHA3-384">9b0a526803992146c73e66eedccf4370e87e23e5930b18981476c2269be08a71cd2b4e072e11c3d04795a259283ae32a</hash>
+        <hash alg="SHA3-256">893828fad964d4fdc3e662beb93b6751cc396ac010e71958925e406c08262ba7</hash>
+        <hash alg="SHA3-512">4041799bc8c7672e37282bffc41f57c374982a0dfb0ca2a2272938366d5f56be70934114704eb10547351c377060df254c3117a1473e13e4a3a3c9b5cb761825</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.apache.maven/maven-model-builder@3.1.1?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://maven.apache.org/ref/3.1.1/maven-model-builder</url>
+        </reference>
+        <reference type="build-system">
+          <url>https://builds.apache.org/job/maven-3.x/</url>
+        </reference>
+        <reference type="distribution">
+          <url>http://maven.apache.org/download.html</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://repository.apache.org/service/local/staging/deploy/maven2</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>http://jira.codehaus.org/browse/MNG</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>http://mail-archives.apache.org/mod_mbox/maven-users</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/apache/maven/tree/maven-3.1.1/maven-model-builder</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.apache.maven/maven-aether-provider@3.1.1?type=jar">
+      <publisher>The Apache Software Foundation</publisher>
+      <group>org.apache.maven</group>
+      <name>maven-aether-provider</name>
+      <version>3.1.1</version>
+      <description>Extensions to Aether for utilizing Maven POM and repository metadata.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">007a9dcc3298c0869477110a36099313</hash>
+        <hash alg="SHA-1">7fd8a65d950d0e77dd39cc4ce2776ff9673ae470</hash>
+        <hash alg="SHA-256">db89b9a2738d42ee05ec2279c2114bfe4f7e33b3aae3a6ca9bfe4fe9196f9ad8</hash>
+        <hash alg="SHA-512">778491dc7a0a51d4bef51606f1071acc2de673fb59700f2b6e096d06553326ac0495f0692da4ea6cee4eac605136da7e751fdb215b842ca63e4ba3f7bd836a01</hash>
+        <hash alg="SHA-384">2c7b8aa3cc6d37593e255b71ed412eac52eed77f49f50c72932e8ebce372b56e7591d09d5fcad1fb00330e58cd069b7f</hash>
+        <hash alg="SHA3-384">3109e91dc37d3b26d98f4454843844ffb9311f2da48a45d39242358b8c98289e05b0f36e1fbd13c75d171a76e4b2ae16</hash>
+        <hash alg="SHA3-256">4660427a93dd875183786f52b1e3392894a30876e2a2fcf10cdd9725e9bf9221</hash>
+        <hash alg="SHA3-512">4916738e7aadbe0e70c6dfcf2578369ef4143db10d45796c80655fd37fffdd8cb7a492799fc31419c770cacff1b300c9090b010bf1887fd126eb8a7ae046a059</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.apache.maven/maven-aether-provider@3.1.1?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://maven.apache.org/ref/3.1.1/maven-aether-provider</url>
+        </reference>
+        <reference type="build-system">
+          <url>https://builds.apache.org/job/maven-3.x/</url>
+        </reference>
+        <reference type="distribution">
+          <url>http://maven.apache.org/download.html</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://repository.apache.org/service/local/staging/deploy/maven2</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>http://jira.codehaus.org/browse/MNG</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>http://mail-archives.apache.org/mod_mbox/maven-users</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/apache/maven/tree/maven-3.1.1/maven-aether-provider</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.eclipse.aether/aether-spi@0.9.0.M2?type=jar">
+      <publisher>The Eclipse Foundation</publisher>
+      <group>org.eclipse.aether</group>
+      <name>aether-spi</name>
+      <version>0.9.0.M2</version>
+      <description>The service provider interface for repository system implementations and repository connectors.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">552d54d8bb3691eedd831b50bb87c309</hash>
+        <hash alg="SHA-1">3647d00620a91360990c9680f29fbcc22d69c2ee</hash>
+        <hash alg="SHA-256">b7b78090d4e708ccbc42b039c8c36c8efb19296146584a14d5bb3e66935ddfe4</hash>
+        <hash alg="SHA-512">7f9142239d8f66442ac4102dae6cfe6407e00b833df9886a3c7fb92779b5892a34fb0a5116cc119a65e6ca22989cb62d411245b61879b388c7c37c36caeceb7e</hash>
+        <hash alg="SHA-384">986628e379880385d93c3be16d677727cc5377d1bb84cca5c8b5e5536c7d9f833ff211cfadbe8aea74167701aa1528b2</hash>
+        <hash alg="SHA3-384">56b534adb52f7451537dd19e954a7aa7f629df093611dfb43b1307e47193ad05bc5cb043fddfe03dbc7efa0e49dfc977</hash>
+        <hash alg="SHA3-256">2a7aac750e239a4df2da090e4ae3f888b3151f47bc535047a07a450219c648e0</hash>
+        <hash alg="SHA3-512">227cf85489c71ac368e5371f6f01b909faaa6f24585196387ce41a0ced5b0a0269b8c7cfd044d0427b0da5299d376336fc600bbf8b19076a3f5212e3150bd590</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>EPL-1.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.eclipse.aether/aether-spi@0.9.0.M2?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://www.eclipse.org/aether/aether-spi/</url>
+        </reference>
+        <reference type="build-system">
+          <url>https://hudson.eclipse.org/hudson/job/aether-core-nightly/</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>https://bugs.eclipse.org/bugs/buglist.cgi?query_format=specific&amp;order=relevance+desc&amp;bug_status=__open__&amp;product=Aether</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>http://dev.eclipse.org/mhonarc/lists/aether-dev/</url>
+        </reference>
+        <reference type="vcs">
+          <url>http://git.eclipse.org/c/aether/aether-core.git/tree/aether-spi/</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.eclipse.aether/aether-impl@0.9.0.M2?type=jar">
+      <publisher>The Eclipse Foundation</publisher>
+      <group>org.eclipse.aether</group>
+      <name>aether-impl</name>
+      <version>0.9.0.M2</version>
+      <description>An implementation of the repository system.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">ffc94e83df65abdc44580b4046ee3b8f</hash>
+        <hash alg="SHA-1">eab9a4baae8de96a24c04219236363d0ca73e8a9</hash>
+        <hash alg="SHA-256">637f5fb07d9b03957bc5f1a57b77a8202ba0a44f52a0d2c30e5d59b65e89ce48</hash>
+        <hash alg="SHA-512">04298a0cbb6656d3fbde76e90f341db702599ea3c39b0684af0dbd8b788d030f56836192da30f3912767ea3a0acbce793fe43dc02f61db641bf5709e61e33172</hash>
+        <hash alg="SHA-384">7939d161c6ed84b586cb867db1f4572f40487bc8d2e1e023954e1cbff79891ca8430573a8e4c0172bfcc9fe3d80e648d</hash>
+        <hash alg="SHA3-384">5bf1843aa15b0a7a44c987e9510eb192339f801c5ede52745c28aabfdb9966e19f81d622b6f2f6cabfae1558f099bded</hash>
+        <hash alg="SHA3-256">f46a2f848ab40f4b7f9b86b945b1af0f5349b4a5e5a158ec76f3a98c0e0f6d4f</hash>
+        <hash alg="SHA3-512">f833e2909dc84a270ed808b2a0bf8480cb0dcd7e1733d251b2553cee20ecac3f543d850caa5dd9256128ccf9b02d2d445b3f47e9727a98eb4367ec3a7433b979</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>EPL-1.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.eclipse.aether/aether-impl@0.9.0.M2?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://www.eclipse.org/aether/aether-impl/</url>
+        </reference>
+        <reference type="build-system">
+          <url>https://hudson.eclipse.org/hudson/job/aether-core-nightly/</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>https://bugs.eclipse.org/bugs/buglist.cgi?query_format=specific&amp;order=relevance+desc&amp;bug_status=__open__&amp;product=Aether</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>http://dev.eclipse.org/mhonarc/lists/aether-dev/</url>
+        </reference>
+        <reference type="vcs">
+          <url>http://git.eclipse.org/c/aether/aether-core.git/tree/aether-impl/</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.eclipse.aether/aether-api@0.9.0.M2?type=jar">
+      <publisher>The Eclipse Foundation</publisher>
+      <group>org.eclipse.aether</group>
+      <name>aether-api</name>
+      <version>0.9.0.M2</version>
+      <description>The application programming interface for the repository system.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">4f45381e19be0eb964f3be5df6351b95</hash>
+        <hash alg="SHA-1">97662c999c6b2fbf2ee50e814a34639c1c1d22de</hash>
+        <hash alg="SHA-256">e220097cffad96c2963ab12652ff8833ec6f40143d509f0a2ea59d22209b6ecd</hash>
+        <hash alg="SHA-512">33e0315a7ee2a81662f4d54c322a70ea1618722d9930c4b5ba4463fc63364ce04b6f2b5d000313407129218602638819577b26bf2a067bb233d4794b169b0b02</hash>
+        <hash alg="SHA-384">6f5c2df34d31db171307afcdc2a3551d383cbdb8c85819e2badd0a9e5d5b8a7bbd35d5bf008f68616c71ae454b652455</hash>
+        <hash alg="SHA3-384">b9bdb39f411d598d9ba79ca82ce3183b7a1e611e1ce1fad4f4ad47e1e0e6bbd764aae607463dc2262bc621af3d860f34</hash>
+        <hash alg="SHA3-256">6a77c395c053eab940088961280d1cb8d081838c8de6343afbf77404360bf5d6</hash>
+        <hash alg="SHA3-512">3d483229c047652b7858ac71db481e2ad6a339a8a0648a6f3d87862c01051cf2b5e1d14500e723bc3d1127c32a189b19583349b437a37d1824744e70c9400058</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>EPL-1.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.eclipse.aether/aether-api@0.9.0.M2?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://www.eclipse.org/aether/aether-api/</url>
+        </reference>
+        <reference type="build-system">
+          <url>https://hudson.eclipse.org/hudson/job/aether-core-nightly/</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>https://bugs.eclipse.org/bugs/buglist.cgi?query_format=specific&amp;order=relevance+desc&amp;bug_status=__open__&amp;product=Aether</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>http://dev.eclipse.org/mhonarc/lists/aether-dev/</url>
+        </reference>
+        <reference type="vcs">
+          <url>http://git.eclipse.org/c/aether/aether-core.git/tree/aether-api/</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.eclipse.aether/aether-util@0.9.0.M2?type=jar">
+      <publisher>The Eclipse Foundation</publisher>
+      <group>org.eclipse.aether</group>
+      <name>aether-util</name>
+      <version>0.9.0.M2</version>
+      <description>A collection of utility classes to ease usage of the repository system.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">fc6315129d2e2063e2f2725e6337587f</hash>
+        <hash alg="SHA-1">b957089deb654647da320ad7507b0a4b5ce23813</hash>
+        <hash alg="SHA-256">7d62b0fdef90196ec4b2947f5973d750bfd3935785244e77cc06780131c404e9</hash>
+        <hash alg="SHA-512">c1b57333a2306ae18c773c7f0c5daa16ec8b4cb521e65e8174791789ab801a6b7153c4e8fb08834a82b0a3510b5c7770e1d46a6d5344f2593be7c670edef0171</hash>
+        <hash alg="SHA-384">0ed94faa821b00a9865b73480a56e4a1e2d180f076ea6e7649a2179e95f845b2e9cdac81f3206fce3995696b4313ea6b</hash>
+        <hash alg="SHA3-384">3e29a3743800156a266f79a3409208e15cbc04e76f738f71db3162453188d09a8f151dd8e6e6bfc54a1d7b76ebc2cc1b</hash>
+        <hash alg="SHA3-256">28d0fcf6432e4a3deb5f5743c401285982bca13620cd9adac1c18dbb6ff797b1</hash>
+        <hash alg="SHA3-512">c97dc52b268caeca436f41a6dbbe15d84286160b288e5a7a24ab12171f9d08d10f624f5fb04618eee469f8b8b9bfb27712bc1997cb414ff9a0cb5b018bbdb26b</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>EPL-1.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.eclipse.aether/aether-util@0.9.0.M2?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://www.eclipse.org/aether/aether-util/</url>
+        </reference>
+        <reference type="build-system">
+          <url>https://hudson.eclipse.org/hudson/job/aether-core-nightly/</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>https://bugs.eclipse.org/bugs/buglist.cgi?query_format=specific&amp;order=relevance+desc&amp;bug_status=__open__&amp;product=Aether</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>http://dev.eclipse.org/mhonarc/lists/aether-dev/</url>
+        </reference>
+        <reference type="vcs">
+          <url>http://git.eclipse.org/c/aether/aether-core.git/tree/aether-util/</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.eclipse.sisu/org.eclipse.sisu.plexus@0.0.0.M5?type=jar">
+      <publisher>The Eclipse Foundation</publisher>
+      <group>org.eclipse.sisu</group>
+      <name>org.eclipse.sisu.plexus</name>
+      <version>0.0.0.M5</version>
+      <description>Plexus-JSR330 adapter; adds Plexus support to the Sisu-Inject container</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">0d4b01fed48a36a59a1ccc421093ccf6</hash>
+        <hash alg="SHA-1">8818cc5a4d2afde2fbc87c2a78cf1ebf5719a869</hash>
+        <hash alg="SHA-256">ea8e63f336673f6a6e6f0b837e69578c151417c1113a578568f5e99a5a165f29</hash>
+        <hash alg="SHA-512">f6b8e7b3e31c6b04bd26b04e8e8ee3f7e17f4d33a19bb32b6fb815ca46fabf5474490ce044214efce3932fe4005f30af36ec038f6cb49917ed1cf5dde91ae1a1</hash>
+        <hash alg="SHA-384">1099d2c53dd16eb2bb478023169cc6317203f74c4ffa03f1b6ec50f852ad5093db52c74088aa3c2bbcbf182620e3d1a2</hash>
+        <hash alg="SHA3-384">9c49c81542834023bbfe33df8addf9affc5fbb26f59caad56806812889355bdbe680e37c080c44ced1d7e7bd702f4cfd</hash>
+        <hash alg="SHA3-256">118a0db21947871f70084d889d763ce310a95d651cc08f68ac51957c28439583</hash>
+        <hash alg="SHA3-512">25b613d5e73ac407d99416425d856fcea3bb89929798273bbbed8241f2cada0dd9bf9df6c5c84080d48952a5e1db875ed5e3feac90d0045e93a6d3637085d087</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>EPL-1.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.eclipse.sisu/org.eclipse.sisu.plexus@0.0.0.M5?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://www.eclipse.org/sisu/org.eclipse.sisu.plexus/</url>
+        </reference>
+        <reference type="build-system">
+          <url>https://hudson.eclipse.org/hudson/job/sisu-plexus-nightly/</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>https://bugs.eclipse.org/bugs/enter_bug.cgi?product=Sisu&amp;component=Plexus&amp;format=guided</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>http://dev.eclipse.org/mhonarc/lists/sisu-dev/</url>
+        </reference>
+        <reference type="vcs">
+          <url>http://git.eclipse.org/c/sisu/org.eclipse.sisu.plexus.git/tree/org.eclipse.sisu.plexus/</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/javax.enterprise/cdi-api@1.0?type=jar">
+      <publisher>Seam Framework</publisher>
+      <group>javax.enterprise</group>
+      <name>cdi-api</name>
+      <version>1.0</version>
+      <description>APIs for JSR-299: Contexts and Dependency Injection for Java EE</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">462c0959f0322016495f4598243bc0f2</hash>
+        <hash alg="SHA-1">44c453f60909dfc223552ace63e05c694215156b</hash>
+        <hash alg="SHA-256">1f10b2204cc77c919301f20ff90461c3df1b6e6cb148be1c2d22107f4851d423</hash>
+        <hash alg="SHA-512">3e326196a2cbf19375803ce37d743a9818c4fa2292914439e748060d6889c997fe33077f52e52d4dd61b60e7342aa31b446d7571a92ec864f44cead45ebd612b</hash>
+        <hash alg="SHA-384">cff1b12eddd9d7c4e075ea91edf063bf22308dc1857e1ba19914baa5db0921828a8605c37a2a672af8a6e76116cbaf08</hash>
+        <hash alg="SHA3-384">4551179cf722d33b29627969865017905bbf793320adfe203c3f38f6e1453bb1456d81814c3e3249d1967d6a4139737a</hash>
+        <hash alg="SHA3-256">494d37242e8348177200a539aa035802b9bb5cf9f1c8dfd04fac5b5f1432e216</hash>
+        <hash alg="SHA3-512">27fc4a60df1a65feb497c9296d2ecd7ff9a93b28b6ec7cefd25dfe1b96735cbbeb2d7824f71903dc6ea273357ff24462a6420bdef0b82bf1e75bbc117d92032b</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/javax.enterprise/cdi-api@1.0?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://www.seamframework.org/Weld/cdi-api</url>
+        </reference>
+        <reference type="build-system">
+          <url>http://hudson.jboss.org</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>http://oss.sonatype.org/service/local/staging/deploy/maven2</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>http://jira.jboss.org/browse/WELD</url>
+        </reference>
+        <reference type="vcs">
+          <url>http://fisheye.jboss.org/browse/Weld/api/tags/1.0/build/tags/weld-parent-6/weld-api-bom/weld-api-parent/cdi-api</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/javax.annotation/jsr250-api@1.0?type=jar">
+      <group>javax.annotation</group>
+      <name>jsr250-api</name>
+      <version>1.0</version>
+      <description>JSR-250 Reference Implementation by Glassfish</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">4cd56b2e4977e541186de69f5126b4a6</hash>
+        <hash alg="SHA-1">5025422767732a1ab45d93abfea846513d742dcf</hash>
+        <hash alg="SHA-256">a1a922d0d9b6d183ed3800dfac01d1e1eb159f0e8c6f94736931c1def54a941f</hash>
+        <hash alg="SHA-512">8b5dd24460e42763f3645205be4b4f80691e217d36bee5fc5b5df6ebc8782ed0f641fb9e2fe918a2d0eede32556656f6b61fe65d2cbec5086e61ef3d91e4d871</hash>
+        <hash alg="SHA-384">33e45a556c20dfd05b0af34e58a651bcb3c79275694bf14b68a1e7a1116b722d5a5d3399f4bb304fef7fc296da61dd5d</hash>
+        <hash alg="SHA3-384">5ab52f8a6f45849398f4a268cf498f7788adf8d0ad6ede2f9287814095051ce8529b05bea0a71c90718ce4c21d4594f5</hash>
+        <hash alg="SHA3-256">623ae141aa22b45010282c862e41eec3ed0dafabd8f1ee5591ba623a242375ab</hash>
+        <hash alg="SHA3-512">d7edd7a76d88d466b310d71fdc10d7b289838391408f8b704620b6683b65e436c0fa411d8dd356b0792e29e2fef8fbb8a6658bb97e7046e1277404a3395a9a53</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>CDDL-1.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/javax.annotation/jsr250-api@1.0?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://jcp.org/aboutJava/communityprocess/final/jsr250/index.html</url>
+        </reference>
+        <reference type="distribution">
+          <url>http://jcp.org/aboutJava/communityprocess/final/jsr250/index.html</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/javax.inject/javax.inject@1?type=jar">
+      <group>javax.inject</group>
+      <name>javax.inject</name>
+      <version>1</version>
+      <description>The javax.inject API</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">289075e48b909e9e74e6c915b3631d2e</hash>
+        <hash alg="SHA-1">6975da39a7040257bd51d21a231b76c915872d38</hash>
+        <hash alg="SHA-256">91c77044a50c481636c32d916fd89c9118a72195390452c81065080f957de7ff</hash>
+        <hash alg="SHA-512">e126b7ccf3e42fd1984a0beef1004a7269a337c202e59e04e8e2af714280d2f2d8d2ba5e6f59481b8dcd34aaf35c966a688d0b48ec7e96f102c274dc0d3b381e</hash>
+        <hash alg="SHA-384">ac04c9f03ccbe35a25deb8b50280a0ca01dbe6aff0dd795d55af6112bfe3cd5817eb82f32fb18378d86cd64b07597190</hash>
+        <hash alg="SHA3-384">fca090ecb1edeacb9fe865dc515cd1d109b323cd742d4a9733ff199a96ee96e0db4f924079520b9c189ef750f255475d</hash>
+        <hash alg="SHA3-256">5b0054e39e522de0e0ffc4034d12f72270291fb24d94d5ffc9c4d69c25035fc6</hash>
+        <hash alg="SHA3-512">fb290f5a70b1efc1dff12f40a0b2d7b94019f66da42e78010c0b8e61f222c4f267b67e356a9e9c346eb801e5515e36243888f280c5cb95c2dd69016a30cadeb9</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/javax.inject/javax.inject@1?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://code.google.com/p/atinject/</url>
+        </reference>
+        <reference type="vcs">
+          <url>http://code.google.com/p/atinject/source/checkout</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.google.guava/guava@10.0.1?type=jar">
+      <group>com.google.guava</group>
+      <name>guava</name>
+      <version>10.0.1</version>
+      <description>Guava is a suite of core and expanded libraries that include
+    utility classes, google's collections, io classes, and much
+    much more.
+
+    This project is a complete packaging of all the Guava libraries
+    into a single jar.  Individual portions of Guava can be used
+    by downloading the appropriate module and its dependencies.
+
+    Guava (complete) has only one code dependency - javax.annotation,
+    per the JSR-305 spec.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">d05cd8b0a7ee4466994d64779eb28190</hash>
+        <hash alg="SHA-1">292c96f9cb18231528cac4b0bf17d28149d14809</hash>
+        <hash alg="SHA-256">7d228a16b9cd0d78ac7cc1a45cd6b65c9423c32c5e26f99f9bd2577d37396baa</hash>
+        <hash alg="SHA-512">22e576453ba72f4b0628782c85ba630a5be677738dc766d67f3b28c950381f86f6521a79c8bfcc5a5c86646e58cb8c48c996f1d41a39dcb1533edf9ba4918210</hash>
+        <hash alg="SHA-384">4d854090204ad8c1e47e5420141bba01696aa0a1508edbec9a721b06946b760acb2a77f3e55de906c316d4750cc331f2</hash>
+        <hash alg="SHA3-384">3afc2b6198e37e256d8d5686d4e1ba91e0552489c1099a88804b95a4193fa6d41608963c8602bcfa95cb8133b51c052f</hash>
+        <hash alg="SHA3-256">d474f3b419dfa7f192162741f7ea241ac6d02471eb3e747f026009f2f50949c9</hash>
+        <hash alg="SHA3-512">e3063128ff42cf5a5142014438e338a07c7545fe8594341d89dc6affd2ac77e9d6f04304ff7c96ad90d5d531f4c821847a224d9fce294b8057753f7a0dac0806</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/com.google.guava/guava@10.0.1?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://code.google.com/p/guava-libraries/guava</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>http://code.google.com/p/guava-libraries/issues</url>
+        </reference>
+        <reference type="vcs">
+          <url>http://code.google.com/p/guava-libraries/source/browse/guava</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.google.code.findbugs/jsr305@1.3.9?type=jar">
+      <group>com.google.code.findbugs</group>
+      <name>jsr305</name>
+      <version>1.3.9</version>
+      <description>JSR305 Annotations for Findbugs</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">1d5a772e400b04bb67a7ef4a0e0996d8</hash>
+        <hash alg="SHA-1">40719ea6961c0cb6afaeb6a921eaa1f6afd4cfdf</hash>
+        <hash alg="SHA-256">905721a0eea90a81534abb7ee6ef4ea2e5e645fa1def0a5cd88402df1b46c9ed</hash>
+        <hash alg="SHA-512">06da282cfd8e30d9f8cf17702b8709172b00e22b75a627a1d85f8989615b8a1a401bc25d9aee7b14aed1d9b5df73bf2ea8d66f9c8468d9577c29f0ccfa2cc70a</hash>
+        <hash alg="SHA-384">56e6b41ef62eb5edfed0203802cefae9c2df86388148e420bb0c687abb2b80e14d5c2a82d5b35dce4badaf148f94eada</hash>
+        <hash alg="SHA3-384">58c3bf89fa1afa75c2c5078159fd28e27b2273d437f26aaaa7391310b6f0823f3cf476a24f5631c0881f3f7e946d99be</hash>
+        <hash alg="SHA3-256">c333ea5faedfa78e0614a2620438d5724eab093df4e960918391b6a44c2915b0</hash>
+        <hash alg="SHA3-512">67ec31448e156cc72dd036060b460bb2667a13b1cbe500b6b7eed3235b1994b44c39f440ebd07b21ec9595b166ad61121d4f6a132b5b313c558ab21b72599425</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/com.google.code.findbugs/jsr305@1.3.9?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://findbugs.sourceforge.net/</url>
+        </reference>
+        <reference type="vcs">
+          <url>http://findbugs.googlecode.com/svn/trunk/</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.sonatype.sisu/sisu-guice@3.1.0?classifier=no_aop&amp;type=jar">
+      <publisher>Google, Inc.</publisher>
+      <group>org.sonatype.sisu</group>
+      <name>sisu-guice</name>
+      <version>3.1.0</version>
+      <description>Patched build of Guice: a lightweight dependency injection framework for Java 5 and above</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">19f877ae736fa153a545d0cf801dcec9</hash>
+        <hash alg="SHA-1">97c87d15d749c86b2be1b9809b28321a1d926c7f</hash>
+        <hash alg="SHA-256">4b76079f35407e5682aac1ecbe67afd5f430ae619044a9d6a413666a45750c25</hash>
+        <hash alg="SHA-512">5d71d57203ce8b6ca76f502f79396691833bd28f7ed7315ba68736f7f35c037af054c9dba60eb914bfc0f76e27a7a273d0d75d0ce127ef753e13f299f21c4e8b</hash>
+        <hash alg="SHA-384">375c7ca393ebd402e304578f2c3f27a329f091d77f6a30f8908ff3302d9331b91538cf3e02d326c3e9d615d57d2dc287</hash>
+        <hash alg="SHA3-384">c973d7c2877acb773461793211cc8fd89450f8d3a0be5dd331e212e9828c835d2fa02f7ad8b28feabb7d7e493b008f02</hash>
+        <hash alg="SHA3-256">98d7f2526ca53d330839d104c0ee057fe4e90f0e158873928393be07516f8f8e</hash>
+        <hash alg="SHA3-512">204efdcb47c3dedd0e986d1550508c820d8dbcc209ab5eecb0659ac63c790f5fdc6f2872f2e8f7d591a320317d2d3f01a6160b4e8b28c2c76c1fc8f7f26787e5</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.sonatype.sisu/sisu-guice@3.1.0?classifier=no_aop&amp;type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://code.google.com/p/google-guice/sisu-guice/</url>
+        </reference>
+        <reference type="build-system">
+          <url>https://builds.sonatype.org/job/sisu-guice/</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://repository.sonatype.org/service/local/staging/deploy/maven2</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>http://code.google.com/p/google-guice/issues/</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>http://groups.google.com/group/google-guice/topics</url>
+        </reference>
+        <reference type="vcs">
+          <url>http://github.com/sonatype/sisu-guice/sisu-guice</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/aopalliance/aopalliance@1.0?type=jar">
+      <group>aopalliance</group>
+      <name>aopalliance</name>
+      <version>1.0</version>
+      <description>AOP Alliance</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">04177054e180d09e3998808efa0401c7</hash>
+        <hash alg="SHA-1">0235ba8b489512805ac13a8f9ea77a1ca5ebe3e8</hash>
+        <hash alg="SHA-256">0addec670fedcd3f113c5c8091d783280d23f75e3acb841b61a9cdb079376a08</hash>
+        <hash alg="SHA-512">3f44a932d8c00cfeee2eb057bcd7c301a2d029063e0a916e1e20b3aec4877d19d67a2fd8aaf58fa2d5a00133d1602128a7f50912ffb6cabc7b0fdc7fbda3f8a1</hash>
+        <hash alg="SHA-384">4dddf44338b5aff9580da2532b81c0ac3e1d09e1f28c6db871a55cad442b705dd7791eb07f9d4577d49d0be3673ba783</hash>
+        <hash alg="SHA3-384">2bd64cbaf769c6e4e85e34f7a6119d89e16fbf55af3fc5d6cbd52eb214c367dec1ac7b9062ee0fb35a2e0acfc7c477e1</hash>
+        <hash alg="SHA3-256">d4a726b2bf8aa58197021a7d8fca674b4b2790d4c48de43a92f728866a91c2f0</hash>
+        <hash alg="SHA3-512">830bc3f8328be76897990e9b9fc42eef02623115e456af96ad09b20900ad615519c8c8de60155ac04fb332eaa9510110d52edd13911af76271c71d91cbd789cc</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <name>Public Domain</name>
+        </license>
+      </licenses>
+      <purl>pkg:maven/aopalliance/aopalliance@1.0?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://aopalliance.sourceforge.net</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.eclipse.sisu/org.eclipse.sisu.inject@0.0.0.M5?type=jar">
+      <publisher>The Eclipse Foundation</publisher>
+      <group>org.eclipse.sisu</group>
+      <name>org.eclipse.sisu.inject</name>
+      <version>0.0.0.M5</version>
+      <description>JSR330-based container; supports classpath scanning, auto-binding, and dynamic auto-wiring</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">8676e5cace1cbe75966671dd6a768642</hash>
+        <hash alg="SHA-1">4f6bda3f528c60a12e70db2e7a3feee539dcc8cd</hash>
+        <hash alg="SHA-256">a591bd6b63e54639ae70f8eada0944ce9bdbeca0760162c7f2bf09a1edf20e6c</hash>
+        <hash alg="SHA-512">c27ec9432e6c132862cc137b585a6184b0bf02bbc3e279eedb154e57b624737594d2aa8da859690c0fa85b57207f0640dc441036215e4389e8de66306f6827bc</hash>
+        <hash alg="SHA-384">eb5af2a6ff59f85ede1dbbfcc74bf7cad4d44f3751f6d4187175f399125390972c1cc1b1bd4252342d3d099db95b80f0</hash>
+        <hash alg="SHA3-384">f116aa3771bf4872b715c9c28ab8d9b8551f41404ec280f996e428918a63a60435990de958951d69265ff3683508d9c2</hash>
+        <hash alg="SHA3-256">4688ef16eff16d847b504ca7dde88d265bbc09948b2b3e4ebe172cd69baadf83</hash>
+        <hash alg="SHA3-512">6873dc2f124589bc88539ad30a69f71e0b8b4dee63c7f00ada68040b9f4491ec2ce0ded546e0e397f5b9dad95c8523325dae06467c8eb64529daede810355ec1</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>EPL-1.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.eclipse.sisu/org.eclipse.sisu.inject@0.0.0.M5?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://www.eclipse.org/sisu/org.eclipse.sisu.inject/</url>
+        </reference>
+        <reference type="build-system">
+          <url>https://hudson.eclipse.org/hudson/job/sisu-inject-nightly/</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>https://bugs.eclipse.org/bugs/enter_bug.cgi?product=Sisu&amp;component=Inject&amp;format=guided</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>http://dev.eclipse.org/mhonarc/lists/sisu-dev/</url>
+        </reference>
+        <reference type="vcs">
+          <url>http://git.eclipse.org/c/sisu/org.eclipse.sisu.inject.git/tree/org.eclipse.sisu.inject/</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.codehaus.plexus/plexus-classworlds@2.5.1?type=jar">
+      <publisher>Codehaus</publisher>
+      <group>org.codehaus.plexus</group>
+      <name>plexus-classworlds</name>
+      <version>2.5.1</version>
+      <description>A class loader framework</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">68f4007be15d717d09373575278c08c1</hash>
+        <hash alg="SHA-1">98fea8e8c3fb0e8670a69ad6ea445872c9972910</hash>
+        <hash alg="SHA-256">de9ce33b29088c2db7c3f55ddc061c2a7a72f9c93c28faad62cc15aee26b6888</hash>
+        <hash alg="SHA-512">fdd3d816b2c3311c7482c46ab49804b8363ec1d8663aaa853515a91b710a22b88b08382bc0f4302b2dbfba1dfa3648f408abc3b475119112d265512bb62e6fbc</hash>
+        <hash alg="SHA-384">eedb126826b1460fc88d1121eab3aab8bb0be1843af6494e19f3005ca9f890032e3cd0524a6797b9826e540282212a67</hash>
+        <hash alg="SHA3-384">64cfb59362b5f98ef6e5a55396a669667996cea7e688ff9d2b5bbf61a30370d239785c79f0f671700c4792fe353a3eb5</hash>
+        <hash alg="SHA3-256">5577848d698b61070ea4a97de671cd12f7731d6909c9f833949c32e184918606</hash>
+        <hash alg="SHA3-512">e4bf68c0dfbcf5f523a409481b1e4cdac65100a52d95f9b8df220eff70bb0168fc811b995b4f3209b6cd26d7aea0ec92701b1189e3b18c54fa969f80658b2c33</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.codehaus.plexus/plexus-classworlds@2.5.1?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://plexus.codehaus.org/plexus-classworlds/</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>http://jira.codehaus.org/browse/PLX</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>http://archive.plexus.codehaus.org/user</url>
+        </reference>
+        <reference type="vcs">
+          <url>http://github.com/sonatype/plexus-classworlds</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.codehaus.plexus/plexus-component-annotations@2.0.0?type=jar">
+      <publisher>Codehaus Plexus</publisher>
+      <group>org.codehaus.plexus</group>
+      <name>plexus-component-annotations</name>
+      <version>2.0.0</version>
+      <description>Plexus Component "Java 5" Annotations, to describe plexus components properties in java sources with
+    standard annotations instead of javadoc annotations.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">be18d50372002ba958de0ae4850b18a7</hash>
+        <hash alg="SHA-1">6897b9fa8b67c900b52996f845e2d179eea13441</hash>
+        <hash alg="SHA-256">405eef6fc9188241ec88579c3e473f5c8997455c69bcd62e142492aca15106bc</hash>
+        <hash alg="SHA-512">a82bff6a7b68501e8ed54dfdfbe05bc2722ba8fdf8d6c1bdb8c36c0d516167cf2cfe8b8e835ee1f14c5f576c4523dd83d55ec6a9e8206aef57dedebe5a82c3ab</hash>
+        <hash alg="SHA-384">3216aeb7616da3afa0afbd3411477ac3c8b9bb79e1df07accf86de8c3f0737c67167980d61f9191a4fcff57fd5af690c</hash>
+        <hash alg="SHA3-384">743fd43379cf4c39a2c0354bd746bbff129d041efb668ceffe9565151b08ef3fbd6b0041457f7cbd5ad7217a65400344</hash>
+        <hash alg="SHA3-256">ce2b61b3da3e481bac422c71a531f0c788f9e6f55cda31835cae75af9d88eaaa</hash>
+        <hash alg="SHA3-512">f400ba6cd9c5cfc0f34a065354a47e3985f0b9ed63c6a0c77f6701e1eeaab081f30e6cc295474a028f6e364475761f6e60f802414329161b4103880bd69b3bdc</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.codehaus.plexus/plexus-component-annotations@2.0.0?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://codehaus-plexus.github.io/plexus-containers/plexus-component-annotations/</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>http://github.com/codehaus-plexus/plexus-containers/issues</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>http://archive.plexus.codehaus.org/user</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/codehaus-plexus/plexus-containers/plexus-component-annotations</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.sonatype.plexus/plexus-sec-dispatcher@1.3?type=jar">
+      <group>org.sonatype.plexus</group>
+      <name>plexus-sec-dispatcher</name>
+      <version>1.3</version>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">53160199f5667de3fca69b723173639b</hash>
+        <hash alg="SHA-1">dedc02034fb8fcd7615d66593228cb71709134b4</hash>
+        <hash alg="SHA-256">3b0559bb8432f28937efe6ca193ef54a8506d0075d73fd7406b9b116c6a11063</hash>
+        <hash alg="SHA-512">8b609608e4ce1346fdd3a0793d66dbdb893d6af046594ccc456eaceabca3f7a251cc8a6f1cad22fc17688911d0842cc84fa2303027fdf241c77f4078905aaacd</hash>
+        <hash alg="SHA-384">539392b84ed3dfeeaa97c42a4befa559a05d18baabcadda2537b18fe8f340e11823ce0646e8931b92a4cfb24cd39d981</hash>
+        <hash alg="SHA3-384">9355f99fc6e1c5f4eaa73417b730adfed5d5d20528171aea4b487b8a75028a900d67abd923df025dffd20f32edff69ab</hash>
+        <hash alg="SHA3-256">b6185018455b1ffd854f9d5ef2ba2dc5750ad4c68789854e4c2440bd91ada76c</hash>
+        <hash alg="SHA3-512">323c863614c94d12508265454a5c598358a0b5b2fb18400d1ab457cf3a161c7e31079ada7ab8ed5d1b28d1e4dee9ab8f82cfb84ad40b42d69e330562d1a69da7</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.sonatype.plexus/plexus-sec-dispatcher@1.3?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://spice.sonatype.org/plexus-sec-dispatcher</url>
+        </reference>
+        <reference type="build-system">
+          <url>https://grid.sonatype.org/ci/view/Spice/</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>http://repository.sonatype.org/content/repositories/releases</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>https://issues.sonatype.org/browse/SPICE</url>
+        </reference>
+        <reference type="vcs">
+          <url>http://svn.sonatype.org/spice/tags/plexus-sec-dispatcher-1.3</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.sonatype.plexus/plexus-cipher@1.4?type=jar">
+      <group>org.sonatype.plexus</group>
+      <name>plexus-cipher</name>
+      <version>1.4</version>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">7b2d6fcf0d5800d5b1ce09d98d98dcaf</hash>
+        <hash alg="SHA-1">50ade46f23bb38cd984b4ec560c46223432aac38</hash>
+        <hash alg="SHA-256">5a15fdba22669e0fdd06e10dcce6320879e1f7398fbc910cd0677b50672a78c4</hash>
+        <hash alg="SHA-512">deb948be3a9f6a2fa74adca17e54b1074948267b3a35dd4000d92c559d0387650770ccee096ad8f01dd51c36caf63878dc0bcf57dfb1f2e3e1a9d51204096617</hash>
+        <hash alg="SHA-384">29d6722d6d4c412a98ed95f1fd6620047b22ce8d7e3160bcc49ca616a016b57be0c4d35daa8896ef93a80bcff77725ec</hash>
+        <hash alg="SHA3-384">2f27b64dcb2dcc7b16eb24487c67363a2977d4d695b97ebea829b7301c444e07cbf8a8b0471332c81b3d3ee393388834</hash>
+        <hash alg="SHA3-256">ef83ecf09c7bda0c412b6acdf558171f4f5f1065a68359916ecffcbea8e3475d</hash>
+        <hash alg="SHA3-512">1a8b406ab9d63cb3af63e56a09bbde88e404041a1b70c68487c1c0009c24d042cea9ee2325ad99c0aee845ec61ff17a69ae14843f08de2f5af90cd5bb617e34c</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.sonatype.plexus/plexus-cipher@1.4?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://spice.sonatype.org/plexus-cipher</url>
+        </reference>
+        <reference type="build-system">
+          <url>https://grid.sonatype.org/ci/view/Spice/</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>http://repository.sonatype.org/content/repositories/releases</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>https://issues.sonatype.org/browse/SPICE</url>
+        </reference>
+        <reference type="vcs">
+          <url>http://svn.sonatype.org/spice/tags/plexus-cipher-1.4</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.apache.maven.shared/maven-shared-utils@3.3.3?type=jar">
+      <publisher>The Apache Software Foundation</publisher>
+      <group>org.apache.maven.shared</group>
+      <name>maven-shared-utils</name>
+      <version>3.3.3</version>
+      <description>Shared utilities for use by Maven core and plugins</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">d894ecaa696341ba8fcfbe65ac330c05</hash>
+        <hash alg="SHA-1">89bb03ff6e66394a9c952357784858ad692aa2e4</hash>
+        <hash alg="SHA-256">44a60c610f4e31524b03d81a698b1ecceba116320ea510babf859575b2ea7233</hash>
+        <hash alg="SHA-512">d85102ebe4a2a1d98ddb8231cd8e837eeea9cf5d9ce18d8fd8292347ebf4fa6ada9e97c1001a0af65884687a2a27fa12fa3593477de87b0372e4fba51ccbd9ba</hash>
+        <hash alg="SHA-384">e4a821ad9ae6902fb70a0e935da5c98e3c772c0c7ad408129b143ead73e73b06782cc1156756c452b717b7afbd0c3754</hash>
+        <hash alg="SHA3-384">3d39ddd99481899cd9e82a7511b94ceb3a86e05492039b1668d9e287df244c62201f2ca86d7bb5bf2ae8ef8b0cf6e411</hash>
+        <hash alg="SHA3-256">ab611761f9978d941a33f2ac209d3a6929757ab0827fec42372da0e1fb291314</hash>
+        <hash alg="SHA3-512">ee05e95d3a45d86538232a4124bb273223e984f22e188a9bc5bfac882133cdad9bb109d216354b844549e16a19eada9aca5a13e12ca78fc5b57a93c090181ef2</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.apache.maven.shared/maven-shared-utils@3.3.3?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://maven.apache.org/shared/maven-shared-utils/</url>
+        </reference>
+        <reference type="build-system">
+          <url>https://builds.apache.org/job/maven-box/job/maven-shared-utils/</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://repository.apache.org/service/local/staging/deploy/maven2</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>https://issues.apache.org/jira/issues/?jql=project%20%3D%20MSHARED%20AND%20component%20%3D%20maven-shared-utils</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>https://lists.apache.org/list.html?users@maven.apache.org</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/apache/maven-shared-utils/tree/maven-shared-utils-3.3.3</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/commons-io/commons-io@2.6?type=jar">
+      <publisher>The Apache Software Foundation</publisher>
+      <group>commons-io</group>
+      <name>commons-io</name>
+      <version>2.6</version>
+      <description>The Apache Commons IO library contains utility classes, stream implementations, file filters,
+file comparators, endian transformation classes, and much more.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">467c2a1f64319c99b5faf03fc78572af</hash>
+        <hash alg="SHA-1">815893df5f31da2ece4040fe0a12fd44b577afaf</hash>
+        <hash alg="SHA-256">f877d304660ac2a142f3865badfc971dec7ed73c747c7f8d5d2f5139ca736513</hash>
+        <hash alg="SHA-512">4de22e2a50711f756a5542474395d8619dca0a8be0407b722605005a1167f8c306bc5eef7f0b8252f5508c817c1ceb759171e4e18d4eb9697dfdd809ac39673f</hash>
+        <hash alg="SHA-384">1efcb8c663fff4cf7f2bc86e1a367b5f88819a6a2f80341fd5d41ad82eb0adda9f34a05c20115f461bee64d1ab487e3c</hash>
+        <hash alg="SHA3-384">47f8067345da2e60493ced8f5852b5a9ee5fd1ee141c03177f132f97fa4beccd3c3f649276cbcb06a3fa2d0b39e20369</hash>
+        <hash alg="SHA3-256">12e088d6b2f63a97e29d4cf1a81dbe311a0110e784677698a2eaa0b63785dc6e</hash>
+        <hash alg="SHA3-512">82e8aa5fb7b8801b94c83f912dc863ff1b569a281081d33ca7e512a694202aebb60101b54bc9ba0a3b6a769221667a3d222b67102377d554603678798ca22d07</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/commons-io/commons-io@2.6?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://commons.apache.org/proper/commons-io/</url>
+        </reference>
+        <reference type="build-system">
+          <url>https://builds.apache.org/</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://repository.apache.org/service/local/staging/deploy/maven2</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>http://issues.apache.org/jira/browse/IO</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>http://mail-archives.apache.org/mod_mbox/commons-user/</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://git-wip-us.apache.org/repos/asf?p=commons-io.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.apache.commons/commons-compress@1.20?type=jar">
+      <publisher>The Apache Software Foundation</publisher>
+      <group>org.apache.commons</group>
+      <name>commons-compress</name>
+      <version>1.20</version>
+      <description>Apache Commons Compress software defines an API for working with
+compression and archive formats.  These include: bzip2, gzip, pack200,
+lzma, xz, Snappy, traditional Unix Compress, DEFLATE, DEFLATE64, LZ4,
+Brotli, Zstandard and ar, cpio, jar, tar, zip, dump, 7z, arj.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">3f7237fb56029591b5bdd2698c196220</hash>
+        <hash alg="SHA-1">b8df472b31e1f17c232d2ad78ceb1c84e00c641b</hash>
+        <hash alg="SHA-256">0aeb625c948c697ea7b205156e112363b59ed5e2551212cd4e460bdb72c7c06e</hash>
+        <hash alg="SHA-512">5d3ce7ae4518c0fe5094b512c5c4825cc213ebc388e1e1e7692475406d5876c893140e5bbaaecb1676262a6b73c7250d40b83653cd03600815693474f92f0fa7</hash>
+        <hash alg="SHA-384">934fcbb21929aadb952c0c48b6d1bb89b34b0279d48546896f81b26759edba0e1cbc45dc821f55d6239c34160b507ade</hash>
+        <hash alg="SHA3-384">b59c53dc435ace657070665a1f41d64ca4ce61b21cbc4405879e559b56eb5cf1869debd4ab7b77f202af621142fad77f</hash>
+        <hash alg="SHA3-256">f11ea223d764cb87944f5f5686dbdb3bd140153f6ad146f0ab8666c6157b3e00</hash>
+        <hash alg="SHA3-512">0b1fa80da6f334a0a75ae4164581d2d69c4126f25b91d122d25cf3ee2d217fd399b04dde36f8e9de0faa20dc1804c38ca33b31aa28bf7bd6524332b3d0ac659d</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.apache.commons/commons-compress@1.20?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://commons.apache.org/proper/commons-compress/</url>
+        </reference>
+        <reference type="build-system">
+          <url>https://builds.apache.org/</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://repository.apache.org/service/local/staging/deploy/maven2</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>https://issues.apache.org/jira/browse/COMPRESS</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>https://mail-archives.apache.org/mod_mbox/commons-user/</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://gitbox.apache.org/repos/asf?p=commons-compress.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.codehaus.plexus/plexus-archiver@4.2.7?type=jar">
+      <publisher>Codehaus Plexus</publisher>
+      <group>org.codehaus.plexus</group>
+      <name>plexus-archiver</name>
+      <version>4.2.7</version>
+      <description>The Plexus project provides a full software stack for creating and executing software projects.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">0b7d267876216af63af4b52fc46d2519</hash>
+        <hash alg="SHA-1">ea77e871447d62c8759404e84989845d0168ddd6</hash>
+        <hash alg="SHA-256">5e0c49de4c56a25aa242e2de2b5fea1c0368826c2a8ab73764a0c91d3631633b</hash>
+        <hash alg="SHA-512">51bbba2c6609eaaf73b2db60e2a993d4e5a1f5ca6a53f16e70266682a36d5810789187145152db5eb34ebfccbac791eeb1988f3067fb1490a8fffce74fc449d4</hash>
+        <hash alg="SHA-384">ed2002e7d870bdd1cae66741012ea058c3721a4868859a674072210a4e9d605f9c980e3304cc1d8dacef397fce4cdecb</hash>
+        <hash alg="SHA3-384">49edf199160096d81096f2ecc777e0be819cad3f9aed4be21c63941ea51415a8c4488a08ec15baeeb83e01cc623d16b5</hash>
+        <hash alg="SHA3-256">61f1fb72c44e9ef283cc1e90126e233b37a172f893e1b5707ef5f1fc94be8e76</hash>
+        <hash alg="SHA3-512">8ed23475b09590a8950e1be201030331446a4adb3dc3ad2a45f85f7fa43a2d98baa6f62a6423a9f723184331be6ec5b6fd7c5207387cfbeafbab9004a150d4be</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.codehaus.plexus/plexus-archiver@4.2.7?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://codehaus-plexus.github.io/plexus-archiver/</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>https://github.com/codehaus-plexus/plexus-archiver/issues</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>http://archive.plexus.codehaus.org/user</url>
+        </reference>
+        <reference type="vcs">
+          <url>http://github.com/codehaus-plexus/plexus-archiver/tree/plexus-archiver-4.2.7/</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.codehaus.plexus/plexus-io@3.2.0?type=jar">
+      <publisher>Codehaus Plexus</publisher>
+      <group>org.codehaus.plexus</group>
+      <name>plexus-io</name>
+      <version>3.2.0</version>
+      <description>The Plexus project provides a full software stack for creating and executing software projects.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">10e377cecbafa25cd80de1207be4b685</hash>
+        <hash alg="SHA-1">0f7d52906fe1b21b06fa046a98d6c15c4e595c5e</hash>
+        <hash alg="SHA-256">15cf8cbd9e014b7156482bbb48e515613158bdd9b4b908d21e6b900f7876f6ff</hash>
+        <hash alg="SHA-512">6edb562a75b779b25d65264ae26a1c04ecccf08d6a14708cec67a64e0141d321020983c1103a4f892107c838de2149db7039446641174a786f2153e680613492</hash>
+        <hash alg="SHA-384">20f574cd47ee2b41302317adc21935e4a06c179beb4653ca65c10c2e49b3071c60132c01226984a61e4aa7a59591a496</hash>
+        <hash alg="SHA3-384">cd5afdb48f16ea48bf38691b2ad6c8e68e1fd44f818828cc902e40b7683d7ec13c483b18a0a83767e6dc5ec7ba249eea</hash>
+        <hash alg="SHA3-256">5a922b50da424007987fa34abc116d6d39d9eba1d4a63af553297383f5766105</hash>
+        <hash alg="SHA3-512">fd2f29e6a6987687a5c9b7aeb851e32c1ae88126d79f244fa881028beb3bc8673ad1ad9c57d79abbdebff4affd3ff6c57c3bfb8475010c829fefcc0c53155bb2</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.codehaus.plexus/plexus-io@3.2.0?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://codehaus-plexus.github.io/plexus-io/</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>https://github.com/codehaus-plexus/plexus-io/issues</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>http://archive.plexus.codehaus.org/user</url>
+        </reference>
+        <reference type="vcs">
+          <url>http://github.com/codehaus-plexus/plexus-io</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.iq80.snappy/snappy@0.4?type=jar">
+      <group>org.iq80.snappy</group>
+      <name>snappy</name>
+      <version>0.4</version>
+      <description>Port of Snappy to Java</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">f0792d1dbe7f90d8b34c7c19961e0073</hash>
+        <hash alg="SHA-1">a42b2d92a89efd35bb14738000dabcac6bd07a8d</hash>
+        <hash alg="SHA-256">46a0c87d504ce9d6063e1ff6e4d20738feb49d8abf85b5071a7d18df4f11bac9</hash>
+        <hash alg="SHA-512">dfd2559bf0388c6f1987d1393497a423203b2a72febbe648b3429e4d07b47a504797228e6e4e39a94c6800c5d3df8d3792863a3b841e6e8f65cfdcda91b6f0ab</hash>
+        <hash alg="SHA-384">7b5feeb0f1ee3fd3f5cd17c5ea31a75cdd060e7beaa1773474727711c308d2cf5b900b5717965afe8c14912e33c41538</hash>
+        <hash alg="SHA3-384">d96d486687e858c1ebe1fadbd731d33e0233922eee703f1a4e36e68fa1dcc527cdcc4fae8fc91894ebeada2a1214606e</hash>
+        <hash alg="SHA3-256">cf1b329b3f46891dc9e86fe9c6350a023dc0cb411739d2fd9d35490dfa8397aa</hash>
+        <hash alg="SHA3-512">3a8584d15b63d4c371fed5b615f7a121fe2530d35d234b2caa499c53e7c558376ed22d289828276fbc77cd7c1311ba4d6c1af03edf08c5f051d5b674f01e6120</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+          <url>https://www.apache.org/licenses/LICENSE-2.0</url>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.iq80.snappy/snappy@0.4?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://github.com/dain/snappy</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </reference>
+        <reference type="vcs">
+          <url>http://github.com/dain/snapy/tree/master</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.tukaani/xz@1.9?type=jar">
+      <group>org.tukaani</group>
+      <name>xz</name>
+      <version>1.9</version>
+      <description>XZ data compression</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">57c2fbfeb55e307ccae52e5322082e02</hash>
+        <hash alg="SHA-1">1ea4bec1a921180164852c65006d928617bd2caf</hash>
+        <hash alg="SHA-256">211b306cfc44f8f96df3a0a3ddaf75ba8c5289eed77d60d72f889bb855f535e5</hash>
+        <hash alg="SHA-512">a4362db234d4e83683e90f5baf90c82107450cc4404acab96e3fab14b8a3d4588a19722171d32f27d18463682a6994cad9af0b1065c954e3a77ea7bdcf586bac</hash>
+        <hash alg="SHA-384">aa30349b094723369908369a18e2cb5beb5b7ca0b24b4d56c2f5725fae152220f6526466672b22bfec939e2e0622a01d</hash>
+        <hash alg="SHA3-384">b3e1fee7784188df5e1931c9e8137ac0e20e63f66f93e7f938a448fc0b3adb4be5205c7a5f1835007e233fee2696fc2c</hash>
+        <hash alg="SHA3-256">92eff603ed0aab557e1a45e17a74e80d8ec656b5f137197b23c429c903fa448f</hash>
+        <hash alg="SHA3-512">b290f92958f8cd91705331d8411140c23957ab8b568fbe19a70f4f1dc97eddc13d3a200df28a02ab5911ce18f546c33f720878be0f727edac839a6e63ee66ece</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <name>Public Domain</name>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.tukaani/xz@1.9?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://tukaani.org/xz/java.html</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://git.tukaani.org/?p=xz-java.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.codehaus.plexus/plexus-utils@3.3.0?type=jar">
+      <publisher>Codehaus Plexus</publisher>
+      <group>org.codehaus.plexus</group>
+      <name>plexus-utils</name>
+      <version>3.3.0</version>
+      <description>A collection of various utility classes to ease working with strings, files, command lines, XML and
+    more.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">3ae76ff0195ada460d495efe1fb50d17</hash>
+        <hash alg="SHA-1">cf43b5391de623b36fe066a21127baef82c64022</hash>
+        <hash alg="SHA-256">76d174792540e2775af94d03d10fb2d3c776e2cd0ac0ebf427d3e570072bb9ce</hash>
+        <hash alg="SHA-512">a93038005cd9793476c913beaea7c8c170d1853dddf39bf6794ad6446165eaf538c2c3c2314baa9d919d6b0bda78e5ea3cd987d5dbacf8e3b98e315bcfa7db64</hash>
+        <hash alg="SHA-384">27742e2c82c13ffe947c6ce8750b1989491e8a5d7554cc3fa240a952c9d3a22fe006516041c66650e71972275c06565e</hash>
+        <hash alg="SHA3-384">16af5ee2b4f8710fa14bbd977ef3630466c51c4ed6bf9886ac0ea9c74bd23dedbbce60beae5217fab686777108c2e54d</hash>
+        <hash alg="SHA3-256">364bfb131dab58736c995ac4484d9eab53b1e62129a99ed55e9c12ed39079dc6</hash>
+        <hash alg="SHA3-512">4687c5ca8bb73d6880132d7d886733d0a5ce7a873c7b5b68d9d46066ee7e1f6c11f0510a70f313ca2563550bfcf6e81cf37a0c4ceef247bab55d6aadc49fae59</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.codehaus.plexus/plexus-utils@3.3.0?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://codehaus-plexus.github.io/plexus-utils/</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>http://github.com/codehaus-plexus/plexus-utils/issues</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>http://archive.plexus.codehaus.org/user</url>
+        </reference>
+        <reference type="vcs">
+          <url>http://github.com/codehaus-plexus/plexus-utils</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.codehaus.plexus/plexus-interpolation@1.26?type=jar">
+      <publisher>Codehaus Plexus</publisher>
+      <group>org.codehaus.plexus</group>
+      <name>plexus-interpolation</name>
+      <version>1.26</version>
+      <description>The Plexus project provides a full software stack for creating and executing software projects.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">1049ae9f5cd8cf618abf5bc5805e6b94</hash>
+        <hash alg="SHA-1">25b919c664b79795ccde0ede5cee0fd68b544197</hash>
+        <hash alg="SHA-256">b3b5412ce17889103ea564bcdfcf9fb3dfa540344ffeac6b538a73c9d7182662</hash>
+        <hash alg="SHA-512">6c3b40442adf721d325ee9cbf935d758223a04b3bd8e0f3b60fdb652175c1ca65a6010f7ea8288617ffa73cb1f19d2737c79c403d343b285e0f9afb1729caa60</hash>
+        <hash alg="SHA-384">93dcdffb567f4b7d24eecf9fb0733243ebfe1fd80c92fe69532fed9d1727a58ffa5ce7da4ab26b5c6aa8a6a59beb3844</hash>
+        <hash alg="SHA3-384">7489d45be45f74f7639db3b18ae6075d32d84adfaa9c4568f3fe2b2fc35c7de73ffce6f42e494466a8c81e78747b0f17</hash>
+        <hash alg="SHA3-256">62145ec219beb405063de848cb54e0d63efc8c255322998858d7df74f8d1ae18</hash>
+        <hash alg="SHA3-512">12fba4d2ffab1f89003e375bf74df3fc5d0f831906f9716f2ab2fc5a4ca7084c8a61500b24c5fa0ded27d1cef14b030df70b34c148c138136070e27f7cc41536</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.codehaus.plexus/plexus-interpolation@1.26?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://codehaus-plexus.github.io/plexus-interpolation/</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>https://github.com/codehaus-plexus/plexus-interpolation/issues</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>http://archive.plexus.codehaus.org/user</url>
+        </reference>
+        <reference type="vcs">
+          <url>http://github.com/codehaus-plexus/plexus-interpolation/tree/plexus-interpolation-1.26/</url>
+        </reference>
+      </externalReferences>
+    </component>
+  </components>
+  <dependencies>
+    <dependency ref="pkg:maven/org.apache.maven/maven-archiver@3.5.2?type=jar">
+      <dependency ref="pkg:maven/org.apache.maven/maven-artifact@3.1.1?type=jar"/>
+      <dependency ref="pkg:maven/org.apache.maven/maven-model@3.1.1?type=jar"/>
+      <dependency ref="pkg:maven/org.apache.maven/maven-core@3.1.1?type=jar"/>
+      <dependency ref="pkg:maven/org.apache.maven.shared/maven-shared-utils@3.3.3?type=jar"/>
+      <dependency ref="pkg:maven/commons-io/commons-io@2.6?type=jar"/>
+      <dependency ref="pkg:maven/org.apache.commons/commons-compress@1.20?type=jar"/>
+      <dependency ref="pkg:maven/org.codehaus.plexus/plexus-archiver@4.2.7?type=jar"/>
+      <dependency ref="pkg:maven/org.codehaus.plexus/plexus-utils@3.3.0?type=jar"/>
+      <dependency ref="pkg:maven/org.codehaus.plexus/plexus-interpolation@1.26?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.apache.maven/maven-artifact@3.1.1?type=jar">
+      <dependency ref="pkg:maven/org.codehaus.plexus/plexus-utils@3.3.0?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.codehaus.plexus/plexus-utils@3.3.0?type=jar"/>
+    <dependency ref="pkg:maven/org.apache.maven/maven-model@3.1.1?type=jar">
+      <dependency ref="pkg:maven/org.codehaus.plexus/plexus-utils@3.3.0?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.apache.maven/maven-core@3.1.1?type=jar">
+      <dependency ref="pkg:maven/org.apache.maven/maven-model@3.1.1?type=jar"/>
+      <dependency ref="pkg:maven/org.apache.maven/maven-settings@3.1.1?type=jar"/>
+      <dependency ref="pkg:maven/org.apache.maven/maven-settings-builder@3.1.1?type=jar"/>
+      <dependency ref="pkg:maven/org.apache.maven/maven-repository-metadata@3.1.1?type=jar"/>
+      <dependency ref="pkg:maven/org.apache.maven/maven-artifact@3.1.1?type=jar"/>
+      <dependency ref="pkg:maven/org.apache.maven/maven-plugin-api@3.1.1?type=jar"/>
+      <dependency ref="pkg:maven/org.apache.maven/maven-model-builder@3.1.1?type=jar"/>
+      <dependency ref="pkg:maven/org.apache.maven/maven-aether-provider@3.1.1?type=jar"/>
+      <dependency ref="pkg:maven/org.eclipse.aether/aether-impl@0.9.0.M2?type=jar"/>
+      <dependency ref="pkg:maven/org.eclipse.aether/aether-api@0.9.0.M2?type=jar"/>
+      <dependency ref="pkg:maven/org.eclipse.aether/aether-util@0.9.0.M2?type=jar"/>
+      <dependency ref="pkg:maven/org.eclipse.sisu/org.eclipse.sisu.plexus@0.0.0.M5?type=jar"/>
+      <dependency ref="pkg:maven/org.codehaus.plexus/plexus-interpolation@1.26?type=jar"/>
+      <dependency ref="pkg:maven/org.codehaus.plexus/plexus-utils@3.3.0?type=jar"/>
+      <dependency ref="pkg:maven/org.codehaus.plexus/plexus-classworlds@2.5.1?type=jar"/>
+      <dependency ref="pkg:maven/org.codehaus.plexus/plexus-component-annotations@2.0.0?type=jar"/>
+      <dependency ref="pkg:maven/org.sonatype.plexus/plexus-sec-dispatcher@1.3?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.apache.maven/maven-settings@3.1.1?type=jar">
+      <dependency ref="pkg:maven/org.codehaus.plexus/plexus-utils@3.3.0?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.apache.maven/maven-settings-builder@3.1.1?type=jar">
+      <dependency ref="pkg:maven/org.codehaus.plexus/plexus-utils@3.3.0?type=jar"/>
+      <dependency ref="pkg:maven/org.codehaus.plexus/plexus-interpolation@1.26?type=jar"/>
+      <dependency ref="pkg:maven/org.codehaus.plexus/plexus-component-annotations@2.0.0?type=jar"/>
+      <dependency ref="pkg:maven/org.apache.maven/maven-settings@3.1.1?type=jar"/>
+      <dependency ref="pkg:maven/org.sonatype.plexus/plexus-sec-dispatcher@1.3?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.codehaus.plexus/plexus-interpolation@1.26?type=jar"/>
+    <dependency ref="pkg:maven/org.codehaus.plexus/plexus-component-annotations@2.0.0?type=jar"/>
+    <dependency ref="pkg:maven/org.sonatype.plexus/plexus-sec-dispatcher@1.3?type=jar">
+      <dependency ref="pkg:maven/org.codehaus.plexus/plexus-utils@3.3.0?type=jar"/>
+      <dependency ref="pkg:maven/org.sonatype.plexus/plexus-cipher@1.4?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.sonatype.plexus/plexus-cipher@1.4?type=jar"/>
+    <dependency ref="pkg:maven/org.apache.maven/maven-repository-metadata@3.1.1?type=jar">
+      <dependency ref="pkg:maven/org.codehaus.plexus/plexus-utils@3.3.0?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.apache.maven/maven-plugin-api@3.1.1?type=jar">
+      <dependency ref="pkg:maven/org.apache.maven/maven-model@3.1.1?type=jar"/>
+      <dependency ref="pkg:maven/org.apache.maven/maven-artifact@3.1.1?type=jar"/>
+      <dependency ref="pkg:maven/org.eclipse.sisu/org.eclipse.sisu.plexus@0.0.0.M5?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.eclipse.sisu/org.eclipse.sisu.plexus@0.0.0.M5?type=jar">
+      <dependency ref="pkg:maven/javax.enterprise/cdi-api@1.0?type=jar"/>
+      <dependency ref="pkg:maven/com.google.guava/guava@10.0.1?type=jar"/>
+      <dependency ref="pkg:maven/org.sonatype.sisu/sisu-guice@3.1.0?classifier=no_aop&amp;type=jar"/>
+      <dependency ref="pkg:maven/org.eclipse.sisu/org.eclipse.sisu.inject@0.0.0.M5?type=jar"/>
+      <dependency ref="pkg:maven/org.codehaus.plexus/plexus-component-annotations@2.0.0?type=jar"/>
+      <dependency ref="pkg:maven/org.codehaus.plexus/plexus-classworlds@2.5.1?type=jar"/>
+      <dependency ref="pkg:maven/org.codehaus.plexus/plexus-utils@3.3.0?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/javax.enterprise/cdi-api@1.0?type=jar">
+      <dependency ref="pkg:maven/javax.annotation/jsr250-api@1.0?type=jar"/>
+      <dependency ref="pkg:maven/javax.inject/javax.inject@1?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/javax.annotation/jsr250-api@1.0?type=jar"/>
+    <dependency ref="pkg:maven/javax.inject/javax.inject@1?type=jar"/>
+    <dependency ref="pkg:maven/com.google.guava/guava@10.0.1?type=jar">
+      <dependency ref="pkg:maven/com.google.code.findbugs/jsr305@1.3.9?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.google.code.findbugs/jsr305@1.3.9?type=jar"/>
+    <dependency ref="pkg:maven/org.sonatype.sisu/sisu-guice@3.1.0?classifier=no_aop&amp;type=jar">
+      <dependency ref="pkg:maven/javax.inject/javax.inject@1?type=jar"/>
+      <dependency ref="pkg:maven/aopalliance/aopalliance@1.0?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/aopalliance/aopalliance@1.0?type=jar"/>
+    <dependency ref="pkg:maven/org.eclipse.sisu/org.eclipse.sisu.inject@0.0.0.M5?type=jar"/>
+    <dependency ref="pkg:maven/org.codehaus.plexus/plexus-classworlds@2.5.1?type=jar"/>
+    <dependency ref="pkg:maven/org.apache.maven/maven-model-builder@3.1.1?type=jar">
+      <dependency ref="pkg:maven/org.codehaus.plexus/plexus-utils@3.3.0?type=jar"/>
+      <dependency ref="pkg:maven/org.codehaus.plexus/plexus-interpolation@1.26?type=jar"/>
+      <dependency ref="pkg:maven/org.codehaus.plexus/plexus-component-annotations@2.0.0?type=jar"/>
+      <dependency ref="pkg:maven/org.apache.maven/maven-model@3.1.1?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.apache.maven/maven-aether-provider@3.1.1?type=jar">
+      <dependency ref="pkg:maven/org.apache.maven/maven-model@3.1.1?type=jar"/>
+      <dependency ref="pkg:maven/org.apache.maven/maven-model-builder@3.1.1?type=jar"/>
+      <dependency ref="pkg:maven/org.apache.maven/maven-repository-metadata@3.1.1?type=jar"/>
+      <dependency ref="pkg:maven/org.eclipse.aether/aether-api@0.9.0.M2?type=jar"/>
+      <dependency ref="pkg:maven/org.eclipse.aether/aether-spi@0.9.0.M2?type=jar"/>
+      <dependency ref="pkg:maven/org.eclipse.aether/aether-util@0.9.0.M2?type=jar"/>
+      <dependency ref="pkg:maven/org.eclipse.aether/aether-impl@0.9.0.M2?type=jar"/>
+      <dependency ref="pkg:maven/org.codehaus.plexus/plexus-component-annotations@2.0.0?type=jar"/>
+      <dependency ref="pkg:maven/org.codehaus.plexus/plexus-utils@3.3.0?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.eclipse.aether/aether-api@0.9.0.M2?type=jar"/>
+    <dependency ref="pkg:maven/org.eclipse.aether/aether-spi@0.9.0.M2?type=jar">
+      <dependency ref="pkg:maven/org.eclipse.aether/aether-api@0.9.0.M2?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.eclipse.aether/aether-util@0.9.0.M2?type=jar">
+      <dependency ref="pkg:maven/org.eclipse.aether/aether-api@0.9.0.M2?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.eclipse.aether/aether-impl@0.9.0.M2?type=jar">
+      <dependency ref="pkg:maven/org.eclipse.aether/aether-api@0.9.0.M2?type=jar"/>
+      <dependency ref="pkg:maven/org.eclipse.aether/aether-spi@0.9.0.M2?type=jar"/>
+      <dependency ref="pkg:maven/org.eclipse.aether/aether-util@0.9.0.M2?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.apache.maven.shared/maven-shared-utils@3.3.3?type=jar">
+      <dependency ref="pkg:maven/commons-io/commons-io@2.6?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/commons-io/commons-io@2.6?type=jar"/>
+    <dependency ref="pkg:maven/org.apache.commons/commons-compress@1.20?type=jar"/>
+    <dependency ref="pkg:maven/org.codehaus.plexus/plexus-archiver@4.2.7?type=jar">
+      <dependency ref="pkg:maven/org.codehaus.plexus/plexus-utils@3.3.0?type=jar"/>
+      <dependency ref="pkg:maven/org.codehaus.plexus/plexus-io@3.2.0?type=jar"/>
+      <dependency ref="pkg:maven/org.apache.commons/commons-compress@1.20?type=jar"/>
+      <dependency ref="pkg:maven/org.iq80.snappy/snappy@0.4?type=jar"/>
+      <dependency ref="pkg:maven/org.tukaani/xz@1.9?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.codehaus.plexus/plexus-io@3.2.0?type=jar">
+      <dependency ref="pkg:maven/org.codehaus.plexus/plexus-utils@3.3.0?type=jar"/>
+      <dependency ref="pkg:maven/commons-io/commons-io@2.6?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.iq80.snappy/snappy@0.4?type=jar"/>
+    <dependency ref="pkg:maven/org.tukaani/xz@1.9?type=jar"/>
+  </dependencies>
+</bom>
