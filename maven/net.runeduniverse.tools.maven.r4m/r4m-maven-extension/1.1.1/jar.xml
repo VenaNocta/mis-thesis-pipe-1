@@ -1937,7 +1937,7 @@ file comparators, endian transformation classes, and much more.</description>
     </component>
   </components>
   <dependencies>
-    <dependency ref="pkg:maven/net.runeduniverse.tools.maven.r4m/r4m-maven-extension@1.1.1?type=maven-plugin">
+    <dependency ref="pkg:maven/net.runeduniverse.tools.maven.r4m/r4m-maven-extension@1.1.1?type=jar">
       <dependency ref="pkg:maven/net.runeduniverse.tools.maven.r4m/r4m-api@1.1.0?type=jar"/>
       <dependency ref="pkg:maven/net.runeduniverse.tools.maven.r4m/r4m-model@1.1.0?type=jar"/>
       <dependency ref="pkg:maven/net.runeduniverse.tools.maven.r4m/r4m-model-builder@1.1.1?type=jar"/>
