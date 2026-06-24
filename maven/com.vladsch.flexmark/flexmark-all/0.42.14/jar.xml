@@ -1,0 +1,2096 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bom serialNumber="urn:uuid:1542f899-6653-3f5c-b2a9-46f83c97b0c6" version="1" xmlns="http://cyclonedx.org/schema/bom/1.6">
+  <metadata>
+    <timestamp>2026-06-24T15:54:01Z</timestamp>
+    <lifecycles>
+      <lifecycle>
+        <phase>build</phase>
+      </lifecycle>
+    </lifecycles>
+    <tools>
+      <components>
+        <component type="library">
+          <author>OWASP Foundation</author>
+          <group>org.cyclonedx</group>
+          <name>cyclonedx-maven-plugin</name>
+          <version>2.9.2</version>
+          <description>CycloneDX Maven plugin</description>
+          <hashes>
+            <hash alg="MD5">843a7130400f75d33f563dc7e9f52dea</hash>
+            <hash alg="SHA-1">2cac5a176b9f48801dfc4910d4f6a34bfbb13445</hash>
+            <hash alg="SHA-256">d9e5a12bac3c1a91d85f3a1ad84307099f457ff24aa65b438ba7de9ca784a54e</hash>
+            <hash alg="SHA-512">636f788518752c5a23d14bad41d68b0d549e4b3a3d720d66f2f6e2b8b956207942ee12abba968a1e9aac6cf1d78d9e738a4a75eeb8bc6fca2377030fbb482407</hash>
+            <hash alg="SHA-384">72aad41633b92fadd4dbd1c6f5c1b956836b22d3b96afbdd7ca8b8eb0456eec00c2ed658e3c2d4e93d95048bcc23dac8</hash>
+            <hash alg="SHA3-384">9837cee0f9b7d575f8d88df3ad6f58a075032ad2635e0987abbc102240327f1cec87dc062b3034009f028ab5baf988f9</hash>
+            <hash alg="SHA3-256">4c654267cde6eb6d295dbc06b33e33528412bee57549dae89c85b8df8202dbcb</hash>
+            <hash alg="SHA3-512">f7da73632ef2fd1c2d85f0cf5eebc2b6a3ff1ae2ed0945442e679da71490562a2ff6b67422dbd5285f4042eda6637e6f3544f62825a625b38efacfdebc8df137</hash>
+          </hashes>
+        </component>
+      </components>
+    </tools>
+    <component type="library" bom-ref="pkg:maven/com.vladsch.flexmark/flexmark-all@0.42.14?type=jar">
+      <group>com.vladsch.flexmark</group>
+      <name>flexmark-all</name>
+      <version>0.42.14</version>
+      <description>flexmark-java core and all extension modules and converters</description>
+      <hashes>
+        <hash alg="MD5">3de7e346dbbda0664e5c0b94c67451b3</hash>
+        <hash alg="SHA-1">0a3750727570d1eee516b1d4c1f3e42f8ada513b</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>BSD-2-Clause</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/com.vladsch.flexmark/flexmark-all@0.42.14?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/vsch/flexmark-java/flexmark-all</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/vsch/flexmark-java/flexmark-all</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <properties>
+      <property name="maven.goal">makeBom</property>
+      <property name="maven.scopes">compile,provided,runtime,system</property>
+    </properties>
+  </metadata>
+  <components>
+    <component type="library" bom-ref="pkg:maven/com.vladsch.flexmark/flexmark@0.42.14?type=jar">
+      <group>com.vladsch.flexmark</group>
+      <name>flexmark</name>
+      <version>0.42.14</version>
+      <description>Core of flexmark-java (implementation of CommonMark for parsing markdown and rendering to HTML)</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">e51158a4276d4353e276ed6d77559979</hash>
+        <hash alg="SHA-1">9842fefbaba8640ed844aba4d46359f91729e9eb</hash>
+        <hash alg="SHA-256">0f317b4487f1728bd774484294ca2c6bda47222bf6798d2e3180d19fb943176c</hash>
+        <hash alg="SHA-512">6c800ccced6e6c84b04015c52fa3c99f5cb00ea747bd3e79594667ef22acecc08ed249ed9b7a29b280a99c687e1e74e00b29da6dba17c5830e3bb9ccdece62ba</hash>
+        <hash alg="SHA-384">9c6568311eec1f70090269cac4ac1946d6a662b4578456d191e990d73de5d32e07bb993bd9ad2f97dd2f7f06548c9def</hash>
+        <hash alg="SHA3-384">9cb653c06c8a454c6e59b0d5b4905315e6c474cff9229f8767542efd1783722b1f83aea54f8764f8e0c897187115fe79</hash>
+        <hash alg="SHA3-256">1df29695b9abf6127053605ef103014a567d19e634b0236123a03ccb53261ebb</hash>
+        <hash alg="SHA3-512">6dd3586f69f5ed6eff4f5a81a4d0ee3357fb73696297de8022111185c5b320e052a2df6c71aa9d52e74e7d07e027ff526fd3dc6f21ee34e3b0051643876ca46a</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>BSD-2-Clause</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/com.vladsch.flexmark/flexmark@0.42.14?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/vsch/flexmark-java/flexmark</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/vsch/flexmark-java/flexmark</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-abbreviation@0.42.14?type=jar">
+      <group>com.vladsch.flexmark</group>
+      <name>flexmark-ext-abbreviation</name>
+      <version>0.42.14</version>
+      <description>flexmark-java extension for defining abbreviations and turning appearance of these abbreviations in text into links with titles consisting of the expansion of the abbreviation</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">a83c9a54e768adc0380296d370412aae</hash>
+        <hash alg="SHA-1">fd18fcd0c69b30388b115fe644a3eb0476e924b5</hash>
+        <hash alg="SHA-256">6c11c50d91a73e5ee83e58c25b124acf5fdfcec8006357c100aa5daa1a40a036</hash>
+        <hash alg="SHA-512">168518af7bfb2696f196077683f1bde0c9f588d78227adbd63a7978b15a67170dca1eb03b4528fdbadf0c66a6e96df62c75d13328dd29bfa13406f3c1c126b1e</hash>
+        <hash alg="SHA-384">f826f113d66397218bf95b153bda85403c9584e840a4d06af9807af4daa71974f302261bec3457c4297bb7ba9a434075</hash>
+        <hash alg="SHA3-384">8258ad3cf3421250f0781e1c6ea6128d5c6d6e8659ac912e8d3301c5257cd472d77eba8d441aab9a80ed0800fc4a5003</hash>
+        <hash alg="SHA3-256">c91e14ebe8f8cb923a9f2e4c8f0e82fed0f373b4debae9961900178dbbe64fda</hash>
+        <hash alg="SHA3-512">d09cd5a70058b984bc0c3f5dbfea754312bf5d7c8258ef4fa4acc09c4946510d812a64bc51b13c3835869eef1436ded1517d308bac85733027386dc4159bf33e</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>BSD-2-Clause</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/com.vladsch.flexmark/flexmark-ext-abbreviation@0.42.14?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/vsch/flexmark-java/flexmark-ext-abbreviation</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/vsch/flexmark-java/flexmark-ext-abbreviation</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-admonition@0.42.14?type=jar">
+      <group>com.vladsch.flexmark</group>
+      <name>flexmark-ext-admonition</name>
+      <version>0.42.14</version>
+      <description>flexmark-java extension for admonition syntax</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">f5a981c82fd39ea64c2ba3502084f77c</hash>
+        <hash alg="SHA-1">6705da4805d75040b5f113af1296ce1c290002bd</hash>
+        <hash alg="SHA-256">1c919c8cb3db778ce63c1cceb121e06492ffc5c2f8cdd1508b6a88d2060d77c7</hash>
+        <hash alg="SHA-512">a93e9ac2f6fe71a7ca1732c22164f23945634bd18a4c07e588b8ceef5700c9c0b3c95d4371d1b552c6b07ac4dd41d74cd4b2a37bc01e40948ac384254853f9d2</hash>
+        <hash alg="SHA-384">139dd3df1df7b6072a4a29d972a3efb994c3af656053768ffecd2f6d73fe5b87c9608dfb6a5e282357c547cf080508bf</hash>
+        <hash alg="SHA3-384">1f81506140e812cde30921991645ec1840c2b862037fcf95fb5ad2ec9f884fec54b43749bf70ed2f65fc2a07e7fb4350</hash>
+        <hash alg="SHA3-256">52aa1a57e2e3f66ce17136a3876b7fc08aed7d83aab3aab71b42eaf8bde43eae</hash>
+        <hash alg="SHA3-512">d3b5da3e2a7884227465f63d771260cb65d2db44b99f710f8c723a82289bfd7635738a12d5716b07c118fe5f9537069ef985c3d28be70ccb9b1f92d009ef482d</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>BSD-2-Clause</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/com.vladsch.flexmark/flexmark-ext-admonition@0.42.14?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/vsch/flexmark-java/flexmark-ext-admonition</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/vsch/flexmark-java/flexmark-ext-admonition</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-anchorlink@0.42.14?type=jar">
+      <group>com.vladsch.flexmark</group>
+      <name>flexmark-ext-anchorlink</name>
+      <version>0.42.14</version>
+      <description>flexmark-java extension for generating anchor links for headings using GitHub compatible algorithm</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">64ec5eb0aaa2ac4261caf91bb3b83196</hash>
+        <hash alg="SHA-1">5ce9fd060b044cbfe076d93bf852c953d8f3661e</hash>
+        <hash alg="SHA-256">49bb421d40d45dad315a68b691ecfee8b80a843bf1626d52b945743a6a656ca1</hash>
+        <hash alg="SHA-512">06304ed274407ec6ff1f7a54ab4b8c7b0c263b50a1627b120af0397567e8fad6b8a138389c584af0af937465d94027a74380ae9974c98bd58c0279ff51e08039</hash>
+        <hash alg="SHA-384">7af855e80b155afaa7468b17ce0d8a3e2331f1efb20a894fd6c270b3908038a4e3f630c2fa57c607f4278d108adc0404</hash>
+        <hash alg="SHA3-384">e2329731faf2cb5402c830981ddfbceade530d0934704aa154eb0695cf56a0ecab199380a93e5b1475e123096d7b2c3c</hash>
+        <hash alg="SHA3-256">6bc97f17901fb2c2d8023a85234962e39d332057a25cabc55a5a91c8815294ae</hash>
+        <hash alg="SHA3-512">ab98dec3b8550ee989721a647a8713a83ae641a262e56a0f7846fba55280a0149bb9898d258bda7063498507d63a60f4eb6c00ada56b7df576b8a88e49bd325a</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>BSD-2-Clause</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/com.vladsch.flexmark/flexmark-ext-anchorlink@0.42.14?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/vsch/flexmark-java/flexmark-ext-anchorlink</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/vsch/flexmark-java/flexmark-ext-anchorlink</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-aside@0.42.14?type=jar">
+      <group>com.vladsch.flexmark</group>
+      <name>flexmark-ext-aside</name>
+      <version>0.42.14</version>
+      <description>flexmark-java extension for converting | to aside tags</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">2272ac9ca4f0d86e8f0986cd486ac768</hash>
+        <hash alg="SHA-1">74b2971f4ebf31b933a8f540a15b4f48bc76730e</hash>
+        <hash alg="SHA-256">b568313f16bdeb0338e72d64b32974be18c7abc5ee84331a6db02f04c08ffaae</hash>
+        <hash alg="SHA-512">61b78e7fab1fd94ce4722f62ff951a18555fcc7cdc7d2c68b57434b9d01b0497c972ada8b75a4469a67ff9da3702c700264b3d04f7959643ec16745d6e771aa0</hash>
+        <hash alg="SHA-384">2e02d3eca67e82ad8de587f74f2d08d586a817d4b4ddcb2da9fed1b43b5d7716941bf16c1e9299043994c8f0c452cae0</hash>
+        <hash alg="SHA3-384">906bd2a1bd3ce690f579968fb5c7ed905802fed6e001e65d841211e8eefefc813f79b4011c1c6ece6fbed5dfc122fd65</hash>
+        <hash alg="SHA3-256">aac2c1f0b125227b60bbb46af867c8c8cbcbb11199f0e0a9a60fe4f877a97b17</hash>
+        <hash alg="SHA3-512">0281d9503543c59b8eca190f3b61ddabbe1849eaec61aace89812f5900924c903bc9716aac020c0cce2ea84c2946b85f3b3ace25f444b187a71c3b24a3156a3e</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>BSD-2-Clause</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/com.vladsch.flexmark/flexmark-ext-aside@0.42.14?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/vsch/flexmark-java/flexmark-ext-aside</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/vsch/flexmark-java/flexmark-ext-aside</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-attributes@0.42.14?type=jar">
+      <group>com.vladsch.flexmark</group>
+      <name>flexmark-ext-attributes</name>
+      <version>0.42.14</version>
+      <description>flexmark-java extension for attributes</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">e0655612fdda723988ac5313430bc6cf</hash>
+        <hash alg="SHA-1">4c72e54679490138b19303c22f31f69af48e3aab</hash>
+        <hash alg="SHA-256">ee64456a07cf1c06597bede3afccfbdc014688ce66328d863b4cf4055abc8eb0</hash>
+        <hash alg="SHA-512">25148eb1f3b2f90ce8decda64c27085daaddcb6244f8d70c5705569d3c45a5d760f34b90bfb3f8140f37992950515475390f43d06b5f6b7743d65a26263334a4</hash>
+        <hash alg="SHA-384">9dde7ef22026e8376b8ef39f110bfd3f08228e647b3a40200887a607c387dbf99c44e89ddedabb3a1a1451b301f5c39c</hash>
+        <hash alg="SHA3-384">2bbed9ca7fa5226b7b59b1c727cd704fbe27d7bc20cf531188a6d558ab5caed94664ae4d22f6a92d338263bf126d8438</hash>
+        <hash alg="SHA3-256">d6ac4517aacaf36248058cd159a033ad2b6da32f95f16d3490e78566385a7408</hash>
+        <hash alg="SHA3-512">7a63f818ced0fc8d9f26e22bb09a2c13645047a51aa87be20edf03ba389c585b240c7ffc14e68cd5e574b75020ca3c4c531ae88c6e7259d5903a11a5aa386724</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>BSD-2-Clause</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/com.vladsch.flexmark/flexmark-ext-attributes@0.42.14?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/vsch/flexmark-java/flexmark-ext-attributes</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/vsch/flexmark-java/flexmark-ext-attributes</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-autolink@0.42.14?type=jar">
+      <group>com.vladsch.flexmark</group>
+      <name>flexmark-ext-autolink</name>
+      <version>0.42.14</version>
+      <description>flexmark-java extension for turning plain URLs and email addresses into links</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">3fd6cba361141a5c31932ceaa9755646</hash>
+        <hash alg="SHA-1">3cfe60cb3647db7bad3579d3b02d4ea6cec78541</hash>
+        <hash alg="SHA-256">99e84fbccc0d75e476e16d3df4466f666ed5446a1c2e9f382ec1b8fb834def8e</hash>
+        <hash alg="SHA-512">15bf96a3167f92d89dde8c348743fd11b43ef7b9b0f3341234d9e8a92ee89e57eaa3b5d6577e2a49fcf925cbdafbee27df39ed3fb91e8510bb10dcc8259a1b64</hash>
+        <hash alg="SHA-384">8dc1dd72b33c05b22426a9a25587b915f28c17c0e0be45d0c7fd2a6ff3a7e2dc58661b749f0fb5860b64da2d23e662e7</hash>
+        <hash alg="SHA3-384">f01b6c71dadfea59bc01ae8fec84375e2563b5a70aad47f09f44be01b371d7124ea1489775fa233b6023a9743fcc8bd0</hash>
+        <hash alg="SHA3-256">31010f19e43f7f45a729a23a7357a604c59160f18328e1a2986fc8099e20682e</hash>
+        <hash alg="SHA3-512">270ce0b1fe11a009b48b0bb6e9d4f7b0db8abd3c27c9acbfa427ce2116d058aaf5ab147c3b9b98bfc4c9c4e193cbf2abf4e166a0f61e69c852e83d479f1446cf</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>BSD-2-Clause</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/com.vladsch.flexmark/flexmark-ext-autolink@0.42.14?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/vsch/flexmark-java/flexmark-ext-autolink</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/vsch/flexmark-java/flexmark-ext-autolink</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.nibor.autolink/autolink@0.6.0?type=jar">
+      <group>org.nibor.autolink</group>
+      <name>autolink</name>
+      <version>0.6.0</version>
+      <description>Java library to extract links (URLs, email addresses) from plain text;
+        fast, small and smart about recognizing where links end</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">f2633571471a5957ee12e61b184e6219</hash>
+        <hash alg="SHA-1">3986d016a14e8c81afeec752f19af29b20e8367b</hash>
+        <hash alg="SHA-256">a80be030f6386f18111cad9161c0b6983157352a1b59a59e6002172f0d321c04</hash>
+        <hash alg="SHA-512">fae9bf5a5bf96ae5a2959e73202e05526c1477d9161b55fdf5e33c2b006515f719f96186ee0e439c4e4dbe4980dc282c9753162aaefa3c4b3e62f29b9838acaf</hash>
+        <hash alg="SHA-384">c95e2d6af633d7e3721a569a32070ae8ac5f0bf95aec3b5f71f18dcc503ca014baa8b1c0fda19e2111277b2d468e9a6c</hash>
+        <hash alg="SHA3-384">7cc26db545b164738f5e8eae706c24d91e58e0b97c19bc7568a752ccb52c16d14b0356459a36e4f720493f2cf4631aee</hash>
+        <hash alg="SHA3-256">b4d48f48ebcdec59ab4d85eaf02a5426dca1a9d1fc705e86b1aad45c8284ed77</hash>
+        <hash alg="SHA3-512">d8a25de41335b774af7867035e27cfc46b784fb1b6751134a4f8983c5467de86c9c32a9acbb4aa0188afb44681034ad0cd44bd396d4f40bdc125da636ec10e62</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/license/mit/</url>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.nibor.autolink/autolink@0.6.0?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/robinst/autolink-java</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/robinst/autolink-java</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-definition@0.42.14?type=jar">
+      <group>com.vladsch.flexmark</group>
+      <name>flexmark-ext-definition</name>
+      <version>0.42.14</version>
+      <description>flexmark-java extension for definition</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">0d198fcb393922b552f36aa8ee9a541c</hash>
+        <hash alg="SHA-1">3ee31461b72186ed8b0bbc45f07b2cba70bb1721</hash>
+        <hash alg="SHA-256">28d7739d1e922fbc391942dfc2e4061a65ca864c48577bc82a23fc7576be118e</hash>
+        <hash alg="SHA-512">dafb3e5e9ace060c8c9edec91434a50e481172b8178570156d48156b34fa30a78cc1ea96020bbb07c861952929ee16e604f17b9feaf9cd8e301e1812c791cda2</hash>
+        <hash alg="SHA-384">51a868b0a584b643cd5cd8443b94bdeeaab27e0f903e2844a46e72021537e086920f022aeb0ac9dd847e0fa359a3cfe0</hash>
+        <hash alg="SHA3-384">35633153b1a3d07198c111e73f8033e62f64a4b9520f1d1ff85f73b0e5752dbd936d303257a23c34797d32105242ccc8</hash>
+        <hash alg="SHA3-256">ed5abb9c0fa24864000008458ad4550141cf7efac142d279fc242c0d13a7492d</hash>
+        <hash alg="SHA3-512">ca2cbc27d034068b08172aadef072dc36502a5d234ea2653f20d625684f457ea2c6c407957092f005e8161b0ab6a44a0f7ab28554c975bb706ca0d83912cc480</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>BSD-2-Clause</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/com.vladsch.flexmark/flexmark-ext-definition@0.42.14?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/vsch/flexmark-java/flexmark-ext-definition</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/vsch/flexmark-java/flexmark-ext-definition</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-emoji@0.42.14?type=jar">
+      <group>com.vladsch.flexmark</group>
+      <name>flexmark-ext-emoji</name>
+      <version>0.42.14</version>
+      <description>flexmark-java extension for emoji shortcuts using Emoji-Cheat-Sheet.com http://www.emoji-cheat-sheet.com/</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">e07e5cb45cbb8b639428ba15b1ce4d27</hash>
+        <hash alg="SHA-1">3118723b2fa76dc2c7238652bca7519e31c55b22</hash>
+        <hash alg="SHA-256">9aef7c6edf2128731e7a438a4b4c65ed4a39699bd21ff3d2c6cda4805ec0e019</hash>
+        <hash alg="SHA-512">56b5685b7e464f6608f41191c67ffb152360f791a4b8ea29247da93aa752ad76614593c17a1f2b9650ea0ac03806f52bed3f164936419bc58336c204a66ab1c2</hash>
+        <hash alg="SHA-384">74308c8ab0cf87bdb81569c1099b101a3aed9cea7e7272397f733cbf32aa769104f65a0e58a7e7a6fe5febbe54036051</hash>
+        <hash alg="SHA3-384">3f53f2422a64d17e1d36cc62712bdec0ce6cdbfebedff0a73f7d048830e30310a3c59af2dd913bdd693c96024e34b3ce</hash>
+        <hash alg="SHA3-256">f9bce48fe5025a5a902eed96a61ce082020af261114004668a6934a155b8f93e</hash>
+        <hash alg="SHA3-512">a8f03bda858f9144f929b3b4c4cb5a58dd537abfde590c277f6702c970729150ab75f751259fa15cf6b26979d9a812038e71a394c08f146312b117a57ef7da1f</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>BSD-2-Clause</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/com.vladsch.flexmark/flexmark-ext-emoji@0.42.14?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/vsch/flexmark-java/flexmark-ext-emoji</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/vsch/flexmark-java/flexmark-ext-emoji</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-enumerated-reference@0.42.14?type=jar">
+      <group>com.vladsch.flexmark</group>
+      <name>flexmark-ext-enumerated-reference</name>
+      <version>0.42.14</version>
+      <description>flexmark-java extension for enumerated reference processing</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">60760a3658078869bec7b293ef662f33</hash>
+        <hash alg="SHA-1">f9fc520ca7e369a9f8ea70212930f5959b9cb869</hash>
+        <hash alg="SHA-256">ccbdb429d3bbad3bca0ba1282ba41c48325d3eefff0879c7f0e0623cb0046451</hash>
+        <hash alg="SHA-512">e0ce30995a41b3e1055ad58addb36e4b988d691b5c55501104d4f0a2b745ba36bc2256df8e035d1e3e685ed003062d0cfbefee314fd7a0e50d8786a3968fea87</hash>
+        <hash alg="SHA-384">c83f03dfa1c0158fb474d537145ffbe23de78c58dac24ab0c3b70a46885b41ea6d9e52f4685a232d98499b963eda65ce</hash>
+        <hash alg="SHA3-384">c2dc79c4e7b4cc472776a91e6e63e7cf0b3a7954a90577ad1487830d953bee131e8ac46dd302e7838915a10a1785f371</hash>
+        <hash alg="SHA3-256">8d69dbe471b908f9db8c37182541f9e32b307bbfd692e4f16d81c355988f0266</hash>
+        <hash alg="SHA3-512">8c2e1380362598f35ec4bcbecbfb72e918acb67d33e5b7e7463297ac4f4bda69a323802f0ad1ab7ec10bdc51f8698954db25d073a376549c560431d3fd1b63bd</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>BSD-2-Clause</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/com.vladsch.flexmark/flexmark-ext-enumerated-reference@0.42.14?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/vsch/flexmark-java/flexmark-ext-enumerated-reference</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/vsch/flexmark-java/flexmark-ext-enumerated-reference</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-escaped-character@0.42.14?type=jar">
+      <group>com.vladsch.flexmark</group>
+      <name>flexmark-ext-escaped-character</name>
+      <version>0.42.14</version>
+      <description>flexmark-java extension for escaped_character</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">6eea661b0b3c8bfc907e35ac145b4e78</hash>
+        <hash alg="SHA-1">f85a79a652c0e393a007b0a229b25b0acb8fc87f</hash>
+        <hash alg="SHA-256">2513d4fde1af9fb8a81cbddb1d473807cab07908b0fea9e3b32b628f7b9b4126</hash>
+        <hash alg="SHA-512">6227683ffcd1f46bdbc730ed1f1b5603c1748528ea12e80e11dc399535a5d6d987f4c15720ea6980898300a7a2e0d4d79521db2917802f554ef50434c0dc267a</hash>
+        <hash alg="SHA-384">44588125d57f91e25206ece96916b48c4b6532d6d68a634695aca355f20682ea880dbd76f9d92ec24ec345c613e847af</hash>
+        <hash alg="SHA3-384">7f9ae1d3c5130b64d6afd84ef77904d5dfcd6db05964cf51b7b282efd2da8325cf600828fcf0678d82b0fe57f9b8afc7</hash>
+        <hash alg="SHA3-256">1fa34bd074f10b33101be27a4d45dc2440ed5653b90247c10dd6aee104370906</hash>
+        <hash alg="SHA3-512">a5612afac2ff9c857f533f5d959e0730a1087d857260b5bacd2f36ab2942a7d9ddb25d32802c0892081c3e8a0076584d3a12619ed556b77e930b5ed06dc6f136</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>BSD-2-Clause</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/com.vladsch.flexmark/flexmark-ext-escaped-character@0.42.14?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/vsch/flexmark-java/flexmark-ext-escaped-character</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/vsch/flexmark-java/flexmark-ext-escaped-character</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-footnotes@0.42.14?type=jar">
+      <group>com.vladsch.flexmark</group>
+      <name>flexmark-ext-footnotes</name>
+      <version>0.42.14</version>
+      <description>flexmark-java extension for footnote inline elments and footnote definitions</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">b3f6e761a9307710cba1c5ae04f6ddea</hash>
+        <hash alg="SHA-1">37d27c701976e6639f7d085e8cbf1ee1bdac8160</hash>
+        <hash alg="SHA-256">bc883ca8fa1c0593da7d3e18864315ae5455d72707af335da7d222e79ec96557</hash>
+        <hash alg="SHA-512">3a3dda894bb3ca70e2bd816c0c6bffbf61e63f14d016429c8021a3f6891a73e72743453a853ae6538a004d7c5b6fc4f77383b83cc9d056980b089be7836e0663</hash>
+        <hash alg="SHA-384">a1818138b3ead914ba2acdef18b8a4de1dd6ebcdeb2191ed81b22905b487cdd3097c8881fb6ff01599c63c912162ac97</hash>
+        <hash alg="SHA3-384">e8c4f0613be3e288d3fd0a19533eaab8198dfbb44348a5829f2be3cbaebf59e5b8eacc32937e6f211845cb576c660ace</hash>
+        <hash alg="SHA3-256">4082caaa859942ba40d053c6995dbcbcb27a0ac9294631e9f4713c0a38239ebd</hash>
+        <hash alg="SHA3-512">a4e48bd2eb3d08b27c4baa7b6b78046fa65d453e58806054d55f98a14a68f53ce019b112e43974abd2ca599226de823b02fbeb19e5d143cec85207c22861abf5</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>BSD-2-Clause</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/com.vladsch.flexmark/flexmark-ext-footnotes@0.42.14?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/vsch/flexmark-java/flexmark-ext-footnotes</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/vsch/flexmark-java/flexmark-ext-footnotes</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-gfm-issues@0.42.14?type=jar">
+      <group>com.vladsch.flexmark</group>
+      <name>flexmark-ext-gfm-issues</name>
+      <version>0.42.14</version>
+      <description>flexmark-java extension for GitHub issue syntax</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">6f04b8b01f30ddd647304abb358f1703</hash>
+        <hash alg="SHA-1">5ed5f1df0802f1609e4a8e2bed69181b934060b2</hash>
+        <hash alg="SHA-256">8c7deb8f8d65addbb7ebc5fb7f1f2b4c145a46a2608f6830318a6c2cd3b56012</hash>
+        <hash alg="SHA-512">a18472f02e79c3946998c23279757cefb0ee903f58c98d274851d1b3af4b4c670228316ef99e242c01533a7512a93c8017c3fca2b5d96985480e6fff1e279ae5</hash>
+        <hash alg="SHA-384">f20b534b0040c70e8de1dcdfeb3f042e339afe7629676bbaec283b914b5f53fd6108725d65729788e1e996e9b1f45dc6</hash>
+        <hash alg="SHA3-384">fd968e5cb5c6e3d51b2680001208b57c8a064a3c59635b8492357d6a83d2ca7971b85e6ba68d6fccdb0032b586bc88ce</hash>
+        <hash alg="SHA3-256">d78e990b38cd2e9e350d1c49d86b799900dfd12be91bc12a8341237d776bf193</hash>
+        <hash alg="SHA3-512">a0681b1686bfadff6aa85d0f18b1d91a8e91b5827cc8643bcaa344f9fb6cf7792dfbfbfec6723f07a81240053e1b488fbe822a16090f8a44b1f7cbc8d7e095bb</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>BSD-2-Clause</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/com.vladsch.flexmark/flexmark-ext-gfm-issues@0.42.14?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/vsch/flexmark-java/flexmark-ext-gfm-issues</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/vsch/flexmark-java/flexmark-ext-gfm-issues</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-gfm-strikethrough@0.42.14?type=jar">
+      <group>com.vladsch.flexmark</group>
+      <name>flexmark-ext-gfm-strikethrough</name>
+      <version>0.42.14</version>
+      <description>flexmark-java extension for GFM strikethrough using ~~ (GitHub Flavored Markdown)</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">9b01fc335f998e359d3c4f0b0049bfbf</hash>
+        <hash alg="SHA-1">8c56ef720733979a687de0c48e1e9d35caab746f</hash>
+        <hash alg="SHA-256">141d0056dafb323ece1c75933fd88bdbea7617f94f76cc374ee5c76cd1958904</hash>
+        <hash alg="SHA-512">f551ef2d1b5a6926be0bd3b527af2c32917592638e27a5cb7061e8e338f1d25ee06260c8877c4ac9585ec52afa7b237ccc292439bd11d4eac5ca13122a59d5e2</hash>
+        <hash alg="SHA-384">cdf87ec52913a8c854548c3e926dd2d1ceebb85981b3e62d8c414ed7ef8c3989e90a136fb16c8ab4947810e02af16056</hash>
+        <hash alg="SHA3-384">890097a95015454372acc1ddb393187e0315aaf77dded8426d24db3c579dea1097676258b6b65376989d9ad5ffe505e1</hash>
+        <hash alg="SHA3-256">dfc65e9b76c489183b3014c87f67ac8b456bb50792723cbde955aa15f05d1e09</hash>
+        <hash alg="SHA3-512">acc1bb96c7cecf8b4f19d7a88bfc4463dbf3367c63796b0e5fa94bf2d307f1cb2cff168324691ac725869880cdb660ccfdd857082979cd203295141ac64e10f0</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>BSD-2-Clause</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/com.vladsch.flexmark/flexmark-ext-gfm-strikethrough@0.42.14?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/vsch/flexmark-java/flexmark-ext-gfm-strikethrough</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/vsch/flexmark-java/flexmark-ext-gfm-strikethrough</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-gfm-tables@0.42.14?type=jar">
+      <group>com.vladsch.flexmark</group>
+      <name>flexmark-ext-gfm-tables</name>
+      <version>0.42.14</version>
+      <description>flexmark-java extension for GFM tables using "|" pipes (GitHub Flavored Markdown)</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">691d00bdd8a58a042351c5eb94504a19</hash>
+        <hash alg="SHA-1">d89035f7cb7417b5ce12698240fe4c672fa4b30f</hash>
+        <hash alg="SHA-256">808bc5ddbc8936cb31555731f5e9962bf21a164abc11977ef40af049d4b6c4e9</hash>
+        <hash alg="SHA-512">5e4787c2320e34e2c7627245e70dd4d747d982a4e48be991069821a55784a06581a574306a532e3fa7806e06cde4aac86823a296d700ed9ccddbe2e2b40452e8</hash>
+        <hash alg="SHA-384">16032113d8a238d91560cdfcb758e95463a392aad30441f7f8b707f2149a5bd05c4108aab3c4528a58fb925c9d325984</hash>
+        <hash alg="SHA3-384">339a5df6c7f760643cd465c05ce48995d43cde0190c01e54e3e23402c860cad52532ea1c831028030df99520d04de5af</hash>
+        <hash alg="SHA3-256">7d43edb1c38b59883edac1e038586dcd9049df32a9fd75f734f69a1b3c241f71</hash>
+        <hash alg="SHA3-512">8548b22c53fda531ce67fe4e75a2186b9d7042171e6507701b8139429e4debe085393cf157388276d65ee587cf3ade6b2553b2ef9bb170f8e6208f96b2ce2e31</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>BSD-2-Clause</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/com.vladsch.flexmark/flexmark-ext-gfm-tables@0.42.14?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/vsch/flexmark-java/flexmark-ext-gfm-tables</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/vsch/flexmark-java/flexmark-ext-gfm-tables</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-gfm-tasklist@0.42.14?type=jar">
+      <group>com.vladsch.flexmark</group>
+      <name>flexmark-ext-gfm-tasklist</name>
+      <version>0.42.14</version>
+      <description>flexmark-java extension to convert bullet list items that start with [ ] to a TaskListItem node</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">76851d6f75fd202dfc29c158cce06fb2</hash>
+        <hash alg="SHA-1">ae509f9adedbf1ba516d93f69575ac2b5fb083e2</hash>
+        <hash alg="SHA-256">1b73d98bee812030d139f90fd7cdb95a6bead5f04a79a5f020d619dc23a47e69</hash>
+        <hash alg="SHA-512">e7d5736e74b4f3dc6fee6e85123cee4e3454818c01fc4364f3fc5a3997b4a5ee597e41217ea1578ed790004564d98ca2f0d99a832eb07f26f6354c51c7370b8d</hash>
+        <hash alg="SHA-384">d70539d68fd04f91508e1eac5eaf80d8af07471ecfa250c91cdb8010721b7b1b26e2fc6fd2ec348f3c84432b5480f6bd</hash>
+        <hash alg="SHA3-384">9c4210df64193b5a9c4cc7aabf32794b4491340385e219b5366dd0a5de31841ef6f5dc5d872f74df8355004c57b6f734</hash>
+        <hash alg="SHA3-256">cbfdfb09b8ba9a75b3429014a47cd1aee3cff138634022f0098c560e171ae646</hash>
+        <hash alg="SHA3-512">a13cb71425a1956327c01ef68a0741fb2d99443e7116d7600465309cca5e06e52dc9bcb0d38d28f5baaa836c75478c66b13556f9a3275d0b3797c90b33ac8d19</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>BSD-2-Clause</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/com.vladsch.flexmark/flexmark-ext-gfm-tasklist@0.42.14?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/vsch/flexmark-java/flexmark-ext-gfm-tasklist</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/vsch/flexmark-java/flexmark-ext-gfm-tasklist</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-gfm-users@0.42.14?type=jar">
+      <group>com.vladsch.flexmark</group>
+      <name>flexmark-ext-gfm-users</name>
+      <version>0.42.14</version>
+      <description>flexmark-java extension for GitHub user syntax</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">16c5facc4c8785ff0ceba2ffd231356a</hash>
+        <hash alg="SHA-1">46f0b350624a3fe5c3cae7805619a461e9efbce5</hash>
+        <hash alg="SHA-256">625ac18ae795a55bad0d99dcf84385d17c2a5acdc82dbd59ae71553fbe6dad04</hash>
+        <hash alg="SHA-512">d734615f54579b6d20bb93cc0c544d2a63ebd106cbc2c4a0e2a9337b469cc94a032da49ed2d73bcc7dd63a460774107a48701cbb22b1dca3594f4bd3eaf9fa8a</hash>
+        <hash alg="SHA-384">3e2165cd8552cd99e6be9f4bff2ddccac350b2a364da807f828259e7030a2a05f9468fe18f42a1613949487763939818</hash>
+        <hash alg="SHA3-384">acd8d45613d28b685fba06381b1e9effdeebd8de5a0ddd10b22e52394862ea27d8216ee8e476931e14eac189c4fb4c65</hash>
+        <hash alg="SHA3-256">a16401193201371364f569cba52f0ceafb4c79f4e08b486fdcdf508a95fbae61</hash>
+        <hash alg="SHA3-512">4edbd6959ba23572ec6c22f6e59ebe2c70957fda710cd8731a3972083ef838eab5ef18b4c187c2e6bd8a6b8c7af0a093e21f4ef4df3d215d86cfedde06e72194</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>BSD-2-Clause</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/com.vladsch.flexmark/flexmark-ext-gfm-users@0.42.14?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/vsch/flexmark-java/flexmark-ext-gfm-users</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/vsch/flexmark-java/flexmark-ext-gfm-users</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-gitlab@0.42.14?type=jar">
+      <group>com.vladsch.flexmark</group>
+      <name>flexmark-ext-gitlab</name>
+      <version>0.42.14</version>
+      <description>flexmark-java extension for GitLab Flavoured Markdown</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">d2195b296eab8bdc300acaa5713359a7</hash>
+        <hash alg="SHA-1">ab7ce25e56620902304f9495d750611f83d4b843</hash>
+        <hash alg="SHA-256">9e658f078109772daaae325c28a83abd14f9e733c52967506326aa25ac0612c5</hash>
+        <hash alg="SHA-512">d0acf0f65435bbd09af64494d6d42129acd7d5fbaa5e2cfb81d588c5f46145d1b204500df9e2774bc08ad4b9752c49dfbb52fc8e4522659f71a6950564f60b16</hash>
+        <hash alg="SHA-384">dca5a5e29da235b585354aec6466bdae580b46b60d2c565128e8010b79fbbee8965388b799dd6643962feb2266256c4c</hash>
+        <hash alg="SHA3-384">a7a77d97c60399e27dfdc1d3178092ea01bc9139f537c30d5bcd1149b3b415d3d2db5b8bae8955debab245f181332f34</hash>
+        <hash alg="SHA3-256">4a2c75d12baaf51823e4d6a8d73e24a6882f47648e2b57ad1c7f927496fce191</hash>
+        <hash alg="SHA3-512">62723c371aa89991cd929a00a8196967257ccc9037f81a64e595f394abd0a809f812a64567e186f1b6bc1dad3aedfefb8e4a0013e7ddd2b0ff44f15935f8f1cd</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>BSD-2-Clause</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/com.vladsch.flexmark/flexmark-ext-gitlab@0.42.14?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/vsch/flexmark-java/flexmark-ext-gitlab</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/vsch/flexmark-java/flexmark-ext-gitlab</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-jekyll-front-matter@0.42.14?type=jar">
+      <group>com.vladsch.flexmark</group>
+      <name>flexmark-ext-jekyll-front-matter</name>
+      <version>0.42.14</version>
+      <description>flexmark-java extension for jekyll_front_matter</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">226e5f88e347dcbbd8d45d09bb87e315</hash>
+        <hash alg="SHA-1">2a14df9d8e540a5825f584ffc6e4b31a451ee98f</hash>
+        <hash alg="SHA-256">6d8ebded61a9667a1daaa47ed0014693204eabb57ee17a4c54e0b677ec1b7d3f</hash>
+        <hash alg="SHA-512">dd1a46a4b4f0955bd59ea856f253978dbc9ff392b3e9818fe6c2241cee16611350bb0d7538ae72d8b58bf2b3fe0cf33c676cdc18d0d580ea65180151818b70fb</hash>
+        <hash alg="SHA-384">20a001660d1b9a42f1a3d56a64221bc266920e490cbb8f53c15d382953c59cc3fb2fb2c28886eeeedbe746b7edb5414c</hash>
+        <hash alg="SHA3-384">8c07698efb81273acd281c21648f37ca256615b71e33210c65f4946f867fe09a8776f973198010f4868c124c137a9e85</hash>
+        <hash alg="SHA3-256">64954aa5c1c38b142a585ff2b27f1aa1ff8a383981a953cafa78f0eea4f8af9f</hash>
+        <hash alg="SHA3-512">a1d79e80ed9a672dd3779c189fe124561d8c54a448cb55026fd12718861f3931de7a6d5e3dd13734b9c7515a7018245b4c0410f17caf2681295b41337201a228</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>BSD-2-Clause</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/com.vladsch.flexmark/flexmark-ext-jekyll-front-matter@0.42.14?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/vsch/flexmark-java/flexmark-ext-jekyll-front-matter</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/vsch/flexmark-java/flexmark-ext-jekyll-front-matter</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-jekyll-tag@0.42.14?type=jar">
+      <group>com.vladsch.flexmark</group>
+      <name>flexmark-ext-jekyll-tag</name>
+      <version>0.42.14</version>
+      <description>flexmark-java extension for jekyll tag parsing</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">0a66a65e05e6e164438744105aed3833</hash>
+        <hash alg="SHA-1">133380ff82857b6f959a9c63d108c708f0431e54</hash>
+        <hash alg="SHA-256">6d648333da0645814d7ad0f2b990770cb051a948ef3aa8e9c7493313b50bb0e3</hash>
+        <hash alg="SHA-512">6e7cedc1fc7e8a46a167dad5a8965295045fe3cc57d2122846a93ce24ce3dbf214ccfe29312739f60d5ab0dc85b595b419b6d1bae3de0b5c105789b33e3c32f4</hash>
+        <hash alg="SHA-384">ac37de64cd200d8ddff65050be7c3fe7c9f789733df0079e7fc8ac6613ae1bb6b3af3c28159a0afa71bd8fb3025e0d8b</hash>
+        <hash alg="SHA3-384">37e796cd18a5ac3174ca47cdf7a13aef90a3512f1ce1eb1cc48f8ccfb071e6c3baecaf231ade575666f1d093c293c0c4</hash>
+        <hash alg="SHA3-256">444ef9143b86ae7784fdb217f815b983adf20adbec1ed0ff2230f59ca2dc1b48</hash>
+        <hash alg="SHA3-512">1a1feb7aede843e37c0a6273e4fa07673d0b6912d80dd8e7c42902b67fbaf737ef5a3631cdfea6c689e71a4d6c19807f1b8bded33f24d66fcb7fa4178e2d36c6</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>BSD-2-Clause</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/com.vladsch.flexmark/flexmark-ext-jekyll-tag@0.42.14?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/vsch/flexmark-java/flexmark-ext-jekyll-tag</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/vsch/flexmark-java/flexmark-ext-jekyll-tag</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-media-tags@0.42.14?type=jar">
+      <group>com.vladsch.flexmark</group>
+      <name>flexmark-ext-media-tags</name>
+      <version>0.42.14</version>
+      <description>flexmark-java extension parsing and rendering HTML5 media tags</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">640e1e07e83beb2d747b889a29c745a8</hash>
+        <hash alg="SHA-1">0f07ee11b128e6f96d02befb21602e2855ef2033</hash>
+        <hash alg="SHA-256">4181f97ba125999941ec558b51e5e73e7d19fad2880f370393a8f5ee992acee2</hash>
+        <hash alg="SHA-512">dc0f6b3ac0b0730b68227da45a4b884738639da53f176163dacc0fbb429498e7d114d9fcddf8ab3f26ce9c8c2b4413acd02786ac1b1d3186604a144f57f49dcb</hash>
+        <hash alg="SHA-384">4fc5cd385b3fb45eed8303d795cf99209305f13501fac7f4f06ed412314e956fb8123fa24ebc12b521b17b9f42daa70f</hash>
+        <hash alg="SHA3-384">22743ab0f59db832abf631cb2a51b44a10030e9ff78535e1339684048ac8aacef99fe2dbd45cd3ac207d6224d565a4fb</hash>
+        <hash alg="SHA3-256">b47b585a891f7b8b815e4bee886321d1d8cfff1a84bb5976cffd63888bf4f07c</hash>
+        <hash alg="SHA3-512">4ee5461a4024a004ce020695f2f29accd594027e2ae94c2df3b2cfcb4e3b68ed17393fdd33a3472059f8a87e61a1ae851147af3b8a66967f20be3dab21fa7edb</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>BSD-2-Clause</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/com.vladsch.flexmark/flexmark-ext-media-tags@0.42.14?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/vsch/flexmark-java/flexmark-ext-media-tags</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/vsch/flexmark-java/flexmark-ext-media-tags</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-macros@0.42.14?type=jar">
+      <group>com.vladsch.flexmark</group>
+      <name>flexmark-ext-macros</name>
+      <version>0.42.14</version>
+      <description>flexmark-java extension for processing macros</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">49febd0b532c5e2518f200f939e5fc65</hash>
+        <hash alg="SHA-1">ec86935b44abaa46a13fba825aba0ac7c9e13683</hash>
+        <hash alg="SHA-256">9916cd2470331b4f1ec01f830d52d4302ad1b19770ea15250a97658cdd6b8181</hash>
+        <hash alg="SHA-512">4c983a6f18a3572c9453029b3715c0b42a90b61bd7f929e8d96c88d838e5737949c18310c2297dcbe03769cf3ac90b8c0a8279886b6e521c4e24a502806aa900</hash>
+        <hash alg="SHA-384">d9c844dd7bd61dee9c5a12d4da6739d822df3257e931eb5093a2ef87b74811f0320ebccc36c88280a38b832f6d297544</hash>
+        <hash alg="SHA3-384">1546d218ad2989bddaa4962c19e44f38864506ad976b47c820cd7953941a251c1646fb94b58485c4b12ad4df0546d50c</hash>
+        <hash alg="SHA3-256">e86a5c5490f5e118d397fd27e25ad09b48c124c3e2c525c75c4a4d48e1abb785</hash>
+        <hash alg="SHA3-512">12ad138335ef33246741fc22dd5dbd35f2aa216fdf88a4b798115a6a3be4fc0c2af99c8dab67d925a9c51e234552bd4c67a1e0590c9f180bdff0cf9ad4d005c1</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>BSD-2-Clause</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/com.vladsch.flexmark/flexmark-ext-macros@0.42.14?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/vsch/flexmark-java/flexmark-ext-macros</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/vsch/flexmark-java/flexmark-ext-macros</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-ins@0.42.14?type=jar">
+      <group>com.vladsch.flexmark</group>
+      <name>flexmark-ext-ins</name>
+      <version>0.42.14</version>
+      <description>flexmark-java extension for ins</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">e3c5cfcff171ad7fdf5e54c9b4086487</hash>
+        <hash alg="SHA-1">60a5de9f2fbd8cac2def83204d1f49e5236623ae</hash>
+        <hash alg="SHA-256">5b49b1c81093a6efaef384376c063ff69b019c6e11a21509799bd023aff12e98</hash>
+        <hash alg="SHA-512">377575d653c85d4be77ea5f1002235ad093f2ed8dbcc7a0bc0c91e85781166a225b55347e7a85b2329206b7387383d8b3d4d9bbfb2fe1375506b7dc12af4bbf5</hash>
+        <hash alg="SHA-384">37033c3b640681591cf993658cc20ffbe6b6c01a87b3a8481c873b50fbd00c8ea60c6a0ea150163c9f4dae0e4e843788</hash>
+        <hash alg="SHA3-384">ab98c14d257ac26dde37ea215f2b7751e5444f964368c6ec945d5c63992443b3aebbecb97ce967a40762d49034364223</hash>
+        <hash alg="SHA3-256">aecdafa45d0f9790f19839828b0d70a1249950129ec1636f5750f9868a14dcf0</hash>
+        <hash alg="SHA3-512">9b3a067d372d4e8100d0c55bdf6f1930b7440282b0c2a87acc9b3f19a445d62114fc5797a8e31e105792d9cfd0a03cc3f001ca16b6c88f00919f82aafe5481fe</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>BSD-2-Clause</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/com.vladsch.flexmark/flexmark-ext-ins@0.42.14?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/vsch/flexmark-java/flexmark-ext-ins</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/vsch/flexmark-java/flexmark-ext-ins</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-xwiki-macros@0.42.14?type=jar">
+      <group>com.vladsch.flexmark</group>
+      <name>flexmark-ext-xwiki-macros</name>
+      <version>0.42.14</version>
+      <description>flexmark-java extension for xwiki application specific macros</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">a10bbf160018d2cb41894ffd4e556c17</hash>
+        <hash alg="SHA-1">f6c537056b4dfd74f69779c47791731d5414de1d</hash>
+        <hash alg="SHA-256">d96cddc45be4ba3b61f5e4b1e00137ddeef27fc1f9f31f13706a8bffddb5f6df</hash>
+        <hash alg="SHA-512">05260498e59609c85fa2b8b179f1c982797762c88342ad2845e9c93eb8861ebab610bd6942903279e1bb4eb9ed4e76771ecea3c04d469d10854c8536a9f337e6</hash>
+        <hash alg="SHA-384">d03936d072768d10e3845d6db876759f927024f3e513dc31b38c536921995901ac90e4534231280a4431ba4b9df8a25b</hash>
+        <hash alg="SHA3-384">6f35bb955545a74998b4690bd099917b9bdf8df7418abe53b5f2ad50f045e1444f1244d985bf782d8cd49095b4410a08</hash>
+        <hash alg="SHA3-256">e8c7fcbd7383bbf0cfbedf6501e58dba9695b820acd6a472fd17c17ca3fd3c04</hash>
+        <hash alg="SHA3-512">34459309ff85302acec22b725fae556afc85f7de4373c3c3d8712c572a5574efcd3b11ca33605383fddafc5bcaf76031a3a9c847b53467c40701199d3578b6e3</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>BSD-2-Clause</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/com.vladsch.flexmark/flexmark-ext-xwiki-macros@0.42.14?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/vsch/flexmark-java/flexmark-ext-xwiki-macros</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/vsch/flexmark-java/flexmark-ext-xwiki-macros</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-superscript@0.42.14?type=jar">
+      <group>com.vladsch.flexmark</group>
+      <name>flexmark-ext-superscript</name>
+      <version>0.42.14</version>
+      <description>flexmark-java extension for superscript</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">3655e675e51ccedce060b5fce11f0bf4</hash>
+        <hash alg="SHA-1">4220bc81fcf31475b74c93e0f5ad0f1daa32e07e</hash>
+        <hash alg="SHA-256">bd41751827b5359a44bc69ef67c75fbd87057f699a61e1d996f0ad38e61f0f11</hash>
+        <hash alg="SHA-512">b369f9abbb259a47b4603c94439c8767cf985069bac1a45a69fbb2277ed76d1a2a6fad8ade064237f24c7a36d09acb2655800655c88b8cef6f6987011bd7b299</hash>
+        <hash alg="SHA-384">02bd05128e324caa5a207813630d0a999941f0324bd48cc5c30221fb2853851fd7600cf18101d91f9a73f1a9303ff205</hash>
+        <hash alg="SHA3-384">94cb773e9233740ff97a0ea35676ada0db29c1b15ef4d8d837a5d271a7dac8636f258a34dbf62ccc03a80fba0c80af63</hash>
+        <hash alg="SHA3-256">577b1b242e8f98b155431a08cec213b7f801a22a322c57419ec9e0031df35e5f</hash>
+        <hash alg="SHA3-512">d07b0959359dc2f18a0981f2b6a028d35e167eeb06d77bca3ba859ea52ad7f10b1021b11a25f3e01ffc72858e4331c48f39d5fd616a0502357a39077add51a39</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>BSD-2-Clause</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/com.vladsch.flexmark/flexmark-ext-superscript@0.42.14?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/vsch/flexmark-java/flexmark-ext-superscript</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/vsch/flexmark-java/flexmark-ext-superscript</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-tables@0.42.14?type=jar">
+      <group>com.vladsch.flexmark</group>
+      <name>flexmark-ext-tables</name>
+      <version>0.42.14</version>
+      <description>flexmark-java extension for tables using "|" pipes with optional column spans and table caption</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">9b9b4bd4d06f6457dbeb7acb195dd66b</hash>
+        <hash alg="SHA-1">1ddc84b8677a06d511f1e163cb966895754b0e3b</hash>
+        <hash alg="SHA-256">d33267faac807ed9b3b9cc0eba7964659bbcd32e7a9aaf1c2440fc7377c4da0d</hash>
+        <hash alg="SHA-512">d37e6b024c5328705cef478b9122fc908dbeb0daf54f71b055efeddb0518b0b5354e8ca1cb9389b96a3bb0a1feebaddd905b0c312a00d7616db91c3318b1394f</hash>
+        <hash alg="SHA-384">c096e69a2e74e361f2ffc4cf60530440877b2a011a149725c787995b4125193b79e08362c98206065237efe1e09f66df</hash>
+        <hash alg="SHA3-384">6cb132ff564d69ae4b286167e1ffd43a6e3a778833d7918995c82d10f0efd8ade016336efddb3bc55df632610feec4f1</hash>
+        <hash alg="SHA3-256">1d0c17243e8dfc7b02582d2b6533df78f274aff64b100d5a6ac511fbec6d73ed</hash>
+        <hash alg="SHA3-512">90718bf330786273e9e6c8fa9325e9dcb3fd061bb46ca198be3972a03c731a5c5176f66b4c53c4153254d3f72b2afd57baec862346cd5851b6e1b95139825e61</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>BSD-2-Clause</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/com.vladsch.flexmark/flexmark-ext-tables@0.42.14?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/vsch/flexmark-java/flexmark-ext-tables</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/vsch/flexmark-java/flexmark-ext-tables</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-toc@0.42.14?type=jar">
+      <group>com.vladsch.flexmark</group>
+      <name>flexmark-ext-toc</name>
+      <version>0.42.14</version>
+      <description>flexmark-java extension for toc</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">3c75a8e00f4a76dcf4cccaca5904559b</hash>
+        <hash alg="SHA-1">8e280d1010420f4f6b3fd9e1968d30b48437aace</hash>
+        <hash alg="SHA-256">a2682d036948fc008a1cf765a917d9b64df413bddd12a0f4c3e73d3c1daa4cf6</hash>
+        <hash alg="SHA-512">a287569a1bcb9afe3f7e20589360f6317435b75117d746a7273584bc7f54c7f5efa631b0e135ae0c34fd94ce75c505351a56975b0be121b1e41e9b61632d9f49</hash>
+        <hash alg="SHA-384">5aa00a3aa44ad8c9183a89142a4e9dfa9e06f79295dc22b042bbab52bf49c0c3967d9cd659f7d8b505d69fcaebcabffb</hash>
+        <hash alg="SHA3-384">b6a9c8bec95624008fab434cc96868778c69c4b617a6eceed6e0a6f68d7e87d78db109c3d534800b6b00f0edb3eb7e60</hash>
+        <hash alg="SHA3-256">23783413a9eb3fe834ec890f8194a7f33c0f3623f986eb3a57ba32c9771ed272</hash>
+        <hash alg="SHA3-512">7f57d4356b52237fff9815bb1d6efdd0d522d8be92de4a4224bd59a0e85a1571f00d24fd702829a1cacadacf6386a0c7c62333b58bbabfd826cde6f740e8893a</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>BSD-2-Clause</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/com.vladsch.flexmark/flexmark-ext-toc@0.42.14?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/vsch/flexmark-java/flexmark-ext-toc</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/vsch/flexmark-java/flexmark-ext-toc</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-typographic@0.42.14?type=jar">
+      <group>com.vladsch.flexmark</group>
+      <name>flexmark-ext-typographic</name>
+      <version>0.42.14</version>
+      <description>flexmark-java extension for typographic</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">d1fede9d4a9ef9fd1f97d9f5a05e4a5f</hash>
+        <hash alg="SHA-1">b9559e608ed9f31d1098bac5339badff7a83c4b8</hash>
+        <hash alg="SHA-256">423ee0ff4d3656b1eb348e23ac8982540717fbd90474c3b3158daf1fa162a503</hash>
+        <hash alg="SHA-512">119098d4747bf21934dbb947ac6ba7f7e5b6ab5b56dde20f2f8d672af7f4bb058cd7f2422d9732e96b706062bb9b55ba813bdfefd6b6717f252cfc98742359a3</hash>
+        <hash alg="SHA-384">93a2cfed289b8c3aa7bf1c7613fbc41da11ed2aff0859e50933530ae32b443e594b074ffa3cc2835e2d30e47e5a6cfc8</hash>
+        <hash alg="SHA3-384">b97ab6ffd651426ff67bdae96ed88af822e0ce4288b356bcabd3276833c508a4aa94492de2c459f7535b7c84a02fd5f4</hash>
+        <hash alg="SHA3-256">ca37fb3b23849b449200890e5d27dbf79ee1670af54663d038fd7169134ad96f</hash>
+        <hash alg="SHA3-512">fb2dbe0726b0ac8036a45bd33d17d0ff058f9167abd22d6558243cd0fc5a0c0f9edef318254db7850dad38d5665bce34815768a2277a76631055d26c2975e9ce</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>BSD-2-Clause</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/com.vladsch.flexmark/flexmark-ext-typographic@0.42.14?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/vsch/flexmark-java/flexmark-ext-typographic</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/vsch/flexmark-java/flexmark-ext-typographic</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-wikilink@0.42.14?type=jar">
+      <group>com.vladsch.flexmark</group>
+      <name>flexmark-ext-wikilink</name>
+      <version>0.42.14</version>
+      <description>flexmark-java extension parsing and rendering wiki links</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">46de40efb74e2c0273f64cd2b1733fb7</hash>
+        <hash alg="SHA-1">7728aff6e4b7499e6e919d02074691b834fbe03b</hash>
+        <hash alg="SHA-256">a9a0865d7fbd10e6705dcacf846aa5efc242c6e5198b918875a5e72db094607c</hash>
+        <hash alg="SHA-512">7a93d5a62b87e323a0dd25daccdc0007533afc3ed0c05d45cd2a684c10634d30358a6a34f01ffc1d7ea16d276495462ee3d20c41ee020636ae4c9c6655e4ae99</hash>
+        <hash alg="SHA-384">4c918ef44a4468735bc1cef73428f6a1570b9187900b874e9a3ceebd84efa2a79f4328c076284fe4e82bce28b7a3226b</hash>
+        <hash alg="SHA3-384">f3746b849d7e3ab39ff4258bcaa280d99b67c0e9818d616dfcfee6acd4e16d928d025ea31b2b0e9c45124cd82c4d03d3</hash>
+        <hash alg="SHA3-256">ac2f57b1aba7789b3c29ec5e5c1747895019a6fc6b3833ba94902c47ef2bf38f</hash>
+        <hash alg="SHA3-512">4fa3560f7f6ca73d4f988ddcd6be2f6cda4b64e792e756e5d0cff36903f38d0f73ef55e40a3884e4232ab1b267b9e3dea061a07f9f73191e31a3d6acc8a8c90a</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>BSD-2-Clause</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/com.vladsch.flexmark/flexmark-ext-wikilink@0.42.14?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/vsch/flexmark-java/flexmark-ext-wikilink</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/vsch/flexmark-java/flexmark-ext-wikilink</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-yaml-front-matter@0.42.14?type=jar">
+      <group>com.vladsch.flexmark</group>
+      <name>flexmark-ext-yaml-front-matter</name>
+      <version>0.42.14</version>
+      <description>flexmark-java extension for YAML front matter</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">b857ee2e4239d1417060e02c523dfcf5</hash>
+        <hash alg="SHA-1">824fea2282551c407251f027d0c9c10cb6d90200</hash>
+        <hash alg="SHA-256">211e75e9ea83127840405d115d392aea7eb3a7c04d92d016a1fe2f2032be358f</hash>
+        <hash alg="SHA-512">a1a6e4415eaee80224d250c01d5315785b24c7b3dc21db0bf11eb13133bc8ead835c7e567ea26e285c14eec779d70a7a85409f36adb9b1b67b49f6db134f246e</hash>
+        <hash alg="SHA-384">de5aa118871935551d3b5f80a119dbfbfbea4409f219128c0f69be3b71cd641133910332a7c388c1021d30401212d7d9</hash>
+        <hash alg="SHA3-384">1b38a44ab0813c8b9f3d991abf6561cff1da221ef9de2b62cd9b3eee66da61a3ec66b9d889bd545fd1419681be4a3682</hash>
+        <hash alg="SHA3-256">bc36979919bca9b84e6372e7601fc53696fbf97701ae87de3e899f45c763ee69</hash>
+        <hash alg="SHA3-512">c14e73c13ce87b11831b48a612c33645ec3762fc5469f83a12b820dae357d1a3a2e63630346fdaf969b0bd5bcb1e9be5ec7bc9264a3f65224e2844b08ea1150e</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>BSD-2-Clause</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/com.vladsch.flexmark/flexmark-ext-yaml-front-matter@0.42.14?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/vsch/flexmark-java/flexmark-ext-yaml-front-matter</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/vsch/flexmark-java/flexmark-ext-yaml-front-matter</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-youtube-embedded@0.42.14?type=jar">
+      <group>com.vladsch.flexmark</group>
+      <name>flexmark-ext-youtube-embedded</name>
+      <version>0.42.14</version>
+      <description>Java re-implementation of commonmark-java based parser, with AST reflecting source elements, full source position tracking, greater parser extensibility.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">ebaab2ed6abd6158b4b2416b8f5b37be</hash>
+        <hash alg="SHA-1">ed436a9f20bb97de94fb9d110f21b33749202b7b</hash>
+        <hash alg="SHA-256">3ffcd2a138bc98579cc46edbae894939ccb9b15bdbf3251b2483edf00ad76756</hash>
+        <hash alg="SHA-512">0b1cad17b687be470e40538a2a45155b6ac29a298466b3f761b9a81e749813d4855e5b3f1eff97a3b354ba97764f5ebeb38d2dda8c8a3fec03eef77b7ffe8ec6</hash>
+        <hash alg="SHA-384">65515abbf7ac960e8b7ac17a70e09f5adaa707fe45d9d9f02730c0cd7b74dbd35b8ec8081c088f6e51fb9009922c493f</hash>
+        <hash alg="SHA3-384">3a6945546ced6ca511a33c35ff55d4b57fcd2fea85cc98cacfe328f637d4b3c275365ffc675834a12b8e3def8d38cbbb</hash>
+        <hash alg="SHA3-256">26764777053b6cf9b6cd8315aecc1f8ffe6c6df077eeadafb4d786d48a393628</hash>
+        <hash alg="SHA3-512">3ac02a873cdf8e490e204d59ff2ffbc495bf5705c398c8352b5a5273000e70738a3a04497de0716c943d02846ee8c663ead7e26b574bcb24064ac8f77f69f065</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>BSD-2-Clause</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/com.vladsch.flexmark/flexmark-ext-youtube-embedded@0.42.14?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/vsch/flexmark-java/flexmark-ext-youtube-embedded</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/vsch/flexmark-java/flexmark-ext-youtube-embedded</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.vladsch.flexmark/flexmark-formatter@0.42.14?type=jar">
+      <group>com.vladsch.flexmark</group>
+      <name>flexmark-formatter</name>
+      <version>0.42.14</version>
+      <description>flexmark-java extension for formatter</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">8914d66068fe55efd3010b6634101a28</hash>
+        <hash alg="SHA-1">ace562ed441ec52fdff3cd6c375a71262803e8e9</hash>
+        <hash alg="SHA-256">ef152baa6dbba7bcf814595b1919ecde7d3fae2f98f5b5bb760b9fd3d8384d0a</hash>
+        <hash alg="SHA-512">5dbd63b69b5fa905efde4634046217e01bf74563e0cecc9dcdde8f075b5e329bd8eb0673b26e2e1b255e638072c43abad0878ada3e0a8c4266bb2dfa115e5993</hash>
+        <hash alg="SHA-384">939a288f93ad626f78ff3ef69692b73565ac2d1e31126d03507e7ff33b7463b94f9af584e5732227fd56a80a4fbe6f7e</hash>
+        <hash alg="SHA3-384">5f1b3fa07f20a43880d6fcc4fda981d3a330aab21a646d58ea900952b46ee84ac14c2fff8e82e6be52e63a7958ab9cd9</hash>
+        <hash alg="SHA3-256">af74b94c40cdaa8c7fa96372becc20325f34c6d4da28011ea6bb78af6c01a561</hash>
+        <hash alg="SHA3-512">91f7b98d07f167b188ae11af235f8fa20108d6633e75b6fb11fed684896a1d67f2fa0ca138420686070f16bd70707c949c5ad8fcbf8351764719b6daa5818710</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>BSD-2-Clause</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/com.vladsch.flexmark/flexmark-formatter@0.42.14?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/vsch/flexmark-java/flexmark-formatter</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/vsch/flexmark-java/flexmark-formatter</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.vladsch.flexmark/flexmark-html-parser@0.42.14?type=jar">
+      <group>com.vladsch.flexmark</group>
+      <name>flexmark-html-parser</name>
+      <version>0.42.14</version>
+      <description>flexmark-java extension to convert HTML to Markdown</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">d7059783764ae22c9c2626d62fe74163</hash>
+        <hash alg="SHA-1">dd1fc9a95494d9938e6fff8da659fad0d786ce4b</hash>
+        <hash alg="SHA-256">6f7803127310a9f52203a71ed6a38fd06832df57dc5fadd140441982678fbc01</hash>
+        <hash alg="SHA-512">80b8579a3f4c5f1bd4113759ce45e030df6ef003cbd89d5c999f1166de478477060fc659afa15a810712acccf74d2adc14401a5a0aa74b5b191b9ec7f9489972</hash>
+        <hash alg="SHA-384">b6b8c4a08a1f996e91b8dd81c9643d86a2b829e90708ffcb355ac324e63bc7f0ef0f78d5d22eb0b0a78bb827d7525e58</hash>
+        <hash alg="SHA3-384">84b68b39bfd6fe638fb9c675c2b756c1040023b5e90a52267fc163281e2c2637198f3e12ca54ff031b9d7a0467db4c84</hash>
+        <hash alg="SHA3-256">d5e89c594e7f8329a348be2e8c14e356bf317fee8f98c738338f3a2e0655cbcd</hash>
+        <hash alg="SHA3-512">1d4b7c5bafa396f7149eeac715c7c8740dd65202b054cf129a12e4d305da8dc46875dedd823ee40ee8c86157fd6222a556b39eea0991d0848866277db3022f25</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>BSD-2-Clause</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/com.vladsch.flexmark/flexmark-html-parser@0.42.14?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/vsch/flexmark-java/flexmark-html-parser</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/vsch/flexmark-java/flexmark-html-parser</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.jsoup/jsoup@1.10.2?type=jar">
+      <publisher>Jonathan Hedley</publisher>
+      <group>org.jsoup</group>
+      <name>jsoup</name>
+      <version>1.10.2</version>
+      <description>jsoup is a Java library for working with real-world HTML. It provides a very convenient API for extracting and manipulating data, using the best of DOM, CSS, and jquery-like methods. jsoup implements the WHATWG HTML5 specification, and parses HTML to the same DOM as modern browsers do.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">36145fee38e79b81035787f1be296a52</hash>
+        <hash alg="SHA-1">33ee82e324f4b1e40167f3dc5e01234a1c5cab61</hash>
+        <hash alg="SHA-256">6ebe6abd7775c10a49407ae22db45c840cd2cdaf715866a5b0b5af70941c3f4a</hash>
+        <hash alg="SHA-512">3b00b07320831f075a6af9ac1863b8756fe4f99a1b4f2e53578dca17fdaf7bdb147279225045e9eeeba4898fe321cf5457832b8e6a1a5b71acff9a1c10392659</hash>
+        <hash alg="SHA-384">1f902a748f4786e4cf73e301337ff1533970d0b87c44e2235af49822eda2f51a55f545fc222b767c0d758bafd49fe4c5</hash>
+        <hash alg="SHA3-384">8595d6cbd99113a52187e52a6cac23de18b177d2832a1561d075616bcdc00f39079e3fca5b5dc461fdb96871c0785b16</hash>
+        <hash alg="SHA3-256">d25cdda2d2978fdd9c5d71fdc5821818a4dd1451fb5583190b15a93e74e7826b</hash>
+        <hash alg="SHA3-512">c840e8632a822a8fa3688bc6c7e5ef9182d79888f46832ca99cd6a304e9af75fb95b72369de308b6d2a00e29dba13290890f11b9706289affd7c78049b65ae28</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.jsoup/jsoup@1.10.2?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://jsoup.org/</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>http://github.com/jhy/jsoup/issues</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/jhy/jsoup</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.vladsch.flexmark/flexmark-jira-converter@0.42.14?type=jar">
+      <group>com.vladsch.flexmark</group>
+      <name>flexmark-jira-converter</name>
+      <version>0.42.14</version>
+      <description>flexmark-java extension for jira_converter</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">8407c0989d3894147966c2e1cfc22336</hash>
+        <hash alg="SHA-1">b6737fdafe64bb5f705df0947658968c0d3b3847</hash>
+        <hash alg="SHA-256">2f0a689a5e34acf54a754fe6bab63ab9f949f7155d130bb257f4284bb9e27fd1</hash>
+        <hash alg="SHA-512">1767fa7df8d66fc0222e0b1a50f85f61bc77f5abcbfb390937bda7f9b615af998d85e215804d0e454563d7020bf0e9e369bbbbfd28fe5f739ae80f08eb2919fb</hash>
+        <hash alg="SHA-384">9145177942becdb6e26d075f8a1eb8b6c94951bba7724af723c91213c2e7c2ccc5064f295f3fa4679205853c86247a9d</hash>
+        <hash alg="SHA3-384">9d1469be707c466b5487fc17aafb3ecb7fca37214723445e88fe87be2b25dd2a11d84187be340d266be7d190064c8070</hash>
+        <hash alg="SHA3-256">728035d38d880f1535ca26d4f5ae36f79af19dffc760d766b0254f21f5a4a93c</hash>
+        <hash alg="SHA3-512">0d5516db42eb1c66e0411020861954ebf462100cc38f755fce5c1c890f1f5998c83981c816a474c786acb0e56c5899eb4e6d5f5fcf18bbf206cdd584d815ee41</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>BSD-2-Clause</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/com.vladsch.flexmark/flexmark-jira-converter@0.42.14?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/vsch/flexmark-java/flexmark-jira-converter</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/vsch/flexmark-java/flexmark-jira-converter</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.vladsch.flexmark/flexmark-pdf-converter@0.42.14?type=jar">
+      <group>com.vladsch.flexmark</group>
+      <name>flexmark-pdf-converter</name>
+      <version>0.42.14</version>
+      <description>flexmark-java extension for markdown to pdf conversion</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">c4d3f1f265c5f6c37c28387f994f82ec</hash>
+        <hash alg="SHA-1">cfb72b6ec3be8646aaee638fe094405e83dc56c5</hash>
+        <hash alg="SHA-256">e7f71ff256d846d68b3c6dbb19f83e867e58317f6de8961987e8187b827f3541</hash>
+        <hash alg="SHA-512">176739f9c847dff5598dd89648c7c1ab0cb149951b6332f7870876db4c0182ac6647f517bc97ee5eb119f2f8f0f7673e90353dcd25544652cd3c0540e7cff704</hash>
+        <hash alg="SHA-384">d683d9be8f5e9358d6f626c4e1bfdfb3b9b85fe13a71b6f6841c7e4339011373d2817997c1fb31aef8e010635be0f3d7</hash>
+        <hash alg="SHA3-384">ef6370935c4b232609dd030f4fb9d1747790d47496999b9a679dfe3fe6ff1cfdcaeea63760d8c08b382d4223e234d5ec</hash>
+        <hash alg="SHA3-256">71663eb0d3e92abeb8ab512ee106439d311e447effb69214c9b4fcf2d85a1c89</hash>
+        <hash alg="SHA3-512">8ca8e9a4490b661544bff13c6d8ac45cffccd19957885f51d7b006f0fae4bc23d08a874dde9c8ce62f5cab4306fdda8715bc47e26cd3e352423464b9a34a7db4</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>BSD-2-Clause</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/com.vladsch.flexmark/flexmark-pdf-converter@0.42.14?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/vsch/flexmark-java/flexmark-pdf-converter</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/vsch/flexmark-java/flexmark-pdf-converter</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.openhtmltopdf/openhtmltopdf-core@0.0.1-RC15?type=jar">
+      <group>com.openhtmltopdf</group>
+      <name>openhtmltopdf-core</name>
+      <version>0.0.1-RC15</version>
+      <description>Open HTML to PDF is a CSS 2.1 renderer written in Java.  This artifact contains the core rendering and layout code as well as Java2D output.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">0680c46387f24d6435b6670910c55311</hash>
+        <hash alg="SHA-1">049ff52f47af35ed57d6769cf12d2cb94922f481</hash>
+        <hash alg="SHA-256">256ff374ee18eb0ab1048c2909410d0058f6c4995794d7c8afe39ab27146d073</hash>
+        <hash alg="SHA-512">57b2e90b68ebbe7af1da56158da1ea846c7d3e39f24596e43ddae029fb0916d93ff4e6dd669e58976c85ee10af9186adab54b5113b40e7b6b126ace9d878d66e</hash>
+        <hash alg="SHA-384">dd0f14f2ad896421a7108c5d71fa5aadcead656c61b206afa7dcca38152712702eda5db930059a5fa9aae8f63cfdc09a</hash>
+        <hash alg="SHA3-384">104839435eed30da3247638fa100647c8773e52dd51cec1aa5119f59f12231d1434adf93da0ddffa0347609ce95c3508</hash>
+        <hash alg="SHA3-256">9f7012f01c405d29dba67dd21f6d0e63ece7ac9e3fd45ea34301ffa2d1a45c57</hash>
+        <hash alg="SHA3-512">f39189a42302dc447df9517efdd8545428d606da9191b4ea858893b40e1d6d66783b256322526330da903605b2426d011a62b905439c28a8904e751edc84aa0c</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>LGPL-2.1-or-later</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/com.openhtmltopdf/openhtmltopdf-core@0.0.1-RC15?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/danfickle/openhtmltopdf/openhtmltopdf-core</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://api.bintray.com/maven/danfickle/maven/com.openhtmltopdf:openhtmltopdf-parent</url>
+        </reference>
+        <reference type="vcs">
+          <url>git://github.com/danfickle/openhtmltopdf.git/openhtmltopdf-core</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.openhtmltopdf/openhtmltopdf-pdfbox@0.0.1-RC15?type=jar">
+      <group>com.openhtmltopdf</group>
+      <name>openhtmltopdf-pdfbox</name>
+      <version>0.0.1-RC15</version>
+      <description>Openhtmltopdf is a CSS 2.1 renderer written in Java. This artifact supports PDF output with Apache PDF-BOX 2.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">57604f1c4a2ec578796b8a59d55c2e91</hash>
+        <hash alg="SHA-1">e1244e4ab2ac43ff2f671ef287b154b51ff0cb9d</hash>
+        <hash alg="SHA-256">f204731f724a39dc4c1735197ed1e4927c09f6cf354089f72c0afaaca8301540</hash>
+        <hash alg="SHA-512">7dd359e7cf7394965040086b6f893d1c18a0d8bc5aba08877a473659c5a397f362edfbd9c02bff99cf18b8be88db05dee339deab3b4915a2a9ad8897a6bec2d9</hash>
+        <hash alg="SHA-384">ed438912b6f70463592e4418e5bbdaa5c6f4ac68ad4dcce601595239e6687b3445e0644c4e937f0433fff041acafb091</hash>
+        <hash alg="SHA3-384">e5845f5e84751f36ce2263e129ade7197a039aaa472b1ae83f8a12df7c1bf0cfc65cd15b64f7f7ec29faf94ad0872fa3</hash>
+        <hash alg="SHA3-256">11ac220c15eab1f1bb5fe8d63e5319200dd6b6f3ed2869b00f131a57091702a9</hash>
+        <hash alg="SHA3-512">38ff6aa6304ddb52b453c48c73e7a5d8c0e170e252fac132ec5d64e14bb9e429b96e24472d57b126966a8f56e751e0e3b618954928f9f935e04fc5dbad9ba337</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>LGPL-2.1-or-later</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/com.openhtmltopdf/openhtmltopdf-pdfbox@0.0.1-RC15?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/danfickle/openhtmltopdf/openhtmltopdf-pdfbox</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://api.bintray.com/maven/danfickle/maven/com.openhtmltopdf:openhtmltopdf-parent</url>
+        </reference>
+        <reference type="vcs">
+          <url>git://github.com/danfickle/openhtmltopdf.git/openhtmltopdf-pdfbox</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.apache.pdfbox/pdfbox@2.0.11?type=jar">
+      <publisher>The Apache Software Foundation</publisher>
+      <group>org.apache.pdfbox</group>
+      <name>pdfbox</name>
+      <version>2.0.11</version>
+      <description>The Apache PDFBox library is an open source Java tool for working with PDF documents.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">93fbcf37217d0caab35f79476f2ffd1d</hash>
+        <hash alg="SHA-1">eb7e033d9ae41bd4f0b83681bc5dc01c2488d250</hash>
+        <hash alg="SHA-256">756785cafdd309e7d464c3e54228e25674ec6dece7a1e8100e8fde353fa1ce95</hash>
+        <hash alg="SHA-512">ba1fff85c970a45689ad2202596342ded791369ab995841ae3de2df6263d30535b9aaf410a9db08e98133e819657485a10b6b1e28231c677f4f736b00fc8d222</hash>
+        <hash alg="SHA-384">87e5309402d0921c841f0867acc18db4ab8e0973263eefb58f3901fe02091480a4053b4e696ea03122f0d0248bf38eba</hash>
+        <hash alg="SHA3-384">26bb158e8d5f4ae82f8d04c8c9ddb9e62eb5ae99efece9f5013cefe45a3c465095fb1d14ebaa7c7a3ea7bfe05c827535</hash>
+        <hash alg="SHA3-256">2b0d15b4e55597ffe1008b948e5475ef8bf4214280468b7d119a4086459878de</hash>
+        <hash alg="SHA3-512">09490fb65e08265b9d5fc58acb6bd4d5aae7e76050fee0f61e19ced376bdb746253a96edb24b0af41041b91a4668552a450b6854b72aff6aa0e1f1b493ef918e</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.apache.pdfbox/pdfbox@2.0.11?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://www.apache.org/pdfbox-parent/pdfbox/</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://repository.apache.org/service/local/staging/deploy/maven2</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>https://issues.apache.org/jira/browse/PDFBOX</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>https://mail-archives.apache.org/mod_mbox/www-announce/</url>
+        </reference>
+        <reference type="vcs">
+          <url>http://svn.apache.org/viewvc/maven/pom/tags/2.0.11/pdfbox-parent/pdfbox</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.apache.pdfbox/fontbox@2.0.11?type=jar">
+      <publisher>The Apache Software Foundation</publisher>
+      <group>org.apache.pdfbox</group>
+      <name>fontbox</name>
+      <version>2.0.11</version>
+      <description>The Apache FontBox library is an open source Java tool to obtain low level information
+    from font files. FontBox is a subproject of Apache PDFBox.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">4e139453c2bda1e4ce1ff1e90acae04b</hash>
+        <hash alg="SHA-1">b883ca275b4b39f06549e3dbe6b3662a900583e7</hash>
+        <hash alg="SHA-256">5cc9968bc41417f88995fad1de15204f3b9481588cc79e9c627c596cc8faefde</hash>
+        <hash alg="SHA-512">4f372e16debd67ce11aff44432a3d67c355e80fc6968325fe93cb70377e8c10a7b5f59767910b32b5345eea34da303ca18bbfd0e306246cb36ef2d4923333e37</hash>
+        <hash alg="SHA-384">88e2832cd1da23592af958fed860f3b0918382924fe29c823861f2ea63e40286cd9307628fb004f320c1410e25a834d2</hash>
+        <hash alg="SHA3-384">ca5e0cf1405b089b24485a5655922c47303cc655c71ac0c36d23ad8c4be3bf3012673d73e6e09dcf1b8f4735160484dc</hash>
+        <hash alg="SHA3-256">bbaf0dadd84ed25ca7834a7ada571d23218e7fafbb66635d52f1ecdce8be5fb2</hash>
+        <hash alg="SHA3-512">9941805d34222635c94d0a765e01c152e8ce2a107f6bc314a78a3aa38c6e07b7566aa4227dd75bcaf91b06adad768168da7292468b120807aed04f637b2f16b9</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.apache.pdfbox/fontbox@2.0.11?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://pdfbox.apache.org/</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://repository.apache.org/service/local/staging/deploy/maven2</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>https://issues.apache.org/jira/browse/PDFBOX</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>https://mail-archives.apache.org/mod_mbox/www-announce/</url>
+        </reference>
+        <reference type="vcs">
+          <url>http://svn.apache.org/viewvc/maven/pom/tags/2.0.11/pdfbox-parent/fontbox</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/commons-logging/commons-logging@1.2?type=jar">
+      <publisher>The Apache Software Foundation</publisher>
+      <group>commons-logging</group>
+      <name>commons-logging</name>
+      <version>1.2</version>
+      <description>Apache Commons Logging is a thin adapter allowing configurable bridging to other,
+    well known logging systems.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">040b4b4d8eac886f6b4a2a3bd2f31b00</hash>
+        <hash alg="SHA-1">4bfc12adfe4842bf07b657f0369c4cb522955686</hash>
+        <hash alg="SHA-256">daddea1ea0be0f56978ab3006b8ac92834afeefbd9b7e4e6316fca57df0fa636</hash>
+        <hash alg="SHA-512">ed00dbfabd9ae00efa26dd400983601d076fe36408b7d6520084b447e5d1fa527ce65bd6afdcb58506c3a808323d28e88f26cb99c6f5db9ff64f6525ecdfa557</hash>
+        <hash alg="SHA-384">ac20720d7156131478205f1b454395abf84cfc8da2f163301af32f63bd3c4764bd26cb54ed53800f33193ae591f3ce9c</hash>
+        <hash alg="SHA3-384">628eb4407e95dca84da1a06b08a6d9b832a49de8472b1b217e8607f08efeeed18b996232d64dd07f03e78e0e3bb4b078</hash>
+        <hash alg="SHA3-256">9aab62deccf156ee6e324c925dfc30ecb53e8465802863a551901a461424e807</hash>
+        <hash alg="SHA3-512">3fd76857f6d20c03799537cc961c1c4ddf1c375c6c192fb982363e3b9397ba138b77f24ef38b4202f44e37586789c0320e4de18fdadd2772304fd14a9b26d552</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/commons-logging/commons-logging@1.2?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://commons.apache.org/proper/commons-logging/</url>
+        </reference>
+        <reference type="build-system">
+          <url>https://continuum-ci.apache.org/</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://repository.apache.org/service/local/staging/deploy/maven2</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>http://issues.apache.org/jira/browse/LOGGING</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>http://mail-archives.apache.org/mod_mbox/commons-user/</url>
+        </reference>
+        <reference type="vcs">
+          <url>http://svn.apache.org/repos/asf/commons/proper/logging/trunk</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.apache.pdfbox/xmpbox@2.0.11?type=jar">
+      <publisher>The Apache Software Foundation</publisher>
+      <group>org.apache.pdfbox</group>
+      <name>xmpbox</name>
+      <version>2.0.11</version>
+      <description>The Apache XmpBox library is an open source Java tool that implements Adobe's XMP(TM)
+    specification. It can be used to parse, validate and create xmp contents.
+    It is mainly used by subproject preflight of Apache PDFBox. 
+    XmpBox is a subproject of Apache PDFBox.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">4473a20f83bf66f5083f8f977a2f3df6</hash>
+        <hash alg="SHA-1">2c29414fc2bb4e52f5f5645bde1a8acb53bd38d0</hash>
+        <hash alg="SHA-256">5b4c6c76342f0e4b3038427d0c3266a4844ea2b8bbe5f21920e9ccfd9f464b41</hash>
+        <hash alg="SHA-512">d2f53aa71701acbb9c6a55e76fd0cab55cdad540d20152d605612eebc32ed68e585dd8bffc26b56378f08a54c3ccb8de7ca8c2b8454c28da0d70e2fe6c271c1e</hash>
+        <hash alg="SHA-384">e55ecebeb36dcce5c28a09787fa80ab4d0fca9052ea6d42bc7fab04bb6d816eadb72e31b4d572720211245438c61a2ce</hash>
+        <hash alg="SHA3-384">06c8c2e1ce31874a502afc29ca79c8e65058896e948eb9fc89dc1cf7c097019a48ce5cde080dcfa7286ad5ef305cc28e</hash>
+        <hash alg="SHA3-256">796fa5a3489b3950aa8f0a99c7461c26dce229c52025aa0ff92315afd55b3a3c</hash>
+        <hash alg="SHA3-512">8fbed36a803284403fdca0587a620425516b891eb31976493bfdbb2f530291ebac39fd3ac7141add2e708763e9a29864716a722864049e59b30b5f266c66f80e</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.apache.pdfbox/xmpbox@2.0.11?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://www.apache.org/pdfbox-parent/xmpbox/</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://repository.apache.org/service/local/staging/deploy/maven2</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>https://issues.apache.org/jira/browse/PDFBOX</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>https://mail-archives.apache.org/mod_mbox/www-announce/</url>
+        </reference>
+        <reference type="vcs">
+          <url>http://svn.apache.org/viewvc/maven/pom/tags/2.0.11/pdfbox-parent/xmpbox</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/de.rototor.pdfbox/graphics2d@0.15?type=jar">
+      <group>de.rototor.pdfbox</group>
+      <name>graphics2d</name>
+      <version>0.15</version>
+      <description>Graphics2D Bridge for Apache PDFBox</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">26cb8f2c1cdcfdbe2b6e10d0699772a3</hash>
+        <hash alg="SHA-1">6ae09c5593fcc2e174f208a10690840a611c2b04</hash>
+        <hash alg="SHA-256">6e5bf2bd7594a1eaacd2554ddc5713c187adf666c930738328d96cf58b464573</hash>
+        <hash alg="SHA-512">43ae37b49d255147324ba9865f784adfd7f7999d7bb563e8142698f8d1c77f7b5618eda2d749d91bb0347bf2cbcdd24b9cab95aa239f0241a09bfaa906754afe</hash>
+        <hash alg="SHA-384">4e0212cdd583b1eeb32928bd536a063f5002d49e11e17190e1967aebb93ba660f33a03296518240f021fd36991c3afd9</hash>
+        <hash alg="SHA3-384">8185fbe9387a41da47d91f5b11048c24e711cf3998efab0fc5518e7d82c472296ca97fc54211585852a77f6d9063955f</hash>
+        <hash alg="SHA3-256">7352751677bf9f1e996f34b80e0f1ed60c177167b2cf203050697baa8af3358f</hash>
+        <hash alg="SHA3-512">9678aa43cf8a3a95bddbb5625c5912f2c1a342822931c33fea919fee47d30f90c95787fc8397ee4dcf0e44d1ab9ad48becdf95abc83c54bc32e4c55b2af97a86</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/de.rototor.pdfbox/graphics2d@0.15?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/rototor/pdfbox-graphics2d</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/rototor/pdfbox-graphics2d</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.openhtmltopdf/openhtmltopdf-rtl-support@0.0.1-RC15?type=jar">
+      <group>com.openhtmltopdf</group>
+      <name>openhtmltopdf-rtl-support</name>
+      <version>0.0.1-RC15</version>
+      <description>Open HTML to PDF is a CSS 2.1 renderer written in Java.  This artifact supports right-to-left text mixed with left-to-right text.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">917a9c668aa4bf0712441ce3ce34b7d4</hash>
+        <hash alg="SHA-1">2e45a5083f7c8812aa243b355537919f7863942b</hash>
+        <hash alg="SHA-256">df2f68cfc69b628cfc40e6370e3f541076dc480bf901edf68c4719b10aff0757</hash>
+        <hash alg="SHA-512">fbfebc4ad8f2b5ea3248b45a3dc30a4349c605ee5a9a7e38fe23aba226fec2c47061cdd40fe5964d815dee54899ddf1ef5c33f931ae290ef54ab319eb954aead</hash>
+        <hash alg="SHA-384">5911e0255e9dcaf32f7ee2812af30485328f1005424fd7236f5fbc888c68450ac9b59ca365c21a850f67935b0e083723</hash>
+        <hash alg="SHA3-384">ee2ca80d71e52aa4cd7453d992b845cd89317fdd9d2271dcdea48be7491926155433ca5b845e23b043cb59ea4454218b</hash>
+        <hash alg="SHA3-256">0b05e871286ad426ff199bc1f121a31452341bab5dc8a1b7e7c51f18d27ab2e0</hash>
+        <hash alg="SHA3-512">e847819bc512bd48994f3c8486a6f40fdb1aa5fe90319c0ef61d4a88a06db799ae4ba31cf4477dfaf2343c2493d7a7c5972aef48dc12b5e8a86b4a825ad03333</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>LGPL-2.1-or-later</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/com.openhtmltopdf/openhtmltopdf-rtl-support@0.0.1-RC15?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/danfickle/openhtmltopdf/openhtmltopdf-rtl-support</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://api.bintray.com/maven/danfickle/maven/com.openhtmltopdf:openhtmltopdf-parent</url>
+        </reference>
+        <reference type="vcs">
+          <url>git://github.com/danfickle/openhtmltopdf.git/openhtmltopdf-rtl-support</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.ibm.icu/icu4j@59.1?type=jar">
+      <group>com.ibm.icu</group>
+      <name>icu4j</name>
+      <version>59.1</version>
+      <description>International Component for Unicode for Java (ICU4J) is a mature, widely used Java library
+    providing Unicode and Globalization support</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">60997176cc2577bda51a4cb2b77bdbe2</hash>
+        <hash alg="SHA-1">6f06e820cf4c8968bbbaae66ae0b33f6a256b57f</hash>
+        <hash alg="SHA-256">deae084ed81bf5193ef43b1819ee6f120359f101ef0f11aa94697f82e9a91005</hash>
+        <hash alg="SHA-512">921cb32d4362270ec742bfb6f1d14c788075a18bc5f71e98c4ad1fd093a3680e4a3f210192b615c32df49d65c28401ae7916a50d3f9d9c5d116b873883dc4627</hash>
+        <hash alg="SHA-384">9b611e6e0982a1f7fc1bf48ca98207d686ca403cd13c22090e33b90e747b8c096fec262ea1e70f470eca23311f9c0567</hash>
+        <hash alg="SHA3-384">91d9b95a08c630265aa04b9e96df4da6dbe1e808846947fada6d4685fea2fad8c902e7e3abb92067ac7a7278d5646dae</hash>
+        <hash alg="SHA3-256">ce1b4eb978a9d173a0352bf9c035dbff8e9741cbee141c6d40b56111e00f07f2</hash>
+        <hash alg="SHA3-512">73c01b19683dab8b2a48ee22837a13a0fd71a834fd5bd03d053c436baf0fe4534e7ef086429aca05764775063de7def9b08173e58922ee0587017b8cdefd05cd</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <name>Unicode/ICU License</name>
+          <url>http://source.icu-project.org/repos/icu/trunk/icu4j/main/shared/licenses/LICENSE</url>
+        </license>
+      </licenses>
+      <purl>pkg:maven/com.ibm.icu/icu4j@59.1?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://icu-project.org/</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>http://bugs.icu-project.org/trac/</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>http://sourceforge.net/mailarchive/forum.php?forum_name=icu-support</url>
+        </reference>
+        <reference type="vcs">
+          <url>http://source.icu-project.org/repos/icu/trunk/icu4j</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.openhtmltopdf/openhtmltopdf-jsoup-dom-converter@0.0.1-RC15?type=jar">
+      <group>com.openhtmltopdf</group>
+      <name>openhtmltopdf-jsoup-dom-converter</name>
+      <version>0.0.1-RC15</version>
+      <description>Open HTML to PDF is a CSS 2.1 renderer written in Java.  This artifact supports converting a Jsoup HTML5 instance into a DOM supported by Open HTML to PDF.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">0e76755ef545969401701ef4e0d6a225</hash>
+        <hash alg="SHA-1">de157f8a789bdf5ab594672c4a6718ce7caec42b</hash>
+        <hash alg="SHA-256">e68e6643a6b163823d02b06e7d763638bfa3736cd35cf4c65842439861d23560</hash>
+        <hash alg="SHA-512">1e7564d9b2844b85e50e5cd3dd5e92e448157f2114758edfc93f980674b7431f2a62edee41d30705167379ff841c25b895328e9a8b5295822739253e60e5ae89</hash>
+        <hash alg="SHA-384">6d1daa2e62b297b1c6adf091298631146d485fba3c568cbd9eb7b66d05bee6bd6804ab3b29a87f4e2115bb8b05d28839</hash>
+        <hash alg="SHA3-384">7e15c87106da4d3b27e8091de094f05d208ec49d9a185935b42257eade19650df709d9099174b18dc6925ff5fa48094e</hash>
+        <hash alg="SHA3-256">e6b250b7d9a9410b86ee2c302fb35161fd7b1caea25bebb7f79e96f521b2756a</hash>
+        <hash alg="SHA3-512">d81b6c8875c4e38035ba2ee3496c3487a6cb0c87ec354aab18c955eeeb4d7ba8492d713196b5a2210fb74acba1c665b9e238c397f066381e0693ce4e90d1e9b3</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>LGPL-2.1-or-later</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/com.openhtmltopdf/openhtmltopdf-jsoup-dom-converter@0.0.1-RC15?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/danfickle/openhtmltopdf/openhtmltopdf-jsoup-dom-converter</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://api.bintray.com/maven/danfickle/maven/com.openhtmltopdf:openhtmltopdf-parent</url>
+        </reference>
+        <reference type="vcs">
+          <url>git://github.com/danfickle/openhtmltopdf.git/openhtmltopdf-jsoup-dom-converter</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.vladsch.flexmark/flexmark-profile-pegdown@0.42.14?type=jar">
+      <group>com.vladsch.flexmark</group>
+      <name>flexmark-profile-pegdown</name>
+      <version>0.42.14</version>
+      <description>flexmark-java extension for setting flexmark options by using pegdown extension flags</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">8260b91949151f997e9f682cb3ce4f33</hash>
+        <hash alg="SHA-1">38811ea67ee8674d60a47eb45aef3eb6a2833bb3</hash>
+        <hash alg="SHA-256">b604e9868583f6fbc2c5ae2e82c8a4fd0613b30f634f3abfcfc211a3b0118f65</hash>
+        <hash alg="SHA-512">d85039c6ffbd8173cde738934de6ec4d29509da6684282846d3d048963d3b59fa056806fa485fbb05543a8677c91ecba854104d34c62ac518d1a56b6a23b1a9e</hash>
+        <hash alg="SHA-384">28963e59fa296df5ca09ba269e7aa637c1e423cdc49040abaefb0a9924bbf0fccdab2d2cf2196a51f89716f441fa30c8</hash>
+        <hash alg="SHA3-384">41374067f97131a6bfc2fa835b40daf2ab821457d8c1cdf55d268d6a63e69d2549ec122e3ce6be0d4dcd0cec2581796c</hash>
+        <hash alg="SHA3-256">09081e8c701ecda0f85b35100b7e580022d04478fd8360fd57195963368dac2c</hash>
+        <hash alg="SHA3-512">e0f9defec21a2c751c32c264b0851e61be297a9395d7e1aca4e0274b6c29a0c416900bd1619ccdd1ce827ad6f58ff7617524a19a13b33ee48e1d96060785bfa9</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>BSD-2-Clause</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/com.vladsch.flexmark/flexmark-profile-pegdown@0.42.14?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/vsch/flexmark-java/flexmark-profile-pegdown</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/vsch/flexmark-java/flexmark-profile-pegdown</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.vladsch.flexmark/flexmark-util@0.42.14?type=jar">
+      <group>com.vladsch.flexmark</group>
+      <name>flexmark-util</name>
+      <version>0.42.14</version>
+      <description>flexmark-java utility classes</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">7b5e38b7d09347924a7ce7110b44d9fe</hash>
+        <hash alg="SHA-1">1edf60f109f64b1d1e866518fd9f44c7077219a5</hash>
+        <hash alg="SHA-256">c3bf31fd86312df7a0ca2fe686d5c628941872be596c5a0182f39cadd541b76e</hash>
+        <hash alg="SHA-512">9f8be1d17559597b7357f4477c158e3ef18aecb4703bd5c924bf3bfc6e4b0ff8b453153565e2d0e51826afc99f006182f163b0d3bac1c8a42f8df7ebb1d78c7f</hash>
+        <hash alg="SHA-384">1c2da763f4231b8bb5dcba01434e6d3f5c6cee9aa07c491f24cbcc901c5462d8b718faee02694c44327b1e5d0c6b3ad9</hash>
+        <hash alg="SHA3-384">10da3021d73408b6c1b62224cbb10bd70a4e44b000af7a7bd1c5d5807c2fd24661f32ed7519c4658649113f1ecfe3900</hash>
+        <hash alg="SHA3-256">7e678b040ea7d0b2f530e9917ace8f94d0ec6117ca88f79a447c6d33586a1b55</hash>
+        <hash alg="SHA3-512">5ec4f01296ac8007a661265f9097807d195043f0557600d8351aa9016a8a820bf8af236a027f7e0745a3dcecb2b7fb06af68da1716d2719d7a520feb0a1ade5b</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>BSD-2-Clause</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/com.vladsch.flexmark/flexmark-util@0.42.14?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/vsch/flexmark-java/flexmark-util</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/vsch/flexmark-java/flexmark-util</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.vladsch.flexmark/flexmark-youtrack-converter@0.42.14?type=jar">
+      <group>com.vladsch.flexmark</group>
+      <name>flexmark-youtrack-converter</name>
+      <version>0.42.14</version>
+      <description>flexmark-java extension for YouTrack conversion</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">4aef1585e0d7966409dcc2d5e91f2846</hash>
+        <hash alg="SHA-1">8950afca2f9d60ee10ee7f42db638b47929010d7</hash>
+        <hash alg="SHA-256">58293f598b6a5c810ffcb46c3eaeded783a72ddc10371e058acddc7009812ce1</hash>
+        <hash alg="SHA-512">eb548b2d8003d1617193023128b3abb62e75b2e59ce447cea106a1b97d858ed18962e3b78013445aac33c0311e382381d12173595cb5c41771ab8ce94629f7a5</hash>
+        <hash alg="SHA-384">f740f0cd02ce32848ff5289c65832b1e0a8cc72ffc834cad2f6b814a036461b767b1cd45a40201e2d24cf460e016392d</hash>
+        <hash alg="SHA3-384">28baf8abbf9d5f71a9e3cac4ef704d4214ef9343ac39064cb1e991187f52325e4d72dc7cb45a15b129879dc52a7ca782</hash>
+        <hash alg="SHA3-256">dff3b26758537d95b44d951e40a818fd0714e0f7c44c300d6d28b6366726cd90</hash>
+        <hash alg="SHA3-512">f4b0df563759da2e9d4cbd5a2b04e3e175bda2726b981cc52f189b0c6c10f9668827451654b728850b6bd635d97f9410eeaa16ee957afca9d6addad860ce4e2c</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>BSD-2-Clause</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/com.vladsch.flexmark/flexmark-youtrack-converter@0.42.14?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/vsch/flexmark-java/flexmark-youtrack-converter</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/vsch/flexmark-java/flexmark-youtrack-converter</url>
+        </reference>
+      </externalReferences>
+    </component>
+  </components>
+  <dependencies>
+    <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-all@0.42.14?type=jar">
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-abbreviation@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-admonition@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-anchorlink@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-aside@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-attributes@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-autolink@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-definition@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-emoji@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-enumerated-reference@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-escaped-character@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-footnotes@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-gfm-issues@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-gfm-strikethrough@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-gfm-tables@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-gfm-tasklist@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-gfm-users@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-gitlab@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-jekyll-front-matter@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-jekyll-tag@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-media-tags@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-macros@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-ins@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-xwiki-macros@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-superscript@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-tables@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-toc@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-typographic@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-wikilink@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-yaml-front-matter@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-youtube-embedded@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-formatter@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-html-parser@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-jira-converter@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-pdf-converter@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-profile-pegdown@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-util@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-youtrack-converter@0.42.14?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark@0.42.14?type=jar">
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-util@0.42.14?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-util@0.42.14?type=jar"/>
+    <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-abbreviation@0.42.14?type=jar">
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-util@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-autolink@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-formatter@0.42.14?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-autolink@0.42.14?type=jar">
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-util@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/org.nibor.autolink/autolink@0.6.0?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.nibor.autolink/autolink@0.6.0?type=jar"/>
+    <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-formatter@0.42.14?type=jar">
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-util@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark@0.42.14?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-admonition@0.42.14?type=jar">
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-util@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-formatter@0.42.14?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-anchorlink@0.42.14?type=jar">
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-util@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-formatter@0.42.14?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-aside@0.42.14?type=jar">
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-util@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-jira-converter@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-formatter@0.42.14?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-jira-converter@0.42.14?type=jar">
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-util@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-gfm-strikethrough@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-tables@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-wikilink@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-ins@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-superscript@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark@0.42.14?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-gfm-strikethrough@0.42.14?type=jar">
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-util@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-formatter@0.42.14?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-tables@0.42.14?type=jar">
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-util@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-formatter@0.42.14?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-wikilink@0.42.14?type=jar">
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-util@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-formatter@0.42.14?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-ins@0.42.14?type=jar">
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-util@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-formatter@0.42.14?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-superscript@0.42.14?type=jar">
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-util@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-formatter@0.42.14?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-attributes@0.42.14?type=jar">
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-util@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-formatter@0.42.14?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-definition@0.42.14?type=jar">
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-util@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-formatter@0.42.14?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-emoji@0.42.14?type=jar">
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-util@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-jira-converter@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-formatter@0.42.14?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-enumerated-reference@0.42.14?type=jar">
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-util@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-formatter@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-attributes@0.42.14?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-escaped-character@0.42.14?type=jar">
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-util@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-formatter@0.42.14?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-footnotes@0.42.14?type=jar">
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-util@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-formatter@0.42.14?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-gfm-issues@0.42.14?type=jar">
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-util@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-formatter@0.42.14?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-gfm-tables@0.42.14?type=jar">
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-util@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-formatter@0.42.14?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-gfm-tasklist@0.42.14?type=jar">
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-util@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-formatter@0.42.14?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-gfm-users@0.42.14?type=jar">
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-util@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-formatter@0.42.14?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-gitlab@0.42.14?type=jar">
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-util@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-formatter@0.42.14?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-jekyll-front-matter@0.42.14?type=jar">
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-util@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-yaml-front-matter@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-formatter@0.42.14?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-yaml-front-matter@0.42.14?type=jar">
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-util@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-formatter@0.42.14?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-jekyll-tag@0.42.14?type=jar">
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-util@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-formatter@0.42.14?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-media-tags@0.42.14?type=jar">
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark@0.42.14?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-macros@0.42.14?type=jar">
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-util@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-gitlab@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-formatter@0.42.14?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-xwiki-macros@0.42.14?type=jar">
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-util@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-formatter@0.42.14?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-toc@0.42.14?type=jar">
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-util@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-formatter@0.42.14?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-typographic@0.42.14?type=jar">
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-util@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-formatter@0.42.14?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-youtube-embedded@0.42.14?type=jar">
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark@0.42.14?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-html-parser@0.42.14?type=jar">
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-util@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-emoji@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/org.jsoup/jsoup@1.10.2?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.jsoup/jsoup@1.10.2?type=jar"/>
+    <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-pdf-converter@0.42.14?type=jar">
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-util@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/org.jsoup/jsoup@1.10.2?type=jar"/>
+      <dependency ref="pkg:maven/com.openhtmltopdf/openhtmltopdf-core@0.0.1-RC15?type=jar"/>
+      <dependency ref="pkg:maven/com.openhtmltopdf/openhtmltopdf-pdfbox@0.0.1-RC15?type=jar"/>
+      <dependency ref="pkg:maven/com.openhtmltopdf/openhtmltopdf-rtl-support@0.0.1-RC15?type=jar"/>
+      <dependency ref="pkg:maven/com.openhtmltopdf/openhtmltopdf-jsoup-dom-converter@0.0.1-RC15?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.openhtmltopdf/openhtmltopdf-core@0.0.1-RC15?type=jar"/>
+    <dependency ref="pkg:maven/com.openhtmltopdf/openhtmltopdf-pdfbox@0.0.1-RC15?type=jar">
+      <dependency ref="pkg:maven/org.apache.pdfbox/pdfbox@2.0.11?type=jar"/>
+      <dependency ref="pkg:maven/org.apache.pdfbox/xmpbox@2.0.11?type=jar"/>
+      <dependency ref="pkg:maven/com.openhtmltopdf/openhtmltopdf-core@0.0.1-RC15?type=jar"/>
+      <dependency ref="pkg:maven/de.rototor.pdfbox/graphics2d@0.15?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.apache.pdfbox/pdfbox@2.0.11?type=jar">
+      <dependency ref="pkg:maven/org.apache.pdfbox/fontbox@2.0.11?type=jar"/>
+      <dependency ref="pkg:maven/commons-logging/commons-logging@1.2?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.apache.pdfbox/fontbox@2.0.11?type=jar">
+      <dependency ref="pkg:maven/commons-logging/commons-logging@1.2?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/commons-logging/commons-logging@1.2?type=jar"/>
+    <dependency ref="pkg:maven/org.apache.pdfbox/xmpbox@2.0.11?type=jar">
+      <dependency ref="pkg:maven/commons-logging/commons-logging@1.2?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/de.rototor.pdfbox/graphics2d@0.15?type=jar">
+      <dependency ref="pkg:maven/org.apache.pdfbox/pdfbox@2.0.11?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.openhtmltopdf/openhtmltopdf-rtl-support@0.0.1-RC15?type=jar">
+      <dependency ref="pkg:maven/com.ibm.icu/icu4j@59.1?type=jar"/>
+      <dependency ref="pkg:maven/com.openhtmltopdf/openhtmltopdf-core@0.0.1-RC15?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.ibm.icu/icu4j@59.1?type=jar"/>
+    <dependency ref="pkg:maven/com.openhtmltopdf/openhtmltopdf-jsoup-dom-converter@0.0.1-RC15?type=jar">
+      <dependency ref="pkg:maven/org.jsoup/jsoup@1.10.2?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-profile-pegdown@0.42.14?type=jar">
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-abbreviation@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-anchorlink@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-aside@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-autolink@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-definition@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-emoji@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-escaped-character@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-footnotes@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-gfm-strikethrough@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-gfm-tasklist@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-ins@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-jekyll-front-matter@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-superscript@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-tables@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-toc@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-typographic@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-wikilink@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-util@0.42.14?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-youtrack-converter@0.42.14?type=jar">
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-util@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-gfm-strikethrough@0.42.14?type=jar"/>
+      <dependency ref="pkg:maven/com.vladsch.flexmark/flexmark-ext-tables@0.42.14?type=jar"/>
+    </dependency>
+  </dependencies>
+</bom>
