@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bom serialNumber="urn:uuid:7474631a-f64e-3cbf-b059-4f4ea87b3dc6" version="1" xmlns="http://cyclonedx.org/schema/bom/1.6">
+  <metadata>
+    <timestamp>2026-07-05T22:58:24Z</timestamp>
+    <lifecycles>
+      <lifecycle>
+        <phase>build</phase>
+      </lifecycle>
+    </lifecycles>
+    <tools>
+      <components>
+        <component type="library">
+          <author>OWASP Foundation</author>
+          <group>org.cyclonedx</group>
+          <name>cyclonedx-maven-plugin</name>
+          <version>2.9.2</version>
+          <description>CycloneDX Maven plugin</description>
+          <hashes>
+            <hash alg="MD5">843a7130400f75d33f563dc7e9f52dea</hash>
+            <hash alg="SHA-1">2cac5a176b9f48801dfc4910d4f6a34bfbb13445</hash>
+            <hash alg="SHA-256">d9e5a12bac3c1a91d85f3a1ad84307099f457ff24aa65b438ba7de9ca784a54e</hash>
+            <hash alg="SHA-512">636f788518752c5a23d14bad41d68b0d549e4b3a3d720d66f2f6e2b8b956207942ee12abba968a1e9aac6cf1d78d9e738a4a75eeb8bc6fca2377030fbb482407</hash>
+            <hash alg="SHA-384">72aad41633b92fadd4dbd1c6f5c1b956836b22d3b96afbdd7ca8b8eb0456eec00c2ed658e3c2d4e93d95048bcc23dac8</hash>
+            <hash alg="SHA3-384">9837cee0f9b7d575f8d88df3ad6f58a075032ad2635e0987abbc102240327f1cec87dc062b3034009f028ab5baf988f9</hash>
+            <hash alg="SHA3-256">4c654267cde6eb6d295dbc06b33e33528412bee57549dae89c85b8df8202dbcb</hash>
+            <hash alg="SHA3-512">f7da73632ef2fd1c2d85f0cf5eebc2b6a3ff1ae2ed0945442e679da71490562a2ff6b67422dbd5285f4042eda6637e6f3544f62825a625b38efacfdebc8df137</hash>
+          </hashes>
+        </component>
+      </components>
+    </tools>
+    <component type="library" bom-ref="pkg:maven/org.apache.felix/org.apache.felix.bundlerepository@1.6.6?type=jar">
+      <publisher>The Apache Software Foundation</publisher>
+      <group>org.apache.felix</group>
+      <name>org.apache.felix.bundlerepository</name>
+      <version>1.6.6</version>
+      <description>Bundle repository service.</description>
+      <hashes>
+        <hash alg="MD5">46a70af6c63035d0ca9e65e926ce8301</hash>
+        <hash alg="SHA-1">83e4b7fda360d32a44cb2e17d159ddf40c334f96</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.apache.felix/org.apache.felix.bundlerepository@1.6.6?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://felix.apache.org/org.apache.felix.bundlerepository/</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://repository.apache.org/service/local/staging/deploy/maven2</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>http://issues.apache.org/jira/browse/FELIX</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>http://www.mail-archive.com/dev%40felix.apache.org/</url>
+        </reference>
+        <reference type="vcs">
+          <url>http://svn.apache.org/repos/asf/felix/releases/org.apache.felix.bundlerepository-1.6.6</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <properties>
+      <property name="maven.goal">makeAggregateBom</property>
+      <property name="maven.scopes">compile,provided,runtime,system</property>
+    </properties>
+  </metadata>
+  <components>
+    <component type="library" bom-ref="pkg:maven/org.apache.felix/org.apache.felix.utils@1.1.0?type=jar">
+      <publisher>The Apache Software Foundation</publisher>
+      <group>org.apache.felix</group>
+      <name>org.apache.felix.utils</name>
+      <version>1.1.0</version>
+      <description>Utility classes for OSGi.</description>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="MD5">396db677f013acc6f12c86db7ac8ff51</hash>
+        <hash alg="SHA-1">17041181c348931c71e7aa6a8d42a8a9be80697a</hash>
+        <hash alg="SHA-256">ed3738048e24fa3ac0434d5db6344a1bccbb54d438466c6330bd5faa8650f50b</hash>
+        <hash alg="SHA-512">1c041eaa355c665c46db3e3098d0c7be8bc7abee1870e3b0846892d8e3552809821ab6051633c0357c3c1eb1bfc5322cd089effd988f179a34c6419d6f476760</hash>
+        <hash alg="SHA-384">95d85ea7ac45542aacd84d513933b3c51be32857a930cdebbc749551f7156d7f25e59cb169f69ee7bdeb934d619c88b8</hash>
+        <hash alg="SHA3-384">25d7b98b70ce1a1f20e3e8d5a3fb35fee60f054e56bbc50126160d99d1938a82cf790a44004dc8ad3f0f7530cd549aeb</hash>
+        <hash alg="SHA3-256">d23d6b0a5ba1ea47838af27808916e19ce1a8bbb7b4199652040ba57085b6d92</hash>
+        <hash alg="SHA3-512">41087f6692a73e1b573bd45851305cbdaa0bc38202be83f6fa6a96ef1fc78c203af3881191d496e1750030a6592ad7d7ccd3a75ed01b1ac192332049c9880e64</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.apache.felix/org.apache.felix.utils@1.1.0?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://felix.apache.org/org.apache.felix.utils/</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://repository.apache.org/service/local/staging/deploy/maven2</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>http://issues.apache.org/jira/browse/FELIX</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>http://www.mail-archive.com/dev%40felix.apache.org/</url>
+        </reference>
+        <reference type="vcs">
+          <url>scm:svn:https://svn.apache.org/repos/asf/felix/releases/org.apache.felix.utils-1.1.0</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.apache.felix/org.osgi.service.obr@1.0.2?type=jar">
+      <publisher>OSGi Alliance</publisher>
+      <group>org.apache.felix</group>
+      <name>org.osgi.service.obr</name>
+      <version>1.0.2</version>
+      <description>OSGi OBR Service API</description>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="MD5">a9f1043cb2861432d884a1548e4e65bd</hash>
+        <hash alg="SHA-1">d97ef52fe053e57d38684a8c8aea2a7f21ca589b</hash>
+        <hash alg="SHA-256">6d1365a51e753d3dd3696f68985550af8153f6a58364bd30b27321cef0e4fe1b</hash>
+        <hash alg="SHA-512">9eccced760518425bd85d35b635c99848f610b4c86ad62270bcb06532f885b6aefa37882db9003f94083672c322e789c46e353bc1e572d602da774459db3a6da</hash>
+        <hash alg="SHA-384">8486e7e8705184e2ceb222046189caf76ed0cfcacbf069f445428a362f678c1c08aa67a46b95b5dd70d3be1eb5e9a132</hash>
+        <hash alg="SHA3-384">8eb7e66eec418bd8815e5a49e26b35b3baf6369372593ecea958e3d1dbed1ff7df7bd37479bf99c6c4d0e25dc6bdc9ad</hash>
+        <hash alg="SHA3-256">e94ca5b8f2d9f9d2a1ddae98e7857a77fd44346efbc2849ef7e2a9e2e0a574f1</hash>
+        <hash alg="SHA3-512">e1d7d05e7f9384ee0fe4a66d58dd2b7f22e0f32b94407744cb7b6a78df3b3fa948896dd317cfb46541e62b2e508be05c81baf98483ba9d9b6eeda9be689f0732</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.apache.felix/org.osgi.service.obr@1.0.2?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://org.osgi.service.obr/</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>scp://people.apache.org/www/people.apache.org/repo/m2-ibiblio-rsync-repository</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>http://issues.apache.org/jira/browse/FELIX</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>http://www.mail-archive.com/dev%40felix.apache.org/</url>
+        </reference>
+        <reference type="vcs">
+          <url>scm:svn:https://svn.apache.org/repos/asf/felix/releases/org.osgi.service.obr-1.0.2</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.apache.felix/org.osgi.core@1.0.1?type=jar">
+      <publisher>OSGi Alliance</publisher>
+      <group>org.apache.felix</group>
+      <name>org.osgi.core</name>
+      <version>1.0.1</version>
+      <description>OSGi Service Platform Release 4 Core Interfaces and Classes.</description>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="MD5">a9fb34e3ae19b4adcf2db117c70cb43f</hash>
+        <hash alg="SHA-1">f2c851ef81b9d3718db4a057f3d010423d186d82</hash>
+        <hash alg="SHA-256">37a3bebd29d26e1d1e7ab2b1240435ba2f3cf610f718dbcfe4c05b628df6382b</hash>
+        <hash alg="SHA-512">b23b804caf252c93147df2b7041373d3b29b13ed8416a9789bdb76575ab797031ba872b919d43a390e0aab4420c137557d7bff1c94ff6c8c97fedae458860eaf</hash>
+        <hash alg="SHA-384">c92001559b8a9037ec9e6d12c8cb11cfd1e1361821b62c7cf9c7c3340f81c35a0a840db9629412b96afe63695f24513f</hash>
+        <hash alg="SHA3-384">5fbdb58e551723a1a783f2246799893093296f26cb31388a83dfad1ea8331e5e2e4b81f3a7998422b532ff320e0fd182</hash>
+        <hash alg="SHA3-256">88c69b587efa1e65cc76943415551244de9c742a293f25960234424d618a4ad6</hash>
+        <hash alg="SHA3-512">c6315c4992461e0261e8f28eca057fdfb3a651c1dbc939e53fb625fe1d7bf5080cc86e36eea08e171a3f63e85cbd3f6fbaa0acc09f99cb53ac0fd8aadbabc102</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.apache.felix/org.osgi.core@1.0.1?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://org.osgi.core/</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>scp://people.apache.org/www/people.apache.org/repo/m2-ibiblio-rsync-repository</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>http://issues.apache.org/jira/browse/FELIX</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>http://www.mail-archive.com/dev%40felix.apache.org/</url>
+        </reference>
+        <reference type="vcs">
+          <url>scm:svn:https://svn.apache.org/repos/asf/felix/releases/org.osgi.core-1.0.1</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.apache.felix/org.apache.felix.shell@1.4.1?type=jar">
+      <publisher>The Apache Software Foundation</publisher>
+      <group>org.apache.felix</group>
+      <name>org.apache.felix.shell</name>
+      <version>1.4.1</version>
+      <description>A simple OSGi command shell service.</description>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="MD5">ec7105e1157ee86f36ea605a4b10ce4f</hash>
+        <hash alg="SHA-1">a3ffb5084649a1b0600be2fd209a9a18d37f6837</hash>
+        <hash alg="SHA-256">843cb476449b56450d4b70a564bea6839f11cb78da955f85578bc6b56b9adbca</hash>
+        <hash alg="SHA-512">4d4813beaaca8640434844d1ea91fb9e488897e2e1e8a51be46aac81872c51b26c494f248a90d8fea491f9d116fbed493a245ed65c31038bb34ae015270fb996</hash>
+        <hash alg="SHA-384">1472432d45a85848164ffd027ea999b36b1935d0daf97bd963cd79e5b48b5a0ca11cdf57deed3c5eeff603d2d4b21df4</hash>
+        <hash alg="SHA3-384">c9a6ee8480a41a63f11c811d8ccb9d770454e2d46fcbe932a3ea1b81902cbab95a6dd09d0f5f52bbcf115690016a35ba</hash>
+        <hash alg="SHA3-256">0864baedb88138b40c774906a8250c54ea1c51b8ac6e930b916f623a66368b41</hash>
+        <hash alg="SHA3-512">2b5ffd77b5d5c56929767ccc249144697be6b157d4276c22718507d966b32e2c802806f4ce250a2a72b8c54f5fcf773ba082a08da736a54c249e752d80169111</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.apache.felix/org.apache.felix.shell@1.4.1?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://felix.apache.org/org.apache.felix.shell/</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://repository.apache.org/service/local/staging/deploy/maven2</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>http://issues.apache.org/jira/browse/FELIX</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>http://www.mail-archive.com/dev%40felix.apache.org/</url>
+        </reference>
+        <reference type="vcs">
+          <url>scm:svn:https://svn.apache.org/repos/asf/felix/releases/org.apache.felix.shell-1.4.1</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/net.sf.kxml/kxml2@2.3.0?type=jar">
+      <publisher>Stefan Haustein, Oberhausen, Rhld., Germany</publisher>
+      <group>net.sf.kxml</group>
+      <name>kxml2</name>
+      <version>2.3.0</version>
+      <description>kXML is a small XML pull parser, specially designed for constrained environments such as Applets, Personal Java or MIDP devices. In contrast to kXML 1, kXML 2 is based on the common XML pull API.</description>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="MD5">04a03b3a4f1ef0e3fda28bf1792e2ee7</hash>
+        <hash alg="SHA-1">ccbc77a5fd907ef863c29f3596c6f54ffa4e9442</hash>
+        <hash alg="SHA-256">f264dd9f79a1fde10ce5ecc53221eff24be4c9331c830b7d52f2f08a7b633de2</hash>
+        <hash alg="SHA-512">f97d418d4c2892fa184f5be83166ac2cd771fd10d7625104d9b054ec0ff361927a2ac2539d38f326f61373b6d700a3b5075605763562ac0ae6714903773cd1cb</hash>
+        <hash alg="SHA-384">961f81219fe04900852844c5d86f5ccfb816fb70cce2032ed63048477ab571e2fc9153283178a86704d1f4ff91015d37</hash>
+        <hash alg="SHA3-384">95518ac11af688c996dc4e61ad6dce3ef516bb418d379a8b3e988676f5fcce154b74a094fab509f159213207d8854e9b</hash>
+        <hash alg="SHA3-256">989bacf9f120cc10c10b0c7f885de3d3e98aac3064644d793e28adbaecfaff2d</hash>
+        <hash alg="SHA3-512">a0b211754ffef3b458e5a1df916df62990f7143379aee14815b2986d40a809e36b9c22e23af401eed5297d11e7b9a24a3c60590f1dc8dcf93cc1656d631d2c39</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <name>BSD style</name>
+          <url>http://kxml.cvs.sourceforge.net/viewvc/kxml/kxml2/license.txt?view=markup</url>
+        </license>
+        <license>
+          <name>Public Domain</name>
+          <url>http://creativecommons.org/licenses/publicdomain</url>
+        </license>
+      </licenses>
+      <purl>pkg:maven/net.sf.kxml/kxml2@2.3.0?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://kxml.sourceforge.net/</url>
+        </reference>
+        <reference type="vcs">
+          <url>http://kxml.cvs.sourceforge.net/viewvc/kxml/kxml2/</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.osgi/org.osgi.compendium@4.0.0?type=jar">
+      <group>org.osgi</group>
+      <name>org.osgi.compendium</name>
+      <version>4.0.0</version>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="MD5">c8d708edb0a365a4a0ff63b9fcf74e38</hash>
+        <hash alg="SHA-1">70d04381dfa21ddb4f1fd82e1f62623632890b48</hash>
+        <hash alg="SHA-256">ba23461e878cff259ef958f0b739e4f423fe1566ab1c02c21927991ecf95ad72</hash>
+        <hash alg="SHA-512">f09d151695a40fd9163d2cd421fa2fb52495692c273028c578a48b71f09fb92b8ec4147c4b0d0450b1104202ec0399f23b33cc315e86eac8538c9fa24986a829</hash>
+        <hash alg="SHA-384">1368301f1073dacc00ad0602938c8c35548e817d701afeb461c9c529e4f7a2e2fc2bcd98e9ed332061614bf27629f7d2</hash>
+        <hash alg="SHA3-384">deaf0e2133405f1ed591c5618c32c1a5df20d0c45fe221624f09d66d54f2f918c80713a44fb75fc53f09fa9f08bbc5c3</hash>
+        <hash alg="SHA3-256">e38ca3105ac9186ab9c88ef326ef6d1115b46c6fb0d66bd425044cdaee71454c</hash>
+        <hash alg="SHA3-512">8a5674246ae4dba3fc3a55a4feb827b265b6b4cf3ddc201277d863e7ceda7679aba6c6150b3e5e96806b4741f61cb703c2a311ef5904f6fc6eee1a8227c5598c</hash>
+      </hashes>
+      <purl>pkg:maven/org.osgi/org.osgi.compendium@4.0.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.osgi/org.osgi.core@4.1.0?type=jar">
+      <group>org.osgi</group>
+      <name>org.osgi.core</name>
+      <version>4.1.0</version>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">2f53de1a2939934088d4899e25967697</hash>
+        <hash alg="SHA-1">b88cd082b5b6774e9db939e28c0e3dc526c92d89</hash>
+        <hash alg="SHA-256">1073de173c659fc1aba698a41faee196cdab9a5b2455e83429d1f7393093934a</hash>
+        <hash alg="SHA-512">72c6aeabbd45f2847ec3c767a246c07a24c1a7f1d57c007cc7823251ab2d24820271b3b2472ec20752b55acd8154696d7fbc6824f7c305384ce01b7ee1459336</hash>
+        <hash alg="SHA-384">7e9bf05e737be7da43d94a54f73a9d0ea17b81875800566c726040d2b1003ae2f960bf168087d4f59c141b976e87c9e1</hash>
+        <hash alg="SHA3-384">bc1698bb27e1e8357d77cb9f1c869080b0c3d4f23ae2f787bf8a8c1303f696687dc2f7c791049f879faf84b9c29a7bfc</hash>
+        <hash alg="SHA3-256">324d27aa1b1940fa022ecf16878928a714d1c8375293762ddbdc0a0c6f2731fa</hash>
+        <hash alg="SHA3-512">0caad1d4f0a41bc82a28e564b3a465fbbbc22bf7ac46e444578da34661e8403cd4e00340280b48817ffdb017fb896bbd47fae3275641912097c1e4ef51612d07</hash>
+      </hashes>
+      <purl>pkg:maven/org.osgi/org.osgi.core@4.1.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.codehaus.woodstox/woodstox-core-asl@4.0.7?type=jar">
+      <publisher>Codehaus</publisher>
+      <group>org.codehaus.woodstox</group>
+      <name>woodstox-core-asl</name>
+      <version>4.0.7</version>
+      <description>Woodstox is a high-performance XML processor that
+implements Stax (JSR-173) and SAX2 APIs</description>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="MD5">ea87a577a323ce732e9818c89872ae9b</hash>
+        <hash alg="SHA-1">a0f6cb9b6bf8c3e1e34e9f33d4e7b37e04e6396f</hash>
+        <hash alg="SHA-256">8d2bd6dcc3bfcf1477ab1fcfc1e3fd3d7799d86555edc8ffce312718342df8a9</hash>
+        <hash alg="SHA-512">c9e99dd0337007c9bf08bf9da226cc62df852f185f92384394f9d59c4aa8eb0ce875c69d0faa209703e2faa8bb6c2a7c7dc512e1f4586ef429063eda26ad21e9</hash>
+        <hash alg="SHA-384">842a16150981568e076d648a98da4ea96a3263bf09e012d46195cf5169847f7f071775b16022915bd1c6ec7f564c07d4</hash>
+        <hash alg="SHA3-384">d597bfa3115d9b25fad86d73ba5674d3d161e737c172cc5fd41dfed7a280854a00b0f801c689e2308e1c2e5ae9f185d8</hash>
+        <hash alg="SHA3-256">ba5444538365dc2b9ff7bc760141dae813a5f65de3749829430df705262ec4d0</hash>
+        <hash alg="SHA3-512">f945de4fe11f3f5ac32171ee583fea03f22055f6f3a7d57b7f899c3f1d7b2cb6a628b2314c5713bbcff9877e633c3e19ebaea4f79e09cd377c14ba92e0c5f819</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.codehaus.woodstox/woodstox-core-asl@4.0.7?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://woodstox.codehaus.org</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>http://jira.codehaus.org/browse/WSTX</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/stax/stax-api@1.0.1?type=jar">
+      <group>stax</group>
+      <name>stax-api</name>
+      <version>1.0.1</version>
+      <description>StAX API is the standard java XML processing API defined by JSR-173</description>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="MD5">7d436a53c64490bee564c576babb36b4</hash>
+        <hash alg="SHA-1">49c100caf72d658aca8e58bd74a4ba90fa2b0d70</hash>
+        <hash alg="SHA-256">d1968436fc216c901fb9b82c7e878b50fd1d30091676da95b2edd3a9c0ccf92e</hash>
+        <hash alg="SHA-512">43c24e8dbffa9b932492c8ccf2b91926b2ba3d1d34b5a9671c689bd24d4c220b996708a9667521641d1abbf29404b653755b6f6f3dc0ad0671f5c09db332ea06</hash>
+        <hash alg="SHA-384">2e6c232d3012064dc17e10c2e5b281728a6771eb0d74868e730caf60fe6f96fdd6145759fbbf9d1aa2e07eb1f49764d6</hash>
+        <hash alg="SHA3-384">03ebb8db88d04b7308570c1058aadfb6a81d3d6725b1dd13a049ea984ed1df42d3e0f8163e1229752228cada978fb462</hash>
+        <hash alg="SHA3-256">8173e3e3a0db17b3dbb80c017268858ecda57c819e5b58dbe202bd8087664bb1</hash>
+        <hash alg="SHA3-512">e9a7c234dfeff5d4cabd034a536f31ad5a141e30b0ad2438cf5856dd6c36eeb16c69b8bc1ba3ee6bba91f69cd3cbd450953249f2f0eee0a9a22d49637b575f4d</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/stax/stax-api@1.0.1?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://stax.codehaus.org/</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>http://jira.codehaus.org/browse/STAX</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>http://groups.yahoo.com/group/stax_builders/</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.codehaus.woodstox/stax2-api@3.0.1?type=jar">
+      <publisher>Codehaus</publisher>
+      <group>org.codehaus.woodstox</group>
+      <name>stax2-api</name>
+      <version>3.0.1</version>
+      <description>Stax2 API is an extension to basic Stax 1.0 API that adds significant new functionality, such as full-featured bi-direction validation interface and high-performance Typed Access API.</description>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="MD5">75d19a6c6649d42b601c84dd39fb9fda</hash>
+        <hash alg="SHA-1">12393455d7d25eab09bb9b2043b6df13406ec70d</hash>
+        <hash alg="SHA-256">68ed11b72b138356063b8baf8551b9d67f46717b3c0001890949195c5b153199</hash>
+        <hash alg="SHA-512">0f802475982eeab9329027e0f9650b8b7760ad4b4d672f3a09aa424c87b939f15c3efb920c46eb6c02e4e5fb0f28ba28a6276c44aa2d2edef5438fb4782ff4e3</hash>
+        <hash alg="SHA-384">619c6f5a05b9a4a44613361f79e7c4c4000b36adc5eab4f99ce2c345a9426b4b557cf64755e329f046dfc0ffa9416664</hash>
+        <hash alg="SHA3-384">c48ff4221b39d98d8e943afb21d98211cd16d04f9a3739eed46e5d0d1c9e8c01d055686ffc6c214186390bac896b63aa</hash>
+        <hash alg="SHA3-256">6e71f60f505494a2523992be251e3c27ddf7e8fe10567beaae46b07f7fd0f86d</hash>
+        <hash alg="SHA3-512">7c6370bf83c3462b6dc498749005b9be7f9db84395e54d05696b662e12894a7a3d8b529ad4a445cb2ca6d17e2dd4c21e48699625a5f7432e3ac9e66b3b65e4e4</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>BSD-4-Clause</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.codehaus.woodstox/stax2-api@3.0.1?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://woodstox.codehaus.org/StAX2</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>http://jira.codehaus.org/browse/WSTX</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.easymock/easymock@2.4?type=jar">
+      <group>org.easymock</group>
+      <name>easymock</name>
+      <version>2.4</version>
+      <description>EasyMock provides an easy way to create Mock Objects for interfaces by generating them on the fly using Java's proxy mechanism</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">8a53a7ae6e64acaf0747be3c3da394b0</hash>
+        <hash alg="SHA-1">a1703c7b69a0590e25dad65ff8d14d7e465b019d</hash>
+        <hash alg="SHA-256">7c48d8ba6e070409f65a45afc4904824b7702598ab0bec273cdd0ce6f4c2c64f</hash>
+        <hash alg="SHA-512">ef6453849ea6ad7f4db1107daebf894fbf3c0ae653d38b839c5ce4036439cd040f93513f1070022bb5290d40fc957d9e463405c8c6105c8cf715f538ee45731e</hash>
+        <hash alg="SHA-384">230c40d0384b16bc936d118b780c00a1de1f3cc74c525ccf4f0446f69cfd8eb217644411e1959d566fc1f743d7b55f5f</hash>
+        <hash alg="SHA3-384">a21df0cce13fc8a08cc5614748ec1119be9f45e5540d61cfea0ca0a176672568c1a820483f557eadb4d7d1e83b7bd55e</hash>
+        <hash alg="SHA3-256">d7ec5cf2d9f57d34aba8311e91782c8a091d7a5c988097c95b336c1ebf0755a0</hash>
+        <hash alg="SHA3-512">acd284798ef89365ad0798bb5a94d4a163c631104ffe47c03c50bc971ab77ecb9716ce55996a8a941c2b5b0fd013a7c1f9ebed8b34fded393c2314c5fbd944c3</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/license/mit/</url>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.easymock/easymock@2.4?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://www.easymock.org</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>scpexe://shell.sf.net/home/groups/e/ea/easymock/htdocs/maven/repository</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>http://sourceforge.net/tracker/?group_id=82958</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>http://tech.groups.yahoo.com/group/easymock/</url>
+        </reference>
+        <reference type="vcs">
+          <url>http://easymock.cvs.sourceforge.net/easymock/</url>
+        </reference>
+      </externalReferences>
+    </component>
+  </components>
+  <dependencies>
+    <dependency ref="pkg:maven/org.apache.felix/org.apache.felix.bundlerepository@1.6.6?type=jar">
+      <dependency ref="pkg:maven/org.apache.felix/org.apache.felix.utils@1.1.0?type=jar"/>
+      <dependency ref="pkg:maven/org.apache.felix/org.osgi.service.obr@1.0.2?type=jar"/>
+      <dependency ref="pkg:maven/org.apache.felix/org.apache.felix.shell@1.4.1?type=jar"/>
+      <dependency ref="pkg:maven/net.sf.kxml/kxml2@2.3.0?type=jar"/>
+      <dependency ref="pkg:maven/org.osgi/org.osgi.compendium@4.0.0?type=jar"/>
+      <dependency ref="pkg:maven/org.osgi/org.osgi.core@4.1.0?type=jar"/>
+      <dependency ref="pkg:maven/org.codehaus.woodstox/woodstox-core-asl@4.0.7?type=jar"/>
+      <dependency ref="pkg:maven/org.easymock/easymock@2.4?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.apache.felix/org.apache.felix.utils@1.1.0?type=jar">
+      <dependency ref="pkg:maven/org.osgi/org.osgi.core@4.1.0?type=jar"/>
+      <dependency ref="pkg:maven/org.osgi/org.osgi.compendium@4.0.0?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.osgi/org.osgi.core@4.1.0?type=jar"/>
+    <dependency ref="pkg:maven/org.osgi/org.osgi.compendium@4.0.0?type=jar"/>
+    <dependency ref="pkg:maven/org.apache.felix/org.osgi.service.obr@1.0.2?type=jar">
+      <dependency ref="pkg:maven/org.apache.felix/org.osgi.core@1.0.1?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.apache.felix/org.osgi.core@1.0.1?type=jar"/>
+    <dependency ref="pkg:maven/org.apache.felix/org.apache.felix.shell@1.4.1?type=jar">
+      <dependency ref="pkg:maven/org.osgi/org.osgi.core@4.1.0?type=jar"/>
+      <dependency ref="pkg:maven/org.osgi/org.osgi.compendium@4.0.0?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/net.sf.kxml/kxml2@2.3.0?type=jar"/>
+    <dependency ref="pkg:maven/org.codehaus.woodstox/woodstox-core-asl@4.0.7?type=jar">
+      <dependency ref="pkg:maven/stax/stax-api@1.0.1?type=jar"/>
+      <dependency ref="pkg:maven/org.codehaus.woodstox/stax2-api@3.0.1?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/stax/stax-api@1.0.1?type=jar"/>
+    <dependency ref="pkg:maven/org.codehaus.woodstox/stax2-api@3.0.1?type=jar">
+      <dependency ref="pkg:maven/stax/stax-api@1.0.1?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.easymock/easymock@2.4?type=jar"/>
+  </dependencies>
+</bom>
