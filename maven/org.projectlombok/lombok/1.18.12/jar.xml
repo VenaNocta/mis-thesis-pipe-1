@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bom serialNumber="urn:uuid:16996d69-b2c3-3b0b-b488-f1d71f938411"
+	version="1" xmlns="http://cyclonedx.org/schema/bom/1.6">
+	<metadata>
+		<component type="library" bom-ref="pkg:maven/org.projectlombok/lombok@1.18.12?type=jar">
+			<group>org.projectlombok</group>
+			<name>lombok</name>
+			<version>1.18.12</version>
+			<description>Spice up your java: Automatic Resource Management, automatic generation of getters, setters, equals, hashCode and toString, and more!</description>
+			<hashes>
+				<hash alg="MD5">9a1e84dfd05b2a0821fc56298d6ed0de</hash>
+				<hash alg="SHA-1">48e4e5d60309ebd833bc528dcf77668eab3cd72c</hash>
+				<hash alg="SHA-256">49381508ecb02b3c173368436ef71b24c0d4418ad260e6cc98becbcf4b345406</hash>
+				<hash alg="SHA-512">40e596f065229b1c4049441fafe3102eca9bee0290ed8660013ef508cf7a624b4d8b53a6998e768f6df9e82acd0a5ea425b1797fcd96b38df59333751c41dea2</hash>
+				<hash alg="SHA-384">df2b2420327f10964f785dd176cc164ed22a5f72f8783b4ed9e85409ffaa63dd7accf48f4ff8bef0b50792e44dc7abbf</hash>
+				<hash alg="SHA3-384">ad729f92923c038197a1261b20d58a0b8ed5b1def7809f1e1ffa26ccc08a6f3e2aa421d4f7f398ea882f3f00405a89c6</hash>
+				<hash alg="SHA3-256">4f9016dd9793069deba70249f751e28c90230c1d12fc8569034d3770c4e105b8</hash>
+				<hash alg="SHA3-512">272bce45dd62de5541d2950d793fa68a97bad7e2cb56663a24f71f84bd7ee8e6f64ffab74cfa122a97a8438e80afaca857946921420f2ccdf08019f487331d6d</hash>
+			</hashes>
+			<licenses>
+				<license>
+					<id>MIT</id>
+				</license>
+			</licenses>
+			<purl>pkg:maven/org.projectlombok/lombok@1.18.12?type=jar</purl>
+			<externalReferences>
+				<reference type="website">
+					<url>https://projectlombok.org</url>
+				</reference>
+				<reference type="issue-tracker">
+					<url>https://github.com/rzwitserloot/lombok/issues</url>
+				</reference>
+				<reference type="vcs">
+					<url>http://github.com/rzwitserloot/lombok</url>
+				</reference>
+			</externalReferences>
+		</component>
+	</metadata>
+</bom>
+
