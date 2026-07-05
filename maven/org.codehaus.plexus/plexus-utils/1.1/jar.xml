@@ -2,8 +2,6 @@
 <bom serialNumber="urn:uuid:16996d69-b2c3-3b0b-b488-f1d71f938411"
 	version="1" xmlns="http://cyclonedx.org/schema/bom/1.6">
 	<metadata>
-		<tools>
-		</tools>
 		<component type="library"
 			bom-ref="pkg:maven/org.codehaus.plexus/plexus-utils@1.1?type=jar">
 			<publisher>Codehaus Plexus</publisher>
@@ -20,12 +18,8 @@
 					<id>Apache-2.0</id>
 				</license>
 			</licenses>
-			<purl>pkg:maven/org.codehaus.plexus/plexus-utils@1.1?type=jar
-			</purl>
-			<externalReferences>
-			</externalReferences>
+			<purl>pkg:maven/org.codehaus.plexus/plexus-utils@1.1?type=jar</purl>
 		</component>
-		<properties>
-		</properties>
 	</metadata>
 </bom>
+
