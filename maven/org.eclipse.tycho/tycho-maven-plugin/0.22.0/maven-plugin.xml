@@ -1,0 +1,1728 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bom serialNumber="urn:uuid:bdf8ba81-33ce-3b0c-bf04-59ec67cb6af0" version="1" xmlns="http://cyclonedx.org/schema/bom/1.6">
+  <metadata>
+    <timestamp>2026-07-05T22:11:13Z</timestamp>
+    <lifecycles>
+      <lifecycle>
+        <phase>build</phase>
+      </lifecycle>
+    </lifecycles>
+    <tools>
+      <components>
+        <component type="library">
+          <author>OWASP Foundation</author>
+          <group>org.cyclonedx</group>
+          <name>cyclonedx-maven-plugin</name>
+          <version>2.9.2</version>
+          <description>CycloneDX Maven plugin</description>
+          <hashes>
+            <hash alg="MD5">843a7130400f75d33f563dc7e9f52dea</hash>
+            <hash alg="SHA-1">2cac5a176b9f48801dfc4910d4f6a34bfbb13445</hash>
+            <hash alg="SHA-256">d9e5a12bac3c1a91d85f3a1ad84307099f457ff24aa65b438ba7de9ca784a54e</hash>
+            <hash alg="SHA-512">636f788518752c5a23d14bad41d68b0d549e4b3a3d720d66f2f6e2b8b956207942ee12abba968a1e9aac6cf1d78d9e738a4a75eeb8bc6fca2377030fbb482407</hash>
+            <hash alg="SHA-384">72aad41633b92fadd4dbd1c6f5c1b956836b22d3b96afbdd7ca8b8eb0456eec00c2ed658e3c2d4e93d95048bcc23dac8</hash>
+            <hash alg="SHA3-384">9837cee0f9b7d575f8d88df3ad6f58a075032ad2635e0987abbc102240327f1cec87dc062b3034009f028ab5baf988f9</hash>
+            <hash alg="SHA3-256">4c654267cde6eb6d295dbc06b33e33528412bee57549dae89c85b8df8202dbcb</hash>
+            <hash alg="SHA3-512">f7da73632ef2fd1c2d85f0cf5eebc2b6a3ff1ae2ed0945442e679da71490562a2ff6b67422dbd5285f4042eda6637e6f3544f62825a625b38efacfdebc8df137</hash>
+          </hashes>
+        </component>
+      </components>
+    </tools>
+    <component type="library" bom-ref="pkg:maven/org.eclipse.tycho/tycho-maven-plugin@0.22.0?type=jar">
+      <publisher>Eclipse Foundation</publisher>
+      <group>org.eclipse.tycho</group>
+      <name>tycho-maven-plugin</name>
+      <version>0.22.0</version>
+      <description>The Tycho Maven Plugin provides extensions to build Eclipse projects.</description>
+      <hashes>
+        <hash alg="MD5">c177ffea46709e8fe0c3a5f3fd1cb710</hash>
+        <hash alg="SHA-1">a65cc1fc5b7e2ab860b2d15c7b4e549ee1ef0a94</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>EPL-1.0</id>
+          <url>http://www.eclipse.org/legal/epl-v10.html</url>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.eclipse.tycho/tycho-maven-plugin@0.22.0?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://www.eclipse.org/tycho/tycho-maven-plugin/</url>
+        </reference>
+        <reference type="build-system">
+          <url>https://hudson.eclipse.org/hudson</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>https://bugs.eclipse.org/bugs/buglist.cgi?product=Tycho</url>
+        </reference>
+        <reference type="vcs">
+          <url>http://git.eclipse.org/c/tycho/org.eclipse.tycho.git/tycho-maven-plugin</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <properties>
+      <property name="maven.goal">makeBom</property>
+      <property name="maven.scopes">compile,provided,runtime,system</property>
+    </properties>
+  </metadata>
+  <components>
+    <component type="library" bom-ref="pkg:maven/org.eclipse.tycho/tycho-core@0.22.0?type=jar">
+      <publisher>Eclipse Foundation</publisher>
+      <group>org.eclipse.tycho</group>
+      <name>tycho-core</name>
+      <version>0.22.0</version>
+      <description>Core Tycho components</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">4a9932cf8492840fb8c58e349334f8a7</hash>
+        <hash alg="SHA-1">9e67d3cbc81f4104ee22ccf8cd9ab7618c4c74f5</hash>
+        <hash alg="SHA-256">cc59402b94f3d7023d911d702e715b3f79e358d9969dc58779109bc417e212f7</hash>
+        <hash alg="SHA-512">480ee84a67c62ab171d85d98a85c355d9b97e1fd920774072e4304a2912781583f8976e546b63fdf33b542424b36415bd9d57c6715f2095e5699d555deac64a2</hash>
+        <hash alg="SHA-384">8f1fc8cfa8f05d6628a03182e3ebe59a81dadf14e2ce8f058a15b22f962e805d93ac21ea6f8e6b2a6da17e621a3ac87e</hash>
+        <hash alg="SHA3-384">9d7509a5a210db095de6a23d4f5252a64fcdb18c364b6d76da886e842517e30388380d1f7b2dc68ec18b36434c67e6c7</hash>
+        <hash alg="SHA3-256">0c2f752bfb8a8a605f7df869edb1b0075daff290297dc45b505c7d002c2137b3</hash>
+        <hash alg="SHA3-512">d1824223c5d04211fbcc8d303f23e1cb6c418b0aa47c73890234231792c93f8bf0d68431065cec12f635b6f13edd5f8fd2b7d3eb64fb799e0dd6add1b83121f2</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>EPL-1.0</id>
+          <url>http://www.eclipse.org/legal/epl-v10.html</url>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.eclipse.tycho/tycho-core@0.22.0?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://www.eclipse.org/tycho/tycho-core/</url>
+        </reference>
+        <reference type="build-system">
+          <url>https://hudson.eclipse.org/hudson</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>https://bugs.eclipse.org/bugs/buglist.cgi?product=Tycho</url>
+        </reference>
+        <reference type="vcs">
+          <url>http://git.eclipse.org/c/tycho/org.eclipse.tycho.git/tycho-core</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.apache.maven/maven-core@3.0?type=jar">
+      <publisher>The Apache Software Foundation</publisher>
+      <group>org.apache.maven</group>
+      <name>maven-core</name>
+      <version>3.0</version>
+      <description>Maven is a project development management and
+    comprehension tool. Based on the concept of a project object model:
+    builds, dependency management, documentation creation, site
+    publication, and distribution publication are all controlled from
+    the declarative file. Maven can be extended by plugins to utilise a
+    number of other development tools for reporting or the build
+    process.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">9bd377874764a4fad7209021abfe7cf7</hash>
+        <hash alg="SHA-1">73728ce32c9016c8bd05584301fa3ba3a6f5d20a</hash>
+        <hash alg="SHA-256">ba03294ee53e7ba31838e4950f280d033c7744c6c7b31253afc75aa351fbd989</hash>
+        <hash alg="SHA-512">a2a898f91472a920ff189de7f3651c0c1c3e809477ee5bff8a9de79060f890496d697cc552896a5470592a9c3acb14b49911eb087400b1a8242d07c82839830b</hash>
+        <hash alg="SHA-384">8c87c3283186c0958e6f648a5f2f58c77ceec4c055d2216fd9af1261bf476f1b65aaea786651716af752e87aae8551f1</hash>
+        <hash alg="SHA3-384">4f98c732a5371c83069f399c1eb650dae1db37b283fa7d5ade2408410f0259ceb09671af9c82765296483aa329aff486</hash>
+        <hash alg="SHA3-256">b980cacea322f6d097ff44ef2d3978ed65154bf8cdc1f9158bc16eea7861c00b</hash>
+        <hash alg="SHA3-512">ca753b14be3b1b1f491b1de15ee417cb7578e4994bbbedd2942337664cb626b39f08f8b2205727aa167ac80efcda12c5bff8f29c45e5241993ec4801354bb5dc</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.apache.maven/maven-core@3.0?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://maven.apache.org/maven-core/</url>
+        </reference>
+        <reference type="build-system">
+          <url>http://grid.sonatype.org/ci</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://repository.apache.org/service/local/staging/deploy/maven2</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>http://jira.codehaus.org/browse/MNG</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>http://mail-archives.apache.org/mod_mbox/maven-dev</url>
+        </reference>
+        <reference type="vcs">
+          <url>http://svn.apache.org/viewvc/maven/maven-3/tags/maven-3.0/maven-core</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.apache.maven/maven-model@3.0?type=jar">
+      <publisher>The Apache Software Foundation</publisher>
+      <group>org.apache.maven</group>
+      <name>maven-model</name>
+      <version>3.0</version>
+      <description>Maven Model</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">562636665b6ac87297513246c5bdccd2</hash>
+        <hash alg="SHA-1">24ce598c94a78341c42556fe9192dad6a2822405</hash>
+        <hash alg="SHA-256">27e426d73f8662b47f60df0e43439b3dec2909c42b89175a6e4431dfed3edafd</hash>
+        <hash alg="SHA-512">013ff22f9e422fed0d0a9bd0ada431530da158579cce366847e1d16f337c7736c042c5798cc8eab705d07cb5b0663b213e9a997a1e913b8cd39e18e0ef3ca58e</hash>
+        <hash alg="SHA-384">5d924408bd32fca9e9f91a236879a78d6a1b29bd9a83324765f537a9a9e43376ec9ddf8e3ae20a1b720d530173c6c8a4</hash>
+        <hash alg="SHA3-384">1e6c40bf9b99f36bcd2b3a2d07b57700e55f6fd7e9e5e3acfb7f5b20851278a81c21c6e1f0cc914e1cfd6052df8208ff</hash>
+        <hash alg="SHA3-256">2b2e15dfa518e3838771a3db41be7838e317a95d3fd31a9acbda5b315f7a8ec2</hash>
+        <hash alg="SHA3-512">c7998b04385314217816e42e6e8479695cb3699a37a4cdfbdc32911be342e634caacf4cb4bf92ba5b7da15ec4b916dc8866b30e3b95dd953e28b955d9ffb893a</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.apache.maven/maven-model@3.0?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://maven.apache.org/maven-model/</url>
+        </reference>
+        <reference type="build-system">
+          <url>http://grid.sonatype.org/ci</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://repository.apache.org/service/local/staging/deploy/maven2</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>http://jira.codehaus.org/browse/MNG</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>http://mail-archives.apache.org/mod_mbox/maven-dev</url>
+        </reference>
+        <reference type="vcs">
+          <url>http://svn.apache.org/viewvc/maven/maven-3/tags/maven-3.0/maven-model</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.apache.maven/maven-settings@3.0?type=jar">
+      <publisher>The Apache Software Foundation</publisher>
+      <group>org.apache.maven</group>
+      <name>maven-settings</name>
+      <version>3.0</version>
+      <description>Maven Settings</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">1ae2f464cfe3c9ba4bbfdfd3255b6ac7</hash>
+        <hash alg="SHA-1">8ee129adae535dd610f2dc952fddce68ac42fd86</hash>
+        <hash alg="SHA-256">3b1a46b4bc26a0176acaf99312ff2f3a631faf3224b0996af546aa48bd73c647</hash>
+        <hash alg="SHA-512">0675bca9190ddb810c082d21c603f9f1bba9c9bf144fe2425a51136c34e09b3798c31f6d7e6e9c1f7a26d2816bca03b8b96f6b86ebe1bbfa67c27456ee12d512</hash>
+        <hash alg="SHA-384">1c21e03399bf21b74bc9628f79ee80397a6941a5b90d76155e82b858401f8ebac5a57bc205f316fb8215dd3ba7cf8b4d</hash>
+        <hash alg="SHA3-384">c3c2a1219f4124e6f0b52c281cbc4dcf9da594c631b9e03b271cf83e02a8a919e5d8121e031252f09cdb80752399f873</hash>
+        <hash alg="SHA3-256">32074aea865295f6345fbbd843b26a481e9e0bd868eb2ba37ba3957c76e303d9</hash>
+        <hash alg="SHA3-512">9a3ca9ceb2e09fd8810fbd36038fd0dc2d745a920abd6f0bc7dd6895d14da55d222957569793c08f12ef08b03735f6c2ff2345bb8981823fd12ea1f4be3fd315</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.apache.maven/maven-settings@3.0?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://maven.apache.org/maven-settings/</url>
+        </reference>
+        <reference type="build-system">
+          <url>http://grid.sonatype.org/ci</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://repository.apache.org/service/local/staging/deploy/maven2</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>http://jira.codehaus.org/browse/MNG</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>http://mail-archives.apache.org/mod_mbox/maven-dev</url>
+        </reference>
+        <reference type="vcs">
+          <url>http://svn.apache.org/viewvc/maven/maven-3/tags/maven-3.0/maven-settings</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.apache.maven/maven-settings-builder@3.0?type=jar">
+      <publisher>The Apache Software Foundation</publisher>
+      <group>org.apache.maven</group>
+      <name>maven-settings-builder</name>
+      <version>3.0</version>
+      <description>Maven is a project development management and
+    comprehension tool. Based on the concept of a project object model:
+    builds, dependency management, documentation creation, site
+    publication, and distribution publication are all controlled from
+    the declarative file. Maven can be extended by plugins to utilise a
+    number of other development tools for reporting or the build
+    process.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">134523c7b38175615b26504e642c960d</hash>
+        <hash alg="SHA-1">08234c1bdf7a9a28c671b0abf11f8adaa66440cd</hash>
+        <hash alg="SHA-256">e17e706c6f03c453f6000599cab607c2af5f1cc6e3a3b1e6fce27e5ef4999eab</hash>
+        <hash alg="SHA-512">c5ed19e0cc2bfc8e4c9217b385d535fcb420a08ec70e2e4027a7f08b2e2e5891d6590fd6088225bfeae240eb85c6de476db1a00863cf45dc3298a22dc371bfb5</hash>
+        <hash alg="SHA-384">1783a273c4d1f22e675477bd57366e3f21768287b302ecb31c511842adb3e9aa5fd8d2c2a8ba64ec3dbc6130487db773</hash>
+        <hash alg="SHA3-384">5274a675c344f8b5999d8ed97432040dd891cf7de63c3e49f265225813217b49c69fc5c46ffc70487b1b324f74ea7f88</hash>
+        <hash alg="SHA3-256">0a318be3d830cc543383fd1c6ca0353083691ce7d5ee02c7b992a082ebeb2785</hash>
+        <hash alg="SHA3-512">dfd9a099b0be8666723299279bbdf0814b1132a479ece81e69e1353b1c899889a9899dba9f666f322a2d1f38f150bcf9b1a017a2ce938e38d573ae406cf7e3de</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.apache.maven/maven-settings-builder@3.0?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://maven.apache.org/maven-settings-builder/</url>
+        </reference>
+        <reference type="build-system">
+          <url>http://grid.sonatype.org/ci</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://repository.apache.org/service/local/staging/deploy/maven2</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>http://jira.codehaus.org/browse/MNG</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>http://mail-archives.apache.org/mod_mbox/maven-dev</url>
+        </reference>
+        <reference type="vcs">
+          <url>http://svn.apache.org/viewvc/maven/maven-3/tags/maven-3.0/maven-settings-builder</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.apache.maven/maven-repository-metadata@3.0?type=jar">
+      <publisher>The Apache Software Foundation</publisher>
+      <group>org.apache.maven</group>
+      <name>maven-repository-metadata</name>
+      <version>3.0</version>
+      <description>Per-directory repository metadata.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">5a8cee4b67ea39a141b9579323b70e27</hash>
+        <hash alg="SHA-1">e3c41f7565b1e189ff7a312796b9d2c470c09a8b</hash>
+        <hash alg="SHA-256">c938e4d8cdf0674496749a87e6d3b29aa41b1b35a39898a1ade2bc9eae214c17</hash>
+        <hash alg="SHA-512">1e6ba2beb6a2a005bb4896c351298e90fc15faa53a72abc4d6371551182bc29e06f0842d3a3d2bf66c3a7dbf95fe5d4c924374a5eb95a15c026a52b009874068</hash>
+        <hash alg="SHA-384">5524992cc2a3fcb02ee8531357702b522044647b913c7fbda2cb492537414687c104d25821d01181eb82678fc4b7d8ee</hash>
+        <hash alg="SHA3-384">5bc8ae753ff4c02461eaca3108eac51a811686b607fca40e24ce794e2d2f7373b42c6e0eca42fb1e73cd6b0bae820063</hash>
+        <hash alg="SHA3-256">68e79114fd2db0c24bc3768184410d7c2ad8e1cb858ee661fbf3119614591eac</hash>
+        <hash alg="SHA3-512">e6c2a48372e1eae84e8831a861d95f2c9220a5bf50cb21e596153410b292ec921c1c36548abeddc825ab99cb799047397097c4bdc3493e2529bd46df1e02e08d</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.apache.maven/maven-repository-metadata@3.0?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://maven.apache.org/maven-repository-metadata/</url>
+        </reference>
+        <reference type="build-system">
+          <url>http://grid.sonatype.org/ci</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://repository.apache.org/service/local/staging/deploy/maven2</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>http://jira.codehaus.org/browse/MNG</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>http://mail-archives.apache.org/mod_mbox/maven-dev</url>
+        </reference>
+        <reference type="vcs">
+          <url>http://svn.apache.org/viewvc/maven/maven-3/tags/maven-3.0/maven-repository-metadata</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.apache.maven/maven-artifact@3.0?type=jar">
+      <publisher>The Apache Software Foundation</publisher>
+      <group>org.apache.maven</group>
+      <name>maven-artifact</name>
+      <version>3.0</version>
+      <description>Maven is a project development management and
+    comprehension tool. Based on the concept of a project object model:
+    builds, dependency management, documentation creation, site
+    publication, and distribution publication are all controlled from
+    the declarative file. Maven can be extended by plugins to utilise a
+    number of other development tools for reporting or the build
+    process.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">43e506190356b85edccfdc7db1f630d8</hash>
+        <hash alg="SHA-1">c29cfa43ce2ba09975a07c40d7241655d7c2fa29</hash>
+        <hash alg="SHA-256">759079b9cf0cddae5ba06c96fd72347d82d0bc1d903c95d398c96522b139e470</hash>
+        <hash alg="SHA-512">b51e56a68020fa21d1eee29d60674be2a6c8b093bf863898cdf53ba6c109f28405657e8cfd172fe1aa4da7eae2eb1ce32ab92a7da8a3dbcce496705d70f8dc0a</hash>
+        <hash alg="SHA-384">5fbbfa39ffea33afef832acb7f801d6fc2089caf010cdf6a771fa83bbfd28846f7bdee28172b37eba12b83e4d99094fe</hash>
+        <hash alg="SHA3-384">495708f303852eb87a38d61b0878d361b3dab90b3cd1eef1c36fe7f5dbe541b856eb857d99a9821102e59b9eb2fe1fb7</hash>
+        <hash alg="SHA3-256">d9bed1de37ba3078fd301205bb6477b1584a27405c33f15fa82cd5fdd4995054</hash>
+        <hash alg="SHA3-512">4c640ce9c5be2beddb07a49c34fce7f77f5d6109ae72b9355a7c19ebd88ce40944353e2baa3782a1974b241f8a01463a93d952d9db7c229dc83cd86ac4cd042c</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.apache.maven/maven-artifact@3.0?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://maven.apache.org/maven-artifact/</url>
+        </reference>
+        <reference type="build-system">
+          <url>http://grid.sonatype.org/ci</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://repository.apache.org/service/local/staging/deploy/maven2</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>http://jira.codehaus.org/browse/MNG</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>http://mail-archives.apache.org/mod_mbox/maven-dev</url>
+        </reference>
+        <reference type="vcs">
+          <url>http://svn.apache.org/viewvc/maven/maven-3/tags/maven-3.0/maven-artifact</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.apache.maven/maven-model-builder@3.0?type=jar">
+      <publisher>The Apache Software Foundation</publisher>
+      <group>org.apache.maven</group>
+      <name>maven-model-builder</name>
+      <version>3.0</version>
+      <description>Maven is a project development management and
+    comprehension tool. Based on the concept of a project object model:
+    builds, dependency management, documentation creation, site
+    publication, and distribution publication are all controlled from
+    the declarative file. Maven can be extended by plugins to utilise a
+    number of other development tools for reporting or the build
+    process.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">b995b6ca151d6d74f5a64047807e6318</hash>
+        <hash alg="SHA-1">bedc161a3b07a4bcd175b9428cdf18725d292b37</hash>
+        <hash alg="SHA-256">1c98a4ec9eb0cb86ecf01710aa75c0346ee3f96edc6edeabcb21ed984120e154</hash>
+        <hash alg="SHA-512">0373544d8bdf824e597e21f83f2126789e21f036aa2ffaddca9b00b139ccb08cf63977a03c59fd416924c7ab7f654821376d186dbf4c609447ddfcf5e3d660e9</hash>
+        <hash alg="SHA-384">b8d2b52171fcbaf2cc84d152ba61cd4930fc922ea5bb076230c5d9ed0153fd1114a00fd1b467a37ec7c39fd313f4de20</hash>
+        <hash alg="SHA3-384">233289e1ae0335ad0d889ae62c0d883cfc864cd1af8462c8d742ebbf7234f1c659446584c258ae8f0fbabe4c8416cdbc</hash>
+        <hash alg="SHA3-256">16b9085443a98e08862f4313b78b8b79cf56414a77788acc3727ac8d7fb7cb35</hash>
+        <hash alg="SHA3-512">debd8f91cf999ac27cef942a4f2812b12d9861dcfd7c71202dc817608990473931b038eb38605599ddc5dd15b5f7dc1b4f064773351bf1cdcc9b0c02ebaf9ade</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.apache.maven/maven-model-builder@3.0?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://maven.apache.org/maven-model-builder/</url>
+        </reference>
+        <reference type="build-system">
+          <url>http://grid.sonatype.org/ci</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://repository.apache.org/service/local/staging/deploy/maven2</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>http://jira.codehaus.org/browse/MNG</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>http://mail-archives.apache.org/mod_mbox/maven-dev</url>
+        </reference>
+        <reference type="vcs">
+          <url>http://svn.apache.org/viewvc/maven/maven-3/tags/maven-3.0/maven-model-builder</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.apache.maven/maven-aether-provider@3.0?type=jar">
+      <publisher>The Apache Software Foundation</publisher>
+      <group>org.apache.maven</group>
+      <name>maven-aether-provider</name>
+      <version>3.0</version>
+      <description>This module provides extensions to Aether for utilizing the Maven POM and Maven metadata.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">859740166efa8857d7a598b05249ac24</hash>
+        <hash alg="SHA-1">419f5eb63cf743a1a0f2a80ea5dde37fd1a4fec0</hash>
+        <hash alg="SHA-256">1205a1f229999170dcadcfb885a278ad0bc2295540a251f4c438f887ead7bbd9</hash>
+        <hash alg="SHA-512">bed4993fe0329de86f8bc51f146c8b0cd9dec8c0dfdb7b06a441964e37fd8660473336101cb53d2bd9a03022e795309cbf62abf10c963a7b197f8887a3b7af9f</hash>
+        <hash alg="SHA-384">e27c2fe42901e61618c84eb5080d0694cc6b430a1cb9baf66065ca03bc06bc251abea6f515587dcf85766e47a37872f7</hash>
+        <hash alg="SHA3-384">dde2419fb1d2a4c38684ef95ec39ddf5a225bad53fe8cb2acc0f2ac810a252617b7cb1ee9c023863779520ad3cca4e7d</hash>
+        <hash alg="SHA3-256">7d40e776886a5993e0a3214ce36f828a3cc6c7fbaf7d538caf2fd94c3598b81b</hash>
+        <hash alg="SHA3-512">6ef4a5e86ef2e997a6f122d92df632d44c38279e89eea681123af33ed879b7c033a112d9eb21d9a40c3b028dc6863cb2a8ae2d513e2a68d9897b4fcc370314e0</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.apache.maven/maven-aether-provider@3.0?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://maven.apache.org/maven-aether-provider/</url>
+        </reference>
+        <reference type="build-system">
+          <url>http://grid.sonatype.org/ci</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://repository.apache.org/service/local/staging/deploy/maven2</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>http://jira.codehaus.org/browse/MNG</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>http://mail-archives.apache.org/mod_mbox/maven-dev</url>
+        </reference>
+        <reference type="vcs">
+          <url>http://svn.apache.org/viewvc/maven/maven-3/tags/maven-3.0/maven-aether-provider</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.sonatype.aether/aether-impl@1.7?type=jar">
+      <publisher>Sonatype, Inc.</publisher>
+      <group>org.sonatype.aether</group>
+      <name>aether-impl</name>
+      <version>1.7</version>
+      <description>An implementation of the repository system.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">88f67bb92b68df022a22ca837b0ebeee</hash>
+        <hash alg="SHA-1">5cc1803eb7126f759d34007b74e6dc44e9a9fb08</hash>
+        <hash alg="SHA-256">288149850d8d131763df4151f7e443fd2739e48510a6e4cfe49ca082c76130fa</hash>
+        <hash alg="SHA-512">4a8262cd4d5fb5e1f400e8875e569bce3acca06793907b69898e7854e5e8010b96385f987fb553f67b6cf83ca629bcf52d900508828f31bc7f87fbdf28ae1dfe</hash>
+        <hash alg="SHA-384">ab48735aa130fc7b2cbc95e07ecfbbaf9aa158919435ddeb98b45696c555435c59591acdc1ac6dff55ff2989e68d25c6</hash>
+        <hash alg="SHA3-384">94fd0ce7f615ca136039686ef904dad3ca696d593e834bc34afc9328757b40d26a8b31d1fe50f31e43ea9acd0235798e</hash>
+        <hash alg="SHA3-256">c356f9eef84c636f40723236c7ed4ad39885d6e00d883dfb32958a01bdb5f91c</hash>
+        <hash alg="SHA3-512">0f40941f0ff262a10c046f02e914d3b8bac93c0d081c9b24e3a81414b7e0cf38823635544153b9f1937d934f9c408c0eaa80dde936915b09f653f13b8a6caa37</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.sonatype.aether/aether-impl@1.7?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://aether.sonatype.org/aether-impl/</url>
+        </reference>
+        <reference type="build-system">
+          <url>https://grid.sonatype.org/ci/job/Aether/</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://repository.sonatype.org/service/local/staging/deploy/maven2</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>https://issues.sonatype.org/browse/AETHER</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>aether-dev-subscribe@sonatype.org</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.sonatype.aether/aether-spi@1.7?type=jar">
+      <publisher>Sonatype, Inc.</publisher>
+      <group>org.sonatype.aether</group>
+      <name>aether-spi</name>
+      <version>1.7</version>
+      <description>The service provider interface for repository system implementations and repository connectors.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">ba2419eb80b2eca0c804e21b58fb3e1f</hash>
+        <hash alg="SHA-1">1ea472b28d9d891d353c0311593f5e2a0e73d4be</hash>
+        <hash alg="SHA-256">f54a0a28ce3d62af0e1cfe41dde616f645c28e452e77f77b78bc36e74d5e1a69</hash>
+        <hash alg="SHA-512">001afe688cc010cb5d335527ddcf53860a28fbf4578beef59b362e10693c61524ca914ab6584d778878f48889c28e5f97f6b0ff155e690975089a4c7144b4655</hash>
+        <hash alg="SHA-384">7b3c7289ce2dcbdaba603acad60ec032785701855944a79ce359dd4ec2e01753b61259caff3f37b2684bda7d6f0b15fa</hash>
+        <hash alg="SHA3-384">1808ba6fe6d423acbe4b694fb430dfc84d9280c57d67a58b8b0645084a9821ecb06abd2e85ca9ee90962d70c9696f035</hash>
+        <hash alg="SHA3-256">73a4f597c8b1e0bd881d49cc3a0072b69695f8819a2729db776c3d6c8ffa977f</hash>
+        <hash alg="SHA3-512">da5ab8091bff76839fb92dfef29038890aa05e087ba65ea58dd0120f49cef0e646d3387c8418c81c19e3a5031df0703ce1d79a77b5d333f9841e82dd817c228e</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.sonatype.aether/aether-spi@1.7?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://aether.sonatype.org/aether-spi/</url>
+        </reference>
+        <reference type="build-system">
+          <url>https://grid.sonatype.org/ci/job/Aether/</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://repository.sonatype.org/service/local/staging/deploy/maven2</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>https://issues.sonatype.org/browse/AETHER</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>aether-dev-subscribe@sonatype.org</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.sonatype.aether/aether-api@1.7?type=jar">
+      <publisher>Sonatype, Inc.</publisher>
+      <group>org.sonatype.aether</group>
+      <name>aether-api</name>
+      <version>1.7</version>
+      <description>The application programming interface for the repository system.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">fa35448855735ad6aa16952b0efc7a4e</hash>
+        <hash alg="SHA-1">0c491a637ee6795143b6708ce5f112e6a9f548f4</hash>
+        <hash alg="SHA-256">1c5c5ac5e8f29aefc8faa051ffa14eccd85b9e20f4bb35dc82fba7d5da50d326</hash>
+        <hash alg="SHA-512">29528e2beaa6c80195962e9434ebc4f2e0ab4ffb414b62d78e36d47811de425ebdf94cf01bfc13da7119670cf09e47abb8ce30d7f813f69ee6bff9a24e41ee18</hash>
+        <hash alg="SHA-384">93311792de74653e202d2627bd627d69c4d44e7cfbf5b09e5383344f258e9da7d5f7f6af1c6785fc296c56e69339960e</hash>
+        <hash alg="SHA3-384">f24b097f43eba91508e4be5ef9f185abbf6b16d103aa498c37e660ecfeae0b12e0c901e3934a8ae34a5be3ae6ea1a42b</hash>
+        <hash alg="SHA3-256">433cb56974d1fffcbf390893f9073d597ed3a827c51d5842bcf5b7ae4836e029</hash>
+        <hash alg="SHA3-512">252e4f60be62bdc9f08fd6e9c137b70c253d2e47765fa723e007aacc214489571629212fba26318566605f744b34858c20c90f821e1b66a8aded7cf77f53b4f9</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.sonatype.aether/aether-api@1.7?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://aether.sonatype.org/aether-api/</url>
+        </reference>
+        <reference type="build-system">
+          <url>https://grid.sonatype.org/ci/job/Aether/</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://repository.sonatype.org/service/local/staging/deploy/maven2</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>https://issues.sonatype.org/browse/AETHER</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>aether-dev-subscribe@sonatype.org</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.sonatype.aether/aether-util@1.7?type=jar">
+      <publisher>Sonatype, Inc.</publisher>
+      <group>org.sonatype.aether</group>
+      <name>aether-util</name>
+      <version>1.7</version>
+      <description>A collection of utility classes to ease usage of the repository system.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">df02504fdf485555fc8bec459325d4ba</hash>
+        <hash alg="SHA-1">38485c9c086c3c867c2dd5371909337bd056c492</hash>
+        <hash alg="SHA-256">ff690ffc550b7ada3a4b79ef4ca89bf002b24f43a13a35d10195c3bba63d7654</hash>
+        <hash alg="SHA-512">9836e0777c9c897558796de4da0658308ba02bf62625f6289ea58cc3643332f0727ae08a3b776521364fbae85e7d0f7e8b0a18aeac69e320a022166cd4206588</hash>
+        <hash alg="SHA-384">5c97e15de43308396f5bfe04903cf1474fd6fa57cc6c5fb1aeca37f274de9468c343a6796a6692d3a8e832edbd5d01f4</hash>
+        <hash alg="SHA3-384">a7bd190ee867bde8adfdd67ea4a27081f9c07d75855db0ebad857104550b56a7ac5cd483de1e593a2b11d4b53d257840</hash>
+        <hash alg="SHA3-256">c5075ec6cc8cfed5852aa6d5ad511f2137d300b8f0218ea50db66f01c85645b9</hash>
+        <hash alg="SHA3-512">693cbd3c59014fd02b4b7de14dcc1e6818f9b90fe417c9137c2451b0d4708fb376c6e22fd4fa79ae24fc654bba99c0a15d2c417136fab07c6f86a096a9bf25f1</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.sonatype.aether/aether-util@1.7?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://aether.sonatype.org/aether-util/</url>
+        </reference>
+        <reference type="build-system">
+          <url>https://grid.sonatype.org/ci/job/Aether/</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://repository.sonatype.org/service/local/staging/deploy/maven2</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>https://issues.sonatype.org/browse/AETHER</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>aether-dev-subscribe@sonatype.org</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.sonatype.sisu/sisu-inject-plexus@1.4.2?type=jar">
+      <publisher>Sonatype, Inc.</publisher>
+      <group>org.sonatype.sisu</group>
+      <name>sisu-inject-plexus</name>
+      <version>1.4.2</version>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">9c1bfd74a76af0757b348554d9a1facc</hash>
+        <hash alg="SHA-1">53d863ed4879d4a43ad7aee7bc63f935cc513353</hash>
+        <hash alg="SHA-256">a65e27aefbe74102d73cd7e3c5c7637021d294a9e7f33132f3c782a76714d0a3</hash>
+        <hash alg="SHA-512">9d73b922ff6f369f77fe18897e6c2a98569716206e48f52df3925fe964561922cf347207f9c7d6dd5eef694d7c39d345b582f1401a0ce9d914c43f926a4a320f</hash>
+        <hash alg="SHA-384">bdb0744db342d925efe436909d7c6a443bc5012f63ea2609c770cfb647662ba3573b61e068d4f7d14d59a825915ffdf4</hash>
+        <hash alg="SHA3-384">bc9a8181935460e7fe4c3e5c483fb56211500f44df92a68ec9e568b1a8166eb80708953f6bf4160090bd3912f5539d10</hash>
+        <hash alg="SHA3-256">ce868e02a4e1ee8abcf85313243987f553f6ed815c1afb7d4cfdfa3a5df6cd61</hash>
+        <hash alg="SHA3-512">2f84256c000bdbc47431f3076ec613e8f98f22f7005a2ce842bc85f9532dfe18050abb43aa837ce9ed541e842e0e72f2cc8b7fca28f5846309a0cb777d479ba4</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.sonatype.sisu/sisu-inject-plexus@1.4.2?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://sisu.sonatype.org/sisu-inject/guice-bean/guice-plexus/sisu-inject-plexus/</url>
+        </reference>
+        <reference type="build-system">
+          <url>https://grid.sonatype.org/ci/job/Sisu/</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://repository.sonatype.org/service/local/staging/deploy/maven2</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>https://issues.sonatype.org/browse/SISU</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>sisu-dev-subscribe@sonatype.org</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.sonatype.sisu/sisu-inject-bean@1.4.2?type=jar">
+      <publisher>Sonatype, Inc.</publisher>
+      <group>org.sonatype.sisu</group>
+      <name>sisu-inject-bean</name>
+      <version>1.4.2</version>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">400f9ca3cb77d34f159127769cb89e92</hash>
+        <hash alg="SHA-1">5cf37202afbaae899d63dd51b46d173df650af1b</hash>
+        <hash alg="SHA-256">fb3160e1e3a7852b441016dbcc97a34e3cf4eeb8ceb9e82edf2729439858f080</hash>
+        <hash alg="SHA-512">8bfd754b4bac265b82795066a7eee04ceb7d9de0a0835687ec0bc44ca644cfa5268bed639934ce169a1a93f7cd0d4591865c969288fb5e31b497bafaf1f17b0a</hash>
+        <hash alg="SHA-384">5bec5b8c215bb5a4b3fb63ddbcb5575fb4e3ed587e7462375e730795df91592d9bd1a0545dd11af8a3d332f419b695e9</hash>
+        <hash alg="SHA3-384">bab07cad88f0afab0711364cfdd1b9536b15176dff4fededad218c55cf380aa63080db1b71a225b68cd4b7e8aa35db2c</hash>
+        <hash alg="SHA3-256">c25c8b7a316edbfff01c28c94c8bdebafddc1361db34a47101e10f2fae259c11</hash>
+        <hash alg="SHA3-512">e4f53b002a30f7c2e8d8eb4a6a7ce9b2deb38359e5a0b3d7b5e3708cb473cd18c496551afaf23ed51871cbeb2a0844af14a1bb53c846e36afabfafd2ee4beb40</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.sonatype.sisu/sisu-inject-bean@1.4.2?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://sisu.sonatype.org/sisu-inject/guice-bean/sisu-inject-bean/</url>
+        </reference>
+        <reference type="build-system">
+          <url>https://grid.sonatype.org/ci/job/Sisu/</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://repository.sonatype.org/service/local/staging/deploy/maven2</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>https://issues.sonatype.org/browse/SISU</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>sisu-dev-subscribe@sonatype.org</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.sonatype.sisu/sisu-guice@2.1.7?classifier=noaop&amp;type=jar">
+      <group>org.sonatype.sisu</group>
+      <name>sisu-guice</name>
+      <version>2.1.7</version>
+      <description>Guice trunk with some patches applied for Sisu</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">f1d341b68fc25c53321eb00cf87b82b0</hash>
+        <hash alg="SHA-1">8cb56e976b8e0e7b23f2969c32bef7b830c6d6ed</hash>
+        <hash alg="SHA-256">240113a2f22fd1f0b182b32baecf0e7876b3a8e41f3c4da3335eeb9ffb24b9f4</hash>
+        <hash alg="SHA-512">75f4e008cef58dde84a511e30db440cc89d344c6978c779115a7da609b9cf06e9626b5693d413101afa1a809ddf1d958d340a1a7aaf59d378c7d03f956b3408a</hash>
+        <hash alg="SHA-384">506798acc8431a1cdbb6d4bb993f1fa0257b6a2eb0d011fd5b51330d6a485a6387fd2b26c2f8e84c5c361794d8d8e4cf</hash>
+        <hash alg="SHA3-384">84e81cb833918e315074ede229c739fc5facc07937632633e0666b6c93561834a3501ce3442321bd0a0b861c56ec0591</hash>
+        <hash alg="SHA3-256">2500200206ca6c0737e18efefcd0a9ae60d7639aa9c9adb0254a5341db31c3e0</hash>
+        <hash alg="SHA3-512">85a9136e524e232306905dae47b905ac45a91f28eb3725350c44c07ab5093c0a8c4e5472aa75b0bc1de6913e723f3e1043e21a2df6e5627abf14c5f40b6f121d</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.sonatype.sisu/sisu-guice@2.1.7?classifier=noaop&amp;type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://forge.sonatype.com/sisu-guice/</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://repository.sonatype.org/service/local/staging/deploy/maven2</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.codehaus.plexus/plexus-interpolation@1.14?type=jar">
+      <publisher>Codehaus</publisher>
+      <group>org.codehaus.plexus</group>
+      <name>plexus-interpolation</name>
+      <version>1.14</version>
+      <description>The Plexus project provides a full software stack for creating and executing software projects.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">f92db8b194fc417d72cc74c428afacf8</hash>
+        <hash alg="SHA-1">c88dd864fe8b8256c25558ce7cd63be66ba07693</hash>
+        <hash alg="SHA-256">7fc63378d3e84663619b9bedace9f9fe78b276c2be3c62ca2245449294c84176</hash>
+        <hash alg="SHA-512">d83880dc325fb8443571a6342f5d749000b9d9a276e2e6e30f1a5d136d8e5522bc4c3a4e876ce8e72a5705dfc06acc8dc84a8887442b592e850229b31cfcfbe7</hash>
+        <hash alg="SHA-384">d75d53812987880603042b486c9aed2043a24a603afd70173f8847047152d57619a3657f73ba175a7f395e990bb6f0af</hash>
+        <hash alg="SHA3-384">9f49aac8b1c1165d525c6427614717ed06e3a137f7160460c13763d3dbe8a66797dade3d15e3bed10d8689e14154695c</hash>
+        <hash alg="SHA3-256">e853a0c93fedda7d70d22ce0a37617af17b3d67bec440f37992316f7a76e1d5a</hash>
+        <hash alg="SHA3-512">41920af4222ba95b58be8999fcd87b25bc65a34e0d894a74a257ce16cce788809260d7f31b5379bf1118bffe54491bce01e573f38f0603e2dc255e325ac74dde</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.codehaus.plexus/plexus-interpolation@1.14?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://plexus.codehaus.org/plexus-components/plexus-interpolation</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>http://jira.codehaus.org/browse/PLXCOMP</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>http://archive.plexus.codehaus.org/user</url>
+        </reference>
+        <reference type="vcs">
+          <url>http://fisheye.codehaus.org/browse/plexus/plexus-components/tags/plexus-interpolation-1.14</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.codehaus.plexus/plexus-classworlds@2.2.3?type=jar">
+      <publisher>Codehaus</publisher>
+      <group>org.codehaus.plexus</group>
+      <name>plexus-classworlds</name>
+      <version>2.2.3</version>
+      <description>A class loader framework</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">e6673b3089c11931211b77d24bbc4f8e</hash>
+        <hash alg="SHA-1">93b34d7a40ed56fe33274480c5792b656d3697a9</hash>
+        <hash alg="SHA-256">7d95ad21733b060bfda2142b62439a196bde7644f9f127c299ae86d92179b518</hash>
+        <hash alg="SHA-512">c6ba483aca6612813a14e84522fc6747857e2657289953712ff8e1b14ab839071a3cc227d8efbcd578b29d9595f49cf0fc445dff0dfc0e8dc1a35f58e1ea270e</hash>
+        <hash alg="SHA-384">6a30c73bb80d5e94bb30560920cc875e4e0af4a026fcbe0d2375f9077ed259437978973e6070346504ccc7d27f2a226e</hash>
+        <hash alg="SHA3-384">877281e7a10f09a2084476da104b8a7cb318b078a9acad96d5556b94ff77ca8f936ed0c2adaa67f5b2125bee008d9733</hash>
+        <hash alg="SHA3-256">f2735d44105d1bd0365671cdfc4aa10d9e00a0764741c2ec91a4ba790331f946</hash>
+        <hash alg="SHA3-512">5100013ee0db1b86aab61a56f6a2406052bdb1fbed6ffa56460cb35485196b9bee376f2c4400124909fca19b56ce3d54addd972a6e77c3d0ed2ca92370b95875</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.codehaus.plexus/plexus-classworlds@2.2.3?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://plexus.codehaus.org/plexus-classworlds/</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>http://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>http://jira.codehaus.org/browse/PLX</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>http://archive.plexus.codehaus.org/user</url>
+        </reference>
+        <reference type="vcs">
+          <url>http://fisheye.codehaus.org/browse/plexus/plexus-classworlds/tags/plexus-classworlds-2.2.3</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.sonatype.plexus/plexus-sec-dispatcher@1.3?type=jar">
+      <group>org.sonatype.plexus</group>
+      <name>plexus-sec-dispatcher</name>
+      <version>1.3</version>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">53160199f5667de3fca69b723173639b</hash>
+        <hash alg="SHA-1">dedc02034fb8fcd7615d66593228cb71709134b4</hash>
+        <hash alg="SHA-256">3b0559bb8432f28937efe6ca193ef54a8506d0075d73fd7406b9b116c6a11063</hash>
+        <hash alg="SHA-512">8b609608e4ce1346fdd3a0793d66dbdb893d6af046594ccc456eaceabca3f7a251cc8a6f1cad22fc17688911d0842cc84fa2303027fdf241c77f4078905aaacd</hash>
+        <hash alg="SHA-384">539392b84ed3dfeeaa97c42a4befa559a05d18baabcadda2537b18fe8f340e11823ce0646e8931b92a4cfb24cd39d981</hash>
+        <hash alg="SHA3-384">9355f99fc6e1c5f4eaa73417b730adfed5d5d20528171aea4b487b8a75028a900d67abd923df025dffd20f32edff69ab</hash>
+        <hash alg="SHA3-256">b6185018455b1ffd854f9d5ef2ba2dc5750ad4c68789854e4c2440bd91ada76c</hash>
+        <hash alg="SHA3-512">323c863614c94d12508265454a5c598358a0b5b2fb18400d1ab457cf3a161c7e31079ada7ab8ed5d1b28d1e4dee9ab8f82cfb84ad40b42d69e330562d1a69da7</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.sonatype.plexus/plexus-sec-dispatcher@1.3?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://spice.sonatype.org/plexus-sec-dispatcher</url>
+        </reference>
+        <reference type="build-system">
+          <url>https://grid.sonatype.org/ci/view/Spice/</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>http://repository.sonatype.org/content/repositories/releases</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>https://issues.sonatype.org/browse/SPICE</url>
+        </reference>
+        <reference type="vcs">
+          <url>http://svn.sonatype.org/spice/tags/plexus-sec-dispatcher-1.3</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.sonatype.plexus/plexus-cipher@1.7?type=jar">
+      <group>org.sonatype.plexus</group>
+      <name>plexus-cipher</name>
+      <version>1.7</version>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">7651a25ecbb8a2ea3fcb6c19be76aa37</hash>
+        <hash alg="SHA-1">51460409b6cdc2b828540c19c05691f89141edc2</hash>
+        <hash alg="SHA-256">114859861ff10f987b880d6f34e3215274af3cc92b3a73831c84d596e37c6511</hash>
+        <hash alg="SHA-512">0c3c5ace6a7ce2799a39af7c93586c312970c995f2e3e1138a5e2616e13d2bb8d170917fb74989a76e9a0df6aa66adcaac2a84a55dea9d71d19bbc3103e7aa87</hash>
+        <hash alg="SHA-384">0982cdafdf8201d3916a24003992f89a20f277cac39f717b5565c6fed9f7d04667f6522d7b228322069c9e479cd6a7f1</hash>
+        <hash alg="SHA3-384">15e24bae287a9dce2c9de1506a608848b8b0c54b460bea6eb8422f73b133c5adbdc0b1850b6e23a38b0e918098b12630</hash>
+        <hash alg="SHA3-256">a4cc3d926c2883f24f9579a0331b07e0aaa7508601ba90eec66e7094d5c5746e</hash>
+        <hash alg="SHA3-512">b0d04db91d07b7b255044095a9c27cc008d17c35cec84c116958b3d014d2d8746eb29dc2cc35d9a389d29b36d06b6ddc43a42400b4efcf2373df717282284803</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.sonatype.plexus/plexus-cipher@1.7?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://spice.sonatype.org/plexus-cipher</url>
+        </reference>
+        <reference type="build-system">
+          <url>https://grid.sonatype.org/ci/view/Spice/</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>http://repository.sonatype.org:8081/service/local/staging/deploy/maven2</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>https://issues.sonatype.org/browse/SPICE</url>
+        </reference>
+        <reference type="vcs">
+          <url>http://github.com/sonatype/plexus-cipher</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.apache.maven/maven-plugin-api@3.0?type=jar">
+      <publisher>The Apache Software Foundation</publisher>
+      <group>org.apache.maven</group>
+      <name>maven-plugin-api</name>
+      <version>3.0</version>
+      <description>Maven is a project development management and
+    comprehension tool. Based on the concept of a project object model:
+    builds, dependency management, documentation creation, site
+    publication, and distribution publication are all controlled from
+    the declarative file. Maven can be extended by plugins to utilise a
+    number of other development tools for reporting or the build
+    process.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">1d67a37a5822b12abc55e5133e47ca0e</hash>
+        <hash alg="SHA-1">98f886f59bb0e69f8e86cdc082e69f2f4c13d648</hash>
+        <hash alg="SHA-256">f5ecc6eaa4a32ee0c115d31525f588f491b2cc75fdeb4ed3c0c662c12ac0c32f</hash>
+        <hash alg="SHA-512">84ea3b9fb254eec55eeb910ca5e3e56d5db511546c06f448b8d4a90108e636ea459e1674b7100536f3ded0027ba7318dae0cdcd453605627bf96f017e3f1a3cd</hash>
+        <hash alg="SHA-384">50cd379b9a86740ae25911431e94eb471a314cdb663dbe0395039860d31291aa7d8ff41665a27445c3c720aa882391f6</hash>
+        <hash alg="SHA3-384">655f9871ece6107ab107249616ab01b784a8d3606967fa6fa9e6e27e821edc05ef12d130acb9faf3d2bce457c7f50a1e</hash>
+        <hash alg="SHA3-256">803637dfc667547afa6d1e2add0f3cb55031828c35953381ea865530906d1701</hash>
+        <hash alg="SHA3-512">a981a77e79473d6684f3d8d6cc1af4f06a8076bdb46156146584a933f3ed8f8b2312ca0c5cf5d9f87de6d980fb779ffa71726d62e50d21bc601155c2412aa83b</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.apache.maven/maven-plugin-api@3.0?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://maven.apache.org/maven-plugin-api/</url>
+        </reference>
+        <reference type="build-system">
+          <url>http://grid.sonatype.org/ci</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://repository.apache.org/service/local/staging/deploy/maven2</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>http://jira.codehaus.org/browse/MNG</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>http://mail-archives.apache.org/mod_mbox/maven-dev</url>
+        </reference>
+        <reference type="vcs">
+          <url>http://svn.apache.org/viewvc/maven/maven-3/tags/maven-3.0/maven-plugin-api</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.codehaus.plexus/plexus-utils@3.0.7?type=jar">
+      <publisher>Codehaus</publisher>
+      <group>org.codehaus.plexus</group>
+      <name>plexus-utils</name>
+      <version>3.0.7</version>
+      <description>A collection of various utility classes to ease working with strings, files, command lines, XML and more.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">c22b393490a46da89d91dd6322446e40</hash>
+        <hash alg="SHA-1">eb10e9cb2b2326fbf0cb68249b10a5c89e0642ef</hash>
+        <hash alg="SHA-256">39b8a74596ac7157f03b47e48b14149a1805276935fd880a12c78a7c7d40dcbd</hash>
+        <hash alg="SHA-512">0aecb8538338a67b4b38c692535d14f4501d3a867b8b1ab61c65ce4d589da9ba0d298ea8e42e56d922b4f3c969b148bcc553c512382390cc012c8555001ad57c</hash>
+        <hash alg="SHA-384">09c6dd99b0ef94ae79c0662d3fef978e3e5a9a44303b8e3c7e15210387203c5f95d536c49f8aa83c99c877c73569727a</hash>
+        <hash alg="SHA3-384">70fdbe74ec1668219f3d73297fc06e347fb06b970278dd19e3b1e3448069f52d89c0fb62f677a9bb5f90faa01441842c</hash>
+        <hash alg="SHA3-256">0c36bc460c0d24369233112fa39dc89bd78a156637da1e63d068fa323c8bb685</hash>
+        <hash alg="SHA3-512">0a0158a986fba10eda83f6406949952d5cfdc0f97764dc7c6a1b2a2718cf1b3c280f66d8f7045a756924857d7e4b5d905ed9e29897bfe02ee5de491a29beafae</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.codehaus.plexus/plexus-utils@3.0.7?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://plexus.codehaus.org/plexus-utils</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>http://jira.codehaus.org/browse/PLXUTILS</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>http://archive.plexus.codehaus.org/user</url>
+        </reference>
+        <reference type="vcs">
+          <url>http://github.com/sonatype/plexus-utils</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.codehaus.plexus/plexus-archiver@2.2?type=jar">
+      <publisher>Codehaus</publisher>
+      <group>org.codehaus.plexus</group>
+      <name>plexus-archiver</name>
+      <version>2.2</version>
+      <description>The Plexus project provides a full software stack for creating and executing software projects.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">61dd3bbc4682a29a286baa58f9c7f859</hash>
+        <hash alg="SHA-1">13e55f4c2b7cdbf59a9bbd668d3c058d1a40664b</hash>
+        <hash alg="SHA-256">9154a5e6e1f95a1c74d4254670fec8d7aacd5692115710fe7e1381636c6be38c</hash>
+        <hash alg="SHA-512">fdf3fe088b5bffb79406b61f8aefb77d6b197c6e5e521dfad4c422cab2a6fe696d17055b0e500476109e545fdbb33d7c62462df45b769fdb63b1d47bbc5fe5e2</hash>
+        <hash alg="SHA-384">daed6c961ce6f2c82690a611c39f53c318abaec2cea6a2996c908b75bb946edf983912b91a58f3ccdf36f1530a7e4183</hash>
+        <hash alg="SHA3-384">88d3ad8d5a83768af5581a6a5a821909ff2b12d52c49016479489614c9ac7fd39f6b3faada145aa94b118c9e7c765c8f</hash>
+        <hash alg="SHA3-256">024ca2e30bd68a2329d5d5cc05ec3dd0e01c63c8997c7cc8ae0ffde2b33091b0</hash>
+        <hash alg="SHA3-512">f0a62ac8310a1880ef2f5d4bd0ec9e92604d7394e389859adc4e389e520722965bdb7085a59f4c6bae7e31fa368d95b5956ae66123fa3415b35effafc4210f33</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.codehaus.plexus/plexus-archiver@2.2?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://plexus.codehaus.org/plexus-components/plexus-archiver</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>http://jira.codehaus.org/browse/PLXCOMP/component/12540</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>http://archive.plexus.codehaus.org/user</url>
+        </reference>
+        <reference type="vcs">
+          <url>http://github.com/sonatype/plexus-archiver</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.codehaus.plexus/plexus-io@2.0.5?type=jar">
+      <publisher>Codehaus</publisher>
+      <group>org.codehaus.plexus</group>
+      <name>plexus-io</name>
+      <version>2.0.5</version>
+      <description>The Plexus project provides a full software stack for creating and executing software projects.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">7d02342c81d0b811b7a9365abf0c3565</hash>
+        <hash alg="SHA-1">4a3c3eaad914de7a30472b9aa3e2047aebf6c97b</hash>
+        <hash alg="SHA-256">344ed462626972a157ee1bdab366ea52be1a1a79337171fea45dc1a5c3f7fe83</hash>
+        <hash alg="SHA-512">51782bc4a155bda1f6960f653f4db4f7bc77991f09f7800701c7794f51b0828a48bc644d102ecd8d2653d6dabb3052b588a3adf49c02570dbe5825dc859b2bc9</hash>
+        <hash alg="SHA-384">cf4e9dde35af43f4c8b48c7434da907781f5477e3a6ec34bff8ffe21e36d2f1507637aa02988f4b2ab717a960ef4e190</hash>
+        <hash alg="SHA3-384">c782c58001be7d246797c98dadde95c578f41d0a2518824589af076c4fa578b124e39856c518b807998dac72c6619de8</hash>
+        <hash alg="SHA3-256">105fa336c516fb44b82a7573784c46c58607ba612c010c8daa8992e166af2ed8</hash>
+        <hash alg="SHA3-512">d985facc3c41881c1c40c822fe075849742890e4fc4a04dd7dfbc81cb04fbd9be07c6cb882f4cade3ffda2e6c256f2c6523b01e4d4ba21b058f93955ea1b2f94</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.codehaus.plexus/plexus-io@2.0.5?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://plexus.codehaus.org/plexus-components/plexus-io</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>http://jira.codehaus.org/browse/PLXCOMP/component/14319</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>http://archive.plexus.codehaus.org/user</url>
+        </reference>
+        <reference type="vcs">
+          <url>http://github.com/sonatype/plexus-io</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.eclipse.tycho/org.eclipse.osgi.compatibility.state@1.0.0.v20140403-1907?type=jar">
+      <group>org.eclipse.tycho</group>
+      <name>org.eclipse.osgi.compatibility.state</name>
+      <version>1.0.0.v20140403-1907</version>
+      <description>This is org.eclipse.osgi.compatibility.state jar used by Tycho</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">97492fd8c7a8f1bc55dc52b24c2205ba</hash>
+        <hash alg="SHA-1">81396c6db11cded8e95792d8a8bc000b590c129b</hash>
+        <hash alg="SHA-256">ca95dab652947768ea4cc8468939e8fa3f22a280ba98a5f98a63823488e5c378</hash>
+        <hash alg="SHA-512">1511bafcb1b7d303be030de0baadbdbe0dbfafe63f18e00d11011d07d7a9306dca25263aa57c22ba1965712c5e9fd3415b5d90066a343c362bc56f2740b40d96</hash>
+        <hash alg="SHA-384">5b327d765ca31ef612d8aa28aad42450a8276cdb0623c80e7f7617785124ab1bdaedf79e8689c272f14480ac3e78d73b</hash>
+        <hash alg="SHA3-384">77d739ea794ebedfc3d326cb61c909078139e4fbef413b19045669cd29903c4ba64ae4b7eb37685d60f7b074f4ca9a29</hash>
+        <hash alg="SHA3-256">93e85735b2961b35b578da95d5a63d8d6c03e59696c8d563f78df62842008401</hash>
+        <hash alg="SHA3-512">0ce147d8b2179b487d73b1094ce15612142584d737e4ddcc168248653b816381a5957b2d59e6c414238d5a1faa8ee8e67f45f7c2a8082773a07df06760a9b965</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>EPL-1.0</id>
+          <url>http://www.eclipse.org/legal/epl-v10.html</url>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.eclipse.tycho/org.eclipse.osgi.compatibility.state@1.0.0.v20140403-1907?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://www.eclipse.org/tycho/</url>
+        </reference>
+        <reference type="vcs">
+          <url>http://git.eclipse.org/c/tycho/org.eclipse.tycho.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.eclipse.tycho/sisu-equinox-embedder@0.22.0?type=jar">
+      <publisher>Eclipse Foundation</publisher>
+      <group>org.eclipse.tycho</group>
+      <name>sisu-equinox-embedder</name>
+      <version>0.22.0</version>
+      <description>Support for embedding an Equinox runtime in Plexus</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">73ea3adb35bec09008f3673643ea9ba4</hash>
+        <hash alg="SHA-1">1ceaa9fac0d29f75ba1f4553ee37a5fa2ee483e3</hash>
+        <hash alg="SHA-256">6dcac1c5aa0fb3266745b77702c84b07ac710eb0b4000dd6b646c881b7ba3847</hash>
+        <hash alg="SHA-512">7b010b766b66745037878243efd6fb94dcc6495d1d15fad385d2c4ab51a715a00eff7c2d1ea8e857af35c3787c68e84e8d8576a06fa26e3155c6a7d68f4aaf35</hash>
+        <hash alg="SHA-384">f7d42428f182668413d45d029df24f426745969ca262f66b287f66b77806cc459e567d58b7dde1f10989a09ff6d05dca</hash>
+        <hash alg="SHA3-384">8aeac6251e30dcf2036d6cc9fc74b33535a35030800337ccc81f9ae24028d8b13d5166678fe1cd9b7b213c43d9be5046</hash>
+        <hash alg="SHA3-256">17b04e26b97f3b590790f445b03e6e24d8b5eff1bd0a52e4a3b504662d2259ff</hash>
+        <hash alg="SHA3-512">8cd540894768b77b249e7622e23085a8026a1cc5975f25dd7a4a4b39f146e6128051fa26e9fd1b40a66142b16853754969054bf6ae3ba3993d73e2fb3d6542ef</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>EPL-1.0</id>
+          <url>http://www.eclipse.org/legal/epl-v10.html</url>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.eclipse.tycho/sisu-equinox-embedder@0.22.0?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://www.eclipse.org/tycho/sisu-equinox/sisu-equinox-embedder/</url>
+        </reference>
+        <reference type="build-system">
+          <url>https://hudson.eclipse.org/hudson</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>https://bugs.eclipse.org/bugs/buglist.cgi?product=Tycho</url>
+        </reference>
+        <reference type="vcs">
+          <url>http://git.eclipse.org/c/tycho/org.eclipse.tycho.git/sisu-equinox/sisu-equinox-embedder</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.eclipse.tycho/org.eclipse.osgi@3.10.0.v20140606-1445?type=jar">
+      <group>org.eclipse.tycho</group>
+      <name>org.eclipse.osgi</name>
+      <version>3.10.0.v20140606-1445</version>
+      <description>This is org.eclipse.osgi jar used by Tycho</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">8283d9f7b491513a172e363a18a51754</hash>
+        <hash alg="SHA-1">931c03f9566b3a5b6c02c0981cc5720aab9d1835</hash>
+        <hash alg="SHA-256">58f6d4588a97d230d53fc49b4e5e8fadb9c70e23f432519e02296ed9601464fa</hash>
+        <hash alg="SHA-512">a4ad05906866ad167c0f3e3f7bbbd6ded271b16b20f8117394f82eb8aeb97c4fc78225ad285c6fde2ac78e4f75b21034b1b4147df34cad8ebc8ce2c3e2d11428</hash>
+        <hash alg="SHA-384">d054ce5a6069fdbbe420028ee295cb346ef5034336aa18eb13f914770fb71985bd16204f59f68e9d0a862cece369bfe3</hash>
+        <hash alg="SHA3-384">42a593fa64fd36478cc6c65cb90b13414cd903fc36b11f3e3d730a07ed90fdbb4cd6e09c871d61480f97b7ebe12b00b6</hash>
+        <hash alg="SHA3-256">091f14baa29ea677bdfadfffe56b0f0f95c0aca93f38f80542754f0b5faaa2b9</hash>
+        <hash alg="SHA3-512">b4bd7b2e9b95d0220b60045e70a436f6c82c4dbf94d727eb1be217539533078da59418c72fc85515a8613f1f12c6e88429460f1661959d7d69808b7a245268a8</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>EPL-1.0</id>
+          <url>http://www.eclipse.org/legal/epl-v10.html</url>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.eclipse.tycho/org.eclipse.osgi@3.10.0.v20140606-1445?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://www.eclipse.org/tycho/</url>
+        </reference>
+        <reference type="vcs">
+          <url>http://git.eclipse.org/c/tycho/org.eclipse.tycho.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.eclipse.tycho/sisu-equinox-api@0.22.0?type=jar">
+      <publisher>Eclipse Foundation</publisher>
+      <group>org.eclipse.tycho</group>
+      <name>sisu-equinox-api</name>
+      <version>0.22.0</version>
+      <description>API for accessing OSGi services from Plexus</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">b1c430266d4beca33677a4180bf55d06</hash>
+        <hash alg="SHA-1">8610e3c1770a524a68e1418fd18f03a6ede4b013</hash>
+        <hash alg="SHA-256">c8dfca71b2bbd7af247af84175bee00b87fbbcdd3e32c281085ae77e626fc651</hash>
+        <hash alg="SHA-512">1f9b2d85ec484dd33521d1e0114dc90f3a53a9a75791e1d8bad3e02846ce9e4aee20c05a64026bb76dd92d12d4afceddf7ecdb2ed0614f65dd97b4c3c0664186</hash>
+        <hash alg="SHA-384">12b4f0c6dae9ecef335cb7d6da472abb16f1fd2ac1c1b67706e4424a6c68a7e62c473c75d857eaf2fe69310dc7350081</hash>
+        <hash alg="SHA3-384">ee1eece375e0a948101be3a5ae4085752e5bc58454161684a5ca9150286cfa6be22640f705c6d94b60fd229ddb7d4511</hash>
+        <hash alg="SHA3-256">f3269aa8d5d37dbd37c7c4c3a6cfb3971f4d0a0aa14f020f0a02dd551ae77074</hash>
+        <hash alg="SHA3-512">b52466719e046e9fc00e480514a874711a3db65b5f6f593bef84889373cc9d2c11875f6d85a25b5f5158c9d38fa34d5622ec4f50d18f06eeedc1987d41a04de8</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>EPL-1.0</id>
+          <url>http://www.eclipse.org/legal/epl-v10.html</url>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.eclipse.tycho/sisu-equinox-api@0.22.0?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://www.eclipse.org/tycho/sisu-equinox/sisu-equinox-api/</url>
+        </reference>
+        <reference type="build-system">
+          <url>https://hudson.eclipse.org/hudson</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>https://bugs.eclipse.org/bugs/buglist.cgi?product=Tycho</url>
+        </reference>
+        <reference type="vcs">
+          <url>http://git.eclipse.org/c/tycho/org.eclipse.tycho.git/sisu-equinox/sisu-equinox-api</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.eclipse.tycho/tycho-metadata-model@0.22.0?type=jar">
+      <publisher>Eclipse Foundation</publisher>
+      <group>org.eclipse.tycho</group>
+      <name>tycho-metadata-model</name>
+      <version>0.22.0</version>
+      <description>Tycho integrates Maven with Eclipse and OSGi</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">4d3079254fa24114a745f57c7e0143dd</hash>
+        <hash alg="SHA-1">77baf8c251341c3d95ae4ff47d33675bcee21047</hash>
+        <hash alg="SHA-256">677ab105ae40ee36050c54720762a52ab4fef15ba518ada09539679bbfc82f6e</hash>
+        <hash alg="SHA-512">6d7362c94b8326ad4902c2910d61020c08e5cf0bfb48035f36e471a8494018013e84890e43dd9f347a5081ff15b56d8e71a16e29fc543f167c8809190e10588e</hash>
+        <hash alg="SHA-384">196b8062ae065f9488206c7c3840c02863d09fa20bf682c60a547660f41baa44d52ff42e69548c1c710d00621d620acd</hash>
+        <hash alg="SHA3-384">1a5f93dc4148fb88421c444f928be7037d361084cc802d1f02ca180b3af7e4eaf1eedf9d85e7804d249780ceb625af3f</hash>
+        <hash alg="SHA3-256">61aae2a870a7a440ea6c35183f7e778add961b8675f43902a2fe05e322aecd25</hash>
+        <hash alg="SHA3-512">04ef590b81bde34cef808b8ce0c85be218a01a079158e3334301cf8a558d17f7ede8ee20c8b584c7fd4949aa7a45f2994bf06d323d2a9faec968f4d5b36fe523</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>EPL-1.0</id>
+          <url>http://www.eclipse.org/legal/epl-v10.html</url>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.eclipse.tycho/tycho-metadata-model@0.22.0?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://www.eclipse.org/tycho/tycho-metadata-model/</url>
+        </reference>
+        <reference type="build-system">
+          <url>https://hudson.eclipse.org/hudson</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>https://bugs.eclipse.org/bugs/buglist.cgi?product=Tycho</url>
+        </reference>
+        <reference type="vcs">
+          <url>http://git.eclipse.org/c/tycho/org.eclipse.tycho.git/tycho-metadata-model</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/de.pdark/decentxml@1.3?type=jar">
+      <group>de.pdark</group>
+      <name>decentxml</name>
+      <version>1.3</version>
+      <description>A decent XML parser. Since it's decent, it's not
+		compatible with the W3C and therefore, it can do roundtripping.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">35bd1eb7c3d2f6adc8793259d65cefa7</hash>
+        <hash alg="SHA-1">06e3eb8b08dd761d08efe6c6c7beabd08c919b6f</hash>
+        <hash alg="SHA-256">21ca2cd44948d838c24e2d28ce720a1bc5e61bec4fa168237fb36a046ae1c772</hash>
+        <hash alg="SHA-512">a27ff895010a3eabf9c8a433dc33a865ef13eafd915c1ebd04ad5aef7577af1146007e71e1987acc6a2705c08905e3e69f5e0b993bdf1fa9c7290d8d7f6c12d2</hash>
+        <hash alg="SHA-384">7b9f0a31c365b9d730e7206df5a52d8f31491b0e6b41aa5947fc0bf4cf7f2111d75ff71d9708e7079ba1e46157b7d4b7</hash>
+        <hash alg="SHA3-384">87ab7944cf94ebf61f6c0dfee53f4fd77952e3b1c5238f58365675b88508346e4475e6c02e85f32e67ef6ad15647cafe</hash>
+        <hash alg="SHA3-256">504848d43c8e44126daea48b69adafb5167ba5879efc0e4bde51ccac10dadcf5</hash>
+        <hash alg="SHA3-512">2f9e18ba3e1c9bc9e88c2f9495d0f6660de890c31ac985e56d7c8765c67bfc877b4f04429341aa88f73e320f446ba0fe37572af1e3af0795de23716e78263886</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>BSD-3-Clause</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/de.pdark/decentxml@1.3?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://code.google.com/p/decentxml/</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>http://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>http://code.google.com/p/decentxml/issues/list</url>
+        </reference>
+        <reference type="vcs">
+          <url>scm:svn:https://decentxml.googlecode.com/svn/tags/r1.3</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.eclipse.tycho/tycho-embedder-api@0.22.0?type=jar">
+      <publisher>Eclipse Foundation</publisher>
+      <group>org.eclipse.tycho</group>
+      <name>tycho-embedder-api</name>
+      <version>0.22.0</version>
+      <description>Tycho integrates Maven with Eclipse and OSGi</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">7cbec749d9be1527690d669bbb9cef3b</hash>
+        <hash alg="SHA-1">6f074b678954b5e72bbf16a04935bf6c2f5d05bb</hash>
+        <hash alg="SHA-256">f9f0bd9ed633e3fb1d333240c91296829c947921ba55eabed37fa126c456392b</hash>
+        <hash alg="SHA-512">7ae96458dff3eafff1c9f44a86b6ee3d7c2a7be0f752b9ba74c641eda4383891e30c622f575eb0474809d4de59819f79a6c4d7460940b1f0b824960da71dadc6</hash>
+        <hash alg="SHA-384">eadc7eb91f1794f3c0ff98a831c942a395c1ef5a10d5d7d3d747d7fccfc09e188f1053481005db503fd2daf46d59dd52</hash>
+        <hash alg="SHA3-384">76f604a67d4363561ea9f86571ebbb51af040f961aa906e8fe8ae213381aeb1e18e3a052601050f353b46413b467a8a2</hash>
+        <hash alg="SHA3-256">eb15cd7afef4496278e53ca782aec6a14a2049acd8ffc8665cba24e3e2a140d6</hash>
+        <hash alg="SHA3-512">227e1263145d16f37d7aac78832e501fe5b82053da00ad49eb4acbca79ad10cdf86fa20b3044e50582eaa30dce671313865d4af9b73669115ca7052e548cfc02</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>EPL-1.0</id>
+          <url>http://www.eclipse.org/legal/epl-v10.html</url>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.eclipse.tycho/tycho-embedder-api@0.22.0?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://www.eclipse.org/tycho/tycho-embedder-api/</url>
+        </reference>
+        <reference type="build-system">
+          <url>https://hudson.eclipse.org/hudson</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>https://bugs.eclipse.org/bugs/buglist.cgi?product=Tycho</url>
+        </reference>
+        <reference type="vcs">
+          <url>http://git.eclipse.org/c/tycho/org.eclipse.tycho.git/tycho-embedder-api</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.eclipse.tycho/org.eclipse.tycho.embedder.shared@0.22.0?type=jar">
+      <publisher>Eclipse Foundation</publisher>
+      <group>org.eclipse.tycho</group>
+      <name>org.eclipse.tycho.embedder.shared</name>
+      <version>0.22.0</version>
+      <description>Classes shared between the tycho-embedder-api module and Tycho's OSGi bundles.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">4fc5e3ff3a2141f169cd403b0960f36d</hash>
+        <hash alg="SHA-1">42908fe5b6b4f2db91b9dfb3843774d6adb61d57</hash>
+        <hash alg="SHA-256">af415060086be732c1b5703ae82cf64c1bd211db097d2a2512e49ef0298ca0ad</hash>
+        <hash alg="SHA-512">c90e035fc2eae6e5005a263502c522787fd2241e6ee5dcbe7ff863921148e0317cb264656d8df230afa75096fb293d4b94a9a6a196fea4ff517cf3ce710172f6</hash>
+        <hash alg="SHA-384">861254b447f8bfa60360e567b2fa3a810c879f7094894ae9c82b78b1634ae4e96d43c9a399bec762e4d47ae8c081ada3</hash>
+        <hash alg="SHA3-384">23318095080e6281042d950adcac375c2247f62fc334aef97665cedecaee88bbd18a9c5ce75a668aa2d929f28a00a0a5</hash>
+        <hash alg="SHA3-256">1ada6feab06f3af3d29f7421681bc7b6f5f5c89a2bb4e5036232d7f1459185bc</hash>
+        <hash alg="SHA3-512">828acc9c1a79db364b7ba4390a444002def4ba475791794a46531dd23964796e02b28add6b56f1e6af9277cfb63389a1267d3e9217ea0da7228c61eebbcf3921</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>EPL-1.0</id>
+          <url>http://www.eclipse.org/legal/epl-v10.html</url>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.eclipse.tycho/org.eclipse.tycho.embedder.shared@0.22.0?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://www.eclipse.org/tycho/tycho-bundles/org.eclipse.tycho.embedder.shared/</url>
+        </reference>
+        <reference type="build-system">
+          <url>https://hudson.eclipse.org/hudson</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>https://bugs.eclipse.org/bugs/buglist.cgi?product=Tycho</url>
+        </reference>
+        <reference type="vcs">
+          <url>http://git.eclipse.org/c/tycho/org.eclipse.tycho.git/tycho-bundles/org.eclipse.tycho.embedder.shared</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.eclipse.tycho/org.eclipse.tycho.core.shared@0.22.0?type=jar">
+      <publisher>Eclipse Foundation</publisher>
+      <group>org.eclipse.tycho</group>
+      <name>org.eclipse.tycho.core.shared</name>
+      <version>0.22.0</version>
+      <description>Classes shared between the tycho-core module and Tycho's OSGi bundles.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">b85d963feefe139c2484bebc2268f4b8</hash>
+        <hash alg="SHA-1">b1ada4c16806498e08a7d577fe7210fe8199332a</hash>
+        <hash alg="SHA-256">fe94a9f59f005d9e43afbf61467b3b667d4ce38e8679e017bb3d6822399b6a11</hash>
+        <hash alg="SHA-512">3f4d92755783a4e39e42b983caea21295b1a6845578f1d7a3ed13dc427398ae65a3c6d178457d5757a7e978ae9fd38a7906df61a3e9147ae5e32379cda1b5271</hash>
+        <hash alg="SHA-384">fddc8f755beb4e423d3c9fb7770a4c4ccda8d11c224240cbe70c4b7aceae31f326eed5eb7c75c7ee18eeea076ee81534</hash>
+        <hash alg="SHA3-384">4e1c2dfa63bcb325169d25ce68fc15db4544a28ac825eecbd00d5a0301f14375ad8aa4bf94d80a9bdb2e547aae3dcb0f</hash>
+        <hash alg="SHA3-256">dfa9f479af14e850083c439f008ac7983ca3fde113835666be64036e8e9e0b51</hash>
+        <hash alg="SHA3-512">846ed4fafa4bf902e02633d4b7548a0e3984233e4e214bf08e92b5c1268920c5a504ef40065525255f8c196db5c6fc5dbde2cfde56cfdde47a219506089bfcea</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>EPL-1.0</id>
+          <url>http://www.eclipse.org/legal/epl-v10.html</url>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.eclipse.tycho/org.eclipse.tycho.core.shared@0.22.0?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://www.eclipse.org/tycho/tycho-bundles/org.eclipse.tycho.core.shared/</url>
+        </reference>
+        <reference type="build-system">
+          <url>https://hudson.eclipse.org/hudson</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>https://bugs.eclipse.org/bugs/buglist.cgi?product=Tycho</url>
+        </reference>
+        <reference type="vcs">
+          <url>http://git.eclipse.org/c/tycho/org.eclipse.tycho.git/tycho-bundles/org.eclipse.tycho.core.shared</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.eclipse.tycho/tycho-p2-facade@0.22.0?type=jar">
+      <publisher>Eclipse Foundation</publisher>
+      <group>org.eclipse.tycho</group>
+      <name>tycho-p2-facade</name>
+      <version>0.22.0</version>
+      <description>Tycho integrates Maven with Eclipse and OSGi</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">3e40e90732f686bc03dfdaf7ab049ab7</hash>
+        <hash alg="SHA-1">41b8924037a950510fd199c3ecfed73c9d032ee9</hash>
+        <hash alg="SHA-256">378a8ebe6615b7955a6e27afa1cd977e2681e95b6e15ef645b76cd2b68ecdf99</hash>
+        <hash alg="SHA-512">e956feeba257ee38edf6488957f4e72003d623eceb3320936a57199453e4ac747d9817ef77dc01e58e9c6c26f689d2d9e71b4670a8171ca7515139203c3031ed</hash>
+        <hash alg="SHA-384">4827cff4da3b469e5a81d871361039746c24cef172daa4d93678973851a0712ece1da09564f223603fb1138531bf36e2</hash>
+        <hash alg="SHA3-384">e8e6781dd4c7a2e74b4c7cfa95303294b030618f1500f7fa5cb8ba2a147b717e65d5c14a77c14c62ea5d206169fcf9ec</hash>
+        <hash alg="SHA3-256">3624df0c9035f69099ab233f8c76eb36f9ee3186cb9066614639dabe6f7a232e</hash>
+        <hash alg="SHA3-512">d32d113911652d625d0a33a716b9432ecf85dc328842acec382e61457aaf569a77d8d38be6f164e08f660ae06221db5558fa85839dc50726771d8a38dc79dfe3</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>EPL-1.0</id>
+          <url>http://www.eclipse.org/legal/epl-v10.html</url>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.eclipse.tycho/tycho-p2-facade@0.22.0?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://www.eclipse.org/tycho/tycho-p2/tycho-p2-facade/</url>
+        </reference>
+        <reference type="build-system">
+          <url>https://hudson.eclipse.org/hudson</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>https://bugs.eclipse.org/bugs/buglist.cgi?product=Tycho</url>
+        </reference>
+        <reference type="vcs">
+          <url>http://git.eclipse.org/c/tycho/org.eclipse.tycho.git/tycho-p2/tycho-p2-facade</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.codehaus.plexus/plexus-component-annotations@1.5.5?type=jar">
+      <publisher>Codehaus</publisher>
+      <group>org.codehaus.plexus</group>
+      <name>plexus-component-annotations</name>
+      <version>1.5.5</version>
+      <description>Plexus Component "Java 5" Annotations, to describe plexus components properties in java sources with
+    standard annotations instead of javadoc annotations.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">ef37dcdb84030422db428b63c4354e5b</hash>
+        <hash alg="SHA-1">c72f2660d0cbed24246ddb55d7fdc4f7374d2078</hash>
+        <hash alg="SHA-256">4df7a6a7be64b35bbccf60b5c115697f9ea3421d22674ae67135dde375fcca1f</hash>
+        <hash alg="SHA-512">2ea4afb8888f157483c6a8e99852fa8a80e90a3cf0756b3b22c73a8bc59a4aa3d7b50b975a1d810f28a090023b268dab49af14e8f8e33c7553fa61315afe06b2</hash>
+        <hash alg="SHA-384">94193ec354f65fa8427b4b5115d1f47cb3bd70b0589c612cb5c604d8a2ddf0cce1d8683bf70c5576c27fc3dad33f0ac0</hash>
+        <hash alg="SHA3-384">eccd004db31d02566b743eb55bcfbc7161aca472a4ab3e86fbb437f0bc19bdb666830a6168646b6d569a09f2af4c4fbc</hash>
+        <hash alg="SHA3-256">b739989c677fee5136fea5f48524f385bd6a161eb8d606772b05afc10d94c827</hash>
+        <hash alg="SHA3-512">58bf57dfa292eeeee95108a732ec5fd9e75cc08e23c94b2335e137c05159b565224529db6348448f973d057c37c84007c417d47de52875d09209a6873a43e218</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.codehaus.plexus/plexus-component-annotations@1.5.5?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://plexus.codehaus.org/plexus-containers/plexus-component-annotations/</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>http://jira.codehaus.org/browse/PLX</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>http://archive.plexus.codehaus.org/user</url>
+        </reference>
+        <reference type="vcs">
+          <url>http://fisheye.codehaus.org/browse/plexus/plexus-containers/tags/plexus-containers-1.5.5/plexus-component-annotations</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.eclipse.tycho/org.eclipse.tycho.p2.resolver.shared@0.22.0?type=jar">
+      <publisher>Eclipse Foundation</publisher>
+      <group>org.eclipse.tycho</group>
+      <name>org.eclipse.tycho.p2.resolver.shared</name>
+      <version>0.22.0</version>
+      <description>Classes shared between the tycho-p2-facade module and Tycho's OSGi bundles.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">af43510a0f82448727da7d9f04ff0f0c</hash>
+        <hash alg="SHA-1">d96d9a4826f38ab8f90ae36db9565040e8d31450</hash>
+        <hash alg="SHA-256">71273c2175e3d210225bde744de2d711cb964eaf04ff05b4f447bcbff3e6e3e3</hash>
+        <hash alg="SHA-512">8d91254d6cda6b15d72d3705a3a5b9daa30390c7e7cf125ef7a21e552bced7cceea80dd9fb82b73b5a4dd759c881ad40db601a67d2ac16e29abe9168d432a99d</hash>
+        <hash alg="SHA-384">a2bef017cea6afda1eee5c1d7881a1836f069f12c3d4aad060efb110a1d008ef00fb7959f5e559a70e0f3118c2c9cbc7</hash>
+        <hash alg="SHA3-384">d5a476219e76fe751321838b471a350c732955738b4e0b05e1d01e5183c202b51dba768aa97285cd8d2c691902118474</hash>
+        <hash alg="SHA3-256">ea9022ac58e464fe86e06a6561dd5cde4b128c8a669c0253b2a38c901258ad31</hash>
+        <hash alg="SHA3-512">4bfcfbb993654faba6fbc84ad3cdad81073e1c77bdea3ac3f9854e3a8185d3f2b2d241b7c07327c956ff1bcf573dbfc3ed7755b6a598d78ce4dcd4498944931c</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>EPL-1.0</id>
+          <url>http://www.eclipse.org/legal/epl-v10.html</url>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.eclipse.tycho/org.eclipse.tycho.p2.resolver.shared@0.22.0?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://www.eclipse.org/tycho/tycho-bundles/org.eclipse.tycho.p2.resolver.shared/</url>
+        </reference>
+        <reference type="build-system">
+          <url>https://hudson.eclipse.org/hudson</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>https://bugs.eclipse.org/bugs/buglist.cgi?product=Tycho</url>
+        </reference>
+        <reference type="vcs">
+          <url>http://git.eclipse.org/c/tycho/org.eclipse.tycho.git/tycho-bundles/org.eclipse.tycho.p2.resolver.shared</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.eclipse.tycho/org.eclipse.tycho.p2.tools.shared@0.22.0?type=jar">
+      <publisher>Eclipse Foundation</publisher>
+      <group>org.eclipse.tycho</group>
+      <name>org.eclipse.tycho.p2.tools.shared</name>
+      <version>0.22.0</version>
+      <description>Exposes tools for manipulating p2 data, which are implemented in OSGi bundles, to Maven plug-ins</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">4452da9bd6b4987d136bd42eb2bf1648</hash>
+        <hash alg="SHA-1">d4f1d6b5285cf809697772fdf8c6be0958b9f86d</hash>
+        <hash alg="SHA-256">3f778104c747d2ff22c6f9f852a6cfa7fb40ed4cdd0534fed972cb6d23bfcd14</hash>
+        <hash alg="SHA-512">d020d81fa04179b2540e70f96c793357bdbf91bcd9823e317999f88ecc826ebf16c038e6a3acaadca1468a8af5e5a43cb858ad71a1af6db4586ff1ae055e98c9</hash>
+        <hash alg="SHA-384">60600a2ad9a22e6a1df5d1b381d68dea1757a6fab61ce435778f1b328d82cce2e159e25e8a3559b722c80641b110e2f9</hash>
+        <hash alg="SHA3-384">ddf26c72238059e143396c78949a6176ce0a9f3dbd984072604e19c4cbb9795ba29b04f84a9445285eeee579ae1751b8</hash>
+        <hash alg="SHA3-256">6f89af234c5b814a352a262fafc55e806d2d4c31db06d4d30187a5978db7dbd0</hash>
+        <hash alg="SHA3-512">3a3d690f72fec0102c5fbc0219c74b38133172c50a95bc9d0650f5fa2cb4597a5712161d9d0452430993e4d4a896cb0b22a1ed1bd2b6dcb4e11b098d433376ee</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>EPL-1.0</id>
+          <url>http://www.eclipse.org/legal/epl-v10.html</url>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.eclipse.tycho/org.eclipse.tycho.p2.tools.shared@0.22.0?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://www.eclipse.org/tycho/tycho-bundles/org.eclipse.tycho.p2.tools.shared/</url>
+        </reference>
+        <reference type="build-system">
+          <url>https://hudson.eclipse.org/hudson</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>https://bugs.eclipse.org/bugs/buglist.cgi?product=Tycho</url>
+        </reference>
+        <reference type="vcs">
+          <url>http://git.eclipse.org/c/tycho/org.eclipse.tycho.git/tycho-bundles/org.eclipse.tycho.p2.tools.shared</url>
+        </reference>
+      </externalReferences>
+    </component>
+  </components>
+  <dependencies>
+    <dependency ref="pkg:maven/org.eclipse.tycho/tycho-maven-plugin@0.22.0?type=jar">
+      <dependency ref="pkg:maven/org.eclipse.tycho/tycho-core@0.22.0?type=jar"/>
+      <dependency ref="pkg:maven/org.eclipse.tycho/tycho-p2-facade@0.22.0?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.eclipse.tycho/tycho-core@0.22.0?type=jar">
+      <dependency ref="pkg:maven/org.apache.maven/maven-core@3.0?type=jar"/>
+      <dependency ref="pkg:maven/org.apache.maven/maven-plugin-api@3.0?type=jar"/>
+      <dependency ref="pkg:maven/org.codehaus.plexus/plexus-utils@3.0.7?type=jar"/>
+      <dependency ref="pkg:maven/org.codehaus.plexus/plexus-archiver@2.2?type=jar"/>
+      <dependency ref="pkg:maven/org.eclipse.tycho/org.eclipse.osgi.compatibility.state@1.0.0.v20140403-1907?type=jar"/>
+      <dependency ref="pkg:maven/org.eclipse.tycho/sisu-equinox-embedder@0.22.0?type=jar"/>
+      <dependency ref="pkg:maven/org.eclipse.tycho/tycho-metadata-model@0.22.0?type=jar"/>
+      <dependency ref="pkg:maven/org.eclipse.tycho/tycho-embedder-api@0.22.0?type=jar"/>
+      <dependency ref="pkg:maven/org.eclipse.tycho/org.eclipse.tycho.core.shared@0.22.0?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.apache.maven/maven-core@3.0?type=jar">
+      <dependency ref="pkg:maven/org.apache.maven/maven-model@3.0?type=jar"/>
+      <dependency ref="pkg:maven/org.apache.maven/maven-settings@3.0?type=jar"/>
+      <dependency ref="pkg:maven/org.apache.maven/maven-settings-builder@3.0?type=jar"/>
+      <dependency ref="pkg:maven/org.apache.maven/maven-repository-metadata@3.0?type=jar"/>
+      <dependency ref="pkg:maven/org.apache.maven/maven-artifact@3.0?type=jar"/>
+      <dependency ref="pkg:maven/org.apache.maven/maven-plugin-api@3.0?type=jar"/>
+      <dependency ref="pkg:maven/org.apache.maven/maven-model-builder@3.0?type=jar"/>
+      <dependency ref="pkg:maven/org.apache.maven/maven-aether-provider@3.0?type=jar"/>
+      <dependency ref="pkg:maven/org.sonatype.aether/aether-impl@1.7?type=jar"/>
+      <dependency ref="pkg:maven/org.sonatype.aether/aether-api@1.7?type=jar"/>
+      <dependency ref="pkg:maven/org.sonatype.aether/aether-util@1.7?type=jar"/>
+      <dependency ref="pkg:maven/org.sonatype.sisu/sisu-inject-plexus@1.4.2?type=jar"/>
+      <dependency ref="pkg:maven/org.codehaus.plexus/plexus-interpolation@1.14?type=jar"/>
+      <dependency ref="pkg:maven/org.codehaus.plexus/plexus-utils@3.0.7?type=jar"/>
+      <dependency ref="pkg:maven/org.codehaus.plexus/plexus-classworlds@2.2.3?type=jar"/>
+      <dependency ref="pkg:maven/org.codehaus.plexus/plexus-component-annotations@1.5.5?type=jar"/>
+      <dependency ref="pkg:maven/org.sonatype.plexus/plexus-sec-dispatcher@1.3?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.apache.maven/maven-model@3.0?type=jar">
+      <dependency ref="pkg:maven/org.codehaus.plexus/plexus-utils@3.0.7?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.codehaus.plexus/plexus-utils@3.0.7?type=jar"/>
+    <dependency ref="pkg:maven/org.apache.maven/maven-settings@3.0?type=jar">
+      <dependency ref="pkg:maven/org.codehaus.plexus/plexus-utils@3.0.7?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.apache.maven/maven-settings-builder@3.0?type=jar">
+      <dependency ref="pkg:maven/org.codehaus.plexus/plexus-utils@3.0.7?type=jar"/>
+      <dependency ref="pkg:maven/org.codehaus.plexus/plexus-interpolation@1.14?type=jar"/>
+      <dependency ref="pkg:maven/org.codehaus.plexus/plexus-component-annotations@1.5.5?type=jar"/>
+      <dependency ref="pkg:maven/org.apache.maven/maven-settings@3.0?type=jar"/>
+      <dependency ref="pkg:maven/org.sonatype.plexus/plexus-sec-dispatcher@1.3?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.codehaus.plexus/plexus-interpolation@1.14?type=jar"/>
+    <dependency ref="pkg:maven/org.codehaus.plexus/plexus-component-annotations@1.5.5?type=jar"/>
+    <dependency ref="pkg:maven/org.sonatype.plexus/plexus-sec-dispatcher@1.3?type=jar">
+      <dependency ref="pkg:maven/org.codehaus.plexus/plexus-utils@3.0.7?type=jar"/>
+      <dependency ref="pkg:maven/org.sonatype.plexus/plexus-cipher@1.7?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.sonatype.plexus/plexus-cipher@1.7?type=jar"/>
+    <dependency ref="pkg:maven/org.apache.maven/maven-repository-metadata@3.0?type=jar">
+      <dependency ref="pkg:maven/org.codehaus.plexus/plexus-utils@3.0.7?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.apache.maven/maven-artifact@3.0?type=jar">
+      <dependency ref="pkg:maven/org.codehaus.plexus/plexus-utils@3.0.7?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.apache.maven/maven-plugin-api@3.0?type=jar">
+      <dependency ref="pkg:maven/org.apache.maven/maven-model@3.0?type=jar"/>
+      <dependency ref="pkg:maven/org.apache.maven/maven-artifact@3.0?type=jar"/>
+      <dependency ref="pkg:maven/org.sonatype.sisu/sisu-inject-plexus@1.4.2?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.sonatype.sisu/sisu-inject-plexus@1.4.2?type=jar">
+      <dependency ref="pkg:maven/org.codehaus.plexus/plexus-component-annotations@1.5.5?type=jar"/>
+      <dependency ref="pkg:maven/org.codehaus.plexus/plexus-classworlds@2.2.3?type=jar"/>
+      <dependency ref="pkg:maven/org.codehaus.plexus/plexus-utils@3.0.7?type=jar"/>
+      <dependency ref="pkg:maven/org.sonatype.sisu/sisu-inject-bean@1.4.2?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.codehaus.plexus/plexus-classworlds@2.2.3?type=jar"/>
+    <dependency ref="pkg:maven/org.sonatype.sisu/sisu-inject-bean@1.4.2?type=jar">
+      <dependency ref="pkg:maven/org.sonatype.sisu/sisu-guice@2.1.7?classifier=noaop&amp;type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.sonatype.sisu/sisu-guice@2.1.7?classifier=noaop&amp;type=jar"/>
+    <dependency ref="pkg:maven/org.apache.maven/maven-model-builder@3.0?type=jar">
+      <dependency ref="pkg:maven/org.codehaus.plexus/plexus-utils@3.0.7?type=jar"/>
+      <dependency ref="pkg:maven/org.codehaus.plexus/plexus-interpolation@1.14?type=jar"/>
+      <dependency ref="pkg:maven/org.codehaus.plexus/plexus-component-annotations@1.5.5?type=jar"/>
+      <dependency ref="pkg:maven/org.apache.maven/maven-model@3.0?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.apache.maven/maven-aether-provider@3.0?type=jar">
+      <dependency ref="pkg:maven/org.apache.maven/maven-model-builder@3.0?type=jar"/>
+      <dependency ref="pkg:maven/org.apache.maven/maven-repository-metadata@3.0?type=jar"/>
+      <dependency ref="pkg:maven/org.sonatype.aether/aether-api@1.7?type=jar"/>
+      <dependency ref="pkg:maven/org.sonatype.aether/aether-util@1.7?type=jar"/>
+      <dependency ref="pkg:maven/org.sonatype.aether/aether-impl@1.7?type=jar"/>
+      <dependency ref="pkg:maven/org.codehaus.plexus/plexus-component-annotations@1.5.5?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.sonatype.aether/aether-api@1.7?type=jar"/>
+    <dependency ref="pkg:maven/org.sonatype.aether/aether-util@1.7?type=jar">
+      <dependency ref="pkg:maven/org.sonatype.aether/aether-api@1.7?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.sonatype.aether/aether-impl@1.7?type=jar">
+      <dependency ref="pkg:maven/org.sonatype.aether/aether-api@1.7?type=jar"/>
+      <dependency ref="pkg:maven/org.sonatype.aether/aether-spi@1.7?type=jar"/>
+      <dependency ref="pkg:maven/org.sonatype.aether/aether-util@1.7?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.sonatype.aether/aether-spi@1.7?type=jar">
+      <dependency ref="pkg:maven/org.sonatype.aether/aether-api@1.7?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.codehaus.plexus/plexus-archiver@2.2?type=jar">
+      <dependency ref="pkg:maven/org.codehaus.plexus/plexus-utils@3.0.7?type=jar"/>
+      <dependency ref="pkg:maven/org.codehaus.plexus/plexus-io@2.0.5?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.codehaus.plexus/plexus-io@2.0.5?type=jar">
+      <dependency ref="pkg:maven/org.codehaus.plexus/plexus-utils@3.0.7?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.eclipse.tycho/org.eclipse.osgi.compatibility.state@1.0.0.v20140403-1907?type=jar"/>
+    <dependency ref="pkg:maven/org.eclipse.tycho/sisu-equinox-embedder@0.22.0?type=jar">
+      <dependency ref="pkg:maven/org.codehaus.plexus/plexus-component-annotations@1.5.5?type=jar"/>
+      <dependency ref="pkg:maven/org.eclipse.tycho/org.eclipse.osgi@3.10.0.v20140606-1445?type=jar"/>
+      <dependency ref="pkg:maven/org.eclipse.tycho/sisu-equinox-api@0.22.0?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.eclipse.tycho/org.eclipse.osgi@3.10.0.v20140606-1445?type=jar"/>
+    <dependency ref="pkg:maven/org.eclipse.tycho/sisu-equinox-api@0.22.0?type=jar"/>
+    <dependency ref="pkg:maven/org.eclipse.tycho/tycho-metadata-model@0.22.0?type=jar">
+      <dependency ref="pkg:maven/de.pdark/decentxml@1.3?type=jar"/>
+      <dependency ref="pkg:maven/org.codehaus.plexus/plexus-utils@3.0.7?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/de.pdark/decentxml@1.3?type=jar"/>
+    <dependency ref="pkg:maven/org.eclipse.tycho/tycho-embedder-api@0.22.0?type=jar">
+      <dependency ref="pkg:maven/org.apache.maven/maven-core@3.0?type=jar"/>
+      <dependency ref="pkg:maven/org.eclipse.tycho/org.eclipse.tycho.embedder.shared@0.22.0?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.eclipse.tycho/org.eclipse.tycho.embedder.shared@0.22.0?type=jar"/>
+    <dependency ref="pkg:maven/org.eclipse.tycho/org.eclipse.tycho.core.shared@0.22.0?type=jar"/>
+    <dependency ref="pkg:maven/org.eclipse.tycho/tycho-p2-facade@0.22.0?type=jar">
+      <dependency ref="pkg:maven/org.codehaus.plexus/plexus-component-annotations@1.5.5?type=jar"/>
+      <dependency ref="pkg:maven/org.eclipse.tycho/tycho-core@0.22.0?type=jar"/>
+      <dependency ref="pkg:maven/org.eclipse.tycho/sisu-equinox-embedder@0.22.0?type=jar"/>
+      <dependency ref="pkg:maven/org.eclipse.tycho/org.eclipse.tycho.p2.resolver.shared@0.22.0?type=jar"/>
+      <dependency ref="pkg:maven/org.eclipse.tycho/org.eclipse.tycho.p2.tools.shared@0.22.0?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.eclipse.tycho/org.eclipse.tycho.p2.resolver.shared@0.22.0?type=jar"/>
+    <dependency ref="pkg:maven/org.eclipse.tycho/org.eclipse.tycho.p2.tools.shared@0.22.0?type=jar"/>
+  </dependencies>
+</bom>
