@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bom serialNumber="urn:uuid:16996d69-b2c3-3b0b-b488-f1d71f938411"
+	version="1" xmlns="http://cyclonedx.org/schema/bom/1.6">
+	<metadata>
+		<tools>
+		</tools>
+		<component type="library"
+			bom-ref="pkg:maven/org.codehaus.plexus/plexus-utils@1.1?type=jar">
+			<publisher>Codehaus Plexus</publisher>
+			<group>org.codehaus.plexus</group>
+			<name>plexus-utils</name>
+			<version>1.1</version>
+			<description>Plexus Common Utilities</description>
+			<hashes>
+				<hash alg="MD5">49e112a6c1ad24962643ef9494f9cbe1</hash>
+				<hash alg="SHA-1">fa632b7f1cb7c50963d0fb7d818ca93c75c10127</hash>
+			</hashes>
+			<licenses>
+				<license>
+					<id>Apache-2.0</id>
+				</license>
+			</licenses>
+			<purl>pkg:maven/org.codehaus.plexus/plexus-utils@1.1?type=jar
+			</purl>
+			<externalReferences>
+			</externalReferences>
+		</component>
+		<properties>
+		</properties>
+	</metadata>
+</bom>
