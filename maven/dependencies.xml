@@ -277,18 +277,6 @@
       </hashes>
       <purl>pkg:maven/org.junit/junit-bom@5.8.2?type=pom</purl>
     </component>
-    <component bom-ref="pkg:maven/net.runeduniverse.tools.maven.workflow/maven-pipeline-workflow@0.1.0?type=jar">
-      <group>net.runeduniverse.tools.maven.workflow</group>
-      <name>maven-pipeline-workflow</name>
-      <version>0.1.0</version>
-      <hashes>
-        <hash alg="SHA-1">194ff20263d0728fa3e31b0b683f9276a77d83d5</hash>
-        <hash alg="SHA-256">60505e5c2bec098d17054e16590e9cb0a8ef521510bd00564c940268f952fd7e</hash>
-        <hash alg="SHA-512">072214db7f3d5040261a15f49da1247d5ab9422d628287b2690d32894f236c42d2d88d3f33c7a1a4538dbe52f185108caee09d13daaa54bdfaf20fca41fdc6e6</hash>
-        <hash alg="MD5">92ed0069dbff63c2d5c69b028a8e152f</hash>
-      </hashes>
-      <purl>pkg:maven/net.runeduniverse.tools.maven.workflow/maven-pipeline-workflow@0.1.0?type=jar</purl>
-    </component>
     <component bom-ref="pkg:maven/com.github.ben-manes.caffeine/caffeine@3.2.3?type=jar">
       <group>com.github.ben-manes.caffeine</group>
       <name>caffeine</name>
@@ -601,18 +589,6 @@
       </hashes>
       <purl>pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.21?type=pom</purl>
     </component>
-    <component bom-ref="pkg:maven/net.runeduniverse.tools.maven.workflow/maven-java-workflow@0.1.0?type=pom">
-      <group>net.runeduniverse.tools.maven.workflow</group>
-      <name>maven-java-workflow</name>
-      <version>0.1.0</version>
-      <hashes>
-        <hash alg="SHA-1">b92a5dfe7284f31dfd4c6a135a95cdc57718178a</hash>
-        <hash alg="SHA-256">e5dd231b838a33116b9b77b346740349a162eca83a4d202f3244dcd7ebc3e345</hash>
-        <hash alg="SHA-512">af01eb948f55a13d8ea80d6d20da2d7f1dc33efe4ed27eba4e4d49460ecf2a229e1fdc8d8c09364912b4a8c09a68a8db48cb0aa70ca914eb1a51699a40426bf4</hash>
-        <hash alg="MD5">753474f3f066c86b6d4253d202d2ea88</hash>
-      </hashes>
-      <purl>pkg:maven/net.runeduniverse.tools.maven.workflow/maven-java-workflow@0.1.0?type=pom</purl>
-    </component>
     <component bom-ref="pkg:maven/com.fasterxml.jackson.dataformat/jackson-dataformat-yaml@2.18.3?type=pom">
       <group>com.fasterxml.jackson.dataformat</group>
       <name>jackson-dataformat-yaml</name>
@@ -852,18 +828,6 @@
         <hash alg="MD5">905e7daa4d8d47705f904092f9bfb749</hash>
       </hashes>
       <purl>pkg:maven/com.fasterxml/oss-parent@61?type=pom</purl>
-    </component>
-    <component bom-ref="pkg:maven/net.runeduniverse.tools.maven.workflow/maven-java-workflow@0.1.0?type=jar">
-      <group>net.runeduniverse.tools.maven.workflow</group>
-      <name>maven-java-workflow</name>
-      <version>0.1.0</version>
-      <hashes>
-        <hash alg="SHA-1">b1502cd7c0295616975ecabf2c37d2020c253f2d</hash>
-        <hash alg="SHA-256">932ddb03e5cb0f1c0dbed206b09baf0b10fd0c0dfc23f5a5902e891159155816</hash>
-        <hash alg="SHA-512">61fe038d50b3d78fe83dbc372e1247ee60d8152aa7301f42541b45f6025a25c69d181e1aeacd2b4ef97516f15c897dcde228d80925d3a9265ac8f7fa521f852e</hash>
-        <hash alg="MD5">79becbc35516d4062df18cb44ab53821</hash>
-      </hashes>
-      <purl>pkg:maven/net.runeduniverse.tools.maven.workflow/maven-java-workflow@0.1.0?type=jar</purl>
     </component>
     <component bom-ref="pkg:maven/org.apache/apache@33?type=pom">
       <group>org.apache</group>
@@ -1212,18 +1176,6 @@
         <hash alg="MD5">78c56edc6e9612ffe1ffcbd09adc6d52</hash>
       </hashes>
       <purl>pkg:maven/org.opentest4j/opentest4j@1.2.0?type=pom</purl>
-    </component>
-    <component bom-ref="pkg:maven/net.runeduniverse.tools.maven.workflow/maven-pipeline-workflow@0.1.0?type=pom">
-      <group>net.runeduniverse.tools.maven.workflow</group>
-      <name>maven-pipeline-workflow</name>
-      <version>0.1.0</version>
-      <hashes>
-        <hash alg="SHA-1">1ed9f3a40293de7290c5d998b32572d3697d7118</hash>
-        <hash alg="SHA-256">83eb2dc7182afbbcdbcda7f3908aba3cfb0e72cb19201d2acc49c0a6deeb0c18</hash>
-        <hash alg="SHA-512">1075fa22e8545dfe1ec3fe2924cf8472662dc0aca65c5906ad941e293b5cb3428635311e5cc927096a74059c29752175cbe5a9af574aea1ad00074d3dcbba0ca</hash>
-        <hash alg="MD5">9cf6ebd56c677cb83382dc1026714312</hash>
-      </hashes>
-      <purl>pkg:maven/net.runeduniverse.tools.maven.workflow/maven-pipeline-workflow@0.1.0?type=pom</purl>
     </component>
     <component bom-ref="pkg:maven/org.cyclonedx/cyclonedx-core-java@12.0.1?type=jar">
       <group>org.cyclonedx</group>
