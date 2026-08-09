@@ -10,11 +10,6 @@ node( label: 'linux' ) {
 		sh '/usr/sbin/ip a'
 		sh 'printenv'
 	}
-	stage('Repo Check') {
-		sh 'mkdir results'
-		sh 'curl -D - -L -o results/r4m-maven-extension-1.0.0.jar https://repo1.maven.org/maven2/net/runeduniverse/tools/maven/r4m/r4m-maven-extension/1.0.0/r4m-maven-extension-1.0.0.jar'
-		sh 'sha1sum results/r4m-maven-extension-1.0.0.jar'
-	}
 
 	repoProxy(['maven>central': 'central', 'maven>runeduniverse>maven-thesis-testing': 'testing']) {
 		sh 'printenv | grep PROXY'
