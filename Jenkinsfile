@@ -17,7 +17,7 @@ node( label: 'linux' ) {
       sh "curl -D - -L -o ${ data.file } ${ data.url }"
       sh "sha1sum ${ data.file }"
       // version 1.0.0
-      def data = artifactData(
+      data = artifactData(
           'net.runeduniverse.tools.maven.r4m', 'r4m-maven-extension', '1.0.0');
       sh "curl -D - -L -o ${ data.file } ${ data.url }"
       // next line might not be executed in time ...
