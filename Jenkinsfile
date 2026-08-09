@@ -2,7 +2,7 @@ def artifactData(groupId, artifactId, version) {
   def map = [:];
   map.file = "${ artifactId }-${ version }.jar";
   map.url = "${ MVN_PROXY_central_URL }" +
-      "${ groupId.replace('.', '/') }/${ version }/" +
+      "${ groupId.replace('.', '/') }/${ artifactId }/${ version }/" +
       map.file;
   return map;
 }
@@ -20,8 +20,6 @@ node( label: 'linux' ) {
       data = artifactData(
           'net.runeduniverse.tools.maven.r4m', 'r4m-maven-extension', '1.0.0');
       sh "curl -D - -L -o ${ data.file } ${ data.url }"
-      // next line might not be executed in time ...
-      sh "cat ${ data.file }"
     }
   }
 }
