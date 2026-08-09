@@ -1,14 +1,13 @@
 node( label: 'linux' ) {
   bundleContext {
     stage('Check 3 : Artifact Deployment') {
-      def fileName = "file.txt"
-      sh "echo 'Hello World' > ${ fileName }"
-      sh "base64 ${ fileName } > ${ fileName }.encoded"
-      archiveArtifacts(artifacts: "${ fileName }*", fingerprint: true)
-      bundleArtifacts(bundle: "files", artifacts: "${ fileName }*", metadata: [
-        'groupId': 'io.github.venanocta.thesis',
+      sh "echo 'Hello World' > file.txt"
+      sh 'base64 file.txt > file.encoded'
+      archiveArtifacts(artifacts: 'file.*', fingerprint: true)
+      bundleArtifacts(bundle: "files", artifacts: 'file.*', metadata: [
+        'groupId':    'io.github.venanocta.thesis',
         'artifactId': 'hello-world',
-        'version': '1'
+        'version':    '1'
       ])
       deployArtifacts(repo: 'thesis>testing', bundle: "files")
     }
