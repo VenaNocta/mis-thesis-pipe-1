@@ -8,6 +8,8 @@ node( label: 'linux' ) {
 
 		stage('Where am I?') {
 			sh 'uname -a'
+			sh 'printenv'
+			sh 'pwd'
 			sh 'ip a'
 		}
 
