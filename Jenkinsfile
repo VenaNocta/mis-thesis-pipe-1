@@ -3,7 +3,7 @@ node( label: 'linux' ) {
 	bundleContext {
 		stage('Checkout SCM') {
 			checkout2(scm)
-			writeFile(file: '.mvn/maven.config', "-s $WORKSPACE/.mvn/settings.xml")
+			writeFile(file: '.mvn/maven.config', text: "-s $WORKSPACE/.mvn/settings.xml")
 		}
 		stage('Where am I?') {
 			sh 'uname -a'
