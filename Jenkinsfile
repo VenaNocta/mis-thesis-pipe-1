@@ -10,7 +10,7 @@ node( label: 'linux' ) {
 
 		stage('Where am I?') {
 			sh 'uname -a'
-			sh 'printenv'
+			sh 'printenv | grep PROXY'
 			sh 'pwd'
 			sh 'ip a'
 		}
