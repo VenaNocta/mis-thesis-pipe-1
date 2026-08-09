@@ -4,6 +4,7 @@ node( label: 'linux' ) {
 		sh 'uname -a'
 		sh 'pwd'
 		sh '/usr/sbin/ip a'
-  }
+		sh 'ps aux'
+	}
 }
 
