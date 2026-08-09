@@ -1,20 +1,21 @@
 node( label: 'linux' ) {
 	repoProxy(['maven>central': 'central', 'maven>runeduniverse>maven-thesis-testing': 'testing']) {
 	bundleContext {
-
-		env.setProperty('PATH+SBIN', "/usr/sbin/")
-
 		stage('Checkout SCM') {
 			checkout2(scm)
+			writeFile(file: '.mvn/maven.config', "-s $WORKSPACE/.mvn/settings.xml")
 		}
-
 		stage('Where am I?') {
 			sh 'uname -a'
 			sh 'printenv | grep PROXY'
 			sh 'pwd'
-			sh 'ip a'
+			sh '/usr/sbin/ip a'
 		}
-
+		stage('Repo Check') {
+		}
+		stage('Maven Check') {
+			sh 'mvn net.runeduniverse.tools.maven.r4m:r4m-maven-extension:help'
+		}
 // deployment repo id: 'thesis>testing'
 
 	}}
