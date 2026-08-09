@@ -8,6 +8,7 @@ node( label: 'linux' ) {
 		sh 'uname -a'
 		sh 'pwd'
 		sh '/usr/sbin/ip a'
+		sh 'printenv'
 	}
 	stage('Repo Check') {
 		sh 'mkdir results'
