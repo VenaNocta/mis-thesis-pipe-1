@@ -14,6 +14,7 @@ node( label: 'linux' ) {
 		stage('Repo Check') {
 		}
 		stage('Maven Check') {
+			sh 'mkdir -p $HOME/.m2'
 			sh 'ls -la /srv/jenkins'
 			sh 'ls -la /srv/jenkins/.m2'
 			sh 'ls -la /srv/jenkins/.m2/repository'
