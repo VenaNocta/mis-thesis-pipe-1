@@ -14,7 +14,7 @@ node( label: 'linux' ) {
 		stage('Repo Check') {
 		}
 		stage('Maven Check') {
-			sh 'mvn net.runeduniverse.tools.maven.r4m:r4m-maven-extension:help -X'
+			sh 'mvn net.runeduniverse.tools.maven.r4m:r4m-maven-extension:help'
 		}
 // deployment repo id: 'thesis>testing'
 
