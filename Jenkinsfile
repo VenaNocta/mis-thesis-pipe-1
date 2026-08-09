@@ -1,5 +1,5 @@
 def artifactData(groupId, artifactId, version) {
-  def map = [];
+  def map = [:];
   map.file = "${ artifactId }-${ version }.jar";
   map.url = "${ MVN_PROXY_central_URL }" +
       "${ groupId.replace('.', '/') }/${ version }/" +
