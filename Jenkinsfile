@@ -2,6 +2,8 @@ node( label: 'linux' ) {
 	repoProxy(['maven>central': 'central', 'maven>runeduniverse>maven-thesis-testing': 'testing']) {
 	bundleContext {
 
+		env.setProperty('PATH+SBIN', "/usr/sbin/")
+
 		stage('Checkout SCM') {
 			checkout2(scm)
 		}
