@@ -1,0 +1,5 @@
+#!/usr/bin/sh
+
+curl -L "https://repo1.maven.org/maven2/net/runeduniverse/tools/maven/r4m/r4m-maven-extension/1.0.0/r4m-maven-extension-1.0.0.jar" -o "./r4m-maven-extension-1.0.0.jar"
+sha1sum ./r4m-maven-extension-1.0.0.jar
+
