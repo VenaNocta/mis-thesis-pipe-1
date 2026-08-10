@@ -1,5 +1,5 @@
 node( label: 'linux' ) {
-  checkout2(scm)
+  checkout(scm)
   stage('Check 7 : Git Repository Version Management') {
 sh 'git config core.hooksPath githooks'
 sh 'tree'
