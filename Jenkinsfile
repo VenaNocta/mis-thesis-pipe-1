@@ -1,4 +1,5 @@
 node( label: 'linux' ) {
+  sh 'rm -rf .git *'
   checkout(scm)
   stage('Check 7 : Git Repository Version Management') {
     if( !gitTagExists2( scm: scm, tag: 'v1.0.1' )) {
