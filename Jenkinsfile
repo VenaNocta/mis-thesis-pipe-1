@@ -1,5 +1,5 @@
 node( label: 'linux' ) {
-  checkout2(scm)
+  checkout(scm)
   stage('Check 7 : Git Repository Version Management') {
     if( !gitTagExists2( scm: scm, tag: 'v1.0.1' )) {
       // tag does not exist -> build and publish the project
