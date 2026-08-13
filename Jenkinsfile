@@ -1,6 +1,6 @@
 node( label: 'linux' ) {
   repoProxy(['maven>central': 'central']) {
-    checkout2(scm)
+    checkout(scm)
     stage('Check 6 : Dynamic Artifact Loading & Inspection : Valid vs Invalid Artifact with Maven') {
       sh "echo '-s \"$WORKSPACE/.mvn/settings.xml\"' >> .mvn/maven.config"
       sh 'printenv | grep PROXY'
