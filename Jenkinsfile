@@ -1,7 +1,7 @@
 node( label: 'linux' ) {
 	stage('Checkout SCM') {
 		checkout(scm)
-		sh "echo '-s \"$WORKSPACE/.mvn/settings.xml\"' >> .mvn/maven.config"
+		sh 'echo "-s=.mvn/settings.xml" >> .mvn/maven.config'
 	}
 	stage('Where am I?') {
 		sh 'whoami'
